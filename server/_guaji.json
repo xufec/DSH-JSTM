@@ -1,0 +1,60 @@
+{
+ "spots": [
+  {
+   "mon_bid": 10101,
+   "map_bid": 10002,
+   "disc": "星斗大森林",
+   "lev_l": 25,
+   "lev_r": 34
+  },
+  {
+   "mon_bid": 10102,
+   "map_bid": 10007,
+   "disc": "明月森林",
+   "lev_l": 35,
+   "lev_r": 44
+  },
+  {
+   "mon_bid": 10103,
+   "map_bid": 10008,
+   "disc": "宁静海湾",
+   "lev_l": 45,
+   "lev_r": 54
+  },
+  {
+   "mon_bid": 10104,
+   "map_bid": 10004,
+   "disc": "明斗山脉",
+   "lev_l": 55,
+   "lev_r": 64
+  },
+  {
+   "mon_bid": 10105,
+   "map_bid": 10005,
+   "disc": "乾坤日月谷",
+   "lev_l": 65,
+   "lev_r": 74
+  },
+  {
+   "mon_bid": 10106,
+   "map_bid": 10009,
+   "disc": "魂殿遗迹一层",
+   "lev_l": 75,
+   "lev_r": 84
+  },
+  {
+   "mon_bid": 10107,
+   "map_bid": 10010,
+   "disc": "魂殿遗迹二层",
+   "lev_l": 85,
+   "lev_r": 94
+  },
+  {
+   "mon_bid": 10108,
+   "map_bid": 10011,
+   "disc": "魂殿遗迹三层",
+   "lev_l": 95,
+   "lev_r": 104
+  }
+ ]
+}

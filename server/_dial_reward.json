@@ -1,0 +1,222 @@
+[
+ {
+  "record_len": 20,
+  "holiday_rule": "<div fontcolor=#fca000>玩法说明：</div>\n1.活动期间消耗<div fontcolor=#00ff00>钻石</div>进行抽奖\n2.每次抽奖会有<div fontcolor=#00ff00>10钻石</div>归入奖池中；十连抽则会有<div fontcolor=#00ff00>100钻石</div>进入奖池\n3.一二三等级为钻石奖金，分别为当前奖池剩余钻石的50%、20%、10%比例钻石\n4.玩家喜中一二三等级后，奖池将相应扣除对应奖金钻石",
+  "free_times": 5,
+  "gold_ten": 800,
+  "continue_time": 10,
+  "lev_limit": 30,
+  "gold_once": 80,
+  "gold_refresh": 10
+ },
+ {
+  "index": 11,
+  "item_bid": 28515
+ },
+ {
+  "index": 13,
+  "item_bid": 28517
+ },
+ {
+  "index": 16,
+  "item_bid": 28514
+ },
+ {
+  "index": 18,
+  "item_bid": 28513
+ },
+ {
+  "index": 15,
+  "item_bid": 28519
+ },
+ {
+  "index": 19,
+  "item_bid": 28511
+ },
+ {
+  "index": 14,
+  "item_bid": 28518
+ },
+ {
+  "index": 20,
+  "item_bid": 28512
+ },
+ {
+  "index": 12,
+  "item_bid": 25870
+ },
+ {
+  "index": 17,
+  "item_bid": 28516
+ },
+ {
+  "index": 11,
+  "name": "夏日清凉时装卡",
+  "type": 1
+ },
+ {
+  "index": 12,
+  "name": "玄冰葫芦碎片",
+  "type": 1
+ },
+ {
+  "index": 13,
+  "name": "一等奖",
+  "type": 2
+ },
+ {
+  "index": 14,
+  "name": "二等奖",
+  "type": 2
+ },
+ {
+  "index": 15,
+  "name": "三等奖",
+  "type": 2
+ },
+ {
+  "index": 16,
+  "name": "物攻石",
+  "type": 1
+ },
+ {
+  "index": 16,
+  "name": "法攻石",
+  "type": 1
+ },
+ {
+  "index": 16,
+  "name": "物防石",
+  "type": 1
+ },
+ {
+  "index": 16,
+  "name": "法防石",
+  "type": 1
+ },
+ {
+  "index": 16,
+  "name": "气血石",
+  "type": 1
+ },
+ {
+  "index": 16,
+  "name": "速度石",
+  "type": 1
+ },
+ {
+  "index": 16,
+  "name": "暴击石",
+  "type": 1
+ },
+ {
+  "index": 16,
+  "name": "抗暴石",
+  "type": 1
+ },
+ {
+  "index": 17,
+  "name": "物攻石",
+  "type": 1
+ },
+ {
+  "index": 17,
+  "name": "法攻石",
+  "type": 1
+ },
+ {
+  "index": 17,
+  "name": "物防石",
+  "type": 1
+ },
+ {
+  "index": 17,
+  "name": "法防石",
+  "type": 1
+ },
+ {
+  "index": 17,
+  "name": "气血石",
+  "type": 1
+ },
+ {
+  "index": 17,
+  "name": "速度石",
+  "type": 1
+ },
+ {
+  "index": 17,
+  "name": "暴击石",
+  "type": 1
+ },
+ {
+  "index": 17,
+  "name": "抗暴石",
+  "type": 1
+ },
+ {
+  "index": 18,
+  "name": "青魂石",
+  "type": 1
+ },
+ {
+  "index": 18,
+  "name": "青魂石",
+  "type": 1
+ },
+ {
+  "index": 19,
+  "name": "坐骑进阶丹",
+  "type": 1
+ },
+ {
+  "index": 19,
+  "name": "魂灵进阶丹",
+  "type": 1
+ },
+ {
+  "index": 19,
+  "name": "魂环进阶丹",
+  "type": 1
+ },
+ {
+  "index": 19,
+  "name": "灵座进阶丹",
+  "type": 1
+ },
+ {
+  "index": 19,
+  "name": "魂器进阶丹",
+  "type": 1
+ },
+ {
+  "index": 19,
+  "name": "坐骑进阶丹",
+  "type": 1
+ },
+ {
+  "index": 19,
+  "name": "魂灵进阶丹",
+  "type": 1
+ },
+ {
+  "index": 19,
+  "name": "魂环进阶丹",
+  "type": 1
+ },
+ {
+  "index": 19,
+  "name": "灵座进阶丹",
+  "type": 1
+ },
+ {
+  "index": 19,
+  "name": "魂器进阶丹",
+  "type": 1
+ },
+ {
+  "index": 20,
+  "name": "财富礼盒",
+  "type": 1
+ }
+]

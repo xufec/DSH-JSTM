@@ -1,0 +1,24 @@
+{
+ "client_version": "1.4.11",
+ "cmds_observed": [],
+ "confidence_counts": {},
+ "distinct_cmds_observed": 0,
+ "event_type_counts": {},
+ "events": 0,
+ "notes": [
+  "协议无请求 ID ⇒ request_id 恒为 null，关联用「连接内消息顺序」",
+  "tcp.log 无逐行连接标识 ⇒ 并发连接时 connection_confidence=LOW",
+  "未观察到客户端「收到帧」的独立证据 ⇒ 关联记录恒含 CLIENT_RECV_NOT_OBSERVED"
+ ],
+ "pairs": 0,
+ "pairs_push_only": 0,
+ "pairs_with_response": 0,
+ "parser_stats": {
+  "missing_gm": 1,
+  "missing_http": 1,
+  "missing_server": 1,
+  "missing_tcp": 1
+ },
+ "session_id": "S20261016T213000",
+ "unparsed_lines": 0
+}

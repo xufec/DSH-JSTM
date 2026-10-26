@@ -1,0 +1,1407 @@
+{
+ "_source": "assets/src/config/config_role_attr.luac (1.4.9 Config.RoleAttr)",
+ "_note": "服务端升级阈值 = levels[lev+1].exp_max（与客户端 main_ui.luac proto#16 的 Config.RoleAttr[lev+1].exp_max 对齐）；本表**不含** atk/hp/def，逐级属性成长不在 APK 内",
+ "max_lev": 200,
+ "levels": {
+  "1": {
+   "exp_max": 240,
+   "exp_total": 240,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "2": {
+   "exp_max": 481,
+   "exp_total": 481,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "3": {
+   "exp_max": 971,
+   "exp_total": 1452,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "4": {
+   "exp_max": 2452,
+   "exp_total": 3904,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "5": {
+   "exp_max": 2749,
+   "exp_total": 6653,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "6": {
+   "exp_max": 3082,
+   "exp_total": 9735,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "7": {
+   "exp_max": 3455,
+   "exp_total": 13190,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "8": {
+   "exp_max": 3873,
+   "exp_total": 17063,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "9": {
+   "exp_max": 4342,
+   "exp_total": 21405,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "10": {
+   "exp_max": 4868,
+   "exp_total": 26273,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "11": {
+   "exp_max": 5458,
+   "exp_total": 31731,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "12": {
+   "exp_max": 6119,
+   "exp_total": 37850,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "13": {
+   "exp_max": 6860,
+   "exp_total": 44710,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "14": {
+   "exp_max": 7690,
+   "exp_total": 52400,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "15": {
+   "exp_max": 8622,
+   "exp_total": 61022,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "16": {
+   "exp_max": 9666,
+   "exp_total": 70688,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "17": {
+   "exp_max": 10836,
+   "exp_total": 81524,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "18": {
+   "exp_max": 12148,
+   "exp_total": 93672,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "19": {
+   "exp_max": 13620,
+   "exp_total": 107292,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "20": {
+   "exp_max": 15269,
+   "exp_total": 122561,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "21": {
+   "exp_max": 17118,
+   "exp_total": 139679,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "22": {
+   "exp_max": 19191,
+   "exp_total": 158870,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "23": {
+   "exp_max": 21515,
+   "exp_total": 180385,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "24": {
+   "exp_max": 24120,
+   "exp_total": 204505,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "25": {
+   "exp_max": 27041,
+   "exp_total": 231546,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "26": {
+   "exp_max": 30316,
+   "exp_total": 261862,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "27": {
+   "exp_max": 33987,
+   "exp_total": 295849,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "28": {
+   "exp_max": 38103,
+   "exp_total": 333952,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "29": {
+   "exp_max": 42718,
+   "exp_total": 376670,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "30": {
+   "exp_max": 47891,
+   "exp_total": 424561,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "31": {
+   "exp_max": 53690,
+   "exp_total": 478251,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "32": {
+   "exp_max": 77956,
+   "exp_total": 556207,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "33": {
+   "exp_max": 91338,
+   "exp_total": 647545,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "34": {
+   "exp_max": 104840,
+   "exp_total": 752385,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "35": {
+   "exp_max": 118461,
+   "exp_total": 870846,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "36": {
+   "exp_max": 126409,
+   "exp_total": 997255,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "37": {
+   "exp_max": 133281,
+   "exp_total": 1130536,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "38": {
+   "exp_max": 136612,
+   "exp_total": 1267148,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "39": {
+   "exp_max": 139944,
+   "exp_total": 1407092,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "40": {
+   "exp_max": 143276,
+   "exp_total": 1550368,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "41": {
+   "exp_max": 219912,
+   "exp_total": 1770280,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "42": {
+   "exp_max": 224910,
+   "exp_total": 1995190,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "43": {
+   "exp_max": 389086,
+   "exp_total": 2384276,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "44": {
+   "exp_max": 411110,
+   "exp_total": 2795386,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "45": {
+   "exp_max": 428946,
+   "exp_total": 3224332,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "46": {
+   "exp_max": 502682,
+   "exp_total": 3727014,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "47": {
+   "exp_max": 525109,
+   "exp_total": 4252123,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "48": {
+   "exp_max": 529629,
+   "exp_total": 4781752,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "49": {
+   "exp_max": 605856,
+   "exp_total": 5387608,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "50": {
+   "exp_max": 610328,
+   "exp_total": 5997936,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "51": {
+   "exp_max": 614834,
+   "exp_total": 6612770,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "52": {
+   "exp_max": 674071,
+   "exp_total": 7286841,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "53": {
+   "exp_max": 679906,
+   "exp_total": 7966747,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "54": {
+   "exp_max": 782409,
+   "exp_total": 8749156,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "55": {
+   "exp_max": 789195,
+   "exp_total": 9538351,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "56": {
+   "exp_max": 796040,
+   "exp_total": 10334391,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "57": {
+   "exp_max": 936791,
+   "exp_total": 11271182,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "58": {
+   "exp_max": 1063040,
+   "exp_total": 12334222,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "59": {
+   "exp_max": 1247448,
+   "exp_total": 13581670,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "60": {
+   "exp_max": 1363186,
+   "exp_total": 14944856,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "61": {
+   "exp_max": 1489661,
+   "exp_total": 16434517,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "62": {
+   "exp_max": 1639265,
+   "exp_total": 18073782,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "63": {
+   "exp_max": 2273688,
+   "exp_total": 20347470,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "64": {
+   "exp_max": 2329393,
+   "exp_total": 22676863,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "65": {
+   "exp_max": 2349784,
+   "exp_total": 25026647,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "66": {
+   "exp_max": 2370355,
+   "exp_total": 27397002,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "67": {
+   "exp_max": 2391143,
+   "exp_total": 29788145,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "68": {
+   "exp_max": 2412114,
+   "exp_total": 32200259,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "69": {
+   "exp_max": 2433306,
+   "exp_total": 34633565,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "70": {
+   "exp_max": 2577419,
+   "exp_total": 37210984,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "71": {
+   "exp_max": 2600094,
+   "exp_total": 39811078,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "72": {
+   "exp_max": 2622977,
+   "exp_total": 42434055,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "73": {
+   "exp_max": 2822501,
+   "exp_total": 45256556,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "74": {
+   "exp_max": 2847383,
+   "exp_total": 48103939,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "75": {
+   "exp_max": 2872527,
+   "exp_total": 50976466,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "76": {
+   "exp_max": 2897895,
+   "exp_total": 53874361,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "77": {
+   "exp_max": 2923525,
+   "exp_total": 56797886,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "78": {
+   "exp_max": 2949390,
+   "exp_total": 59747276,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "79": {
+   "exp_max": 2975523,
+   "exp_total": 62722799,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "80": {
+   "exp_max": 3455504,
+   "exp_total": 66178303,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "81": {
+   "exp_max": 3628279,
+   "exp_total": 69806582,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "82": {
+   "exp_max": 3809692,
+   "exp_total": 73616274,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "83": {
+   "exp_max": 4000176,
+   "exp_total": 77616450,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "84": {
+   "exp_max": 4200184,
+   "exp_total": 81816634,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "85": {
+   "exp_max": 4410193,
+   "exp_total": 86226827,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "86": {
+   "exp_max": 4630702,
+   "exp_total": 90857529,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "87": {
+   "exp_max": 4862237,
+   "exp_total": 95719766,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "88": {
+   "exp_max": 5640194,
+   "exp_total": 101359960,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "89": {
+   "exp_max": 6768232,
+   "exp_total": 108128192,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "90": {
+   "exp_max": 8392607,
+   "exp_total": 116520799,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "91": {
+   "exp_max": 8812237,
+   "exp_total": 125333036,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "92": {
+   "exp_max": 9252848,
+   "exp_total": 134585884,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "93": {
+   "exp_max": 9715490,
+   "exp_total": 144301374,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "94": {
+   "exp_max": 10201264,
+   "exp_total": 154502638,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "95": {
+   "exp_max": 10711327,
+   "exp_total": 165213965,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "96": {
+   "exp_max": 11246893,
+   "exp_total": 176460858,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "97": {
+   "exp_max": 11809237,
+   "exp_total": 188270095,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "98": {
+   "exp_max": 12399698,
+   "exp_total": 200669793,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "99": {
+   "exp_max": 13019682,
+   "exp_total": 213689475,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "100": {
+   "exp_max": 14582043,
+   "exp_total": 228271518,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "101": {
+   "exp_max": 15311145,
+   "exp_total": 243582663,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "102": {
+   "exp_max": 16076702,
+   "exp_total": 259659365,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "103": {
+   "exp_max": 16880537,
+   "exp_total": 276539902,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "104": {
+   "exp_max": 17724563,
+   "exp_total": 294264465,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "105": {
+   "exp_max": 18610791,
+   "exp_total": 312875256,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "106": {
+   "exp_max": 19541330,
+   "exp_total": 332416586,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "107": {
+   "exp_max": 20518396,
+   "exp_total": 352934982,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "108": {
+   "exp_max": 21544315,
+   "exp_total": 374479297,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "109": {
+   "exp_max": 22621530,
+   "exp_total": 397100827,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "110": {
+   "exp_max": 23752606,
+   "exp_total": 420853433,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "111": {
+   "exp_max": 24940236,
+   "exp_total": 445793669,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "112": {
+   "exp_max": 26187247,
+   "exp_total": 471980916,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "113": {
+   "exp_max": 27496609,
+   "exp_total": 499477525,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "114": {
+   "exp_max": 28871439,
+   "exp_total": 528348964,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "115": {
+   "exp_max": 30315010,
+   "exp_total": 558663974,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "116": {
+   "exp_max": 31830760,
+   "exp_total": 590494734,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "117": {
+   "exp_max": 33422298,
+   "exp_total": 623917032,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "118": {
+   "exp_max": 35093412,
+   "exp_total": 659010444,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "119": {
+   "exp_max": 36848082,
+   "exp_total": 695858526,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "120": {
+   "exp_max": 38690486,
+   "exp_total": 734549012,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "121": {
+   "exp_max": 40625010,
+   "exp_total": 775174022,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "122": {
+   "exp_max": 42656260,
+   "exp_total": 817830282,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "123": {
+   "exp_max": 44789073,
+   "exp_total": 862619355,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "124": {
+   "exp_max": 47028526,
+   "exp_total": 909647881,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "125": {
+   "exp_max": 49379952,
+   "exp_total": 959027833,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "126": {
+   "exp_max": 51848949,
+   "exp_total": 1010876782,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "127": {
+   "exp_max": 54441396,
+   "exp_total": 1065318178,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "128": {
+   "exp_max": 57163465,
+   "exp_total": 1122481643,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "129": {
+   "exp_max": 60021638,
+   "exp_total": 1182503281,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "130": {
+   "exp_max": 63022719,
+   "exp_total": 1245526000,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "131": {
+   "exp_max": 66173854,
+   "exp_total": 1311699854,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "132": {
+   "exp_max": 69482546,
+   "exp_total": 1381182400,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "133": {
+   "exp_max": 72956673,
+   "exp_total": 1454139073,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "134": {
+   "exp_max": 76604506,
+   "exp_total": 1530743579,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "135": {
+   "exp_max": 80434731,
+   "exp_total": 1611178310,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "136": {
+   "exp_max": 84456467,
+   "exp_total": 1695634777,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "137": {
+   "exp_max": 88679290,
+   "exp_total": 1784314067,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "138": {
+   "exp_max": 93113254,
+   "exp_total": 1877427321,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "139": {
+   "exp_max": 97768916,
+   "exp_total": 1975196237,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "140": {
+   "exp_max": 102657361,
+   "exp_total": 2077853598,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "141": {
+   "exp_max": 107790229,
+   "exp_total": 2185643827,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "142": {
+   "exp_max": 113179740,
+   "exp_total": 2298823567,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "143": {
+   "exp_max": 118838727,
+   "exp_total": 2417662294,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "144": {
+   "exp_max": 124780663,
+   "exp_total": 2542442957,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "145": {
+   "exp_max": 131019696,
+   "exp_total": 2673462653,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "146": {
+   "exp_max": 137570680,
+   "exp_total": 2811033333,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "147": {
+   "exp_max": 144449214,
+   "exp_total": 2955482547,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "148": {
+   "exp_max": 151671674,
+   "exp_total": 3107154221,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "149": {
+   "exp_max": 159255257,
+   "exp_total": 3266409478,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "150": {
+   "exp_max": 167218019,
+   "exp_total": 3433627497,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "151": {
+   "exp_max": 175578919,
+   "exp_total": 3609206416,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "152": {
+   "exp_max": 184357864,
+   "exp_total": 3793564280,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "153": {
+   "exp_max": 193575757,
+   "exp_total": 3987140037,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "154": {
+   "exp_max": 203254544,
+   "exp_total": 4190394581,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "155": {
+   "exp_max": 213417271,
+   "exp_total": 4403811852,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "156": {
+   "exp_max": 224088134,
+   "exp_total": 4627899986,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "157": {
+   "exp_max": 235292540,
+   "exp_total": 4863192526,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "158": {
+   "exp_max": 247057167,
+   "exp_total": 5110249693,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "159": {
+   "exp_max": 259410025,
+   "exp_total": 5369659718,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "160": {
+   "exp_max": 272380526,
+   "exp_total": 5642040244,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "161": {
+   "exp_max": 285999552,
+   "exp_total": 5928039796,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "162": {
+   "exp_max": 300299529,
+   "exp_total": 6228339325,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "163": {
+   "exp_max": 315314505,
+   "exp_total": 6543653830,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "164": {
+   "exp_max": 331080230,
+   "exp_total": 6874734060,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "165": {
+   "exp_max": 347634241,
+   "exp_total": 7222368301,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "166": {
+   "exp_max": 365015953,
+   "exp_total": 7587384254,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "167": {
+   "exp_max": 383266750,
+   "exp_total": 7970651004,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "168": {
+   "exp_max": 402430087,
+   "exp_total": 8373081091,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "169": {
+   "exp_max": 422551591,
+   "exp_total": 8795632682,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "170": {
+   "exp_max": 443679170,
+   "exp_total": 9239311852,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "171": {
+   "exp_max": 465863128,
+   "exp_total": 9705174980,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "172": {
+   "exp_max": 489156284,
+   "exp_total": 10194331264,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "173": {
+   "exp_max": 513614098,
+   "exp_total": 10707945362,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "174": {
+   "exp_max": 539294802,
+   "exp_total": 11247240164,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "175": {
+   "exp_max": 566259542,
+   "exp_total": 11813499706,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "176": {
+   "exp_max": 594572519,
+   "exp_total": 12408072225,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "177": {
+   "exp_max": 624301144,
+   "exp_total": 13032373369,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "178": {
+   "exp_max": 655516201,
+   "exp_total": 13687889570,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "179": {
+   "exp_max": 688292011,
+   "exp_total": 14376181581,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "180": {
+   "exp_max": 722706611,
+   "exp_total": 15098888192,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "181": {
+   "exp_max": 758841941,
+   "exp_total": 15857730133,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "182": {
+   "exp_max": 796784038,
+   "exp_total": 16654514171,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "183": {
+   "exp_max": 836623239,
+   "exp_total": 17491137410,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "184": {
+   "exp_max": 878454400,
+   "exp_total": 18369591810,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "185": {
+   "exp_max": 922377120,
+   "exp_total": 19291968930,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "186": {
+   "exp_max": 968495976,
+   "exp_total": 20260464906,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "187": {
+   "exp_max": 1016920774,
+   "exp_total": 21277385680,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "188": {
+   "exp_max": 1067766812,
+   "exp_total": 22345152492,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "189": {
+   "exp_max": 1121155152,
+   "exp_total": 23466307644,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "190": {
+   "exp_max": 1177212909,
+   "exp_total": 24643520553,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "191": {
+   "exp_max": 1236073554,
+   "exp_total": 25879594107,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "192": {
+   "exp_max": 1297877231,
+   "exp_total": 27177471338,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "193": {
+   "exp_max": 1362771092,
+   "exp_total": 28540242430,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "194": {
+   "exp_max": 1430909646,
+   "exp_total": 29971152076,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "195": {
+   "exp_max": 1502455128,
+   "exp_total": 31473607204,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "196": {
+   "exp_max": 1577577884,
+   "exp_total": 33051185088,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "197": {
+   "exp_max": 1656456778,
+   "exp_total": 34707641866,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "198": {
+   "exp_max": 1739279616,
+   "exp_total": 36446921482,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "199": {
+   "exp_max": 1826243596,
+   "exp_total": 38273165078,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  },
+  "200": {
+   "exp_max": 1917555775,
+   "exp_total": 40190720853,
+   "attr_point": 0,
+   "sinew_add": 0,
+   "sinew_max": 120
+  }
+ }
+}

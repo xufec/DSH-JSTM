@@ -1,0 +1,88 @@
+{
+ "n_cmds": 231,
+ "ok": 831,
+ "gap": 8,
+ "mismatch": 0,
+ "cs_only_ok": 5,
+ "cs_only_bad": 0,
+ "rows": [
+  {
+   "cmd": 10232,
+   "kind": "GAP",
+   "samples": 4,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 10300,
+   "kind": "CS-ONLY",
+   "samples": 477,
+   "why": "无 SC 定义，不应答=正确"
+  },
+  {
+   "cmd": 10334,
+   "kind": "GAP",
+   "samples": 10,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 10397,
+   "kind": "CS-ONLY",
+   "samples": 9,
+   "why": "无 SC 定义，不应答=正确"
+  },
+  {
+   "cmd": 10523,
+   "kind": "GAP",
+   "samples": 9,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 10801,
+   "kind": "GAP",
+   "samples": 11,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 10805,
+   "kind": "GAP",
+   "samples": 9,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 10999,
+   "kind": "CS-ONLY",
+   "samples": 118,
+   "why": "无 SC 定义，不应答=正确"
+  },
+  {
+   "cmd": 13320,
+   "kind": "GAP",
+   "samples": 9,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 13321,
+   "kind": "GAP",
+   "samples": 26,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 14500,
+   "kind": "GAP",
+   "samples": 9,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 20014,
+   "kind": "CS-ONLY",
+   "samples": 20,
+   "why": "无 SC 定义，不应答=正确"
+  },
+  {
+   "cmd": 20021,
+   "kind": "CS-ONLY",
+   "samples": 11,
+   "why": "无 SC 定义，不应答=正确"
+  }
+ ]
+}

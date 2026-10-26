@@ -1,0 +1,210 @@
+{
+ "gap_total": 73,
+ "real_gaps": {
+  "10206": [
+   "scene_controller.luac"
+  ],
+  "10343": [
+   "role_ctrl.luac"
+  ],
+  "10504": [
+   "backpack_ctrl.luac"
+  ],
+  "10930": [
+   "automate_ctrl.luac"
+  ],
+  "11308": [
+   "trophy_arena_ctrl.luac"
+  ],
+  "11400": [
+   "xianmo_ctrl.luac"
+  ],
+  "12762": [
+   "chat_ctrl.luac"
+  ],
+  "12821": [
+   "shop_ctrl.luac"
+  ],
+  "12901": [
+   "rank_ctrl.luac"
+  ],
+  "12902": [
+   "rank_ctrl.luac"
+  ],
+  "12911": [
+   "rank_ctrl.luac"
+  ],
+  "12912": [
+   "rank_ctrl.luac"
+  ],
+  "12922": [
+   "tower_ctrl.luac"
+  ],
+  "12931": [
+   "rank_ctrl.luac"
+  ],
+  "13005": [
+   "dungeon_ctrl.luac"
+  ],
+  "13020": [
+   "trial_ctrl.luac"
+  ],
+  "13034": [
+   "demontower_ctrl.luac"
+  ],
+  "13036": [
+   "demontower_ctrl.luac"
+  ],
+  "13045": [
+   "tower_ctrl.luac"
+  ],
+  "13052": [
+   "trial_ctrl.luac"
+  ],
+  "13058": [
+   "dungeon_ctrl.luac"
+  ],
+  "13201": [
+   "team_ctrl.luac"
+  ],
+  "13224": [
+   "team_ctrl.luac"
+  ],
+  "13227": [
+   "team_ctrl.luac"
+  ],
+  "13331": [
+   "role_ctrl.luac"
+  ],
+  "13341": [
+   "circle_ctrl.luac"
+  ],
+  "13342": [
+   "circle_ctrl.luac"
+  ],
+  "13343": [
+   "circle_ctrl.luac"
+  ],
+  "13354": [
+   "circle_ctrl.luac"
+  ],
+  "13359": [
+   "circle_ctrl.luac"
+  ],
+  "13361": [
+   "circle_ctrl.luac"
+  ],
+  "13402": [
+   "shop_ctrl.luac"
+  ],
+  "13500": [
+   "guild_ctrl.luac"
+  ],
+  "13501": [
+   "guild_ctrl.luac"
+  ],
+  "13801": [
+   "market_ctrl.luac"
+  ],
+  "13803": [
+   "market_ctrl.luac"
+  ],
+  "13906": [
+   "chongzhi_ctrl.luac"
+  ],
+  "14099": [
+   "form_ctrl.luac"
+  ],
+  "15200": [
+   "npc_ctrl.luac"
+  ],
+  "15204": [
+   "npc_ctrl.luac"
+  ],
+  "15400": [
+   "npc_ctrl.luac"
+  ],
+  "16200": [
+   "boss_ctrl.luac"
+  ],
+  "16601": [
+   "action_ctrl.luac"
+  ],
+  "16602": [
+   "action_ctrl.luac"
+  ],
+  "17001": [
+   "npc_ctrl.luac"
+  ],
+  "17301": [
+   "race_ctrl.luac"
+  ],
+  "17306": [
+   "race_ctrl.luac"
+  ],
+  "17308": [
+   "race_ctrl.luac"
+  ],
+  "17309": [
+   "race_ctrl.luac"
+  ],
+  "17310": [
+   "race_ctrl.luac"
+  ],
+  "17312": [
+   "race_ctrl.luac"
+  ],
+  "17501": [
+   "guildwars_ctrl.luac"
+  ],
+  "18300": [
+   "wedding_ctrl.luac"
+  ],
+  "18307": [
+   "wedding_ctrl.luac"
+  ],
+  "18600": [
+   "mount_ctrl.luac"
+  ],
+  "18865": [
+   "chief_ctrl.luac"
+  ],
+  "18909": [
+   "role_ctrl.luac"
+  ],
+  "19500": [
+   "mission_ctrl.luac"
+  ],
+  "20028": [
+   "battlevideo_ctrl.luac"
+  ],
+  "21301": [
+   "soulstar_ctrl.luac"
+  ],
+  "21400": [
+   "soulstar_ctrl.luac"
+  ],
+  "21410": [
+   "soulstar_ctrl.luac"
+  ],
+  "21411": [
+   "soulstar_ctrl.luac"
+  ],
+  "30201": [
+   "guild_secret_area_ctrl.luac"
+  ],
+  "30716": [
+   "guild_race_ctrl.luac"
+  ]
+ },
+ "harmless": [
+  10232,
+  10334,
+  10523,
+  10801,
+  10805,
+  13320,
+  13321,
+  14500
+ ]
+}

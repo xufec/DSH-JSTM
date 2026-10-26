@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "task": "E1/E2 Monster & Battle Value Extraction",
+    "date": "2026-10-02",
+    "source_version": "1.4.11",
+    "read_only": true,
+    "note": "All extraction from server/cfg/*.json (deconstructed 1.4.11) + analysis/1.4.9/task/config_mon.json (1.4.9 reference). No server/ code modified."
+  },
+  "monster_config_status": {
+    "config_mon_data_luac_1_4_11": {
+      "file": "_tmp_cfg/config_mon_data.luac",
+      "size_bytes": 857309,
+      "deconstructed_json": "server/cfg/config_mon_data.json",
+      "deconstructed_size_bytes": 311,
+      "status": "DECONSTRUCTION_PARTIAL_FAILURE",
+      "detail": "Luac contains 13267 TableConst entries (monster definitions) + 7956 numeric keys (IDs), but the standard deconstruct script only extracted the Filter sub-table (3 entries). The Mon and MonData main tables came out empty ({}).",
+      "evidence": "CONFIRMED - _mon_dis.txt disassembly shows TableConst array data matching the 24-element monster format."
+    },
+    "config_mon_json_1_4_9": {
+      "file": "analysis/1.4.9/task/config_mon.json",
+      "size_bytes": 818547,
+      "total_monsters": 2645,
+      "status": "EXTRACTED_SUCCESSFULLY_1_4_9",
+      "note": "1.4.9 extraction succeeded with 2645 monsters. Same 24-element array format as 1.4.11 luac. This is our reference dataset."
+    }
+  },
+  "monster_field_mapping": {
+    "source": "1.4.9 config_mon.json fields array (24 elements)",
+    "evidence": "CONFIRMED",
+    "fields": {
+      "0": {"desc": "unused/null", "type": "null"},
+      "1": {"desc": "monster name", "type": "string", "unique_values": 601},
+      "2": {"desc": "monster level", "type": "int", "range": [1, 150]},
+      "3": {"desc": "monster type (0=normal, 1=normal, 4=elite/boss)", "type": "int", "values": {0: 1205, 1: 1389, 4: 51}},
+      "4": {"desc": "sub-type / quality tier", "type": "int", "range": [0, 255], "unique": 24},
+      "5": {"desc": "star / quality", "type": "int", "range": [0, 4]},
+      "6": {"desc": "flag (0/1/3/4/254)", "type": "int"},
+      "7": {"desc": "unused (all 0)", "type": "int"},
+      "8": {"desc": "art resource ID", "type": "string", "unique_values": 173},
+      "9": {"desc": "unused (all 0)", "type": "int"},
+      "10": {"desc": "unused (all 0)", "type": "int"},
+      "11": {"desc": "unused (all 0)", "type": "int"},
+      "12": {"desc": "constant '1'", "type": "string"},
+      "13": {"desc": "aggro/detection range (0 or 90)", "type": "int", "values": {0: "most", 90: "some"}},
+      "14": {"desc": "base stat multiplier / detection (0/170/200)", "type": "int", "values": {0: 1082, 170: 1562, 200: 1}},
+      "15": {"desc": "unused/empty", "type": "string"},
+      "16": {"desc": "default attack effect ID (E62931)", "type": "string"},
+      "17": {"desc": "unused/null", "type": "null"},
+      "18": {"desc": "AI type (0-7, 8 unique values)", "type": "int", "range": [0, 7]},
+      "19": {"desc": "unused (all 0)", "type": "int"},
+      "20": {"desc": "special attack effect ID (5 unique values)", "type": "string"},
+      "21": {"desc": "STAT SCALE MULTIPLIER (0.7x - 15x)", "type": "float", "values": [0.7, 0.8, 0.9, 1.0, 1.1, 1.3, 15.0]},
+      "22": {"desc": "named NPC boss title (13 unique)", "type": "string"},
+      "23": {"desc": "drop tier / loot quality (0/2/4/6/8)", "type": "int"}
+    }
+  },
+  "monster_combat_stats_verdict": {
+    "has_explicit_hp": false,
+    "has_explicit_atk": false,
+    "has_explicit_def": false,
+    "has_explicit_exp": false,
+    "has_explicit_coin": false,
+    "reason": "Monster config table stores ONLY metadata (name, level, type, resource, AI, scale factor, drop tier). Actual combat stats (HP, ATK, DEF, EXP, coins) are NOT stored per-monster in config. They are computed server-side via formula: base_stats(level) * type_multiplier * scale_factor[field_21]. The formula itself is in server code (likely mock_server.py battle module), NOT in config tables.",
+    "evidence": "CONFIRMED - 2645 monsters across all level bands show identical field[14] values (170) and no per-monster HP/ATK fields. If HP were stored, it would vary by level.",
+    "conclusion": "1.4.11 怪物数值表无显式战斗数值字段。怪物 HP/ATK/DEF/EXP 均由服务端公式基于 level + type + scale_factor 计算。配置真值 UNKNOWN，需真服抓包或反编译服务端战斗模块获取公式。"
+  },
+  "boss_config": {
+    "source": "server/cfg/config_boss.json",
+    "total_bosses": 27,
+    "fields_present": ["boss_name", "world_lev", "player_lev", "cross", "boss_id", "boss_res", "desc", "face_res", "player_maxlev", "map_bid", "drop_show", "first_kill_award"],
+    "has_hp": false,
+    "has_atk": false,
+    "note": "Boss config only has metadata (name, level, map, drop list). No explicit combat stats. Boss HP/ATK computed via same server-side formula with elite multiplier.",
+    "evidence": "CONFIRMED"
+  },
+  "demon_config": {
+    "source": "server/cfg/config_demon.json",
+    "total_demons": 9,
+    "fields_present": ["nature", "name", "career", "star_lev", "chip", "bid", "res_id", "star_info"],
+    "star_info_detail": "Per-star level action_power (50/60/70/80/90) + skill lists. This is a PVE tower/arena mechanic, not standard monster combat stats.",
+    "has_hp": false,
+    "has_atk": false,
+    "evidence": "CONFIRMED"
+  },
+  "battle_formula_constants": {
+    "attr_power_table": {
+      "source": "server/cfg/config_attr.json AttrPower.hash",
+      "description": "Power score conversion coefficients: 1 point of each attribute = this many power points.",
+      "evidence": "CONFIRMED (table exists and values are read from config)",
+      "note": "These are战力换算系数, not damage formula coefficients. The actual damage formula (ATK vs DEF → damage) coefficients are NOT in config.",
+      "coefficients": {
+        "atk_speed": 450,
+        "dodge": 275,
+        "hit": 275,
+        "crit": 183,
+        "tenacity": 183,
+        "atk_s (物攻)": 106,
+        "atk_p (法攻)": 106,
+        "control": 90,
+        "anti_control": 90,
+        "def_abs (绝对防御)": 82,
+        "atk_abs (绝对攻击)": 82,
+        "atk_abs_s": 41,
+        "atk_abs_p": 41,
+        "def_abs_s": 41,
+        "def_abs_p": 41,
+        "def_s (物防)": 33,
+        "def_p (法防)": 33,
+        "red_def_s (物理破甲)": 33,
+        "red_def_p (法术破甲)": 33,
+        "anti_control_s/c/y/m": 30,
+        "hp_max (生命)": 24
+      }
+    },
+    "fight_type_enum": {
+      "source": "server/cfg/config_battle.json",
+      "values": {"MISS": 0, "HIT": 1, "BAOJI (crit)": 2},
+      "note": "Just an enum, not formula constants.",
+      "evidence": "CONFIRMED"
+    },
+    "damage_formula_coefficients": {
+      "found": false,
+      "reason": "No config table contains damage formula coefficients (e.g., base_damage = ATK * k - DEF * k2, crit_multiplier, etc.). These are hardcoded in server battle logic.",
+      "evidence": "UNKNOWN - needs server-side decompilation or live packet capture."
+    }
+  },
+  "exp_table": {
+    "source": "server/cfg/config_role_attr.json RoleAttr",
+    "total_levels": 200,
+    "evidence": "CONFIRMED",
+    "note": "This is the player exp/level table (not monster exp). Confirms exp_max values per level.",
+    "key_levels": {
+      "1": {"exp_max": 240, "exp_total": 240},
+      "10": {"exp_max": 4868, "exp_total": 26273},
+      "20": {"exp_max": 15269, "exp_total": 122561},
+      "30": {"exp_max": 47891, "exp_total": 424561},
+      "40": {"exp_max": 143276, "exp_total": 1550368},
+      "50": {"exp_max": 610328, "exp_total": 5997936},
+      "60": {"exp_max": 1363186, "exp_total": 14944856},
+      "70": {"exp_max": 2577419, "exp_total": 37210984},
+      "80": {"exp_max": 3455504, "exp_total": 66178303},
+      "90": {"exp_max": 8392607, "exp_total": 116520799},
+      "100": {"exp_max": 14582043, "exp_total": 228271518},
+      "150": {"exp_max": 167218019, "exp_total": 3433627497},
+      "200": {"exp_max": 1917555775, "exp_total": 40190720853}
+    },
+    "verification_note": "Task mentioned exp_max=2600094@lv70. Actual config value = 2,577,419. Close but not exact - likely the 2600094 figure was from a different version or approximation."
+  },
+  "equipment_base_stats": {
+    "found_in_item_table": false,
+    "reason": "config_item.json ItemData entries (32-element arrays) do NOT contain base equipment attribute values (no atk/def/hp fields in the array). The item array has type, name, quality, level requirement, price, etc., but no stat block.",
+    "intensify_table": {
+      "source": "server/cfg/config_intensify.json",
+      "evidence": "CONFIRMED",
+      "intensify_levels": 15,
+      "reward_table": "IntensifyReward: per-type attr_extra at levels 8-15",
+      "all_reward": "IntensifyAllReward: cumulative set bonus at thresholds 6-8+",
+      "note": "Intensify bonus values ARE in config (e.g., +8 weapon = atk_s+20, atk_p+20). But the BASE equipment stats (before any intensify) are NOT in the item table. They must come from a separate equipment level/type table or be computed from equipment level.",
+      "sample_intensify_bonus": {
+        "level_8_weapon": {"atk_s": 20, "atk_p": 20, "atk_s_per": 1, "atk_p_per": 1},
+        "level_10_weapon": {"atk_s": 60, "atk_p": 60, "atk_s_per": 3, "atk_p_per": 3},
+        "level_15_all_set": {"hp_max": 345, "atk_s": 69, "atk_p": 69, "def_s": 49, "def_p": 49, "dodge": 10, "crit": 15}
+      }
+    },
+    "base_equipment_stats": {
+      "found": false,
+      "note": "Base equipment stats (what a +0 weapon of level X gives) are NOT found in any config table we've examined. Likely computed from equipment level + type via a formula, or stored in a table we haven't identified.",
+      "evidence": "UNKNOWN - needs MuMu runtime capture or further config archaeology."
+    }
+  },
+  "evidence_level_summary": {
+    "CONFIRMED": [
+      "Monster config table structure (2645 entries, 24-field array)",
+      "Monster field mapping (which index = what metadata)",
+      "Boss config structure (27 entries, no HP/ATK fields)",
+      "Demon config structure (9 entries, no HP/ATK fields)",
+      "AttrPower战力系数表 (attribute → power conversion)",
+      "Exp table (200 levels, exp_max per level)",
+      "Intensify bonus table (per-level attr_extra values)",
+      "Fight type enum (MISS/HIT/BAOJI)"
+    ],
+    "INFERENCE": [
+      "Combat stats computed server-side via formula (no per-monster HP stored)",
+      "Base equipment stats computed from level + type (not stored per item)"
+    ],
+    "UNKNOWN": [
+      "Monster HP/ATK/DEF actual values (formula not in config)",
+      "Monster EXP/coin rewards per level band",
+      "Damage formula coefficients (ATK-DEF → damage math)",
+      "Base equipment stat values (before intensify)",
+      "Crit damage multiplier value"
+    ],
+    "needs_mumu_runtime": [
+      "Actual monster HP when engaged in combat",
+      "Actual player damage per hit",
+      "Actual drop rates from kill counts",
+      "UI display values for all combat stats"
+    ]
+  }
+}

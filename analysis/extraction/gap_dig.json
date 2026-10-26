@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "task": "4 个 UNKNOWN 真值缺口深度检索（第一阶段：配置/Lua 静态检索）",
+    "date": "2026-10-02",
+    "scope": "_tmp_cfg/ (1.4.11) + 1.4.9 提取语料 + server/cfg/*.json",
+    "read_only": true,
+    "note": "未修改 server/ 任何文件，未碰模拟器"
+  },
+  "gap_1_skill_cost": {
+    "found": true,
+    "evidence": "CONFIRMED",
+    "source": "server/cfg/config_skill.json + config_skill_xiulian.json",
+    "values": {
+      "skill_point_gold_cost": {
+        "table": "config_skill.json → Config.SkillPoint",
+        "levels": 10,
+        "sample": {"L1": 10, "L2": 20, "L5": 50, "L10": 100},
+        "note": "每技能点消耗金币，递增10g/点"
+      },
+      "xiulian_learn_exp": {
+        "table": "config_skill_xiulian.json → SkillXiulianLearn",
+        "skills": 8,
+        "sample": {"攻击修炼(10101)": {"exp": 86, "coin": 0, "max_lev": 23}, "物防修炼(10201)": {"exp": 43, "coin": 0, "max_lev": 23}},
+        "note": "修炼技能学习消耗修炼经验，金币为0"
+      },
+      "xiulian_up_exp": {
+        "table": "config_skill_xiulian.json → SkillXiulianUp",
+        "levels": 192,
+        "sample": {"L1→L2(10101)": {"exp": 402, "coin": "需查表", "next_bid": 10102}, "L2→L3(10102)": {"exp": 852, "next_bid": 10103}},
+        "note": "每级修炼经验消耗递增，L1=402, L2=852... 呈增长曲线"
+      },
+      "xiulian_lev_unlock": {
+        "table": "config_skill_xiulian.json → SkillXiulianLev",
+        "note": "等级解锁门槛：1-4级=角色Lv1+, 5级=Lv22-32, 6级=Lv30-40, 7级=Lv35-45, 8级=Lv40-50"
+      }
+    },
+    "replace_plan": "替换 mock_server 中技能学习/升级消耗占位：SkillPoint金币成本用 config_skill.json；修炼经验消耗用 SkillXiulianLearn + SkillXiulianUp"
+  },
+  "gap_2_partner_cultivation": {
+    "found": "PARTIAL",
+    "evidence": "CONFIRMED (部分)",
+    "source": "server/cfg/config_partner_fetter.json + config_partner_misc.json + config_partner_shenqi.json",
+    "values": {
+      "fetter_exp_ratio": {
+        "table": "config_partner_fetter.json → FetterConst",
+        "value": {"exp_ratio": 600, "default_exp1": 20, "default_exp2": 10, "upstar_exp": 5},
+        "note": "伙伴羁绊/洗练经验系数"
+      },
+      "talisman_cost": {
+        "table": "config_partner_misc.json → PartnerTalismanCost",
+        "levels": 4,
+        "sample": {"L1": 10000, "L2": 20000, "L3": 30000, "L4": 40000},
+        "unit": "hc_cost（金魂币？）",
+        "note": "伙伴符咒/法宝升级消耗"
+      },
+      "shenqi_gold_cost": {
+        "table": "config_partner_shenqi.json → PartnerShenqiConst",
+        "value": {"gold_cost": 100},
+        "note": "伙伴神器基础金币消耗"
+      },
+      "shenqi_level_coin": {
+        "table": "config_partner_shenqi.json → PartnerShenqi",
+        "sample": {"L1": 2400, "L2": 4400, "L3": 6400, "L4": 12000, "L5": 18000},
+        "note": "伙伴神器每级金币消耗，与装备强化同模式"
+      },
+      "feed_gold_exp_cost": {
+        "value": "NOT_FOUND",
+        "evidence": "UNKNOWN",
+        "note": "基础伙伴喂养（FEED_GOLD=1000/FEED_EXP=500）的单次消耗配置未找到。伙伴经验主要通过经验书/任务获得，喂养消耗可能在服务端硬编码。"
+      }
+    },
+    "replace_plan": "伙伴神器/符咒/羁绊消耗 → 替换为配置真值；基础喂养消耗 → 保持 INFERENCE"
+  },
+  "gap_3_gem_attributes": {
+    "found": "PARTIAL",
+    "evidence": "CONFIRMED (部分)",
+    "source": "server/cfg/config_item.json (type=11 宝石类)",
+    "values": {
+      "gem_item_count": 80,
+      "gem_tiers": {
+        "sample": "物攻石系列：一级~五级物攻石（bid 37521~37525）",
+        "note": "宝石分5个等级，通过合成升级（config_item_fuse.json）"
+      },
+      "gem_inlay_flag": "dazao|xiangqian（打造|镶嵌），field[13]",
+      "gem_synthesis": {
+        "table": "config_item_fuse.json → ItemRoleFuse",
+        "entries": 192,
+        "sample": {"36546": {"coin": 2000, "lev": 1, "rate": 100, "fuse_result": "38005×4"}},
+        "note": "宝石合成消耗金币 + 合成成功率"
+      },
+      "gem_attribute_bonus": {
+        "value": "NOT_IN_ITEM_TABLE",
+        "evidence": "UNKNOWN",
+        "note": "宝石物品表中无显式属性加成数值（无 atk_s/def_hp 字段）。镶嵌后属性加成可能由独立的镶嵌系统公式计算，或在未提取的 inlay/jewel 配置表中。ItemJewel 表17条均为 null（反构造不完整）。"
+      }
+    },
+    "replace_plan": "宝石合成消耗 → 替换为 config_item_fuse.json 真值；宝石属性加成 → 保持 INFERENCE，需查镶嵌系统表"
+  },
+  "gap_4_monster_hp_atk": {
+    "found": false,
+    "evidence": "UNKNOWN",
+    "source": "config_mon_data.luac (反构造失败) + config_role_attr.json + config_attr.json",
+    "detail": {
+      "role_attr_check": "RoleAttr 表200级仅含 exp_max/exp_total/attr_point/sinew_add/sinew_max，无基础 HP/ATK 数值",
+      "attr_check": "config_attr.json 仅含属性ID映射 + AttrPower战力系数，无等级基础属性表",
+      "no_monster_base_table": "未找到任何怪物专属的基础属性表（config_mon_base/config_mon_attr 不存在）",
+      "conclusion": "怪物 HP/ATK 真值 UNKNOWN：配置表中无等级基础属性值，战斗数值由服务端公式计算（公式不在配置中）。确认此前 INFERENCE 模型的结论正确。"
+    },
+    "replace_plan": "保持 INFERENCE 占位，标注'需 MuMu 运行时取证或服务端代码反编译'"
+  },
+  "bonus_findings": {
+    "xiulian_notes_exp": "使用修炼笔记可获得600点修炼经验（来自 config_promote.json 文案确认）",
+    "guaji_double_rate": "野外挂机可领取双倍点数（config_promote.json）",
+    "partner_exp_book": "伙伴经验书为伙伴主要经验来源（config_promote.json 文案确认）"
+  }
+}

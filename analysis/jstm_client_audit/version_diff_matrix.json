@@ -1,0 +1,417 @@
+{
+ "meta": {
+  "phase": "PHASE C0 客户端审计",
+  "generated_by": "tools/jstm_audit/gen_version_diff.py",
+  "generated_at": "2026-10-15",
+  "basis": [
+   "analysis/version_compare/version_diff_matrix.json（24 系统骨架，只读未改）",
+   "analysis/jstm_client_audit/_raw/apk_scan_summary.json",
+   "analysis/jstm_client_audit/_raw/apk_scan_1_3_0.json / apk_scan_1_4_9.json / apk_scan_1_4_11.json",
+   "server/item_config.json / mission_config.json / mall_config.json / partner_config.json",
+   "HANDOFF.md（server/ 归属 1.4.11 主目标）"
+  ],
+  "versions": {
+   "1.3.0": {
+    "apk": "C:\\Users\\xu\\Desktop\\DSH\\anzbao\\dldlJl.apk",
+    "now_version": "35"
+   },
+   "1.4.9": {
+    "apk": "C:\\Users\\xu\\Desktop\\DSH\\anzbao\\jstm.apk",
+    "now_version": "186"
+   },
+   "1.4.11": {
+    "apk": "C:\\Users\\xu\\Desktop\\DSH\\anzbao\\jstm_142165.apk",
+    "now_version": "208"
+   }
+  }
+ },
+ "systems": [
+  {
+   "system": "Lua模块",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "三版均含完整 luac 模块族（1557 / 2234 / 2297 个，直接读 zip 中央目录，CONFIRMED）。game 模块目录数按新扫描口径：85 / 108 / 111（CONFIRMED，apk_scan_*.json 的 game_modules 列表长度）；旧 inventory 的 92/116/119 为早期分文件提取口径，已被本口径取代。1.4.11 新增模块含大量 _ctrl/_panel/_view UI 模块；1.4.9 UI corpus 仅部分反编译（提取层面覆盖度，非 UI 不存在）。"
+  },
+  {
+   "system": "cmd",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "共享同一 cmd registry 结构; 条目随 cmd_resolve 增长(89->122->124). registry cmd_table.json=1643 为 1.4.9-based, 不视为与 1.4.11 wire 格式相等; 1.4.11 cmd-diff 仅 INFERENCE."
+  },
+  {
+   "system": "protocol",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "共享 registry fields.json=3553; 1.4.9 已分系统整理. 1.3.0 解包内含 all_proto.luac(落于 extracted/config/protocal/). 存在性 CONFIRMED; 1.4.11 wire 一致性 INFERENCE."
+  },
+  {
+   "system": "cmd_resolve",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "计数 89 / 122 / 124（CONFIRMED，apk_scan_*.json 的 cmd_resolve 列表长度）。1.4.11 vs 1.3.0 新增 35 个（cmd_resolve_187..191 等段；apk_scan_summary.json diff）；1.3.0 无独有 cmd_resolve。1.4.11 另有 server_cmds.json / protocalrulesmgr.luac（version_compare/1.4.11/inventory.md）。"
+  },
+  {
+   "system": "config",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "config_*.luac 计数 168 / 227 / 233（CONFIRMED，apk_scan_*.json 的 config_tables 列表长度）。1.4.11 vs 1.3.0 独有表：auction/black_market/chair/chat_bubble/fashion/foot_print/holiday_*/mine/partner_fetter/score/shenqi 等；1.3.0 独有表仅 config_holiday.luac（1.4.11 拆为 config_holiday_* 系列=重命名/拆分）。"
+  },
+  {
+   "system": "item",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "三版均含 config_item.luac 及 fuse/gift/misc/type_name 族（存在性 CONFIRMED，apk_scan config_tables 清单）。1.4.11 条数=3535（VERIFIED，本脚本实测 server/item_config.json 顶层键数；HANDOFF 指明 server/ 服务 1.4.11 主目标）。1.3.0 / 1.4.9 逐条条数=UNKNOWN（仅存在性证据，禁止按 ID 连续性推测）。注：旧矩阵曾把 3535 记为 1.4.9，经 HANDOFF 归属判定纠正为 1.4.11。"
+  },
+  {
+   "system": "equipment",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "三版均含 config_intensify.luac/config_eqm_starup_data.luac. 1.4.11 新增 config_eqm_ancient.luac/config_red_eqm.luac/config_fabao.luac. 存在性 CONFIRMED."
+  },
+  {
+   "system": "skill",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "三版均含 config_skill.luac + bullet/magic/scene/talent/trigger/xiulian 全家. 存在性 CONFIRMED."
+  },
+  {
+   "system": "task",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "三版均含 config_mission.luac + buffy/escort/help/kill_demon/loop/marry/treasure 族（存在性 CONFIRMED）。1.4.11 条数=846（VERIFIED，server/mission_config.json 实测）。1.3.0 / 1.4.9 条数=UNKNOWN。"
+  },
+  {
+   "system": "partner",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "1.3.0 含 hero 模块 + config_partner_base/misc/skill.luac；1.4.11 新增 fetter/score/shenqi（共6表，存在性 CONFIRMED）。1.4.11 条数=53（VERIFIED，server/partner_config.json 实测）。1.3.0 / 1.4.9 条数=UNKNOWN。"
+  },
+  {
+   "system": "dungeon",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "1.3.0 已有 config_dungeon_new/tower/vip_single.luac. 1.4.11 新增 endless/gods/jieyi/rune/seal_demon/vip_single2 + kunshentower/crossdungeon 模块. 存在性 CONFIRMED."
+  },
+  {
+   "system": "activity",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "三版 config_function.luac 入口均为 91(id-count, VERIFIED). 1.3.0 无 auction/peakwar/holiday_* 系列; 1.4.11 新增 config_act/fest_data/holiday_*(由 config_holiday 重命名/拆分)等. 存在性 CONFIRMED."
+  },
+  {
+   "system": "shop",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "三版均含 config_mall.luac/config_shop.luac/config_market.luac（存在性 CONFIRMED）。1.4.11 mall 条数=142（VERIFIED，server/mall_config.json 实测）。1.3.0 / 1.4.9 条数=UNKNOWN。"
+  },
+  {
+   "system": "currency",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "STRONG_INFERENCE",
+   "notes": "三版同源 config_game_data.luac(AssetsEnToCode 资产/货币枚举); 精确货币 id 集合未逐一枚举. 存在性 STRONG_INFERENCE(同源引擎), 集合粒度 UNKNOWN."
+  },
+  {
+   "system": "UI",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "UI 文件计数 539 / 876 / 910（CONFIRMED，apk_scan_*.json 的 ui_files 列表长度）；UI 覆盖模块数 ui_by_module=89 / 112 / 115。1.3.0 独有 UI 文件：dungeon/gaolaozhuang/glz_main_ui、friend/friend_view 等；1.4.9 UI corpus 仅部分反编译（提取层面覆盖度，非 UI 不存在）。"
+  },
+  {
+   "system": "scene",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "三版均含 map 模块 + config_map.luac/map_block/map_npc/map_icon_pos/map_partical/world_map. 存在性 CONFIRMED."
+  },
+  {
+   "system": "NPC",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "三版均含 npc 模块 + config_npc.luac. 存在性 CONFIRMED."
+  },
+  {
+   "system": "monster",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "三版均含 ghost/boss 模块 + config_mon_data.luac. 存在性 CONFIRMED."
+  },
+  {
+   "system": "GM",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "三版均含 gm_report 模块 + config_gm_cmd.luac. 存在性 CONFIRMED."
+  },
+  {
+   "system": "system entry",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "config_function.luac 入口三版均为 91（id-count，VERIFIED）；game 模块数 85 / 108 / 111（CONFIRMED）。存在性 CONFIRMED。"
+  },
+  {
+   "system": "resources",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "assets 未压缩字节 135.1MB / 241.3MB / 276.2MB（CONFIRMED，apk_scan_summary.json versions.*.assets_bytes，直接读 zip）；APK 压缩包体积 135.8MB / 230.5MB / 267.8MB。单资产文件清单未逐一枚举=UNKNOWN。"
+  },
+  {
+   "system": "strings",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "三版均含文案/常量表: 1.3.0 config_color.luac/config_color_code.luac/config_notice.luac; 1.4.11 另增 config_chat_bubble.luac 等. 存在性 CONFIRMED."
+  },
+  {
+   "system": "assets",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "总条目 10670 / 16379 / 19106（CONFIRMED，apk_scan_summary.json versions.*.entries，直接读 zip 中央目录）。单个资产文件清单未逐一枚举。"
+  },
+  {
+   "system": "data tables",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "1.3.0 168 配置表 ⊂ 1.4.11 233(仅 config_holiday.luac 为 1.3.0 独有, 1.4.11 拆为 config_holiday_* 系列=重命名/拆分); item/skill/partner/mission/dungeon/activity 等大量重叠. 行级 table-count diff UNKNOWN. 存在性 CONFIRMED."
+  }
+ ],
+ "scan_metrics": [
+  {
+   "dimension": "APK 体积",
+   "kind": "scan_metric",
+   "v130": "135.8MB",
+   "v149": "230.5MB",
+   "v1411": "267.8MB",
+   "delta_1411_vs_130": "+138366797",
+   "evidence": "CONFIRMED",
+   "notes": "zip 文件字节数；证据 apk_scan_summary.json versions.*.apk_bytes。"
+  },
+  {
+   "dimension": "APK 条目总数",
+   "kind": "scan_metric",
+   "v130": "10670",
+   "v149": "16379",
+   "v1411": "19106",
+   "delta_1411_vs_130": "+8436",
+   "evidence": "CONFIRMED",
+   "notes": "zip 中央目录条目数；证据 apk_scan_*.json。"
+  },
+  {
+   "dimension": "assets 字节数(未压缩)",
+   "kind": "scan_metric",
+   "v130": "135.1MB",
+   "v149": "241.3MB",
+   "v1411": "276.2MB",
+   "delta_1411_vs_130": "+148004638",
+   "evidence": "CONFIRMED",
+   "notes": "assets/ 条目未压缩字节合计；证据 apk_scan_summary.json。"
+  },
+  {
+   "dimension": "luac 文件总数",
+   "kind": "scan_metric",
+   "v130": "1557",
+   "v149": "2234",
+   "v1411": "2297",
+   "delta_1411_vs_130": "+740",
+   "evidence": "CONFIRMED",
+   "notes": "assets/src/**.luac 计数；证据 apk_scan_*.json。"
+  },
+  {
+   "dimension": "game 模块目录数",
+   "kind": "scan_metric",
+   "v130": "85",
+   "v149": "108",
+   "v1411": "111",
+   "delta_1411_vs_130": "+26",
+   "evidence": "CONFIRMED",
+   "notes": "assets/src/game/ 下模块目录数（新扫描口径，取代旧 inventory 92/116/119 提取口径）；证据 apk_scan_*.json game_modules。"
+  },
+  {
+   "dimension": "config 表数(config_*.luac)",
+   "kind": "scan_metric",
+   "v130": "168",
+   "v149": "227",
+   "v1411": "233",
+   "delta_1411_vs_130": "+65",
+   "evidence": "CONFIRMED",
+   "notes": "证据 apk_scan_*.json config_tables 列表。"
+  },
+  {
+   "dimension": "cmd_resolve 文件数",
+   "kind": "scan_metric",
+   "v130": "89",
+   "v149": "122",
+   "v1411": "124",
+   "delta_1411_vs_130": "+35",
+   "evidence": "CONFIRMED",
+   "notes": "证据 apk_scan_*.json cmd_resolve 列表。"
+  },
+  {
+   "dimension": "UI 文件数",
+   "kind": "scan_metric",
+   "v130": "539",
+   "v149": "876",
+   "v1411": "910",
+   "delta_1411_vs_130": "+371",
+   "evidence": "CONFIRMED",
+   "notes": "证据 apk_scan_*.json ui_files 列表。"
+  },
+  {
+   "dimension": "UI 覆盖模块数(ui_by_module)",
+   "kind": "scan_metric",
+   "v130": "89",
+   "v149": "112",
+   "v1411": "115",
+   "delta_1411_vs_130": "+26",
+   "evidence": "CONFIRMED",
+   "notes": "证据 apk_scan_*.json ui_by_module 字典键数。"
+  },
+  {
+   "dimension": "res 资源分类数",
+   "kind": "scan_metric",
+   "v130": "821",
+   "v149": "1178",
+   "v1411": "1251",
+   "delta_1411_vs_130": "+430",
+   "evidence": "CONFIRMED",
+   "notes": "证据 apk_scan_*.json res_categories 字典键数。"
+  },
+  {
+   "dimension": "版本自证(NOW_VERSION)",
+   "kind": "scan_metric",
+   "v130": "35",
+   "v149": "186",
+   "v1411": "208",
+   "delta_1411_vs_130": "+173",
+   "evidence": "CONFIRMED",
+   "notes": "读 assets/src/config.luac 明文 NOW_VERSION（apk_scan_*.json version_probe）。'1.3.0' 是工程代号 INFERENCE（实际版本串 1.0.100/35，ewan 渠道）。"
+  },
+  {
+   "dimension": "item 配置条数",
+   "kind": "row_count",
+   "v130": "UNKNOWN",
+   "v149": "UNKNOWN",
+   "v1411": "3535",
+   "delta_1411_vs_130": "N/A",
+   "evidence": "VERIFIED",
+   "notes": "1.4.11=server/item_config.json 顶层键数（本脚本实测）；1.3.0/1.4.9 仅 config 表存在性证据，条数 UNKNOWN。"
+  },
+  {
+   "dimension": "mission 配置条数",
+   "kind": "row_count",
+   "v130": "UNKNOWN",
+   "v149": "UNKNOWN",
+   "v1411": "846",
+   "delta_1411_vs_130": "N/A",
+   "evidence": "VERIFIED",
+   "notes": "1.4.11=server/mission_config.json 顶层键数（本脚本实测）；1.3.0/1.4.9 条数 UNKNOWN。"
+  },
+  {
+   "dimension": "mall 配置条数",
+   "kind": "row_count",
+   "v130": "UNKNOWN",
+   "v149": "UNKNOWN",
+   "v1411": "142",
+   "delta_1411_vs_130": "N/A",
+   "evidence": "VERIFIED",
+   "notes": "1.4.11=server/mall_config.json 顶层条数（本脚本实测）；1.3.0/1.4.9 条数 UNKNOWN。"
+  },
+  {
+   "dimension": "partner 配置条数",
+   "kind": "row_count",
+   "v130": "UNKNOWN",
+   "v149": "UNKNOWN",
+   "v1411": "53",
+   "delta_1411_vs_130": "N/A",
+   "evidence": "VERIFIED",
+   "notes": "1.4.11=server/partner_config.json 顶层条数（本脚本实测）；1.3.0/1.4.9 条数 UNKNOWN。"
+  }
+ ],
+ "system_count": 24,
+ "metric_count": 15,
+ "total_dimensions": 39,
+ "evidence_legend": {
+  "CONFIRMED": "直接读 APK / 解包数据（主源证据）",
+  "VERIFIED": "实机 + 服务器验证（次级但可靠）",
+  "STRONG_INFERENCE": "同源/强推断，无逐字段直接核对",
+  "INFERENCE": "合理推断，无直接核对",
+  "UNKNOWN": "缺少直接证据"
+ },
+ "caveats": [
+  "protocol registry (cmd_table.json 1643, fields.json 3553) 跨版本共享且偏 1.4.9-based —— 不可视为与 1.4.11 wire protocol 相等；1.4.11 的 cmd-diff 结论仅 INFERENCE，直到做 1.4.11 提取。",
+  "1.3.0 已解包（extracted/，293 文件/6.95MB，本次审计已核实目录树），各格存在性现为 CONFIRMED；仅「1.3.0」这一工程代号本身为 INFERENCE（内部版本串 NOW_VERSION=35/VERSION=100）。",
+  "1.4.9 与 1.4.11 的 config_function 均为 91 条（id-count），但各行内容 delta 未在此对比。",
+  "1.3.0 cmd_resolve 解包实际落于 extracted/config/protocal/（非 extracted/protocal/）。",
+  "[C0 新增] game 模块数口径：旧 inventory/旧矩阵记 92/116/119（分文件提取口径），本矩阵采用 apk_scan zip 中央目录口径 85/108/111。",
+  "[C0 纠正] item/mission/mall/partner 条数归属：旧矩阵记为 1.4.9 VERIFIED；按 HANDOFF.md（主兼容版本=1.4.11，server/ 服务该客户端）纠正为 1.4.11 VERIFIED（本脚本实测 server/*.json 计数）。1.3.0/1.4.9 条数无证据，保持 UNKNOWN，禁止按 ID 连续性推测。已剔除旧矩阵中「1.4.11 条数 UNKNOWN、1.4.9=3535」的过时 caveat。",
+  "[C0] assets_bytes 为未压缩字节合计（MiB 口径）：135.1/241.3/276.2MB 与旧 inventory 数值一致；APK 压缩包体积 135.8/230.5/267.8MB 为本轮新增。"
+ ]
+}

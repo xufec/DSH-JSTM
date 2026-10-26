@@ -1,0 +1,5199 @@
+{
+  "_meta": {
+    "version": "1.4.11",
+    "generated": "PHASE 0 audit; updated 2026-10-02 with MuMu runtime evidence channel",
+    "evidence_levels": [
+      "CONFIRMED",
+      "VERIFIED",
+      "STRONG_INFERENCE",
+      "INFERENCE",
+      "UNKNOWN"
+    ],
+    "mumu_runtime_evidence_channel": {
+      "role": "VERIFIED 级证据的唯一来源；APK 静态提取仅可作 CONFIRMED",
+      "flow": [
+        "启动 MuMu 12 实例（实例 0 MuMu安卓设备, Android 12 / hyperv）",
+        "adb connect 127.0.0.1:16384 (adb: D:\\ADB\\platform-tools\\adb.exe; product rubens / model 22041211A, transport_id 1)",
+        "安装并启动 1.4.11 补丁包 C:\\Users\\xu\\Desktop\\DSH\\patched\\jstm_1411_fakelogin_aligned.apk (当前尚未装入)",
+        "客户端 URL/host 指向本机 mock_server TCP 9000",
+        "抓协议 dump (客户端日志 / frida hook send/recv / 抓包)",
+        "记录 UI 显示值与回包字段, 与服务器应答逐字段比对"
+      ],
+      "env_confirmed": {
+        "mumu_installed": "MuMu模拟器 6.6.4.0 at D:\\MuMuPlayer, engine MuMuNxMain.exe",
+        "instance0_running": true,
+        "instance1_running": false,
+        "adb_target": "127.0.0.1:16384",
+        "device_model": "22041211A (rubens)",
+        "installed_packages": [
+          {
+            "pkg": "com.shiyue.dldl.ewan",
+            "versionName": "1.3.0",
+            "versionCode": 25
+          },
+          {
+            "pkg": "com.shiyue.dldl.ewan.qihoo",
+            "versionName": "1.4.9",
+            "versionCode": 44
+          }
+        ],
+        "target_1_4_11_installed": false
+      },
+      "phase1_prerequisite": "搭建 MuMu + mock_server 联调环境 = Phase 1 第一项任务"
+    }
+  },
+  "systems": [
+    {
+      "system_id": "SYS_CORE_001",
+      "system_name": "Account Login",
+      "aliases": [
+        "帐号登录",
+        "账号",
+        "登录"
+      ],
+      "version": "1.4.11",
+      "client_entry": "denglu_ctrl.luac",
+      "lua_modules": [
+        "denglu_ctrl.luac",
+        "login.luac"
+      ],
+      "protocols": [
+        "CS_1110 AccountLogin",
+        "CS_1199 heartbeat",
+        "CS_10001 FirstPack"
+      ],
+      "config_files": [
+        "config_login.luac",
+        "config_client.luac"
+      ],
+      "data_files": [
+        "accounts table",
+        "roles table"
+      ],
+      "dependencies": [
+        "protocol",
+        "network"
+      ],
+      "server_state": "implemented",
+      "database_state": "roles,accounts tables present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Role Creation",
+        "Role Login"
+      ],
+      "evidence": "CMD_NAMES + roles.db + verified context",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "login panel"
+      ],
+      "category": "A. 核心系统"
+    },
+    {
+      "system_id": "SYS_CORE_002",
+      "system_name": "Role Creation",
+      "aliases": [
+        "创建角色"
+      ],
+      "version": "1.4.11",
+      "client_entry": "role_ctrl.luac",
+      "lua_modules": [
+        "role_ctrl.luac"
+      ],
+      "protocols": [
+        "CS_10101 RoleCreate",
+        "CS_10102 RoleLogin",
+        "CS_10103 RoleReLogin"
+      ],
+      "config_files": [
+        "config_role_career.luac",
+        "config_role_face.luac",
+        "config_role_stock.luac"
+      ],
+      "data_files": [
+        "roles table"
+      ],
+      "dependencies": [
+        "Account Login"
+      ],
+      "server_state": "implemented",
+      "database_state": "roles table present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Account Login"
+      ],
+      "evidence": "CMD_NAMES + roles.db",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "role create panel"
+      ],
+      "category": "A. 核心系统"
+    },
+    {
+      "system_id": "SYS_CORE_003",
+      "system_name": "Role Base/Init",
+      "aliases": [
+        "角色基础信息",
+        "角色初始化"
+      ],
+      "version": "1.4.11",
+      "client_entry": "role_ctrl.luac",
+      "lua_modules": [
+        "role_ctrl.luac",
+        "denglu_ctrl.luac"
+      ],
+      "protocols": [
+        "SC_10300",
+        "SC_10301",
+        "SC_10302",
+        "SC_10303"
+      ],
+      "config_files": [
+        "config_game_data.luac",
+        "config_role_attr.luac",
+        "config_role_attribute.luac"
+      ],
+      "data_files": [
+        "roles table",
+        "role_attr table",
+        "role_assets table"
+      ],
+      "dependencies": [
+        "Role Login",
+        "Scene"
+      ],
+      "server_state": "implemented",
+      "database_state": "roles,role_attr,role_assets present",
+      "rewards": [],
+      "currencies": [
+        "gold,coin,coupon,experience,sinew"
+      ],
+      "related_systems": [
+        "Role Login",
+        "Assets/Economy",
+        "Role Attr"
+      ],
+      "evidence": "ROLE_DEFAULTS + roles.db",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [],
+      "category": "A. 核心系统"
+    },
+    {
+      "system_id": "SYS_CORE_004",
+      "system_name": "Role Login",
+      "aliases": [
+        "角色进入游戏",
+        "登录角色"
+      ],
+      "version": "1.4.11",
+      "client_entry": "denglu_ctrl.luac",
+      "lua_modules": [
+        "denglu_ctrl.luac"
+      ],
+      "protocols": [
+        "CS_10102",
+        "SC_1110 account roles"
+      ],
+      "config_files": [
+        "config_login.luac"
+      ],
+      "data_files": [
+        "roles table"
+      ],
+      "dependencies": [
+        "Account Login"
+      ],
+      "server_state": "implemented",
+      "database_state": "roles present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Account Login",
+        "Role Base/Init"
+      ],
+      "evidence": "CMD_NAMES",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "role select"
+      ],
+      "category": "A. 核心系统"
+    },
+    {
+      "system_id": "SYS_CORE_005",
+      "system_name": "Scene & Movement",
+      "aliases": [
+        "场景",
+        "移动",
+        "寻路",
+        "自动寻路"
+      ],
+      "version": "1.4.11",
+      "client_entry": "scene_controller.luac",
+      "lua_modules": [
+        "scene_controller.luac"
+      ],
+      "protocols": [
+        "CS_10200 RoleEnter",
+        "CS_10201",
+        "CS_10204",
+        "CS_10205"
+      ],
+      "config_files": [
+        "config_map.luac",
+        "config_map_block.luac",
+        "config_map_npc.luac",
+        "config_map_icon_pos.luac",
+        "config_world_map.luac",
+        "config_trap.luac"
+      ],
+      "data_files": [
+        "roles.scene_id/x/y",
+        "map_block.json"
+      ],
+      "dependencies": [
+        "Role Login",
+        "Network",
+        "pathfind"
+      ],
+      "server_state": "implemented",
+      "database_state": "roles scene/x/y persisted",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Role Base/Init",
+        "Team"
+      ],
+      "evidence": "pathfind.py/map_block.json",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "scene/UI",
+        "minimap"
+      ],
+      "category": "A. 核心系统"
+    },
+    {
+      "system_id": "SYS_CORE_006",
+      "system_name": "Protocol/Network Layer",
+      "aliases": [
+        "网络协议层",
+        "封包解包"
+      ],
+      "version": "1.4.11",
+      "client_entry": "protocalrulesmgr.luac",
+      "lua_modules": [
+        "protocalrulesmgr.luac"
+      ],
+      "protocols": [
+        "all"
+      ],
+      "config_files": [],
+      "data_files": [
+        "cmd_table.json",
+        "cmd_classes.json",
+        "fields.json"
+      ],
+      "dependencies": [],
+      "server_state": "implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "all"
+      ],
+      "evidence": "protocol registry present",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [],
+      "category": "A. 核心系统"
+    },
+    {
+      "system_id": "SYS_CORE_007",
+      "system_name": "Version/Resource Update",
+      "aliases": [
+        "版本更新",
+        "资源下载"
+      ],
+      "version": "1.4.11",
+      "client_entry": "xiazai (function 25000)",
+      "lua_modules": [
+        "file_update_1411.luac"
+      ],
+      "protocols": [
+        "20100"
+      ],
+      "config_files": [
+        "config_client.luac",
+        "config_notice.luac"
+      ],
+      "data_files": [],
+      "dependencies": [],
+      "server_state": "not implemented (client-only)",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Account Login"
+      ],
+      "evidence": "file_update_1411.luac + function id 25000",
+      "confidence": "VERIFIED",
+      "implementation_status": "client-only / not hooked",
+      "UI_files": [
+        "downloader"
+      ],
+      "category": "A. 核心系统"
+    },
+    {
+      "system_id": "SYS_ROLE_001",
+      "system_name": "Role Attribute",
+      "aliases": [
+        "角色属性",
+        "属性加点"
+      ],
+      "version": "1.4.11",
+      "client_entry": "role (function 5000)",
+      "lua_modules": [
+        "role_ctrl.luac"
+      ],
+      "protocols": [
+        "SC_10301/10302/10303",
+        "CS_10331",
+        "CS_10333"
+      ],
+      "config_files": [
+        "config_role_attr.luac",
+        "config_role_attribute.luac",
+        "config_attr.luac",
+        "_attr.json",
+        "_attr_meta.json",
+        "_role_attr.json"
+      ],
+      "data_files": [
+        "role_attr table"
+      ],
+      "dependencies": [
+        "Role Base/Init"
+      ],
+      "server_state": "implemented",
+      "database_state": "role_attr present",
+      "rewards": [],
+      "currencies": [
+        "attr_point"
+      ],
+      "related_systems": [
+        "Role Base/Init",
+        "Skill"
+      ],
+      "evidence": "role_attr.db + _attr_data.json",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "attr assign panel"
+      ],
+      "category": "B. 角色系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 属性公式/加点收益"
+    },
+    {
+      "system_id": "SYS_ROLE_002",
+      "system_name": "Career/Job",
+      "aliases": [
+        "职业"
+      ],
+      "version": "1.4.11",
+      "client_entry": "menpai (function 10)",
+      "lua_modules": [
+        "role_ctrl.luac",
+        "menpai?"
+      ],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_role_career.luac",
+        "config_role_cost.luac"
+      ],
+      "data_files": [
+        "roles.career"
+      ],
+      "dependencies": [
+        "Role Creation"
+      ],
+      "server_state": "implemented",
+      "database_state": "roles.career col",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Role Creation",
+        "Role Attribute"
+      ],
+      "evidence": "config_role_career",
+      "confidence": "VERIFIED",
+      "implementation_status": "implemented (basic)",
+      "UI_files": [
+        "career select"
+      ],
+      "category": "B. 角色系统"
+    },
+    {
+      "system_id": "SYS_ROLE_003",
+      "system_name": "Title System",
+      "aliases": [
+        "称号"
+      ],
+      "version": "1.4.11",
+      "client_entry": "title?",
+      "lua_modules": [
+        "rank_title.luac"
+      ],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_title.luac"
+      ],
+      "data_files": [
+        "role_title table"
+      ],
+      "dependencies": [
+        "Role Base/Init",
+        "Rank"
+      ],
+      "server_state": "implemented",
+      "database_state": "role_title present",
+      "rewards": [
+        "称号"
+      ],
+      "currencies": [],
+      "related_systems": [
+        "Rank",
+        "Achievement"
+      ],
+      "evidence": "role_title.db",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "title list"
+      ],
+      "category": "B. 角色系统"
+    },
+    {
+      "system_id": "SYS_ROLE_004",
+      "system_name": "VIP System",
+      "aliases": [
+        "VIP",
+        "贵族"
+      ],
+      "version": "1.4.11",
+      "client_entry": "super_vip (function 44)",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_vip.luac",
+        "config_vip_ernie_data.luac",
+        "config_charge_eyou.luac"
+      ],
+      "data_files": [
+        "roles.is_vip/vip_lev/vip_exp cols"
+      ],
+      "dependencies": [
+        "Recharge",
+        "Economy"
+      ],
+      "server_state": "partial",
+      "database_state": "role_assets.vip_exp + role fields only (no vip_* table)",
+      "rewards": [
+        "VIP礼包"
+      ],
+      "currencies": [
+        "vip_exp"
+      ],
+      "related_systems": [
+        "Recharge",
+        "Level Gift"
+      ],
+      "evidence": "vip fields in ROLE_DEFAULTS; no dedicated table",
+      "confidence": "VERIFIED",
+      "implementation_status": "partial (fields tracked, no full VIP logic)",
+      "UI_files": [
+        "VIP panel"
+      ],
+      "category": "B. 角色系统"
+    },
+    {
+      "system_id": "SYS_ROLE_005",
+      "system_name": "Experience/Level",
+      "aliases": [
+        "经验",
+        "升级",
+        "等级礼包"
+      ],
+      "version": "1.4.11",
+      "client_entry": "jitici?",
+      "lua_modules": [],
+      "protocols": [
+        "CS_14600",
+        "CS_14601 level gift"
+      ],
+      "config_files": [
+        "config_role_cost.luac",
+        "config_guider_up.luac",
+        "config_fly_up.luac"
+      ],
+      "data_files": [
+        "roles.lev/exp",
+        "levgift_got table"
+      ],
+      "dependencies": [
+        "Role Base/Init"
+      ],
+      "server_state": "implemented",
+      "database_state": "levgift_got present",
+      "rewards": [
+        "等级礼包"
+      ],
+      "currencies": [
+        "exp"
+      ],
+      "related_systems": [
+        "Level Gift",
+        "Role Attribute",
+        "Growth"
+      ],
+      "evidence": "levgift_got.db + CS_14600/14601",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "level up panel",
+        "gift panel"
+      ],
+      "category": "B. 角色系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 经验曲线/升级数值"
+    },
+    {
+      "system_id": "SYS_ROLE_006",
+      "system_name": "Avatar/Head & Chat Bubble",
+      "aliases": [
+        "头像框",
+        "聊天气泡"
+      ],
+      "version": "1.4.11",
+      "client_entry": "set?",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_head_surface.luac",
+        "config_chat_bubble.luac",
+        "config_biaoqing.luac"
+      ],
+      "data_files": [
+        "roles.head_bid/chat_bubble cols"
+      ],
+      "dependencies": [],
+      "server_state": "partial",
+      "database_state": "role fields only, no dedicated table",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Chat",
+        "Appearance"
+      ],
+      "evidence": "ROLE_DEFAULTS head_bid/chat_bubble",
+      "confidence": "VERIFIED",
+      "implementation_status": "partial",
+      "UI_files": [
+        "avatar/bubble select"
+      ],
+      "category": "B. 角色系统"
+    },
+    {
+      "system_id": "SYS_GROWTH_001",
+      "system_name": "Skill System",
+      "aliases": [
+        "技能"
+      ],
+      "version": "1.4.11",
+      "client_entry": "skill (function 1000)",
+      "lua_modules": [
+        "skill_act.luac"
+      ],
+      "protocols": [
+        "CS_10401..10406",
+        "CS_20012 skill_play"
+      ],
+      "config_files": [
+        "config_skill.luac",
+        "config_skill_magic.luac",
+        "config_skill_scene.luac",
+        "config_skill_talent.luac",
+        "config_skill_trigger.luac",
+        "config_skill_xiulian.luac",
+        "config_skill_bullet.luac",
+        "skill_bids.json"
+      ],
+      "data_files": [
+        "role_form? / role_heros skill bind"
+      ],
+      "dependencies": [
+        "Partner",
+        "Battle"
+      ],
+      "server_state": "implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Battle",
+        "Talent"
+      ],
+      "evidence": "skill_bids.json + battle chain verified",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented (battle integration)",
+      "UI_files": [
+        "skill panel"
+      ],
+      "category": "C. 成长系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 技能伤害系数/成长"
+    },
+    {
+      "system_id": "SYS_GROWTH_002",
+      "system_name": "Talent/天赋",
+      "aliases": [
+        "天赋"
+      ],
+      "version": "1.4.11",
+      "client_entry": "skill (function 1000)",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_skill_talent.luac",
+        "buff_tianfu_tips.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Skill"
+      ],
+      "server_state": "partial",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Skill",
+        "Buff"
+      ],
+      "evidence": "config_skill_talent + buff_tianfu_tips",
+      "confidence": "VERIFIED",
+      "implementation_status": "partial (config only)",
+      "UI_files": [
+        "talent panel"
+      ],
+      "category": "C. 成长系统"
+    },
+    {
+      "system_id": "SYS_GROWTH_003",
+      "system_name": "Practice/修炼 (Buff)",
+      "aliases": [
+        "修炼",
+        "修为"
+      ],
+      "version": "1.4.11",
+      "client_entry": "cultivate",
+      "lua_modules": [
+        "buff_manager.luac",
+        "_cfg_buff.luac"
+      ],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_skill_xiulian.luac",
+        "config_buff_data.luac",
+        "config_insight.luac"
+      ],
+      "data_files": [
+        "role_buffs table"
+      ],
+      "dependencies": [
+        "Skill"
+      ],
+      "server_state": "implemented",
+      "database_state": "role_buffs present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Skill",
+        "Buff"
+      ],
+      "evidence": "role_buffs.db + config_skill_xiulian",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented (buff persistence)",
+      "UI_files": [
+        "cultivate panel"
+      ],
+      "category": "C. 成长系统"
+    },
+    {
+      "system_id": "SYS_GROWTH_004",
+      "system_name": "Buff System",
+      "aliases": [
+        "Buff"
+      ],
+      "version": "1.4.11",
+      "client_entry": "battle buff",
+      "lua_modules": [
+        "buff_manager.luac",
+        "buff_item.luac",
+        "buff_vo.luac",
+        "buff_tips.luac",
+        "_cfg_buff.luac"
+      ],
+      "protocols": [
+        "relay SC_20012/20013 buff"
+      ],
+      "config_files": [
+        "config_buff_data.luac"
+      ],
+      "data_files": [
+        "role_buffs table"
+      ],
+      "dependencies": [
+        "Battle"
+      ],
+      "server_state": "implemented",
+      "database_state": "role_buffs present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Battle",
+        "Practise"
+      ],
+      "evidence": "role_buffs.db + _tmp_buff modules",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "buff bar"
+      ],
+      "category": "C. 成长系统"
+    },
+    {
+      "system_id": "SYS_GROWTH_005",
+      "system_name": "Morale 士气",
+      "aliases": [
+        "士气"
+      ],
+      "version": "1.4.11",
+      "client_entry": "??",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_morale.luac",
+        "config_hero_morale.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Battle",
+        "Partner"
+      ],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Battle",
+        "Partner"
+      ],
+      "evidence": "config_morale + config_hero_morale only",
+      "confidence": "STRONG_INFERENCE",
+      "implementation_status": "client-config only",
+      "UI_files": [],
+      "category": "C. 成长系统"
+    },
+    {
+      "system_id": "SYS_BATTLE_001",
+      "system_name": "Turn-based Battle",
+      "aliases": [
+        "回合制战斗",
+        "怪物"
+      ],
+      "version": "1.4.11",
+      "client_entry": "battle_ctrl.luac",
+      "lua_modules": [
+        "battle.luac",
+        "battle_ctrl.luac",
+        "battle_role.luac",
+        "battle_view.luac",
+        "battle_tips.luac",
+        "conf_test_battle.luac"
+      ],
+      "protocols": [
+        "CS_20002",
+        "SC_20010",
+        "SC_20012",
+        "SC_20013",
+        "CS_20014",
+        "SC_20020"
+      ],
+      "config_files": [
+        "config_battle.luac",
+        "config_combat.luac",
+        "config_fight.luac",
+        "config_mon_data.luac"
+      ],
+      "data_files": [
+        "battle.py"
+      ],
+      "dependencies": [
+        "Skill",
+        "Buff",
+        "Partner",
+        "Equipment"
+      ],
+      "server_state": "implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Skill",
+        "Buff",
+        "PvE Dungeon",
+        "Boss"
+      ],
+      "evidence": "battle.py + protocol_index five-cmd chain verified on real device",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "battle UI"
+      ],
+      "category": "D. 战斗系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 战斗数值（回合伤害/命中/暴击公式）"
+    },
+    {
+      "system_id": "SYS_BATTLE_002",
+      "system_name": "Auto-battle / AFK",
+      "aliases": [
+        "挂机",
+        "自动战斗"
+      ],
+      "version": "1.4.11",
+      "client_entry": "automate (function 504)",
+      "lua_modules": [
+        "automate_ctrl.luac"
+      ],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_guaji.luac",
+        "config_automate.luac",
+        "_guaji.json"
+      ],
+      "data_files": [
+        "guaji_state table"
+      ],
+      "dependencies": [
+        "Battle"
+      ],
+      "server_state": "implemented",
+      "database_state": "guaji_state present",
+      "rewards": [
+        "挂机奖励"
+      ],
+      "currencies": [
+        "profit_exp"
+      ],
+      "related_systems": [
+        "Battle",
+        "Daily/Active"
+      ],
+      "evidence": "guaji_state.db + config_guaji",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "auto battle toggles"
+      ],
+      "category": "D. 战斗系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 挂机战斗数值与自动战斗 AI 行为"
+    },
+    {
+      "system_id": "SYS_BATTLE_003",
+      "system_name": "Battle Replay / Video",
+      "aliases": [
+        "战报",
+        "战斗回放"
+      ],
+      "version": "1.4.11",
+      "client_entry": "battlevideo_ctrl.luac",
+      "lua_modules": [
+        "battlevideo_ctrl.luac",
+        "battlevideo_data.luac",
+        "battlevideo_main_panel.luac",
+        "ownvideo_*.luac",
+        "peakvideo_*.luac"
+      ],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_battlevideo.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Battle"
+      ],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Battle",
+        "Rank PvP"
+      ],
+      "evidence": "_tmp_battle battlevideo modules; no DB",
+      "confidence": "VERIFIED",
+      "implementation_status": "client-only / not hooked",
+      "UI_files": [
+        "replay lists"
+      ],
+      "category": "D. 战斗系统"
+    },
+    {
+      "system_id": "SYS_BATTLE_004",
+      "system_name": "God War Battle",
+      "aliases": [
+        "神魔战"
+      ],
+      "version": "1.4.11",
+      "client_entry": "godwar (function 52)",
+      "lua_modules": [
+        "godwar_battle_*.luac"
+      ],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_sm_war_data.luac",
+        "config_god_unite_data.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Battle",
+        "Cross-server"
+      ],
+      "server_state": "not implemented (client UI only)",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Battle",
+        "Dungeon tower"
+      ],
+      "evidence": "godwar_battle_* modules + config_sm_war",
+      "confidence": "VERIFIED",
+      "implementation_status": "client-only / not hooked",
+      "UI_files": [
+        "godwar battle UI"
+      ],
+      "category": "D. 战斗系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 神魔战数值与胜负结算"
+    },
+    {
+      "system_id": "SYS_BATTLE_005",
+      "system_name": "Boss System",
+      "aliases": [
+        "BOSS",
+        "世界BOSS",
+        "恶魔/魔王"
+      ],
+      "version": "1.4.11",
+      "client_entry": "boss?",
+      "lua_modules": [
+        "ghost_ctrl.luac",
+        "ghost_mon.luac"
+      ],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_boss.luac",
+        "config_demon.luac"
+      ],
+      "data_files": [
+        "role_boss_kill table"
+      ],
+      "dependencies": [
+        "Battle"
+      ],
+      "server_state": "implemented",
+      "database_state": "role_boss_kill present",
+      "rewards": [],
+      "currencies": [
+        "boss_point (37)"
+      ],
+      "related_systems": [
+        "Battle"
+      ],
+      "evidence": "role_boss_kill.db + config_boss",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented (kill record)",
+      "UI_files": [
+        "boss scene"
+      ],
+      "category": "D. 战斗系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 怪物血量/攻击"
+    },
+    {
+      "system_id": "SYS_EQUIP_001",
+      "system_name": "Equipment System",
+      "aliases": [
+        "装备"
+      ],
+      "version": "1.4.11",
+      "client_entry": "equip?",
+      "lua_modules": [
+        "durable_item.luac",
+        "durable_panel.luac"
+      ],
+      "protocols": [
+        "CS_10500..10593",
+        "CS_11200~11205 partner equip"
+      ],
+      "config_files": [
+        "config_eqm_ancient.luac",
+        "config_eqm_starup_data.luac",
+        "config_marry_eqm_data.luac",
+        "config_red_eqm.luac",
+        "config_item_type_name.luac"
+      ],
+      "data_files": [
+        "equip_items table"
+      ],
+      "dependencies": [
+        "Inventory",
+        "Partner"
+      ],
+      "server_state": "implemented",
+      "database_state": "equip_items present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Inventory",
+        "Smith/Forge",
+        "Rune"
+      ],
+      "evidence": "equip_items.db",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "equip panel"
+      ],
+      "category": "E. 装备系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 装备基础属性/穿戴加成"
+    },
+    {
+      "system_id": "SYS_EQUIP_002",
+      "system_name": "Smith / Forge / Fuse",
+      "aliases": [
+        "锻造",
+        "合成",
+        "融合",
+        "装备升阶"
+      ],
+      "version": "1.4.11",
+      "client_entry": "smith (function 11000) / hecheng (function 16000)",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_item_fuse.luac",
+        "config_intensify.luac",
+        "config_promote.luac",
+        "_promote.json"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Equipment",
+        "Inventory"
+      ],
+      "server_state": "partial",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Equipment",
+        "Equip StarUp"
+      ],
+      "evidence": "config_item_fuse + hecheng function id",
+      "confidence": "VERIFIED",
+      "implementation_status": "partial",
+      "UI_files": [
+        "forge panel"
+      ],
+      "category": "E. 装备系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 锻造/合成/升阶数值成功率"
+    },
+    {
+      "system_id": "SYS_EQUIP_003",
+      "system_name": "Rune System",
+      "aliases": [
+        "符文"
+      ],
+      "version": "1.4.11",
+      "client_entry": "rune?",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_rune_data.luac",
+        "config_rune_dec.json",
+        "config_rune_treasure_data.luac",
+        "config_dungeon_rune.luac",
+        "_rune_cfg.json"
+      ],
+      "data_files": [
+        "role_runes table"
+      ],
+      "dependencies": [
+        "Equipment",
+        "Dungeon"
+      ],
+      "server_state": "implemented",
+      "database_state": "role_runes present",
+      "rewards": [],
+      "currencies": [
+        "rune_exp(39),rune_chip(40)"
+      ],
+      "related_systems": [
+        "Equipment",
+        "Dungeon Tower"
+      ],
+      "evidence": "role_runes.db + config_rune_data",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "rune panel"
+      ],
+      "category": "E. 装备系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 符文属性与套装效果"
+    },
+    {
+      "system_id": "SYS_EQUIP_004",
+      "system_name": "Equip StarUp/强化",
+      "aliases": [
+        "装备升星",
+        "强化",
+        "装备强化"
+      ],
+      "version": "1.4.11",
+      "client_entry": "smith",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_eqm_starup_data.luac",
+        "config_intensify.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Equipment"
+      ],
+      "server_state": "partial",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Equipment",
+        "Smith"
+      ],
+      "evidence": "config_eqm_starup_data",
+      "confidence": "VERIFIED",
+      "implementation_status": "partial",
+      "UI_files": [
+        "starup panel"
+      ],
+      "category": "E. 装备系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 强化概率/强化属性成长"
+    },
+    {
+      "system_id": "SYS_FRIEND_001",
+      "system_name": "Partner/Hero System",
+      "aliases": [
+        "伙伴",
+        "英雄",
+        "随从"
+      ],
+      "version": "1.4.11",
+      "client_entry": "hero (function 4000)",
+      "lua_modules": [
+        "hero_ctrl.luac",
+        "hero_data.luac",
+        "hero_vo.luac",
+        "partner_event.luac",
+        "partner_vo.luac",
+        "partner_atlas_*.luac",
+        "hero_constants.luac"
+      ],
+      "protocols": [
+        "CS_10401..10406"
+      ],
+      "config_files": [
+        "config_hero_base.luac",
+        "config_hero_info.luac",
+        "config_hero_attr.luac",
+        "config_hero_attr_opp.luac",
+        "config_hero_misc.luac",
+        "config_hero_morale.luac",
+        "config_hero_skill_order.luac",
+        "config_partner_base.luac",
+        "config_partner_fetter.luac",
+        "config_partner_misc.luac",
+        "config_partner_score.luac",
+        "config_partner_shenqi.luac",
+        "config_partner_skill.luac",
+        "partner_config.json"
+      ],
+      "data_files": [
+        "role_heros table"
+      ],
+      "dependencies": [
+        "Inventory",
+        "Battle",
+        "Skill"
+      ],
+      "server_state": "implemented",
+      "database_state": "role_heros present",
+      "rewards": [],
+      "currencies": [
+        "courage(16)"
+      ],
+      "related_systems": [
+        "Formation",
+        "Partner Atlas",
+        "Partner Weapon"
+      ],
+      "evidence": "role_heros.db + partner_config.json",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "hero list/atlas/pack"
+      ],
+      "category": "F. 伙伴系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 伙伴属性/技能数值/招募概率"
+    },
+    {
+      "system_id": "SYS_FRIEND_002",
+      "system_name": "Formation / 阵法",
+      "aliases": [
+        "阵法",
+        "阵型"
+      ],
+      "version": "1.4.11",
+      "client_entry": "formation (function 3000)",
+      "lua_modules": [
+        "form_ctrl.luac",
+        "form_data.luac",
+        "form_view.luac",
+        "form_hero_list.luac",
+        "form_type_list.luac",
+        "form_partner_list.luac",
+        "endless_form_ctrl.luac"
+      ],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_formation.luac"
+      ],
+      "data_files": [
+        "role_form table"
+      ],
+      "dependencies": [
+        "Partner",
+        "Battle"
+      ],
+      "server_state": "implemented",
+      "database_state": "role_form present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Partner",
+        "Battle"
+      ],
+      "evidence": "role_form.db + form_ctrl.luac",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "formation panel",
+        "endless form"
+      ],
+      "category": "F. 伙伴系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 阵法加成数值"
+    },
+    {
+      "system_id": "SYS_FRIEND_003",
+      "system_name": "Partner Atlas/图鉴",
+      "aliases": [
+        "伙伴图鉴"
+      ],
+      "version": "1.4.11",
+      "client_entry": "hero",
+      "lua_modules": [
+        "partner_atlas_*.luac",
+        "partner_show_panel.luac",
+        "partner_pack_view.luac"
+      ],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_partner_score.luac",
+        "config_hero_attr_opp.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Partner"
+      ],
+      "server_state": "partial",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Partner"
+      ],
+      "evidence": "partner_atlas modules",
+      "confidence": "VERIFIED",
+      "implementation_status": "client UI / partial",
+      "UI_files": [
+        "atlas"
+      ],
+      "category": "F. 伙伴系统"
+    },
+    {
+      "system_id": "SYS_FRIEND_004",
+      "system_name": "Partner Recruit/招募",
+      "aliases": [
+        "伙伴招募",
+        "抽卡"
+      ],
+      "version": "1.4.11",
+      "client_entry": "recruit (function 113)",
+      "lua_modules": [
+        "shop_partner_view.luac"
+      ],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_partner_skill.luac",
+        "config_lucky_box_data.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Partner",
+        "Mall"
+      ],
+      "server_state": "partial",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Partner",
+        "Mall",
+        "Activity"
+      ],
+      "evidence": "recruit function id + shop_partner_view",
+      "confidence": "VERIFIED",
+      "implementation_status": "partial",
+      "UI_files": [
+        "recruit panel"
+      ],
+      "category": "F. 伙伴系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 伙伴招募概率/保底"
+    },
+    {
+      "system_id": "SYS_FRIEND_005",
+      "system_name": "Partner Fetter/羁绊",
+      "aliases": [
+        "伙伴羁绊"
+      ],
+      "version": "1.4.11",
+      "client_entry": "hero",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_partner_fetter.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Partner"
+      ],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Partner"
+      ],
+      "evidence": "config_partner_fetter only",
+      "confidence": "STRONG_INFERENCE",
+      "implementation_status": "client-config only",
+      "UI_files": [],
+      "category": "F. 伙伴系统"
+    },
+    {
+      "system_id": "SYS_APPEAR_001",
+      "system_name": "Wing System 翅膀",
+      "aliases": [
+        "翅膀",
+        "wind"
+      ],
+      "version": "1.4.11",
+      "client_entry": "wind (function 20000)",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_wing_data.luac"
+      ],
+      "data_files": [
+        "role_wing table"
+      ],
+      "dependencies": [
+        "Appearance",
+        "Attribute"
+      ],
+      "server_state": "implemented",
+      "database_state": "role_wing present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Appearance Suite",
+        "Ride"
+      ],
+      "evidence": "role_wing.db + config_wing_data",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "wing panel"
+      ],
+      "category": "G. 外观系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 翅膀成长数值"
+    },
+    {
+      "system_id": "SYS_APPEAR_002",
+      "system_name": "Mount 坐骑",
+      "aliases": [
+        "坐骑"
+      ],
+      "version": "1.4.11",
+      "client_entry": "ride (function 18000)",
+      "lua_modules": [],
+      "protocols": [
+        "CS_10551.."
+      ],
+      "config_files": [
+        "config_ride.luac"
+      ],
+      "data_files": [
+        "role_ride table"
+      ],
+      "dependencies": [
+        "Appearance"
+      ],
+      "server_state": "implemented",
+      "database_state": "role_ride present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Wing"
+      ],
+      "evidence": "role_ride.db + config_ride",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "mount panel"
+      ],
+      "category": "G. 外观系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 坐骑成长数值"
+    },
+    {
+      "system_id": "SYS_APPEAR_003",
+      "system_name": "Beast 灵兽",
+      "aliases": [
+        "灵兽",
+        "Lingshou"
+      ],
+      "version": "1.4.11",
+      "client_entry": "lingshou (function 19000)",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_lingshou.luac",
+        "config_lingshou_speak.luac"
+      ],
+      "data_files": [
+        "role_lingshou table"
+      ],
+      "dependencies": [
+        "Appearance",
+        "Attribute"
+      ],
+      "server_state": "implemented",
+      "database_state": "role_lingshou present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Wing",
+        "Ride"
+      ],
+      "evidence": "role_lingshou.db",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "beast panel"
+      ],
+      "category": "G. 外观系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 灵兽成长数值"
+    },
+    {
+      "system_id": "SYS_APPEAR_004",
+      "system_name": "Soul 元神",
+      "aliases": [
+        "元神"
+      ],
+      "version": "1.4.11",
+      "client_entry": "yuanshen (function 22000)",
+      "lua_modules": [
+        "yuanshen_ctrl.luac"
+      ],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_yuanshen.luac"
+      ],
+      "data_files": [
+        "role_yuanshen table"
+      ],
+      "dependencies": [
+        "Appearance"
+      ],
+      "server_state": "implemented",
+      "database_state": "role_yuanshen present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Wing",
+        "Divine Artifact"
+      ],
+      "evidence": "role_yuanshen.db + yuanshen_ctrl.luac",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "soul panel"
+      ],
+      "category": "G. 外观系统"
+    },
+    {
+      "system_id": "SYS_APPEAR_005",
+      "system_name": "Divine Artifact 神器",
+      "aliases": [
+        "神器"
+      ],
+      "version": "1.4.11",
+      "client_entry": "shenqi (function 21000)",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_shenqi.luac",
+        "config_partner_shenqi.luac",
+        "config_artifact_image.luac"
+      ],
+      "data_files": [
+        "role_shenqi table"
+      ],
+      "dependencies": [
+        "Appearance",
+        "Partner"
+      ],
+      "server_state": "implemented",
+      "database_state": "role_shenqi present",
+      "rewards": [],
+      "currencies": [
+        "partner_shenqi_point(38)"
+      ],
+      "related_systems": [
+        "Partner",
+        "Wing"
+      ],
+      "evidence": "role_shenqi.db + config_shenqi",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "artifact panel"
+      ],
+      "category": "G. 外观系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 神器属性数值"
+    },
+    {
+      "system_id": "SYS_APPEAR_006",
+      "system_name": "Fate/Natal 命格",
+      "aliases": [
+        "命格"
+      ],
+      "version": "1.4.11",
+      "client_entry": "mingge (function 24000)",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_mingge.luac",
+        "_mingge_cfg.json"
+      ],
+      "data_files": [
+        "role_mingge table"
+      ],
+      "dependencies": [
+        "Appearance"
+      ],
+      "server_state": "implemented",
+      "database_state": "role_mingge present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Wing"
+      ],
+      "evidence": "role_mingge.db + _mingge_cfg.json",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "fate panel"
+      ],
+      "category": "G. 外观系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 命格属性数值"
+    },
+    {
+      "system_id": "SYS_APPEAR_007",
+      "system_name": "Magic Weapon 法宝",
+      "aliases": [
+        "法宝"
+      ],
+      "version": "1.4.11",
+      "client_entry": "fabao?",
+      "lua_modules": [
+        "fabao_select.luac"
+      ],
+      "protocols": [
+        "CS_11200~11205?"
+      ],
+      "config_files": [
+        "config_fabao.luac"
+      ],
+      "data_files": [
+        "role_fabao table"
+      ],
+      "dependencies": [
+        "Battle",
+        "Partner"
+      ],
+      "server_state": "implemented",
+      "database_state": "role_fabao present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Battle",
+        "Partner"
+      ],
+      "evidence": "role_fabao.db",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "weapon select"
+      ],
+      "category": "G. 外观系统"
+    },
+    {
+      "system_id": "SYS_APPEAR_008",
+      "system_name": "Vehicle/Chair 座驾",
+      "aliases": [
+        "座驾",
+        "椅子"
+      ],
+      "version": "1.4.11",
+      "client_entry": "chair?",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_chair.luac"
+      ],
+      "data_files": [
+        "role_chair table"
+      ],
+      "dependencies": [
+        "Appearance"
+      ],
+      "server_state": "implemented",
+      "database_state": "role_chair present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Ride"
+      ],
+      "evidence": "role_chair.db + config_chair",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "vehicle panel"
+      ],
+      "category": "G. 外观系统"
+    },
+    {
+      "system_id": "SYS_APPEAR_009",
+      "system_name": "Fashion/Skin 时装",
+      "aliases": [
+        "时装"
+      ],
+      "version": "1.4.11",
+      "client_entry": "fashion?",
+      "lua_modules": [],
+      "protocols": [
+        "10573",
+        "10574",
+        "10575",
+        "10576",
+        "10578"
+      ],
+      "config_files": [
+        "config_fashion.luac",
+        "config_fashion_upgrade.luac",
+        "config_fashion_constant.luac"
+      ],
+      "data_files": [
+        "role_fashion (SQLite)",
+        "server/cfg_kconfig/config_fashion.json"
+      ],
+      "dependencies": [
+        "Appearance",
+        "Attribute"
+      ],
+      "server_state": "implemented (activate/wear/star/unwear); attribute contribution not yet wired",
+      "database_state": [
+        "role_fashion"
+      ],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Wing",
+        "Halo"
+      ],
+      "evidence": "role_fashion + config_fashion validation + tools/test_fashion.py ALL PASS",
+      "confidence": "VERIFIED",
+      "implementation_status": "implemented (persistence)",
+      "notes": "PHASE2.7：10573/10574/10575/10576/10578 真实落库并**按 config_fashion 校验 bid**。CS id 即 bid(无实例概念)。10577 过期推送未做；属性/战力贡献未接。 [需 MuMu 运行时取证] 时装属性数值",
+      "UI_files": [
+        "skin panel"
+      ],
+      "category": "G. 外观系统",
+      "needs_mumu_runtime": true
+    },
+    {
+      "system_id": "SYS_APPEAR_010",
+      "system_name": "Halo 光环",
+      "aliases": [
+        "光环"
+      ],
+      "version": "1.4.11",
+      "client_entry": "halo (game/halo/*)",
+      "lua_modules": [
+        "halo_ctrl",
+        "halo_model",
+        "halo_view",
+        "halo_info_view"
+      ],
+      "protocols": [
+        "19100",
+        "19103",
+        "19104"
+      ],
+      "config_files": [
+        "config_halo.luac"
+      ],
+      "data_files": [
+        "role_halo (SQLite)",
+        "role_halo_equip (SQLite)"
+      ],
+      "dependencies": [
+        "Appearance",
+        "Attribute"
+      ],
+      "server_state": "implemented (info + equip slots); upgrade not implemented",
+      "database_state": [
+        "role_halo",
+        "role_halo_equip"
+      ],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Fashion",
+        "Wing"
+      ],
+      "evidence": "role_halo + halo_model disassembly + tools/test_halo.py ALL PASS",
+      "confidence": "VERIFIED",
+      "implementation_status": "implemented (persistence)",
+      "notes": "PHASE2.8：19100 真实状态(items 用 bag_items_bytes 编码装备位)+19103/19104 落库。halo_model 只读 stage/luck/grow(已反汇编证实)。升阶/属性贡献未做。",
+      "UI_files": [
+        "halo_view"
+      ],
+      "category": "G. 外观系统"
+    },
+    {
+      "system_id": "SYS_ECON_001",
+      "system_name": "Assets/Currency System",
+      "aliases": [
+        "货币",
+        "资源",
+        "资产"
+      ],
+      "version": "1.4.11",
+      "client_entry": "all",
+      "lua_modules": [],
+      "protocols": [
+        "SC_10303 assets"
+      ],
+      "config_files": [
+        "config_game_data.luac (AssetsEnToCode)"
+      ],
+      "data_files": [
+        "role_assets table"
+      ],
+      "dependencies": [],
+      "server_state": "implemented",
+      "database_state": "role_assets present",
+      "rewards": [],
+      "currencies": [
+        "gold,coin,coupon,experience,diamond,sinew,vitality,guild_contrib,practice_exp,tower_cent,arena_cent,coral,rmb,lingshi,gouyu,cash_coupon,dan_point,marriage,course,peak_point,arena_soul,black_soul,jiebai_cent,lottery_point,boss_point,..."
+      ],
+      "related_systems": [
+        "all"
+      ],
+      "evidence": "ASSETS_EN_TO_CODE 38 items verified vs client config",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "top bar"
+      ],
+      "category": "H. 资源经济",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 货币汇率/资产数值"
+    },
+    {
+      "system_id": "SYS_ECON_002",
+      "system_name": "Inventory/Bag 背包",
+      "aliases": [
+        "背包",
+        "道具",
+        "物品"
+      ],
+      "version": "1.4.11",
+      "client_entry": "bag (function 2000)",
+      "lua_modules": [
+        "backpack_const.luac"
+      ],
+      "protocols": [
+        "CS_10500..10593"
+      ],
+      "config_files": [
+        "config_item.luac",
+        "config_item_misc.luac",
+        "config_item_gift.luac",
+        "item_config.json",
+        "item_gift.json"
+      ],
+      "data_files": [
+        "bag_items table",
+        "bag_volume table"
+      ],
+      "dependencies": [
+        "Economy",
+        "All"
+      ],
+      "server_state": "implemented",
+      "database_state": "bag_items, bag_volume present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "all reward paths"
+      ],
+      "evidence": "bag_items.db + item_config.json (3535 items)",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "bag panel"
+      ],
+      "category": "H. 资源经济"
+    },
+    {
+      "system_id": "SYS_ECON_003",
+      "system_name": "Mall/Shop 商城",
+      "aliases": [
+        "商城",
+        "商店"
+      ],
+      "version": "1.4.11",
+      "client_entry": "mall (function 501)",
+      "lua_modules": [
+        "shop_ctrl.luac",
+        "shop_cell.luac",
+        "shop_model.luac",
+        "shop_exchange_view.luac",
+        "shop_new_exchange_view.luac"
+      ],
+      "protocols": [
+        "CS_12801..12856",
+        "CS_13401..13416"
+      ],
+      "config_files": [
+        "config_mall.luac",
+        "config_shop.luac",
+        "config_exchange.luac",
+        "mall_config.json",
+        "mall_exchange.json",
+        "mall_zhenbao.json"
+      ],
+      "data_files": [
+        "mall_bought table"
+      ],
+      "dependencies": [
+        "Economy",
+        "Recharge"
+      ],
+      "server_state": "implemented",
+      "database_state": "mall_bought present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Recharge",
+        "Exchange"
+      ],
+      "evidence": "mall_bought.db + mall_config.json",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "mall/shop UI"
+      ],
+      "category": "H. 资源经济",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 商品价格/限购"
+    },
+    {
+      "system_id": "SYS_ECON_004",
+      "system_name": "Storage/Warehouse 仓库",
+      "aliases": [
+        "仓库",
+        "背包扩展"
+      ],
+      "version": "1.4.11",
+      "client_entry": "bag (function 2000)",
+      "lua_modules": [],
+      "protocols": [
+        "CS_10714",
+        "CS_10621"
+      ],
+      "config_files": [
+        "config_storage_data.luac"
+      ],
+      "data_files": [
+        "store_items table"
+      ],
+      "dependencies": [
+        "Inventory"
+      ],
+      "server_state": "implemented",
+      "database_state": "store_items present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Inventory"
+      ],
+      "evidence": "store_items.db + config_storage_data",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "warehouse panel"
+      ],
+      "category": "H. 资源经济"
+    },
+    {
+      "system_id": "SYS_ECON_005",
+      "system_name": "Trade Market 市场/交易",
+      "aliases": [
+        "市场",
+        "寄售"
+      ],
+      "version": "1.4.11",
+      "client_entry": "market (function 7000)",
+      "lua_modules": [
+        "market_ctrl.luac"
+      ],
+      "protocols": [
+        "CS_18909.."
+      ],
+      "config_files": [
+        "config_market.luac"
+      ],
+      "data_files": [
+        "role_market table",
+        "role_market_goods table"
+      ],
+      "dependencies": [
+        "Economy",
+        "Inventory"
+      ],
+      "server_state": "implemented",
+      "database_state": "role_market, role_market_goods present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Black Market",
+        "Auction"
+      ],
+      "evidence": "role_market,role_market_goods.db + market_ctrl.luac",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "market UI"
+      ],
+      "category": "H. 资源经济"
+    },
+    {
+      "system_id": "SYS_ECON_006",
+      "system_name": "Black Market 黑市",
+      "aliases": [
+        "黑市"
+      ],
+      "version": "1.4.11",
+      "client_entry": "black market?",
+      "lua_modules": [],
+      "protocols": [
+        "CS_18909?"
+      ],
+      "config_files": [
+        "config_black_market.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Market",
+        "Economy"
+      ],
+      "server_state": "partial (generic response)",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [
+        "black_soul(32)"
+      ],
+      "related_systems": [
+        "Market",
+        "Auction"
+      ],
+      "evidence": "mock_server handler 17128 loads config_black_market generic",
+      "confidence": "VERIFIED",
+      "implementation_status": "partial (generic stub, no DB)",
+      "UI_files": [
+        "black market"
+      ],
+      "category": "H. 资源经济"
+    },
+    {
+      "system_id": "SYS_ECON_007",
+      "system_name": "Exchange 兑换",
+      "aliases": [
+        "兑换",
+        "duihuan"
+      ],
+      "version": "1.4.11",
+      "client_entry": "duihuan (function 20) / yunyingduihuan (21)",
+      "lua_modules": [
+        "shop_exchange_view.luac",
+        "shop_new_exchange_view.luac"
+      ],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_exchange.luac",
+        "mall_exchange.json"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Mall",
+        "Economy"
+      ],
+      "server_state": "partial",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Mall"
+      ],
+      "evidence": "mall_exchange.json",
+      "confidence": "VERIFIED",
+      "implementation_status": "partial",
+      "UI_files": [
+        "exchange UI"
+      ],
+      "category": "H. 资源经济"
+    },
+    {
+      "system_id": "SYS_ECON_008",
+      "system_name": "Auction/拍卖",
+      "aliases": [
+        "拍卖",
+        "paimai"
+      ],
+      "version": "1.4.11",
+      "client_entry": "paimai (function 43)",
+      "lua_modules": [],
+      "protocols": [
+        "18020",
+        "18021",
+        "18022"
+      ],
+      "config_files": [
+        "config_auction_data.luac",
+        "server/cfg_kconfig/config_auction_data.json"
+      ],
+      "data_files": [
+        "role_assets (扣费)",
+        "bag_items (发货)"
+      ],
+      "dependencies": [
+        "Economy",
+        "Inventory"
+      ],
+      "server_state": "implemented (list + one-price buy); bidding not implemented",
+      "database_state": [
+        "role_assets",
+        "bag_items"
+      ],
+      "rewards": [
+        "item"
+      ],
+      "currencies": [
+        "guild_contrib",
+        "coupon",
+        "coin"
+      ],
+      "related_systems": [
+        "Market",
+        "Shop"
+      ],
+      "evidence": "tools/test_auction.py ALL PASS (real 50 goods, real deduct+deliver)",
+      "confidence": "VERIFIED",
+      "implementation_status": "implemented (list + buy)",
+      "notes": "PHASE2.9：18020/18021 真实 50 商品(按 item_bid 过滤掉 2 条配置行)；18022 一口价真扣费+真入包。price_assets 由 assets 名经 asset_label_map 转 code。item_number 配置无⇒取1(INFERENCE)。竞拍/记录/关注未做。",
+      "UI_files": [
+        "auction"
+      ],
+      "category": "H. 资源经济"
+    },
+    {
+      "system_id": "SYS_ECON_009",
+      "system_name": "Mail 邮件",
+      "aliases": [
+        "邮件"
+      ],
+      "version": "1.4.11",
+      "client_entry": "mail?",
+      "lua_modules": [],
+      "protocols": [
+        "CS_10800 mail"
+      ],
+      "config_files": [
+        "config_notice.luac"
+      ],
+      "data_files": [
+        "role_mail table"
+      ],
+      "dependencies": [
+        "Economy",
+        "Rewards"
+      ],
+      "server_state": "implemented",
+      "database_state": "role_mail present",
+      "rewards": [
+        "附件奖励"
+      ],
+      "currencies": [],
+      "related_systems": [
+        "all reward paths"
+      ],
+      "evidence": "role_mail.db + CS_10800",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "mail UI"
+      ],
+      "category": "H. 资源经济"
+    },
+    {
+      "system_id": "SYS_ECON_010",
+      "system_name": "Recharge/Payment 充值",
+      "aliases": [
+        "充值",
+        "首充"
+      ],
+      "version": "1.4.11",
+      "client_entry": "recharge (function 27)",
+      "lua_modules": [
+        "first_recharge_ui.luac"
+      ],
+      "protocols": [
+        "CS_12831",
+        "CS_13401.."
+      ],
+      "config_files": [
+        "config_charge.luac",
+        "config_charge_eyou.luac",
+        "config_first_charge.luac",
+        "config_once_charge.luac",
+        "config_every_charge.luac",
+        "config_lucky_box_data.luac"
+      ],
+      "data_files": [
+        "mall_bought table",
+        "role_assets"
+      ],
+      "dependencies": [
+        "Economy",
+        "VIP"
+      ],
+      "server_state": "partial",
+      "database_state": "no dedicated recharge table (uses mall_bought/assets)",
+      "rewards": [
+        "首充礼包"
+      ],
+      "currencies": [
+        "rmb(14),cash_coupon(22)"
+      ],
+      "related_systems": [
+        "VIP",
+        "First Charge",
+        "Daily Login"
+      ],
+      "evidence": "recharge function id + config_charge*",
+      "confidence": "VERIFIED",
+      "implementation_status": "partial",
+      "UI_files": [
+        "recharge UI",
+        "first charge"
+      ],
+      "category": "H. 资源经济"
+    },
+    {
+      "system_id": "SYS_ECON_011",
+      "system_name": "Gift Item 礼包/道具",
+      "aliases": [
+        "礼包",
+        "宝箱"
+      ],
+      "version": "1.4.11",
+      "client_entry": "all",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_item_gift.luac",
+        "config_lucky_box_data.luac",
+        "config_reward_box_data.luac",
+        "config_treasure_box_data.luac",
+        "item_gift.json",
+        "config_drop.luac",
+        "config_drop_item.luac",
+        "config_reward_data.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Inventory",
+        "Rewards"
+      ],
+      "server_state": "implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Inventory",
+        "Activity rewards"
+      ],
+      "evidence": "item_gift.json + config_drop",
+      "confidence": "VERIFIED",
+      "implementation_status": "implemented (gift/drop resolve)",
+      "UI_files": [
+        "gift open"
+      ],
+      "category": "H. 资源经济",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 礼包/宝箱实际开出内容"
+    },
+    {
+      "system_id": "SYS_QUEST_001",
+      "system_name": "Mission/Quest 任务",
+      "aliases": [
+        "任务",
+        "主线",
+        "任务奖励"
+      ],
+      "version": "1.4.11",
+      "client_entry": "mission (function 10000)",
+      "lua_modules": [
+        "mission_util.luac"
+      ],
+      "protocols": [
+        "CS_12400..12421",
+        "CS_12407/08/09"
+      ],
+      "config_files": [
+        "config_mission.luac",
+        "config_mission_buffy.luac",
+        "config_chapter.luac",
+        "mission_config.json",
+        "_mission_route.json"
+      ],
+      "data_files": [
+        "missions table"
+      ],
+      "dependencies": [
+        "Rewards",
+        "Economy"
+      ],
+      "server_state": "implemented",
+      "database_state": "missions present",
+      "rewards": [
+        "任务奖励(assets+items)"
+      ],
+      "currencies": [
+        "gold,coin,coupon,exp..."
+      ],
+      "related_systems": [
+        "Daily",
+        "Achievement",
+        "Guide"
+      ],
+      "evidence": "missions.db + mission_config.json (846 tasks) + protocol_index",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "quest log/track"
+      ],
+      "category": "I. 任务系统"
+    },
+    {
+      "system_id": "SYS_QUEST_002",
+      "system_name": "Daily/Active 日常活跃",
+      "aliases": [
+        "日常",
+        "活跃度"
+      ],
+      "version": "1.4.11",
+      "client_entry": "richang (function 503) / daily",
+      "lua_modules": [
+        "daily_ctrl.luac",
+        "daily_cell.luac",
+        "daily_panel.luac"
+      ],
+      "protocols": [
+        "CS_10301?"
+      ],
+      "config_files": [
+        "config_richang.luac",
+        "config_function.luac",
+        "_richang.json"
+      ],
+      "data_files": [
+        "daily_progress table",
+        "daily_lingqu table"
+      ],
+      "dependencies": [
+        "Mission",
+        "Rewards"
+      ],
+      "server_state": "implemented",
+      "database_state": "daily_progress, daily_lingqu present",
+      "rewards": [
+        "活跃宝箱"
+      ],
+      "currencies": [
+        "guild_active(24)"
+      ],
+      "related_systems": [
+        "Mission",
+        "Target"
+      ],
+      "evidence": "daily_progress.db",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "daily/active UI"
+      ],
+      "category": "I. 任务系统"
+    },
+    {
+      "system_id": "SYS_QUEST_003",
+      "system_name": "Achievement 成就",
+      "aliases": [
+        "成就"
+      ],
+      "version": "1.4.11",
+      "client_entry": "chengjiu (function 17000)",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_chengjiu.luac",
+        "_chengjiu.json",
+        "_chengjiu_map.json"
+      ],
+      "data_files": [
+        "chengjiu_progress table"
+      ],
+      "dependencies": [
+        "Rewards"
+      ],
+      "server_state": "implemented",
+      "database_state": "chengjiu_progress present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Title",
+        "Daily"
+      ],
+      "evidence": "chengjiu_progress.db",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "achievement panel"
+      ],
+      "category": "I. 任务系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 成就奖励"
+    },
+    {
+      "system_id": "SYS_QUEST_004",
+      "system_name": "Growth Target 成长目标",
+      "aliases": [
+        "目标",
+        "成长目标"
+      ],
+      "version": "1.4.11",
+      "client_entry": "target (function 505)",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_growth_target_data.luac",
+        "config_growth_target.json",
+        "config_fly_up.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Achievement"
+      ],
+      "server_state": "partial",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Achievement",
+        "Level"
+      ],
+      "evidence": "config_growth_target",
+      "confidence": "VERIFIED",
+      "implementation_status": "partial",
+      "UI_files": [
+        "target panel"
+      ],
+      "category": "I. 任务系统"
+    },
+    {
+      "system_id": "SYS_QUEST_005",
+      "system_name": "Guide System 引导",
+      "aliases": [
+        "新手引导",
+        "剧情"
+      ],
+      "version": "1.4.11",
+      "client_entry": "guide",
+      "lua_modules": [
+        "action_ctrl.luac",
+        "action_panel.luac"
+      ],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_guide.luac",
+        "config_guider_up.luac",
+        "config_drama_data.luac",
+        "config_function_notice.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "all"
+      ],
+      "server_state": "not implemented (client-side)",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Mission"
+      ],
+      "evidence": "config_guide + action_ctrl",
+      "confidence": "VERIFIED",
+      "implementation_status": "client-only",
+      "UI_files": [
+        "guide overlay"
+      ],
+      "category": "I. 任务系统"
+    },
+    {
+      "system_id": "SYS_MAP_001",
+      "system_name": "World Map / Region",
+      "aliases": [
+        "世界地图",
+        "区域"
+      ],
+      "version": "1.4.11",
+      "client_entry": "world map",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_world_map.luac",
+        "config_map.luac",
+        "config_team_destination.luac"
+      ],
+      "data_files": [
+        "map_block.json"
+      ],
+      "dependencies": [
+        "Scene"
+      ],
+      "server_state": "implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Scene",
+        "Teleport"
+      ],
+      "evidence": "map_block.json + config_map*",
+      "confidence": "VERIFIED",
+      "implementation_status": "implemented (basic)",
+      "UI_files": [
+        "world map"
+      ],
+      "category": "J. 地图系统"
+    },
+    {
+      "system_id": "SYS_MAP_002",
+      "system_name": "Team Group 组队",
+      "aliases": [
+        "组队",
+        "团队"
+      ],
+      "version": "1.4.11",
+      "client_entry": "team (function 12000)",
+      "lua_modules": [],
+      "protocols": [
+        "13200",
+        "13201",
+        "13202",
+        "13203",
+        "13204",
+        "13210",
+        "13218",
+        "13226",
+        "13237"
+      ],
+      "config_files": [
+        "config_team_destination.luac"
+      ],
+      "data_files": [
+        "role_team (SQLite)",
+        "role_team_invite (SQLite)"
+      ],
+      "dependencies": [
+        "Scene",
+        "Social"
+      ],
+      "server_state": "implemented (core + multi-member invite)",
+      "database_state": [
+        "role_team",
+        "role_team_invite"
+      ],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Social",
+        "Dungeon",
+        "Marriage",
+        "Jiebai"
+      ],
+      "evidence": "tools/test_multi_session.py ALL PASS (2 roles, real invite->accept->2-member team)",
+      "confidence": "VERIFIED",
+      "implementation_status": "implemented (core + invite)",
+      "notes": "PHASE2/2.4：13200/13201/13202/13204/13210/13218/13226/13237；13203=服务端推送。多人(2角色)已实测。role_team/role_team_invite 为兼容层(INFERENCE)，协议字段来自 fields.json(CONFIRMED)。其余 132xx(13219/13224/13250 等)仍为通用回执。",
+      "UI_files": [
+        "team panel"
+      ],
+      "category": "J. 地图系统"
+    },
+    {
+      "system_id": "SYS_DUNGEON_001",
+      "system_name": "Dungeon 副本",
+      "aliases": [
+        "副本",
+        "地牢"
+      ],
+      "version": "1.4.11",
+      "client_entry": "dungeon?",
+      "lua_modules": [
+        "tower_ctrl.luac"
+      ],
+      "protocols": [
+        "CS_11700..11713?",
+        "CS_13028.."
+      ],
+      "config_files": [
+        "config_dungeon_new.luac",
+        "config_dungeon_reward_desc.luac",
+        "config_dungeon_vip_single.luac",
+        "config_dungeon_vip_single2.luac",
+        "config_dungeon_research?"
+      ],
+      "data_files": [
+        "dungeon_progress table"
+      ],
+      "dependencies": [
+        "Battle",
+        "Rewards"
+      ],
+      "server_state": "implemented",
+      "database_state": "dungeon_progress present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Battle",
+        "Endless",
+        "Tower"
+      ],
+      "evidence": "dungeon_progress.db",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "dungeon select"
+      ],
+      "category": "K. 副本系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 副本难度/怪物数值/通关奖励"
+    },
+    {
+      "system_id": "SYS_DUNGEON_002",
+      "system_name": "Endless Dungeon 无尽/深渊",
+      "aliases": [
+        "无尽",
+        "深渊",
+        "endless"
+      ],
+      "version": "1.4.11",
+      "client_entry": "endless",
+      "lua_modules": [
+        "endless_form_ctrl.luac",
+        "endless_battle_ui.luac"
+      ],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_dungeon_endless_data.luac"
+      ],
+      "data_files": [
+        "dungeon_progress table"
+      ],
+      "dependencies": [
+        "Dungeon",
+        "Battle",
+        "Formation"
+      ],
+      "server_state": "partial",
+      "database_state": "dungeon_progress shared",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Dungeon",
+        "Tower"
+      ],
+      "evidence": "config_dungeon_endless_data",
+      "confidence": "VERIFIED",
+      "implementation_status": "partial",
+      "UI_files": [
+        "endless UI"
+      ],
+      "category": "K. 副本系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 无尽深渊数值/奖励"
+    },
+    {
+      "system_id": "SYS_DUNGEON_003",
+      "system_name": "Tower 塔",
+      "aliases": [
+        "爬塔",
+        "镇魂塔",
+        "恶魔塔"
+      ],
+      "version": "1.4.11",
+      "client_entry": "tower / demontower",
+      "lua_modules": [
+        "tower_ctrl.luac",
+        "demontower_ctrl.luac",
+        "kunshentower_battleui.luac"
+      ],
+      "protocols": [
+        "CS_13035",
+        "CS_13038",
+        "SC_13752.."
+      ],
+      "config_files": [
+        "config_dungeon_tower.luac",
+        "config_single_tower.luac",
+        "config_golden_tower.luac",
+        "config_treasure_data.luac",
+        "cfg_config_dungeon_tower.json",
+        "cfg_config_single_tower.json"
+      ],
+      "data_files": [
+        "dungeon_progress table"
+      ],
+      "dependencies": [
+        "Dungeon",
+        "Battle"
+      ],
+      "server_state": "partial",
+      "database_state": "dungeon_progress shared",
+      "rewards": [],
+      "currencies": [
+        "tower_cent(10)"
+      ],
+      "related_systems": [
+        "Dungeon",
+        "Endless"
+      ],
+      "evidence": "mock_server round44 demontower fix + cfg_config_dungeon_tower.json",
+      "confidence": "VERIFIED",
+      "implementation_status": "partial (tower stub, demontower config)",
+      "UI_files": [
+        "tower UI"
+      ],
+      "category": "K. 副本系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 爬塔数值/奖励"
+    },
+    {
+      "system_id": "SYS_DUNGEON_004",
+      "system_name": "Mystic Realm 秘境/遗迹",
+      "aliases": [
+        "秘境",
+        "mijing"
+      ],
+      "version": "1.4.11",
+      "client_entry": "mijing (function 1011)",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_treasure_plane_data.luac",
+        "config_dungeon_jieyi.luac",
+        "config_dungeon_seal_demon_data.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Dungeon"
+      ],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Dungeon",
+        "Treasure"
+      ],
+      "evidence": "mijing function id",
+      "confidence": "VERIFIED",
+      "implementation_status": "client-only",
+      "UI_files": [],
+      "category": "K. 副本系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 秘境数值/奖励"
+    },
+    {
+      "system_id": "SYS_DUNGEON_005",
+      "system_name": "Shadow/Palace dungeon other",
+      "aliases": [
+        "其余副本"
+      ],
+      "version": "1.4.11",
+      "client_entry": "dungeon*",
+      "lua_modules": [
+        "kunshentower_battleui.luac",
+        "smjz"
+      ],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_dungeon_gods.luac",
+        "config_dungeon_seal_demon_data.luac",
+        "config_smjz.luac",
+        "config_primus.luac",
+        "config_golden_tower.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Dungeon"
+      ],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Dungeon",
+        "God"
+      ],
+      "evidence": "config_dungeon_gods + smjz",
+      "confidence": "STRONG_INFERENCE",
+      "implementation_status": "client-config only",
+      "UI_files": [],
+      "category": "K. 副本系统"
+    },
+    {
+      "system_id": "SYS_ACT_001",
+      "system_name": "Sign-in/Check-in 签到",
+      "aliases": [
+        "签到",
+        "每日签到"
+      ],
+      "version": "1.4.11",
+      "client_entry": "sign?",
+      "lua_modules": [
+        "dailysign_ctrl.luac"
+      ],
+      "protocols": [
+        "CS_14100 签到",
+        "CS_14101"
+      ],
+      "config_files": [
+        "config_checkin.luac",
+        "config_seven_login.luac"
+      ],
+      "data_files": [
+        "sign_got table"
+      ],
+      "dependencies": [
+        "Rewards",
+        "Daily"
+      ],
+      "server_state": "implemented",
+      "database_state": "sign_got present",
+      "rewards": [
+        "签到礼"
+      ],
+      "currencies": [],
+      "related_systems": [
+        "Daily",
+        "Seven Login"
+      ],
+      "evidence": "sign_got.db + CS_14100/14101",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "sign-in panel"
+      ],
+      "category": "L. 活动系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 签到奖励"
+    },
+    {
+      "system_id": "SYS_ACT_002",
+      "system_name": "Seven-Day Login 七日签到",
+      "aliases": [
+        "七日登录",
+        "七日活动"
+      ],
+      "version": "1.4.11",
+      "client_entry": "seven login",
+      "lua_modules": [
+        "notice7day.luac"
+      ],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_seven_login.luac",
+        "config_fest_data.luac"
+      ],
+      "data_files": [
+        "sign_got table"
+      ],
+      "dependencies": [
+        "Sign-in"
+      ],
+      "server_state": "partial",
+      "database_state": "sign_got shared",
+      "rewards": [
+        "7天奖励"
+      ],
+      "currencies": [],
+      "related_systems": [
+        "Sign-in",
+        "Festival"
+      ],
+      "evidence": "notice7day.luac + config_seven_login",
+      "confidence": "VERIFIED",
+      "implementation_status": "partial",
+      "UI_files": [
+        "7day panel"
+      ],
+      "category": "L. 活动系统"
+    },
+    {
+      "system_id": "SYS_ACT_003",
+      "system_name": "Invest 投资",
+      "aliases": [
+        "投资",
+        "invest"
+      ],
+      "version": "1.4.11",
+      "client_entry": "invest_sec (function 106)",
+      "lua_modules": [
+        "invest_ctrl.luac",
+        "invest_const.luac",
+        "invest_cost_ui.luac",
+        "invest_level_ui.luac",
+        "invest_model.luac",
+        "invest_panel.luac",
+        "invest_sec_panel.luac",
+        "invest_vip_ui.luac"
+      ],
+      "protocols": [
+        "CS_13901.."
+      ],
+      "config_files": [
+        "config_invest.json",
+        "config_invest.luac",
+        "config_invest_dec.json",
+        "_invest_cfg.json"
+      ],
+      "data_files": [
+        "role_invest table"
+      ],
+      "dependencies": [
+        "Recharge",
+        "Economy"
+      ],
+      "server_state": "implemented",
+      "database_state": "role_invest present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Recharge",
+        "VIP"
+      ],
+      "evidence": "role_invest.db + invest_ctrl.luac",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "invest panel"
+      ],
+      "category": "L. 活动系统"
+    },
+    {
+      "system_id": "SYS_ACT_004",
+      "system_name": "Turntable/Lucky Draw 转盘抽奖",
+      "aliases": [
+        "转盘",
+        "lucky_turntable",
+        "rotatetable",
+        "dial"
+      ],
+      "version": "1.4.11",
+      "client_entry": "rotatetable (function 8) / lucky_turntable (47)",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_gold_ernie_data.luac",
+        "config_ernie_data.luac",
+        "config_holiday_lucky_turntable_data.luac",
+        "config_holiday_dial_reward_data.luac",
+        "config_vip_ernie_data.luac",
+        "_dial_reward.json"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Mall",
+        "Economy"
+      ],
+      "server_state": "partial (dial reward stub)",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Activity Suite",
+        "Scratcher"
+      ],
+      "evidence": "_dial_reward.json + config_ernie",
+      "confidence": "VERIFIED",
+      "implementation_status": "partial (config+stub, no DB)",
+      "UI_files": [
+        "turntable"
+      ],
+      "category": "L. 活动系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 转盘概率/奖励"
+    },
+    {
+      "system_id": "SYS_ACT_005",
+      "system_name": "Scratch Card 刮刮乐",
+      "aliases": [
+        "刮卡",
+        "scratch"
+      ],
+      "version": "1.4.11",
+      "client_entry": "scratcher (function 51)",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_scratch_card.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Lottery"
+      ],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Turntable"
+      ],
+      "evidence": "config_scratch_card only",
+      "confidence": "STRONG_INFERENCE",
+      "implementation_status": "client-config only",
+      "UI_files": [
+        "scratch UI"
+      ],
+      "category": "L. 活动系统"
+    },
+    {
+      "system_id": "SYS_ACT_006",
+      "system_name": "Festival/Operation Activity 节日/运营活动",
+      "aliases": [
+        "节日活动",
+        "fest"
+      ],
+      "version": "1.4.11",
+      "client_entry": "fest*",
+      "lua_modules": [
+        "activity_ctrl.luac",
+        "festival? (activity_ctrl.luac in form2)"
+      ],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_fest_data.json",
+        "config_fest_data.luac",
+        "config_festival_goods.luac",
+        "config_friend_regress.luac",
+        "config_holiday_regress_data.luac",
+        "config_holiday_util.luac",
+        "config_holiday_balloon.luac",
+        "config_holiday_crowd_lottery.luac",
+        "config_holiday_order_mission.luac",
+        "config_helloween_data.luac",
+        "config_huaguo_mountain_data.luac",
+        "config_week_calendar.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Activity infra"
+      ],
+      "server_state": "not implemented (event data only)",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Activity Suite"
+      ],
+      "evidence": "config_fest_data.json + holiday_* configs",
+      "confidence": "VERIFIED",
+      "implementation_status": "client-event-data only",
+      "UI_files": [
+        "festival panels"
+      ],
+      "category": "L. 活动系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 节日/运营活动奖励"
+    },
+    {
+      "system_id": "SYS_ACT_007",
+      "system_name": "Answer Quiz 答题",
+      "aliases": [
+        "答题",
+        "answer"
+      ],
+      "version": "1.4.11",
+      "client_entry": "answer (function 3)",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_answer.luac",
+        "config_lantern_answer.luac"
+      ],
+      "data_files": [],
+      "dependencies": [],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Guess",
+        "Activity"
+      ],
+      "evidence": "config_answer + answer function id",
+      "confidence": "VERIFIED",
+      "implementation_status": "client-only",
+      "UI_files": [
+        "quiz"
+      ],
+      "category": "L. 活动系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 答题题库/奖励"
+    },
+    {
+      "system_id": "SYS_ACT_008",
+      "system_name": "Guess 竞猜",
+      "aliases": [
+        "竞猜",
+        "guess"
+      ],
+      "version": "1.4.11",
+      "client_entry": "guess (function 25)",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_fun.luac",
+        "config_player_guess?"
+      ],
+      "data_files": [],
+      "dependencies": [],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Answer"
+      ],
+      "evidence": "guess function id",
+      "confidence": "VERIFIED",
+      "implementation_status": "client-only",
+      "UI_files": [],
+      "category": "L. 活动系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 竞猜赔率/奖励"
+    },
+    {
+      "system_id": "SYS_ACT_009",
+      "system_name": "Money Tree 摇钱树",
+      "aliases": [
+        "摇钱树",
+        "moneytree"
+      ],
+      "version": "1.4.11",
+      "client_entry": "moneytree (function 26)",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_money_tree.luac"
+      ],
+      "data_files": [
+        "role_tree table"
+      ],
+      "dependencies": [
+        "Economy",
+        "Daily"
+      ],
+      "server_state": "implemented",
+      "database_state": "role_tree present",
+      "rewards": [
+        "金币"
+      ],
+      "currencies": [
+        "gold"
+      ],
+      "related_systems": [
+        "Daily",
+        "Qifu"
+      ],
+      "evidence": "role_tree.db + config_money_tree",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "money tree"
+      ],
+      "category": "L. 活动系统"
+    },
+    {
+      "system_id": "SYS_ACT_010",
+      "system_name": "Pray/QiFu 祈福",
+      "aliases": [
+        "祈福"
+      ],
+      "version": "1.4.11",
+      "client_entry": "qifu?",
+      "lua_modules": [
+        "qifu_ctrl.luac",
+        "qifu_model.luac",
+        "qifu_view.luac",
+        "qifu_cell.luac",
+        "qifu_redpaper_item.luac",
+        "qifu_redpaper.luac"
+      ],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_qifu.luac",
+        "config_flying?"
+      ],
+      "data_files": [
+        "role_qifu table"
+      ],
+      "dependencies": [
+        "Economy",
+        "Daily"
+      ],
+      "server_state": "implemented",
+      "database_state": "role_qifu present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Money Tree",
+        "Red Packet"
+      ],
+      "evidence": "role_qifu.db + qifu_ctrl.luac",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "qifu/redpacket"
+      ],
+      "category": "L. 活动系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 祈福数值/产出"
+    },
+    {
+      "system_id": "SYS_ACT_011",
+      "system_name": "Treasure Hunt 夺宝/探宝",
+      "aliases": [
+        "夺宝",
+        "duobao"
+      ],
+      "version": "1.4.11",
+      "client_entry": "duobao (function 1013)",
+      "lua_modules": [
+        "duobao?"
+      ],
+      "protocols": [
+        "CS_13810..13817?"
+      ],
+      "config_files": [
+        "config_duobao.luac",
+        "config_treasure.luac",
+        "config_treasure_plane_data.luac",
+        "config_mission_treasure.luac",
+        "config_rune_treasure_data.luac",
+        "config_chest?"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Economy",
+        "Dungeon"
+      ],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Treasure",
+        "Secret Realm"
+      ],
+      "evidence": "config_duobao + duobao function id",
+      "confidence": "VERIFIED",
+      "implementation_status": "client-only",
+      "UI_files": [
+        "duobao UI"
+      ],
+      "category": "L. 活动系统",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 夺宝概率/奖励"
+    },
+    {
+      "system_id": "SYS_ACT_012",
+      "system_name": "Return/Back Flow 回归",
+      "aliases": [
+        "回归",
+        "老玩家"
+      ],
+      "version": "1.4.11",
+      "client_entry": "regress",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_friend_regress.luac",
+        "config_holiday_regress_data.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Activity"
+      ],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Activity Suite"
+      ],
+      "evidence": "config_friend_regress",
+      "confidence": "VERIFIED",
+      "implementation_status": "client-only",
+      "UI_files": [
+        "regress panel"
+      ],
+      "category": "L. 活动系统"
+    },
+    {
+      "system_id": "SYS_ACT_013",
+      "system_name": "Gift Recharge events 充值活动",
+      "aliases": [
+        "累计充值",
+        "天降壕礼"
+      ],
+      "version": "1.4.11",
+      "client_entry": "charge_double (62) / tianjianghaoli (117)",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_every_charge.luac",
+        "config_once_charge.luac",
+        "config_charge_double?"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Recharge"
+      ],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Recharge",
+        "Level"
+      ],
+      "evidence": "charge_double/tianjianghaoli function ids",
+      "confidence": "VERIFIED",
+      "implementation_status": "client-only",
+      "UI_files": [],
+      "category": "L. 活动系统"
+    },
+    {
+      "system_id": "SYS_ACT_014",
+      "system_name": "Point/Qing Fu activities 点/dnf/live",
+      "aliases": [
+        "点券活动",
+        "dnf活动",
+        "直播"
+      ],
+      "version": "1.4.11",
+      "client_entry": "live?",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_dnf_data.luac",
+        "config_live.luac",
+        "config_source_data.luac"
+      ],
+      "data_files": [
+        "role_point table"
+      ],
+      "dependencies": [],
+      "server_state": "implemented (role_point) / activities not hooked",
+      "database_state": "role_point present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Activity"
+      ],
+      "evidence": "role_point.db",
+      "confidence": "VERIFIED",
+      "implementation_status": "partial (point persisted)",
+      "UI_files": [],
+      "category": "L. 活动系统"
+    },
+    {
+      "system_id": "SYS_ACT_015",
+      "system_name": "Global Wish 全球许愿",
+      "aliases": [
+        "许愿",
+        "global wish"
+      ],
+      "version": "1.4.11",
+      "client_entry": "1008 julong?",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_global_wish_data.luac",
+        "config_fangyao.luac",
+        "config_party.luac"
+      ],
+      "data_files": [],
+      "dependencies": [],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Festival"
+      ],
+      "evidence": "config_global_wish_data",
+      "confidence": "STRONG_INFERENCE",
+      "implementation_status": "client-config only",
+      "UI_files": [],
+      "category": "L. 活动系统"
+    },
+    {
+      "system_id": "SYS_SOCIAL_001",
+      "system_name": "Chat System",
+      "aliases": [
+        "聊天",
+        "社交"
+      ],
+      "version": "1.4.11",
+      "client_entry": "chat?",
+      "lua_modules": [],
+      "protocols": [
+        "CS_10800.."
+      ],
+      "config_files": [
+        "config_chat_bubble.luac",
+        "config_sns.luac"
+      ],
+      "data_files": [
+        "role_chat table"
+      ],
+      "dependencies": [],
+      "server_state": "implemented",
+      "database_state": "role_chat present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Friend",
+        "Social"
+      ],
+      "evidence": "role_chat.db",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "chat window"
+      ],
+      "category": "M. 社交系统"
+    },
+    {
+      "system_id": "SYS_SOCIAL_002",
+      "system_name": "Friend System",
+      "aliases": [
+        "好友"
+      ],
+      "version": "1.4.11",
+      "client_entry": "friend (function 6000)",
+      "lua_modules": [
+        "friend_zone?"
+      ],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_friend_zone_data.luac",
+        "config_friend_regress.luac"
+      ],
+      "data_files": [
+        "role_moments? / friends via chat?"
+      ],
+      "dependencies": [
+        "Chat"
+      ],
+      "server_state": "partial",
+      "database_state": "no dedicated friend table",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Chat",
+        "Moments"
+      ],
+      "evidence": "friend function id",
+      "confidence": "VERIFIED",
+      "implementation_status": "partial",
+      "UI_files": [
+        "friend list"
+      ],
+      "category": "M. 社交系统"
+    },
+    {
+      "system_id": "SYS_SOCIAL_003",
+      "system_name": "Moments/朋友圈",
+      "aliases": [
+        "朋友圈",
+        "动态"
+      ],
+      "version": "1.4.11",
+      "client_entry": "friend zone",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_friend_zone_data.luac"
+      ],
+      "data_files": [
+        "role_moments table"
+      ],
+      "dependencies": [
+        "Friend"
+      ],
+      "server_state": "implemented",
+      "database_state": "role_moments present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Friend",
+        "Chat"
+      ],
+      "evidence": "role_moments.db",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "moments"
+      ],
+      "category": "M. 社交系统"
+    },
+    {
+      "system_id": "SYS_SOCIAL_004",
+      "system_name": "Guild 公会",
+      "aliases": [
+        "公会",
+        "帮派"
+      ],
+      "version": "1.4.11",
+      "client_entry": "guild (function 9000)",
+      "lua_modules": [
+        "guild_constants.luac",
+        "guild_action_item.luac",
+        "guild_race_const.luac",
+        "guild_race_data.luac",
+        "guild_race_ctrl.luac",
+        "guildwars_ctrl.luac"
+      ],
+      "protocols": [
+        "CS_17500..17519",
+        "CS_19509.."
+      ],
+      "config_files": [
+        "config_guild.luac",
+        "config_guild_animal.luac",
+        "config_guild_exploit_data.luac",
+        "config_guild_lucky_data.luac",
+        "config_guild_mission.luac",
+        "config_guild_mission_data.luac",
+        "config_guild_pray.luac",
+        "config_guild_skill_data.luac",
+        "config_guild_task_data.luac",
+        "config_guild_tree_data.luac",
+        "config_guild_union.luac",
+        "config_guild_welcome_data.luac",
+        "config_guild_match_war_data.luac"
+      ],
+      "data_files": [
+        "role_guild table"
+      ],
+      "dependencies": [
+        "Social",
+        "Economy"
+      ],
+      "server_state": "implemented (core)",
+      "database_state": "role_guild present",
+      "rewards": [],
+      "currencies": [
+        "guild_contrib(8),guild_active(24)"
+      ],
+      "related_systems": [
+        "Guild Wars",
+        "Guild Party",
+        "Guild Mission"
+      ],
+      "evidence": "role_guild.db",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented (core guild, sub-systems partial)",
+      "UI_files": [
+        "guild UI"
+      ],
+      "category": "M. 社交系统"
+    },
+    {
+      "system_id": "SYS_SOCIAL_005",
+      "system_name": "Marriage 结婚",
+      "aliases": [
+        "婚姻",
+        "结婚系统"
+      ],
+      "version": "1.4.11",
+      "client_entry": "wedding (function 17)",
+      "lua_modules": [],
+      "protocols": [
+        "18300",
+        "18301",
+        "18302",
+        "18303",
+        "18313",
+        "18314",
+        "18316",
+        "18318",
+        "18321",
+        "18322"
+      ],
+      "config_files": [
+        "config_marry_data.luac",
+        "config_marry_eqm_data.luac",
+        "config_spouse.luac",
+        "config_mission_marry.luac"
+      ],
+      "data_files": [
+        "role_marry (SQLite)",
+        "role_marry_propose (SQLite)"
+      ],
+      "dependencies": [
+        "Social",
+        "Team"
+      ],
+      "server_state": "implemented (propose->accept->marry->divorce->ring); target via server-side intent table",
+      "database_state": [
+        "role_marry",
+        "role_marry_propose"
+      ],
+      "rewards": [],
+      "currencies": [
+        "marriage(25)"
+      ],
+      "related_systems": [
+        "Jiebai",
+        "Team"
+      ],
+      "evidence": "tools/test_marry_propose.py ALL PASS (2 roles full proposal loop)",
+      "confidence": "VERIFIED",
+      "implementation_status": "implemented (core loop)",
+      "notes": "PHASE2.5：18300/18301/18302/18303 双角色实测。★CS_18300 为空消息，客户端不上传对象(反汇编 wedding_ctrl 证实)⇒目标由服务端意向表 role_marry_propose 承载(机制本身 UNKNOWN，不冒充原版)。婚宴 18304-18309 未实现。 [需 MuMu 运行时取证] 结婚消耗/奖励数值 [需 MuMu 运行时取证] 结婚数值/消耗",
+      "UI_files": [
+        "wedding panel"
+      ],
+      "category": "M. 社交系统",
+      "needs_mumu_runtime": true
+    },
+    {
+      "system_id": "SYS_SOCIAL_006",
+      "system_name": "Jiebai Soulmate 结拜",
+      "aliases": [
+        "结拜",
+        "义结金兰"
+      ],
+      "version": "1.4.11",
+      "client_entry": "jiebailiucheng (110) / jiebaitoupiao (506)",
+      "lua_modules": [],
+      "protocols": [
+        "19505",
+        "19511",
+        "19512",
+        "19513",
+        "19514",
+        "19524",
+        "19530",
+        "19533",
+        "19536"
+      ],
+      "config_files": [
+        "config_jiebai_data.luac",
+        "config_dungeon_jieyi.luac"
+      ],
+      "data_files": [
+        "role_jiebai (SQLite)"
+      ],
+      "dependencies": [
+        "Social",
+        "Team"
+      ],
+      "server_state": "implemented (create/space/member list/invite/confirm/upgrade/cancel)",
+      "database_state": [
+        "role_jiebai"
+      ],
+      "rewards": [],
+      "currencies": [
+        "jiebai_cent(33)"
+      ],
+      "related_systems": [
+        "Marriage",
+        "Friend",
+        "Team"
+      ],
+      "evidence": "tools/test_jiebai_multi.py ALL PASS (2 roles invite->confirm->2 members)",
+      "confidence": "VERIFIED",
+      "implementation_status": "implemented (core + multi-member)",
+      "notes": "PHASE2.6：19505/19511/19512/19513/19514/19524/19530/19533/19536；19511/19513=推送。多人(2角色)已实测。注意 SC_19514/19530 无 code/msg。其余 195xx(投票/技能/称号) 仍为通用回执。 [需 MuMu 运行时取证] 结拜数值/属性加成 [需 MuMu 运行时取证] 结拜数值/加成",
+      "UI_files": [
+        "jieyi panel"
+      ],
+      "category": "M. 社交系统",
+      "needs_mumu_runtime": true
+    },
+    {
+      "system_id": "SYS_SOCIAL_007",
+      "system_name": "Flower/Gift 送花",
+      "aliases": [
+        "送花",
+        "花"
+      ],
+      "version": "1.4.11",
+      "client_entry": "flower (function 23)",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_flower.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Marriage",
+        "Social"
+      ],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [
+        "charm(17)"
+      ],
+      "related_systems": [
+        "Marriage",
+        "Rank"
+      ],
+      "evidence": "config_flower + flower function id",
+      "confidence": "VERIFIED",
+      "implementation_status": "client-only",
+      "UI_files": [],
+      "category": "M. 社交系统"
+    },
+    {
+      "system_id": "SYS_SOCIAL_008",
+      "system_name": "Party 宴会/派对",
+      "aliases": [
+        "宴会",
+        "party"
+      ],
+      "version": "1.4.11",
+      "client_entry": "party?",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_party.luac",
+        "config_fangyao.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Marriage"
+      ],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Marriage"
+      ],
+      "evidence": "config_party only",
+      "confidence": "STRONG_INFERENCE",
+      "implementation_status": "client-config only",
+      "UI_files": [
+        "party"
+      ],
+      "category": "M. 社交系统"
+    },
+    {
+      "system_id": "SYS_SOCIAL_009",
+      "system_name": "Guild Wars 公会战",
+      "aliases": [
+        "公会战",
+        "宗门战",
+        "guildwars"
+      ],
+      "version": "1.4.11",
+      "client_entry": "gangwars (14) / guildwars (15) / kuafu_guildwars (24) / guildmatchwar (1012)",
+      "lua_modules": [
+        "guildwars_ctrl.luac",
+        "guild_race_ctrl.luac"
+      ],
+      "protocols": [
+        "CS_17501",
+        "CS_195?",
+        "CS_130?..."
+      ],
+      "config_files": [
+        "config_guild_match_war_data.luac",
+        "config_guild_tree_data.luac",
+        "config_sm_war_data.luac"
+      ],
+      "data_files": [
+        "role_guild table"
+      ],
+      "dependencies": [
+        "Guild",
+        "Battle"
+      ],
+      "server_state": "partial (mock handles 17501 by type)",
+      "database_state": "role_guild",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Guild",
+        "Cross-server",
+        "Peakwar"
+      ],
+      "evidence": "mock_server line 15953 handles guildwars_ctrl type branch",
+      "confidence": "VERIFIED",
+      "implementation_status": "partial (dispatch stub)",
+      "UI_files": [
+        "war UI"
+      ],
+      "category": "M. 社交系统"
+    },
+    {
+      "system_id": "SYS_SOCIAL_010",
+      "system_name": "Guild Tree/Animal/Skill sub",
+      "aliases": [
+        "公会科技",
+        "公会神兽",
+        "公会技能"
+      ],
+      "version": "1.4.11",
+      "client_entry": "guild",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_guild_tree_data.luac",
+        "config_guild_animal.luac",
+        "config_guild_skill_data.luac",
+        "config_guild_pray.luac",
+        "config_guild_welcome_data.luac",
+        "config_guild_exploit_data.luac",
+        "config_guild_lucky_data.luac"
+      ],
+      "data_files": [
+        "role_guild table"
+      ],
+      "dependencies": [
+        "Guild"
+      ],
+      "server_state": "partial",
+      "database_state": "role_guild",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Guild"
+      ],
+      "evidence": "guild sub configs present",
+      "confidence": "VERIFIED",
+      "implementation_status": "partial",
+      "UI_files": [],
+      "category": "M. 社交系统"
+    },
+    {
+      "system_id": "SYS_COMM_001",
+      "system_name": "Rank 排行榜",
+      "aliases": [
+        "排行榜"
+      ],
+      "version": "1.4.11",
+      "client_entry": "rank? / actionrank (16)",
+      "lua_modules": [
+        "rank_ctrl.luac",
+        "rank_data.luac",
+        "rank_data_vo.luac",
+        "rank_title.luac"
+      ],
+      "protocols": [
+        "CS_16900..16903"
+      ],
+      "config_files": [
+        "config_rank.luac",
+        "config_rank.full.json",
+        "config_rank.asm"
+      ],
+      "data_files": [
+        "derived from other tables"
+      ],
+      "dependencies": [
+        "Title"
+      ],
+      "server_state": "partial (derived)",
+      "database_state": "no dedicated rank table",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Title",
+        "Arena",
+        "Power"
+      ],
+      "evidence": "rank_ctrl.luac + config_rank",
+      "confidence": "VERIFIED",
+      "implementation_status": "partial",
+      "UI_files": [
+        "rank UI"
+      ],
+      "category": "N. 商业系统 / 对抗",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 排行榜排序字段/实时值"
+    },
+    {
+      "system_id": "SYS_COMM_002",
+      "system_name": "Arena 竞技场",
+      "aliases": [
+        "竞技场"
+      ],
+      "version": "1.4.11",
+      "client_entry": "arena?",
+      "lua_modules": [
+        "trophy_arena_ctrl.luac"
+      ],
+      "protocols": [
+        "CS_11300..11310",
+        "CS_11301"
+      ],
+      "config_files": [
+        "config_arena_data.luac",
+        "config_arena_msg.luac",
+        "config_trophy_arena_data.luac"
+      ],
+      "data_files": [
+        "arena_state table",
+        "arena_record table"
+      ],
+      "dependencies": [
+        "Battle",
+        "Rank"
+      ],
+      "server_state": "implemented",
+      "database_state": "arena_state, arena_record present",
+      "rewards": [],
+      "currencies": [
+        "arena_cent(11),arena_soul(31),trophy(18)"
+      ],
+      "related_systems": [
+        "Rank",
+        "PvP"
+      ],
+      "evidence": "arena_state/arena_record.db",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "arena UI"
+      ],
+      "category": "N. 商业系统 / 对抗",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 竞技场匹配/战斗数值/积分"
+    },
+    {
+      "system_id": "SYS_COMM_003",
+      "system_name": "Peakwar 巅峰战",
+      "aliases": [
+        "巅峰战",
+        "精英赛"
+      ],
+      "version": "1.4.11",
+      "client_entry": "peakwar (function 28)",
+      "lua_modules": [
+        "peakvideo_*.luac"
+      ],
+      "protocols": [
+        "CS_130?..",
+        "CS_113?.."
+      ],
+      "config_files": [
+        "config_peak_war_data.luac"
+      ],
+      "data_files": [
+        "peakwar_state table"
+      ],
+      "dependencies": [
+        "Battle",
+        "Rank"
+      ],
+      "server_state": "implemented",
+      "database_state": "peakwar_state present",
+      "rewards": [],
+      "currencies": [
+        "peak_point(30)"
+      ],
+      "related_systems": [
+        "Arena",
+        "Godwar"
+      ],
+      "evidence": "peakwar_state.db + config_peak_war_data",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "peakwar UI"
+      ],
+      "category": "N. 商业系统 / 对抗"
+    },
+    {
+      "system_id": "SYS_COMM_004",
+      "system_name": "Race 竞速/种族战",
+      "aliases": [
+        "竞速",
+        "race",
+        "跨服竞速"
+      ],
+      "version": "1.4.11",
+      "client_entry": "race (function 12) / crossrace (22)",
+      "lua_modules": [
+        "race_ctrl.luac",
+        "race_ui_*.luac",
+        "guild_race_ctrl.luac",
+        "cross_ctrl.luac"
+      ],
+      "protocols": [
+        "CS_130?.."
+      ],
+      "config_files": [
+        "config_race?"
+      ],
+      "data_files": [
+        "race_state table"
+      ],
+      "dependencies": [
+        "Battle"
+      ],
+      "server_state": "implemented",
+      "database_state": "race_state present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Guild Wars",
+        "Peakwar"
+      ],
+      "evidence": "race_state.db + race_ctrl.luac",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "race UI"
+      ],
+      "category": "N. 商业系统 / 对抗"
+    },
+    {
+      "system_id": "SYS_COMM_005",
+      "system_name": "Cross-server 跨服",
+      "aliases": [
+        "跨服",
+        "cross"
+      ],
+      "version": "1.4.11",
+      "client_entry": "crossrace (22) / kuafu_guildwars (24)",
+      "lua_modules": [
+        "cross_ctrl.luac"
+      ],
+      "protocols": [
+        "30100~31299 cross?"
+      ],
+      "config_files": [],
+      "data_files": [],
+      "dependencies": [
+        "All PvP"
+      ],
+      "server_state": "not implemented (single-process)",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Race",
+        "Guild Wars",
+        "Godwar"
+      ],
+      "evidence": "cross_ctrl.luac; mock_server single-process",
+      "confidence": "STRONG_INFERENCE",
+      "implementation_status": "not implemented",
+      "UI_files": [],
+      "category": "N. 商业系统 / 对抗",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 跨服匹配/数值"
+    },
+    {
+      "system_id": "SYS_COMM_006",
+      "system_name": "Mining 采矿",
+      "aliases": [
+        "采矿",
+        "矿脉"
+      ],
+      "version": "1.4.11",
+      "client_entry": "mining?",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_mining.luac",
+        "config_mine_new.luac",
+        "config_mine_guild_data.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Guild"
+      ],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Guild"
+      ],
+      "evidence": "config_mining + config_mine_guild_data",
+      "confidence": "VERIFIED",
+      "implementation_status": "client-config only",
+      "UI_files": [],
+      "category": "N. 商业系统 / 对抗",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 采矿产出"
+    },
+    {
+      "system_id": "SYS_COMM_007",
+      "system_name": "Manor/Oasis 庄园/领地",
+      "aliases": [
+        "庄园",
+        "manor"
+      ],
+      "version": "1.4.11",
+      "client_entry": "manor?",
+      "lua_modules": [
+        "build_ctrl.luac",
+        "hunger.luac"
+      ],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_manor.luac",
+        "config_garden_data.luac",
+        "config_build.luac"
+      ],
+      "data_files": [
+        "role_build table",
+        "role_build_learn table"
+      ],
+      "dependencies": [
+        "Economy"
+      ],
+      "server_state": "implemented (build)",
+      "database_state": "role_build, role_build_learn present",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Guild",
+        "Tree"
+      ],
+      "evidence": "role_build.db + build_ctrl.luac + config_manor",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented (build persistent)",
+      "UI_files": [
+        "manor/build UI"
+      ],
+      "category": "N. 商业系统 / 对抗"
+    },
+    {
+      "system_id": "SYS_COMM_008",
+      "system_name": "Attack City 攻城/领土战",
+      "aliases": [
+        "攻城",
+        "领地战"
+      ],
+      "version": "1.4.11",
+      "client_entry": "qiangdao (102)?",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_attack_city.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Guild",
+        "Battle"
+      ],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Guild Wars"
+      ],
+      "evidence": "config_attack_city",
+      "confidence": "STRONG_INFERENCE",
+      "implementation_status": "client-config only",
+      "UI_files": [],
+      "category": "N. 商业系统 / 对抗"
+    },
+    {
+      "system_id": "SYS_COMM_009",
+      "system_name": "Freight/Escort 押镖",
+      "aliases": [
+        "押镖",
+        "护送"
+      ],
+      "version": "1.4.11",
+      "client_entry": "escort?",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_freight.luac",
+        "config_mission_escort.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Mission",
+        "Battle"
+      ],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Mission"
+      ],
+      "evidence": "config_freight",
+      "confidence": "STRONG_INFERENCE",
+      "implementation_status": "client-config only",
+      "UI_files": [],
+      "category": "N. 商业系统 / 对抗",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 押镖奖励/劫镖"
+    },
+    {
+      "system_id": "SYS_COMM_010",
+      "system_name": "Gold/JinYin Tower activities",
+      "aliases": [
+        "金银塔",
+        "jinyinta"
+      ],
+      "version": "1.4.11",
+      "client_entry": "jinyinta (function 56)",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_golden_tower.luac",
+        "config_single_tower.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Dungeon",
+        "Economy"
+      ],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [
+        "gold,coral(13)"
+      ],
+      "related_systems": [
+        "Tower"
+      ],
+      "evidence": "jinyinta function id",
+      "confidence": "VERIFIED",
+      "implementation_status": "client-only",
+      "UI_files": [],
+      "category": "N. 商业系统 / 对抗",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 金银塔奖励"
+    },
+    {
+      "system_id": "SYS_GM_001",
+      "system_name": "GM Tools",
+      "aliases": [
+        "GM命令",
+        "调试"
+      ],
+      "version": "1.4.11",
+      "client_entry": "gm?",
+      "lua_modules": [
+        "battle_debug.luac",
+        "gm? (config_gm_cmd)"
+      ],
+      "protocols": [
+        "CS_10922..10932?",
+        "CS_11999?"
+      ],
+      "config_files": [
+        "config_gm_cmd.luac",
+        "config_client.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "all"
+      ],
+      "server_state": "implemented (debug cmds)",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "all"
+      ],
+      "evidence": "config_gm_cmd + battle_debug + protocol gm_protocol.md",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "GM panel"
+      ],
+      "category": "O. GM 系统"
+    },
+    {
+      "system_id": "SYS_BACK_001",
+      "system_name": "Server Backend/DB",
+      "aliases": [
+        "后台",
+        "数据库"
+      ],
+      "version": "1.4.11",
+      "client_entry": "(server)",
+      "lua_modules": [],
+      "protocols": [],
+      "config_files": [],
+      "data_files": [
+        "roles.db / jstm.db"
+      ],
+      "dependencies": [],
+      "server_state": "implemented",
+      "database_state": "all tables in roles.db",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "all"
+      ],
+      "evidence": "server/state/roles.db 48 tables",
+      "confidence": "CONFIRMED",
+      "implementation_status": "implemented",
+      "UI_files": [
+        "(admin)"
+      ],
+      "category": "P. 后台系统"
+    },
+    {
+      "system_id": "SYS_BACK_002",
+      "system_name": "Cross-server backend",
+      "aliases": [
+        "跨服后台"
+      ],
+      "version": "1.4.11",
+      "client_entry": "(server)",
+      "lua_modules": [],
+      "protocols": [],
+      "config_files": [],
+      "data_files": [],
+      "dependencies": [],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [],
+      "evidence": "single-process server",
+      "confidence": "STRONG_INFERENCE",
+      "implementation_status": "not implemented",
+      "UI_files": [],
+      "category": "P. 后台系统"
+    },
+    {
+      "system_id": "SYS_HIDDEN_001",
+      "system_name": "Seal System 封印",
+      "aliases": [
+        "封印"
+      ],
+      "version": "1.4.11",
+      "client_entry": "seal?",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_seal.luac",
+        "config_dungeon_seal_demon_data.luac",
+        "config_fangyao.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Dungeon",
+        "Boss"
+      ],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Boss",
+        "Demon"
+      ],
+      "evidence": "config_seal",
+      "confidence": "STRONG_INFERENCE",
+      "implementation_status": "client-config only",
+      "UI_files": [],
+      "category": "Q. 隐藏/未归类系统"
+    },
+    {
+      "system_id": "SYS_HIDDEN_002",
+      "system_name": "XiuLuo 修罗",
+      "aliases": [
+        "修罗",
+        "xiuluo"
+      ],
+      "version": "1.4.11",
+      "client_entry": "xiuluo?",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_xiuluo_data.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "PvP"
+      ],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Arena"
+      ],
+      "evidence": "config_xiuluo_data",
+      "confidence": "STRONG_INFERENCE",
+      "implementation_status": "client-config only",
+      "UI_files": [],
+      "category": "Q. 隐藏/未归类系统"
+    },
+    {
+      "system_id": "SYS_HIDDEN_003",
+      "system_name": "Chief 会长/百官",
+      "aliases": [
+        "会长",
+        "首席"
+      ],
+      "version": "1.4.11",
+      "client_entry": "chief (function 41)",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_chief_award_data.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Rank"
+      ],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Rank"
+      ],
+      "evidence": "chief function id + config_chief_award",
+      "confidence": "VERIFIED",
+      "implementation_status": "client-only",
+      "UI_files": [],
+      "category": "Q. 隐藏/未归类系统"
+    },
+    {
+      "system_id": "SYS_HIDDEN_004",
+      "system_name": "Star Soul 星魂",
+      "aliases": [
+        "星魂",
+        "xinghun",
+        "soulstar"
+      ],
+      "version": "1.4.11",
+      "client_entry": "xinghun (function 28000)",
+      "lua_modules": [
+        "soulstar_ctrl.luac"
+      ],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_rune_star?"
+      ],
+      "data_files": [
+        "role_runes table?"
+      ],
+      "dependencies": [
+        "Rune",
+        "Wing"
+      ],
+      "server_state": "partial",
+      "database_state": "role_runes?",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Rune",
+        "Fate"
+      ],
+      "evidence": "soulstar_ctrl.luac + xinghun function id",
+      "confidence": "VERIFIED",
+      "implementation_status": "partial",
+      "UI_files": [
+        "soul star"
+      ],
+      "category": "Q. 隐藏/未归类系统"
+    },
+    {
+      "system_id": "SYS_HIDDEN_005",
+      "system_name": "God Redemption 神位/神减免",
+      "aliases": [
+        "神灵",
+        "godredeem"
+      ],
+      "version": "1.4.11",
+      "client_entry": "god?",
+      "lua_modules": [
+        "godredeem_ctrl.luac",
+        "godredeem_data.luac",
+        "godredeem_view.luac",
+        "godredeem_panel.luac",
+        "godredeem_item.luac",
+        "godredeem_aptitude*.luac"
+      ],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_dungeon_gods.luac",
+        "config_god_unite_data.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Partner"
+      ],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Partner",
+        "Dungeon gods"
+      ],
+      "evidence": "_tmp_god godredeem_ctrl.modules",
+      "confidence": "VERIFIED",
+      "implementation_status": "client-only / not hooked",
+      "UI_files": [
+        "god redeem UI"
+      ],
+      "category": "Q. 隐藏/未归类系统"
+    },
+    {
+      "system_id": "SYS_HIDDEN_006",
+      "system_name": "Dragon 神龙/巨龙",
+      "aliases": [
+        "神龙",
+        "巨龙"
+      ],
+      "version": "1.4.11",
+      "client_entry": "julong (function 1008)",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_dragon.luac",
+        "config_golden_dragon?"
+      ],
+      "data_files": [],
+      "dependencies": [],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [],
+      "evidence": "config_dragon + julong function id",
+      "confidence": "VERIFIED",
+      "implementation_status": "client-only",
+      "UI_files": [],
+      "category": "Q. 隐藏/未归类系统"
+    },
+    {
+      "system_id": "SYS_HIDDEN_007",
+      "system_name": "Balloon 气球/多种活动",
+      "aliases": [
+        "气球",
+        "action_balloon"
+      ],
+      "version": "1.4.11",
+      "client_entry": "action_balloon (function 48)",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_holiday_balloon.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Activity"
+      ],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Festival"
+      ],
+      "evidence": "action_balloon function id",
+      "confidence": "VERIFIED",
+      "implementation_status": "client-only",
+      "UI_files": [],
+      "category": "Q. 隐藏/未归类系统"
+    },
+    {
+      "system_id": "SYS_UNKNOWN_001",
+      "system_name": "Dan War / 丹药战",
+      "aliases": [
+        "丹药",
+        "dan_war"
+      ],
+      "version": "1.4.11",
+      "client_entry": "??",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_dan_war.luac"
+      ],
+      "data_files": [],
+      "dependencies": [],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [
+        "dan_point(23)"
+      ],
+      "related_systems": [],
+      "evidence": "config_dan_war + dan_point currency",
+      "confidence": "UNKNOWN",
+      "implementation_status": "client-config only",
+      "UI_files": [],
+      "category": "R. 未知系统"
+    },
+    {
+      "system_id": "SYS_UNKNOWN_002",
+      "system_name": "YunYing Ops systems",
+      "aliases": [
+        "运营活动"
+      ],
+      "version": "1.4.11",
+      "client_entry": "33/34/37/40/101/103 etc (unnamed function ids)",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_function.json ids 33,34,37,40,101,103..."
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Activity"
+      ],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Activity"
+      ],
+      "evidence": "config_function.json unnamed ids",
+      "confidence": "UNKNOWN",
+      "implementation_status": "unidentified ops entries",
+      "UI_files": [],
+      "category": "R. 未知系统"
+    },
+    {
+      "system_id": "SYS_UNKNOWN_003",
+      "system_name": "Insight 顿悟/洞察",
+      "aliases": [
+        "顿悟",
+        "洞察"
+      ],
+      "version": "1.4.11",
+      "client_entry": "insight?",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_insight.luac"
+      ],
+      "data_files": [
+        "roles.insight_status field"
+      ],
+      "dependencies": [
+        "Skill"
+      ],
+      "server_state": "partial",
+      "database_state": "roles.insight_status field only",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Skill",
+        "Practice"
+      ],
+      "evidence": "config_insight + ROLE_DEFAULTS insight_status",
+      "confidence": "VERIFIED",
+      "implementation_status": "partial",
+      "UI_files": [],
+      "category": "R. 未知系统"
+    },
+    {
+      "system_id": "SYS_UNKNOWN_004",
+      "system_name": "Color/Head system",
+      "aliases": [
+        "染色",
+        "color"
+      ],
+      "version": "1.4.11",
+      "client_entry": "color?",
+      "lua_modules": [],
+      "protocols": [
+        ""
+      ],
+      "config_files": [
+        "config_color.luac",
+        "config_color_code.luac"
+      ],
+      "data_files": [],
+      "dependencies": [
+        "Appearance"
+      ],
+      "server_state": "not implemented",
+      "database_state": [],
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [
+        "Fashion"
+      ],
+      "evidence": "config_color*",
+      "confidence": "UNKNOWN",
+      "implementation_status": "client-config only",
+      "UI_files": [],
+      "category": "R. 未知系统"
+    },
+    {
+      "version": "1.4.11",
+      "lua_modules": [],
+      "protocols": [],
+      "config_files": [],
+      "data_files": [],
+      "UI_files": [],
+      "dependencies": [
+        "Equipment"
+      ],
+      "server_state": "unknown",
+      "database_state": "UNKNOWN",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [],
+      "confidence": "UNKNOWN",
+      "implementation_status": "not implemented (unknown)",
+      "evidence": "UNKNOWN: named in PHASE0 audit checklist; no dedicated config/module/protocol found during APK inventory",
+      "system_id": "SYS_EQUIP_005",
+      "system_name": "Equip Refine 装备洗练",
+      "aliases": [
+        "洗练",
+        "xilian",
+        "refine"
+      ],
+      "client_entry": "UNKNOWN",
+      "category": "E. 装备系统",
+      "notes": "PHASE0 audit-flagged item; no config_eqm_refine / xilian module located."
+    },
+    {
+      "version": "1.4.11",
+      "lua_modules": [],
+      "protocols": [],
+      "config_files": [],
+      "data_files": [],
+      "UI_files": [],
+      "dependencies": [
+        "Equipment"
+      ],
+      "server_state": "unknown",
+      "database_state": "UNKNOWN",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [],
+      "confidence": "UNKNOWN",
+      "implementation_status": "not implemented (unknown)",
+      "evidence": "UNKNOWN: named in PHASE0 audit checklist; no dedicated config/module/protocol found during APK inventory",
+      "system_id": "SYS_EQUIP_006",
+      "system_name": "Gem / Socket 宝石",
+      "aliases": [
+        "宝石",
+        "gem",
+        "baoshi"
+      ],
+      "client_entry": "UNKNOWN",
+      "category": "E. 装备系统",
+      "notes": "PHASE0 audit-flagged item; no config_gem / gem socket module located. Rune system (SYS_EQUIP_003) is distinct."
+    },
+    {
+      "version": "1.4.11",
+      "lua_modules": [],
+      "protocols": [],
+      "config_files": [],
+      "data_files": [],
+      "UI_files": [],
+      "dependencies": [
+        "Role",
+        "Equipment"
+      ],
+      "server_state": "unknown",
+      "database_state": "UNKNOWN",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [],
+      "confidence": "UNKNOWN",
+      "implementation_status": "not implemented (unknown)",
+      "evidence": "UNKNOWN: named in PHASE0 audit checklist; no dedicated config/module/protocol found during APK inventory",
+      "system_id": "SYS_GROWTH_006",
+      "system_name": "Soul Bone 魂骨",
+      "aliases": [
+        "魂骨",
+        "hun_gu",
+        "soulbone"
+      ],
+      "client_entry": "UNKNOWN",
+      "category": "C. 成长系统",
+      "notes": "PHASE0 audit-flagged item; no config_hungu / soulbone module located in JSTM 1.4.11 inventory."
+    },
+    {
+      "version": "1.4.11",
+      "lua_modules": [],
+      "protocols": [],
+      "config_files": [],
+      "data_files": [],
+      "UI_files": [],
+      "dependencies": [
+        "Role Attribute"
+      ],
+      "server_state": "unknown",
+      "database_state": "UNKNOWN",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [],
+      "confidence": "UNKNOWN",
+      "implementation_status": "not implemented (unknown)",
+      "evidence": "UNKNOWN: named in PHASE0 audit checklist; no dedicated config/module/protocol found during APK inventory",
+      "system_id": "SYS_GROWTH_007",
+      "system_name": "Augment / Amplify 增幅",
+      "aliases": [
+        "增幅",
+        "zengfu",
+        "augment"
+      ],
+      "client_entry": "UNKNOWN",
+      "category": "C. 成长系统",
+      "notes": "PHASE0 audit-flagged item; no dedicated augment module located. Attribute growth may be folded into role_attr."
+    },
+    {
+      "version": "1.4.11",
+      "lua_modules": [],
+      "protocols": [],
+      "config_files": [
+        "config_mon_data.luac (drop refs)",
+        "config_item_drop?"
+      ],
+      "data_files": [
+        "UNKNOWN"
+      ],
+      "UI_files": [],
+      "dependencies": [
+        "Battle",
+        "Monster",
+        "Item"
+      ],
+      "server_state": "partial (drop resolved via gift/item path)",
+      "database_state": "UNKNOWN",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [],
+      "confidence": "INFERENCE",
+      "implementation_status": "partial (drop resolve inside gift/battle; no dedicated drop system)",
+      "evidence": "config_mon_data referenced inside SYS_BATTLE_001; no dedicated drop-table module inventoried",
+      "system_id": "SYS_ECON_012",
+      "system_name": "Drop / Loot Table 掉落",
+      "aliases": [
+        "掉落",
+        "drop",
+        "loot"
+      ],
+      "client_entry": "UNKNOWN",
+      "category": "H. 资源经济",
+      "needs_mumu_runtime": true,
+      "notes": "[需 MuMu 运行时取证] 掉落表真实产出"
+    },
+    {
+      "version": "1.4.11",
+      "lua_modules": [],
+      "protocols": [],
+      "config_files": [],
+      "data_files": [],
+      "UI_files": [],
+      "dependencies": [
+        "all UI"
+      ],
+      "server_state": "unknown",
+      "database_state": "UNKNOWN",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [],
+      "confidence": "UNKNOWN",
+      "implementation_status": "not implemented (unknown)",
+      "evidence": "UNKNOWN: named in PHASE0 audit checklist; no dedicated config/module/protocol found during APK inventory",
+      "system_id": "SYS_CORE_008",
+      "system_name": "Red Dot / Badge 红点",
+      "aliases": [
+        "红点",
+        "reddot",
+        "red_point",
+        "badge",
+        "notice"
+      ],
+      "client_entry": "UNKNOWN",
+      "category": "A. 核心系统",
+      "notes": "PHASE0 audit-flagged item; no dedicated red-dot framework module located. config_function_notice referenced inside Guide system."
+    },
+    {
+      "version": "1.4.11",
+      "lua_modules": [],
+      "protocols": [],
+      "config_files": [],
+      "data_files": [],
+      "UI_files": [],
+      "dependencies": [
+        "Protocol/Network"
+      ],
+      "server_state": "unknown",
+      "database_state": "UNKNOWN",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [],
+      "confidence": "UNKNOWN",
+      "implementation_status": "not implemented (unknown)",
+      "evidence": "UNKNOWN: named in PHASE0 audit checklist; no dedicated config/module/protocol found during APK inventory",
+      "system_id": "SYS_CORE_009",
+      "system_name": "UI State Sync UI状态",
+      "aliases": [
+        "UI状态",
+        "uistate",
+        "ui_state",
+        "ui_status"
+      ],
+      "client_entry": "UNKNOWN",
+      "category": "A. 核心系统",
+      "notes": "PHASE0 audit-flagged item; no dedicated UI-state push/sync module located (generic SC pushes cover per-system state)."
+    },
+    {
+      "version": "1.4.11",
+      "lua_modules": [],
+      "protocols": [],
+      "config_files": [],
+      "data_files": [],
+      "UI_files": [],
+      "dependencies": [
+        "Role Attribute"
+      ],
+      "server_state": "unknown",
+      "database_state": "UNKNOWN",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [],
+      "confidence": "UNKNOWN",
+      "implementation_status": "not implemented (unknown)",
+      "evidence": "UNKNOWN: named in PHASE0 audit checklist; no dedicated config/module/protocol found during APK inventory",
+      "system_id": "SYS_ROLE_007",
+      "system_name": "Combat Power 战力",
+      "aliases": [
+        "战力",
+        "power",
+        "zhanli",
+        "fight_power"
+      ],
+      "client_entry": "UNKNOWN",
+      "category": "B. 角色系统",
+      "notes": "PHASE0 audit-flagged item; no dedicated zhanli/power calc module located. Power likely derived from role_attr on fly. [需 MuMu 运行时取证] 战力计算公式",
+      "needs_mumu_runtime": true
+    },
+    {
+      "version": "1.4.11",
+      "lua_modules": [],
+      "protocols": [],
+      "config_files": [],
+      "data_files": [],
+      "UI_files": [],
+      "dependencies": [
+        "Partner/Hero System"
+      ],
+      "server_state": "unknown",
+      "database_state": "UNKNOWN",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [],
+      "confidence": "UNKNOWN",
+      "implementation_status": "not implemented (unknown)",
+      "evidence": "UNKNOWN: named in PHASE0 audit checklist; no dedicated config/module/protocol found during APK inventory",
+      "system_id": "SYS_FRIEND_006",
+      "system_name": "Partner Training 伙伴培养",
+      "aliases": [
+        "伙伴培养",
+        "partner_train",
+        "hero_peiyang"
+      ],
+      "client_entry": "UNKNOWN",
+      "category": "F. 伙伴系统",
+      "notes": "PHASE0 audit-flagged item; partner level/star may be folded into SYS_FRIEND_001 but no dedicated train module located."
+    },
+    {
+      "version": "1.4.11",
+      "lua_modules": [],
+      "protocols": [
+        "CS_11200~11205 partner equip (referenced in SYS_EQUIP_001)"
+      ],
+      "config_files": [],
+      "data_files": [],
+      "UI_files": [],
+      "dependencies": [
+        "Partner/Hero System",
+        "Equipment"
+      ],
+      "server_state": "partial (protocol range referenced)",
+      "database_state": "UNKNOWN",
+      "rewards": [],
+      "currencies": [],
+      "related_systems": [],
+      "confidence": "INFERENCE",
+      "implementation_status": "partial (protocols referenced; no dedicated module)",
+      "evidence": "CS_11200..11205 mentioned as partner equip range inside SYS_EQUIP_001; no dedicated partner-equip module inventoried",
+      "system_id": "SYS_FRIEND_007",
+      "system_name": "Partner Equipment 伙伴装备",
+      "aliases": [
+        "伙伴装备",
+        "partner_equip",
+        "hero_equip",
+        "partner_eqm"
+      ],
+      "client_entry": "UNKNOWN",
+      "category": "F. 伙伴系统"
+    }
+  ]
+}

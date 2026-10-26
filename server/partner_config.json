@@ -1,0 +1,426 @@
+[
+ {
+  "bid": 33100,
+  "name": "唐舞桐",
+  "career": 3,
+  "score": 24490,
+  "take_lev": 1,
+  "mode": 1
+ },
+ {
+  "bid": 33200,
+  "name": "徐三石",
+  "career": 1,
+  "score": 24450,
+  "take_lev": 1,
+  "mode": 1
+ },
+ {
+  "bid": 33300,
+  "name": "霍雨浩",
+  "career": 2,
+  "score": 24320,
+  "take_lev": 1,
+  "mode": 1
+ },
+ {
+  "bid": 33400,
+  "name": "萧萧",
+  "career": 4,
+  "score": 24330,
+  "take_lev": 1,
+  "mode": 1
+ },
+ {
+  "bid": 33500,
+  "name": "镜红尘",
+  "career": 1,
+  "score": 23750,
+  "take_lev": 1,
+  "mode": 1
+ },
+ {
+  "bid": 33600,
+  "name": "季绝尘",
+  "career": 3,
+  "score": 23600,
+  "take_lev": 1,
+  "mode": 1
+ },
+ {
+  "bid": 33700,
+  "name": "碧波仙子",
+  "career": 2,
+  "score": 11579,
+  "take_lev": 1,
+  "mode": 1
+ },
+ {
+  "bid": 33800,
+  "name": "马小桃",
+  "career": 2,
+  "score": 0,
+  "take_lev": 1,
+  "mode": 1
+ },
+ {
+  "bid": 33900,
+  "name": "王秋儿",
+  "career": 3,
+  "score": 0,
+  "take_lev": 1,
+  "mode": 1
+ },
+ {
+  "bid": 32900,
+  "name": "和菜头",
+  "career": 2,
+  "score": 0,
+  "take_lev": 1,
+  "mode": 1
+ },
+ {
+  "bid": 30800,
+  "name": "穆恩",
+  "career": 1,
+  "score": 0,
+  "take_lev": 1,
+  "mode": 1
+ },
+ {
+  "bid": 32100,
+  "name": "邪幻月",
+  "career": 1,
+  "score": 0,
+  "take_lev": 1,
+  "mode": 1
+ },
+ {
+  "bid": 32200,
+  "name": "少年雨浩",
+  "career": 4,
+  "score": 0,
+  "take_lev": 1,
+  "mode": 1
+ },
+ {
+  "bid": 32300,
+  "name": "少年王冬",
+  "career": 3,
+  "score": 0,
+  "take_lev": 1,
+  "mode": 1
+ },
+ {
+  "bid": 32400,
+  "name": "巫风",
+  "career": 2,
+  "score": 0,
+  "take_lev": 1,
+  "mode": 1
+ },
+ {
+  "bid": 31300,
+  "name": "龙傲天",
+  "career": 1,
+  "score": 0,
+  "take_lev": 35,
+  "mode": 1
+ },
+ {
+  "bid": 32800,
+  "name": "凌落宸",
+  "career": 2,
+  "score": 0,
+  "take_lev": 35,
+  "mode": 1
+ },
+ {
+  "bid": 30900,
+  "name": "戴华斌",
+  "career": 3,
+  "score": 0,
+  "take_lev": 35,
+  "mode": 1
+ },
+ {
+  "bid": 30000,
+  "name": "久久公主",
+  "career": 4,
+  "score": 0,
+  "take_lev": 35,
+  "mode": 1
+ },
+ {
+  "bid": 30100,
+  "name": "梦红尘",
+  "career": 1,
+  "score": 0,
+  "take_lev": 45,
+  "mode": 1
+ },
+ {
+  "bid": 30400,
+  "name": "言少哲",
+  "career": 2,
+  "score": 0,
+  "take_lev": 45,
+  "mode": 1
+ },
+ {
+  "bid": 31400,
+  "name": "南秋秋",
+  "career": 3,
+  "score": 0,
+  "take_lev": 45,
+  "mode": 1
+ },
+ {
+  "bid": 31100,
+  "name": "唐雅",
+  "career": 4,
+  "score": 0,
+  "take_lev": 45,
+  "mode": 1
+ },
+ {
+  "bid": 31700,
+  "name": "轩梓文",
+  "career": 1,
+  "score": 0,
+  "take_lev": 55,
+  "mode": 1
+ },
+ {
+  "bid": 31000,
+  "name": "毒不死",
+  "career": 2,
+  "score": 0,
+  "take_lev": 55,
+  "mode": 1
+ },
+ {
+  "bid": 30700,
+  "name": "江楠楠",
+  "career": 3,
+  "score": 0,
+  "take_lev": 55,
+  "mode": 1
+ },
+ {
+  "bid": 31800,
+  "name": "海公主",
+  "career": 4,
+  "score": 0,
+  "take_lev": 55,
+  "mode": 1
+ },
+ {
+  "bid": 30300,
+  "name": "戴浩",
+  "career": 1,
+  "score": 0,
+  "take_lev": 65,
+  "mode": 1
+ },
+ {
+  "bid": 31900,
+  "name": "叶夕水",
+  "career": 2,
+  "score": 0,
+  "take_lev": 65,
+  "mode": 1
+ },
+ {
+  "bid": 32000,
+  "name": "贝贝",
+  "career": 3,
+  "score": 0,
+  "take_lev": 65,
+  "mode": 1
+ },
+ {
+  "bid": 31200,
+  "name": "宁天",
+  "career": 4,
+  "score": 0,
+  "take_lev": 65,
+  "mode": 1
+ },
+ {
+  "bid": 30600,
+  "name": "泰坦雪魔",
+  "career": 1,
+  "score": 0,
+  "take_lev": 75,
+  "mode": 1
+ },
+ {
+  "bid": 30500,
+  "name": "张乐萱",
+  "career": 3,
+  "score": 0,
+  "take_lev": 75,
+  "mode": 1
+ },
+ {
+  "bid": 31600,
+  "name": "叶骨衣",
+  "career": 4,
+  "score": 0,
+  "take_lev": 75,
+  "mode": 1
+ },
+ {
+  "bid": 33000,
+  "name": "冰帝",
+  "career": 2,
+  "score": 0,
+  "take_lev": 75,
+  "mode": 1
+ },
+ {
+  "bid": 34100,
+  "name": "牛天",
+  "career": 1,
+  "score": 0,
+  "take_lev": 85,
+  "mode": 1
+ },
+ {
+  "bid": 34200,
+  "name": "冰天雪女",
+  "career": 2,
+  "score": 0,
+  "take_lev": 85,
+  "mode": 1
+ },
+ {
+  "bid": 31500,
+  "name": "饕餮玄老",
+  "career": 3,
+  "score": 0,
+  "take_lev": 85,
+  "mode": 1
+ },
+ {
+  "bid": 34300,
+  "name": "庄老",
+  "career": 4,
+  "score": 0,
+  "take_lev": 85,
+  "mode": 1
+ },
+ {
+  "bid": 34400,
+  "name": "兽神帝天",
+  "career": 1,
+  "score": 0,
+  "take_lev": 95,
+  "mode": 1
+ },
+ {
+  "bid": 34500,
+  "name": "伊莱克斯",
+  "career": 2,
+  "score": 0,
+  "take_lev": 95,
+  "mode": 1
+ },
+ {
+  "bid": 34600,
+  "name": "龙逍遥",
+  "career": 3,
+  "score": 0,
+  "take_lev": 95,
+  "mode": 1
+ },
+ {
+  "bid": 34700,
+  "name": "翡翠碧姬",
+  "career": 4,
+  "score": 0,
+  "take_lev": 95,
+  "mode": 1
+ },
+ {
+  "bid": 34800,
+  "name": "战神",
+  "career": 1,
+  "score": 0,
+  "take_lev": 105,
+  "mode": 1
+ },
+ {
+  "bid": 34900,
+  "name": "凤凰之神",
+  "career": 2,
+  "score": 0,
+  "take_lev": 105,
+  "mode": 1
+ },
+ {
+  "bid": 35000,
+  "name": "速度之神",
+  "career": 3,
+  "score": 0,
+  "take_lev": 105,
+  "mode": 1
+ },
+ {
+  "bid": 35100,
+  "name": "生命女神",
+  "career": 4,
+  "score": 0,
+  "take_lev": 105,
+  "mode": 1
+ },
+ {
+  "bid": 35600,
+  "name": "千仞雪",
+  "career": 3,
+  "score": 25150,
+  "take_lev": 1,
+  "mode": 1
+ },
+ {
+  "bid": 35200,
+  "name": "愤怒之神",
+  "career": 1,
+  "score": 0,
+  "take_lev": 115,
+  "mode": 1
+ },
+ {
+  "bid": 35300,
+  "name": "善良之神",
+  "career": 2,
+  "score": 0,
+  "take_lev": 115,
+  "mode": 1
+ },
+ {
+  "bid": 35400,
+  "name": "邪恶之神",
+  "career": 3,
+  "score": 0,
+  "take_lev": 115,
+  "mode": 1
+ },
+ {
+  "bid": 35500,
+  "name": "融念冰",
+  "career": 4,
+  "score": 0,
+  "take_lev": 115,
+  "mode": 1
+ },
+ {
+  "bid": 35700,
+  "name": "唐三",
+  "career": 2,
+  "score": 25150,
+  "take_lev": 1,
+  "mode": 1
+ }
+]

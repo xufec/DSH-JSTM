@@ -1,0 +1,40 @@
+----------------------------------------------------
+---- 测试服配置文件
+---- @author whjing2011@gmail.com
+------------------------------------------------------
+GAME_NAME = "绝世唐门"                -- 游戏名
+PLATFORM_NAME = "ewan"                -- 平台名，决定读取的cdn，注册服地址之类的。
+
+DEBUG = false                         -- 调试版本
+DEBUG_MODE = false
+SOCKET_DEBUG = false                  -- SOCKET调试
+MAP_LOADING = false                   -- 是否启动地图加载ＵＩ
+IS_STABLE = true                     -- 是否是稳定服
+IS_PLATFORM_LOGIN = true            -- 是否平台登录
+-- is_change_print = true                -- true表示原生print输出
+SHOW_FPS = false
+
+-- 是否请求资源
+IS_REQUIRE_RES = false
+-- 没有五星级好评
+NO_EVALUATION = false
+-- 是否为mol版本
+IS_MOL = false
+-- 一些可能会改变的变量
+-- 使用美元，这个会影响显示货币符号，暂时海外的才会用美元
+IS_USE_DOLLARS = false
+                      
+-- 客户端登录入口个数 (0平台登录 ) 
+MUTIL_LOGIN = 0
+--不能切换账号(注意:false能切换,true:不能切换)
+CHANGE_ACCOUNT_ENABLE = false 
+
+MAIN_VERSION = 100                   -- 主版本号，显示用，1.0.100前面的1.0就是这个算出来的
+NOW_VERSION = 35                     -- 热更新版本号
+BUILD_VERSION = 10                    -- 编译版本号，控制强更删除老文件
+APP_ROUTE = nil                      -- app路由，用于区分不同平台登录界面的一些图标的
+NO_JIHUOMA = nil                     -- 没有激活码标签活动
+FLASH_PNG = APP_ROUTE or "app"
+LOGO_PNG = APP_ROUTE                 -- logo png用的图片
+-- 配置信息获取地址
+URL_LUA_CONFIG="http://cdnres.jstm.shiyuegame.com/update/config/url_config_ewan.lua"

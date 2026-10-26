@@ -1,0 +1,502 @@
+{
+ "n_cmds": 230,
+ "ok": 148,
+ "gap": 72,
+ "mismatch": 5,
+ "cs_only_ok": 5,
+ "cs_only_bad": 0,
+ "rows": [
+  {
+   "cmd": 10206,
+   "kind": "GAP",
+   "samples": 28,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 10232,
+   "kind": "GAP",
+   "samples": 2,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 10300,
+   "kind": "CS-ONLY",
+   "samples": 471,
+   "why": "无 SC 定义，不应答=正确"
+  },
+  {
+   "cmd": 10334,
+   "kind": "GAP",
+   "samples": 10,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 10343,
+   "kind": "GAP",
+   "samples": 4,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 10397,
+   "kind": "CS-ONLY",
+   "samples": 9,
+   "why": "无 SC 定义，不应答=正确"
+  },
+  {
+   "cmd": 10401,
+   "kind": "MISMATCH",
+   "samples": 7,
+   "why": "消耗 242 != 259"
+  },
+  {
+   "cmd": 10502,
+   "kind": "MISMATCH",
+   "samples": 6654,
+   "why": "消耗 139 != 159"
+  },
+  {
+   "cmd": 10504,
+   "kind": "GAP",
+   "samples": 7,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 10523,
+   "kind": "GAP",
+   "samples": 4,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 10800,
+   "kind": "MISMATCH",
+   "samples": 409,
+   "why": "消耗 141 != 148"
+  },
+  {
+   "cmd": 10801,
+   "kind": "GAP",
+   "samples": 8,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 10805,
+   "kind": "GAP",
+   "samples": 5,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 10924,
+   "kind": "MISMATCH",
+   "samples": 803,
+   "why": "消耗 298 != 668"
+  },
+  {
+   "cmd": 10930,
+   "kind": "GAP",
+   "samples": 4,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 10999,
+   "kind": "CS-ONLY",
+   "samples": 271,
+   "why": "无 SC 定义，不应答=正确"
+  },
+  {
+   "cmd": 11215,
+   "kind": "MISMATCH",
+   "samples": 655,
+   "why": "消耗 2228 != 2546"
+  },
+  {
+   "cmd": 11308,
+   "kind": "GAP",
+   "samples": 5,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 11400,
+   "kind": "GAP",
+   "samples": 13,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 12762,
+   "kind": "GAP",
+   "samples": 6,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 12821,
+   "kind": "GAP",
+   "samples": 7,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 12901,
+   "kind": "GAP",
+   "samples": 9,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 12902,
+   "kind": "GAP",
+   "samples": 4,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 12911,
+   "kind": "GAP",
+   "samples": 4,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 12912,
+   "kind": "GAP",
+   "samples": 4,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 12922,
+   "kind": "GAP",
+   "samples": 4,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 12931,
+   "kind": "GAP",
+   "samples": 4,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 13005,
+   "kind": "GAP",
+   "samples": 4,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 13020,
+   "kind": "GAP",
+   "samples": 13,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 13034,
+   "kind": "GAP",
+   "samples": 5,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 13036,
+   "kind": "GAP",
+   "samples": 5,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 13045,
+   "kind": "GAP",
+   "samples": 7,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 13052,
+   "kind": "GAP",
+   "samples": 5,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 13058,
+   "kind": "GAP",
+   "samples": 6,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 13201,
+   "kind": "GAP",
+   "samples": 4,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 13224,
+   "kind": "GAP",
+   "samples": 4,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 13227,
+   "kind": "GAP",
+   "samples": 8,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 13320,
+   "kind": "GAP",
+   "samples": 6,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 13321,
+   "kind": "GAP",
+   "samples": 20,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 13331,
+   "kind": "GAP",
+   "samples": 4,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 13341,
+   "kind": "GAP",
+   "samples": 14,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 13342,
+   "kind": "GAP",
+   "samples": 5,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 13343,
+   "kind": "GAP",
+   "samples": 12,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 13354,
+   "kind": "GAP",
+   "samples": 6,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 13359,
+   "kind": "GAP",
+   "samples": 4,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 13361,
+   "kind": "GAP",
+   "samples": 5,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 13402,
+   "kind": "GAP",
+   "samples": 21,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 13500,
+   "kind": "GAP",
+   "samples": 14,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 13501,
+   "kind": "GAP",
+   "samples": 8,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 13801,
+   "kind": "GAP",
+   "samples": 19,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 13803,
+   "kind": "GAP",
+   "samples": 4,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 13906,
+   "kind": "GAP",
+   "samples": 6,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 14099,
+   "kind": "GAP",
+   "samples": 4,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 14500,
+   "kind": "GAP",
+   "samples": 6,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 15200,
+   "kind": "GAP",
+   "samples": 4,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 15204,
+   "kind": "GAP",
+   "samples": 5,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 15400,
+   "kind": "GAP",
+   "samples": 6,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 16200,
+   "kind": "GAP",
+   "samples": 4,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 16601,
+   "kind": "GAP",
+   "samples": 21,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 16602,
+   "kind": "GAP",
+   "samples": 35,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 17001,
+   "kind": "GAP",
+   "samples": 6,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 17301,
+   "kind": "GAP",
+   "samples": 13,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 17306,
+   "kind": "GAP",
+   "samples": 12,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 17309,
+   "kind": "GAP",
+   "samples": 21,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 17310,
+   "kind": "GAP",
+   "samples": 4,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 17312,
+   "kind": "GAP",
+   "samples": 15,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 17501,
+   "kind": "GAP",
+   "samples": 19,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 18300,
+   "kind": "GAP",
+   "samples": 5,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 18307,
+   "kind": "GAP",
+   "samples": 11,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 18600,
+   "kind": "GAP",
+   "samples": 11,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 18865,
+   "kind": "GAP",
+   "samples": 8,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 18909,
+   "kind": "GAP",
+   "samples": 8,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 19500,
+   "kind": "GAP",
+   "samples": 5,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 20014,
+   "kind": "CS-ONLY",
+   "samples": 24,
+   "why": "无 SC 定义，不应答=正确"
+  },
+  {
+   "cmd": 20021,
+   "kind": "CS-ONLY",
+   "samples": 17,
+   "why": "无 SC 定义，不应答=正确"
+  },
+  {
+   "cmd": 20028,
+   "kind": "GAP",
+   "samples": 10,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 21301,
+   "kind": "GAP",
+   "samples": 4,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 21400,
+   "kind": "GAP",
+   "samples": 10,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 21410,
+   "kind": "GAP",
+   "samples": 8,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 21411,
+   "kind": "GAP",
+   "samples": 6,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 30201,
+   "kind": "GAP",
+   "samples": 4,
+   "why": "有 SC 规格但无应答"
+  },
+  {
+   "cmd": 30716,
+   "kind": "GAP",
+   "samples": 14,
+   "why": "有 SC 规格但无应答"
+  }
+ ]
+}

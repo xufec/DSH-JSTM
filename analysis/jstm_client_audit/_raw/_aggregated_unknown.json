@@ -1,0 +1,5908 @@
+{
+  "systems_master": {
+    "present_in_1_3_0_UNKNOWN": [
+      "SYS_FRIEND_005",
+      "SYS_APPEAR_008",
+      "SYS_DUNGEON_002",
+      "SYS_DUNGEON_004",
+      "SYS_ACT_005",
+      "SYS_ACT_012",
+      "SYS_BACK_001",
+      "SYS_BACK_002",
+      "SYS_HIDDEN_002",
+      "SYS_HIDDEN_003",
+      "SYS_HIDDEN_007",
+      "SYS_UNKNOWN_003",
+      "SYS_EQUIP_005",
+      "SYS_EQUIP_006",
+      "SYS_GROWTH_006",
+      "SYS_GROWTH_007",
+      "SYS_CORE_008",
+      "SYS_CORE_009",
+      "SYS_ROLE_007",
+      "SYS_FRIEND_006"
+    ],
+    "present_in_1_4_9_UNKNOWN": [
+      "SYS_BACK_001",
+      "SYS_BACK_002",
+      "SYS_EQUIP_005",
+      "SYS_EQUIP_006",
+      "SYS_GROWTH_006",
+      "SYS_GROWTH_007",
+      "SYS_CORE_008",
+      "SYS_CORE_009",
+      "SYS_ROLE_007",
+      "SYS_FRIEND_006"
+    ],
+    "present_in_1_4_11_UNKNOWN": [
+      "SYS_BACK_001",
+      "SYS_BACK_002",
+      "SYS_EQUIP_005",
+      "SYS_EQUIP_006",
+      "SYS_GROWTH_006",
+      "SYS_GROWTH_007",
+      "SYS_CORE_008",
+      "SYS_CORE_009",
+      "SYS_ROLE_007",
+      "SYS_FRIEND_006"
+    ],
+    "current_project_status_UNKNOWN": [],
+    "evidence_NOT_CONFIRMED": [
+      {
+        "system_id": "SYS_CORE_007",
+        "system_name": "Version/Resource Update",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_ROLE_002",
+        "system_name": "Career/Job",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_ROLE_004",
+        "system_name": "VIP System",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_ROLE_006",
+        "system_name": "Avatar/Head & Chat Bubble",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_GROWTH_002",
+        "system_name": "Talent/天赋",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_GROWTH_005",
+        "system_name": "Morale 士气",
+        "confidence": "STRONG_INFERENCE"
+      },
+      {
+        "system_id": "SYS_BATTLE_003",
+        "system_name": "Battle Replay / Video",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_BATTLE_004",
+        "system_name": "God War Battle",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_EQUIP_002",
+        "system_name": "Smith / Forge / Fuse",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_EQUIP_004",
+        "system_name": "Equip StarUp/强化",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_FRIEND_003",
+        "system_name": "Partner Atlas/图鉴",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_FRIEND_004",
+        "system_name": "Partner Recruit/招募",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_FRIEND_005",
+        "system_name": "Partner Fetter/羁绊",
+        "confidence": "STRONG_INFERENCE"
+      },
+      {
+        "system_id": "SYS_APPEAR_009",
+        "system_name": "Fashion/Skin 时装",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_APPEAR_010",
+        "system_name": "Halo 光环",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_ECON_006",
+        "system_name": "Black Market 黑市",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_ECON_007",
+        "system_name": "Exchange 兑换",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_ECON_008",
+        "system_name": "Auction/拍卖",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_ECON_010",
+        "system_name": "Recharge/Payment 充值",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_ECON_011",
+        "system_name": "Gift Item 礼包/道具",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_QUEST_004",
+        "system_name": "Growth Target 成长目标",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_QUEST_005",
+        "system_name": "Guide System 引导",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_MAP_001",
+        "system_name": "World Map / Region",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_MAP_002",
+        "system_name": "Team Group 组队",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_DUNGEON_002",
+        "system_name": "Endless Dungeon 无尽/深渊",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_DUNGEON_003",
+        "system_name": "Tower 塔",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_DUNGEON_004",
+        "system_name": "Mystic Realm 秘境/遗迹",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_DUNGEON_005",
+        "system_name": "Shadow/Palace dungeon other",
+        "confidence": "STRONG_INFERENCE"
+      },
+      {
+        "system_id": "SYS_ACT_002",
+        "system_name": "Seven-Day Login 七日签到",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_ACT_004",
+        "system_name": "Turntable/Lucky Draw 转盘抽奖",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_ACT_005",
+        "system_name": "Scratch Card 刮刮乐",
+        "confidence": "STRONG_INFERENCE"
+      },
+      {
+        "system_id": "SYS_ACT_006",
+        "system_name": "Festival/Operation Activity 节日/运营活动",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_ACT_007",
+        "system_name": "Answer Quiz 答题",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_ACT_008",
+        "system_name": "Guess 竞猜",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_ACT_011",
+        "system_name": "Treasure Hunt 夺宝/探宝",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_ACT_012",
+        "system_name": "Return/Back Flow 回归",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_ACT_013",
+        "system_name": "Gift Recharge events 充值活动",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_ACT_014",
+        "system_name": "Point/Qing Fu activities 点/dnf/live",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_ACT_015",
+        "system_name": "Global Wish 全球许愿",
+        "confidence": "STRONG_INFERENCE"
+      },
+      {
+        "system_id": "SYS_SOCIAL_002",
+        "system_name": "Friend System",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_SOCIAL_005",
+        "system_name": "Marriage 结婚",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_SOCIAL_006",
+        "system_name": "Jiebai Soulmate 结拜",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_SOCIAL_007",
+        "system_name": "Flower/Gift 送花",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_SOCIAL_008",
+        "system_name": "Party 宴会/派对",
+        "confidence": "STRONG_INFERENCE"
+      },
+      {
+        "system_id": "SYS_SOCIAL_009",
+        "system_name": "Guild Wars 公会战",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_SOCIAL_010",
+        "system_name": "Guild Tree/Animal/Skill sub",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_COMM_001",
+        "system_name": "Rank 排行榜",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_COMM_005",
+        "system_name": "Cross-server 跨服",
+        "confidence": "STRONG_INFERENCE"
+      },
+      {
+        "system_id": "SYS_COMM_006",
+        "system_name": "Mining 采矿",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_COMM_008",
+        "system_name": "Attack City 攻城/领土战",
+        "confidence": "STRONG_INFERENCE"
+      },
+      {
+        "system_id": "SYS_COMM_009",
+        "system_name": "Freight/Escort 押镖",
+        "confidence": "STRONG_INFERENCE"
+      },
+      {
+        "system_id": "SYS_COMM_010",
+        "system_name": "Gold/JinYin Tower activities",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_BACK_001",
+        "system_name": "Server Backend/DB",
+        "confidence": "UNKNOWN"
+      },
+      {
+        "system_id": "SYS_BACK_002",
+        "system_name": "Cross-server backend",
+        "confidence": "STRONG_INFERENCE"
+      },
+      {
+        "system_id": "SYS_HIDDEN_001",
+        "system_name": "Seal System 封印",
+        "confidence": "STRONG_INFERENCE"
+      },
+      {
+        "system_id": "SYS_HIDDEN_002",
+        "system_name": "XiuLuo 修罗",
+        "confidence": "STRONG_INFERENCE"
+      },
+      {
+        "system_id": "SYS_HIDDEN_003",
+        "system_name": "Chief 会长/百官",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_HIDDEN_004",
+        "system_name": "Star Soul 星魂",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_HIDDEN_005",
+        "system_name": "God Redemption 神位/神减免",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_HIDDEN_006",
+        "system_name": "Dragon 神龙/巨龙",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_HIDDEN_007",
+        "system_name": "Balloon 气球/多种活动",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_UNKNOWN_001",
+        "system_name": "Dan War / 丹药战",
+        "confidence": "UNKNOWN"
+      },
+      {
+        "system_id": "SYS_UNKNOWN_002",
+        "system_name": "YunYing Ops systems",
+        "confidence": "UNKNOWN"
+      },
+      {
+        "system_id": "SYS_UNKNOWN_003",
+        "system_name": "Insight 顿悟/洞察",
+        "confidence": "VERIFIED"
+      },
+      {
+        "system_id": "SYS_UNKNOWN_004",
+        "system_name": "Color/Head system",
+        "confidence": "UNKNOWN"
+      },
+      {
+        "system_id": "SYS_EQUIP_005",
+        "system_name": "Equip Refine 装备洗练",
+        "confidence": "UNKNOWN"
+      },
+      {
+        "system_id": "SYS_EQUIP_006",
+        "system_name": "Gem / Socket 宝石",
+        "confidence": "UNKNOWN"
+      },
+      {
+        "system_id": "SYS_GROWTH_006",
+        "system_name": "Soul Bone 魂骨",
+        "confidence": "UNKNOWN"
+      },
+      {
+        "system_id": "SYS_GROWTH_007",
+        "system_name": "Augment / Amplify 增幅",
+        "confidence": "UNKNOWN"
+      },
+      {
+        "system_id": "SYS_ECON_012",
+        "system_name": "Drop / Loot Table 掉落",
+        "confidence": "INFERENCE"
+      },
+      {
+        "system_id": "SYS_CORE_008",
+        "system_name": "Red Dot / Badge 红点",
+        "confidence": "UNKNOWN"
+      },
+      {
+        "system_id": "SYS_CORE_009",
+        "system_name": "UI State Sync UI状态",
+        "confidence": "UNKNOWN"
+      },
+      {
+        "system_id": "SYS_ROLE_007",
+        "system_name": "Combat Power 战力",
+        "confidence": "UNKNOWN"
+      },
+      {
+        "system_id": "SYS_FRIEND_006",
+        "system_name": "Partner Training 伙伴培养",
+        "confidence": "UNKNOWN"
+      },
+      {
+        "system_id": "SYS_FRIEND_007",
+        "system_name": "Partner Equipment 伙伴装备",
+        "confidence": "INFERENCE"
+      }
+    ],
+    "supplemented_cmds": [
+      "10926",
+      "10927",
+      "10928",
+      "10929",
+      "11310",
+      "11999",
+      "12804",
+      "12806",
+      "12807",
+      "12808",
+      "12809",
+      "12810",
+      "12811",
+      "12812",
+      "12813",
+      "12814",
+      "12815",
+      "12816",
+      "12817",
+      "12818",
+      "12819",
+      "12820",
+      "12824",
+      "12825",
+      "12826",
+      "12827",
+      "12828",
+      "12829",
+      "12830",
+      "12833",
+      "12834",
+      "12835",
+      "12844",
+      "12845",
+      "12846",
+      "12847",
+      "12848",
+      "12849",
+      "12850",
+      "12851",
+      "12852",
+      "13404",
+      "13405",
+      "13406",
+      "13407",
+      "13408",
+      "13409",
+      "13412",
+      "13413",
+      "13414",
+      "16902",
+      "17500",
+      "30100",
+      "31299",
+      "13752"
+    ],
+    "direction_mismatches": [
+      {
+        "cmd": "10500",
+        "record_direction": "sc",
+        "systems_master_token_dirs": [
+          "cs"
+        ],
+        "note": "库内记录已存在，仅方向标签不一致；不补录，待 systems_master 侧修复"
+      },
+      {
+        "cmd": "11202",
+        "record_direction": "sc",
+        "systems_master_token_dirs": [
+          "cs"
+        ],
+        "note": "库内记录已存在，仅方向标签不一致；不补录，待 systems_master 侧修复"
+      },
+      {
+        "cmd": "11304",
+        "record_direction": "sc",
+        "systems_master_token_dirs": [
+          "cs"
+        ],
+        "note": "库内记录已存在，仅方向标签不一致；不补录，待 systems_master 侧修复"
+      },
+      {
+        "cmd": "11307",
+        "record_direction": "sc",
+        "systems_master_token_dirs": [
+          "cs"
+        ],
+        "note": "库内记录已存在，仅方向标签不一致；不补录，待 systems_master 侧修复"
+      },
+      {
+        "cmd": "12420",
+        "record_direction": "sc",
+        "systems_master_token_dirs": [
+          "cs"
+        ],
+        "note": "库内记录已存在，仅方向标签不一致；不补录，待 systems_master 侧修复"
+      },
+      {
+        "cmd": "13203",
+        "record_direction": "sc",
+        "systems_master_token_dirs": [
+          "cs"
+        ],
+        "note": "库内记录已存在，仅方向标签不一致；不补录，待 systems_master 侧修复"
+      },
+      {
+        "cmd": "19511",
+        "record_direction": "sc",
+        "systems_master_token_dirs": [
+          "cs"
+        ],
+        "note": "库内记录已存在，仅方向标签不一致；不补录，待 systems_master 侧修复"
+      },
+      {
+        "cmd": "19513",
+        "record_direction": "sc",
+        "systems_master_token_dirs": [
+          "cs"
+        ],
+        "note": "库内记录已存在，仅方向标签不一致；不补录，待 systems_master 侧修复"
+      },
+      {
+        "cmd": "20012",
+        "record_direction": "sc",
+        "systems_master_token_dirs": [
+          "cs"
+        ],
+        "note": "库内记录已存在，仅方向标签不一致；不补录，待 systems_master 侧修复"
+      },
+      {
+        "cmd": "10300",
+        "record_direction": "cs",
+        "systems_master_token_dirs": [
+          "sc"
+        ],
+        "note": "库内记录已存在，仅方向标签不一致；不补录，待 systems_master 侧修复"
+      }
+    ],
+    "supplemented_by_system": {
+      "SYS_ECON_003": [
+        "CS_12804 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12806 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12807 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12808 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12809 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12810 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12811 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12812 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12813 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12814 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12815 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12816 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12817 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12818 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12819 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12820 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12824 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12825 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12826 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12827 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12828 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12829 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12830 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12833 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12834 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12835 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12844 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12845 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12846 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12847 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12848 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12849 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12850 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12851 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_12852 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_13404 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_13405 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_13406 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_13407 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_13408 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_13409 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_13412 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_13413 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_13414 [UNCONFIRMED: fields.json 两方向均无映射]"
+      ],
+      "SYS_DUNGEON_003": [
+        "SC_13752 [UNCONFIRMED: fields.json 两方向均无映射]"
+      ],
+      "SYS_SOCIAL_004": [
+        "CS_17500 [UNCONFIRMED: fields.json 两方向均无映射]"
+      ],
+      "SYS_COMM_001": [
+        "CS_16902 [UNCONFIRMED: fields.json 两方向均无映射]"
+      ],
+      "SYS_COMM_002": [
+        "CS_11310 [UNCONFIRMED: fields.json 两方向均无映射]"
+      ],
+      "SYS_COMM_005": [
+        "CS_30100 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_31299 [UNCONFIRMED: fields.json 两方向均无映射]"
+      ],
+      "SYS_GM_001": [
+        "CS_10926 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_10927 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_10928 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_10929 [UNCONFIRMED: fields.json 两方向均无映射]",
+        "CS_11999 [UNCONFIRMED: fields.json 两方向均无映射]"
+      ]
+    }
+  },
+  "ui_inventory": {
+    "A_verified": [
+      {
+        "ui_name": "answer panel",
+        "module": "answer",
+        "system_id": "SYS_ACT_007",
+        "system_name": "Answer Quiz 答题"
+      },
+      {
+        "ui_name": "automate panel",
+        "module": "automate",
+        "system_id": "SYS_BATTLE_002",
+        "system_name": "Auto-battle/AFK 挂机"
+      },
+      {
+        "ui_name": "backpack ctrl",
+        "module": "backpack",
+        "system_id": "SYS_ECON_002",
+        "system_name": "Inventory/Bag 背包"
+      },
+      {
+        "ui_name": "battle ctrl",
+        "module": "battle",
+        "system_id": "SYS_BATTLE_001",
+        "system_name": "Turn-based Battle 回合制战斗"
+      },
+      {
+        "ui_name": "daily panel",
+        "module": "daily",
+        "system_id": "SYS_QUEST_002",
+        "system_name": "Daily/Active 日常活跃"
+      },
+      {
+        "ui_name": "equipforge panel",
+        "module": "equipforge",
+        "system_id": "SYS_EQUIP_002",
+        "system_name": "Smith/Forge 锻造"
+      },
+      {
+        "ui_name": "friend panel",
+        "module": "friend",
+        "system_id": "SYS_SOCIAL_002",
+        "system_name": "Friend 好友"
+      },
+      {
+        "ui_name": "guild base panel",
+        "module": "guild",
+        "system_id": "SYS_SOCIAL_004",
+        "system_name": "Guild 公会"
+      },
+      {
+        "ui_name": "hero ctrl",
+        "module": "hero",
+        "system_id": "SYS_FRIEND_001",
+        "system_name": "Partner/Hero 伙伴"
+      },
+      {
+        "ui_name": "login panel",
+        "module": "login",
+        "system_id": "SYS_CORE_001",
+        "system_name": "Account Login 登录"
+      },
+      {
+        "ui_name": "map view",
+        "module": "map",
+        "system_id": "SYS_MAP_001",
+        "system_name": "World Map 世界地图"
+      },
+      {
+        "ui_name": "mission panel",
+        "module": "mission",
+        "system_id": "SYS_QUEST_001",
+        "system_name": "Mission 任务"
+      },
+      {
+        "ui_name": "role ctrl",
+        "module": "role",
+        "system_id": "SYS_ROLE_001",
+        "system_name": "Role Attribute 角色属性"
+      },
+      {
+        "ui_name": "scratcher ctrl",
+        "module": "scratcher",
+        "system_id": "SYS_ACT_005",
+        "system_name": "Scratch Card 刮刮乐"
+      },
+      {
+        "ui_name": "set panel",
+        "module": "set",
+        "system_id": "SYS_CORE_009",
+        "system_name": "Settings 设置"
+      },
+      {
+        "ui_name": "shop ctrl",
+        "module": "shop",
+        "system_id": "SYS_ECON_003",
+        "system_name": "Mall/Shop 商城"
+      },
+      {
+        "ui_name": "skill panel",
+        "module": "skill",
+        "system_id": "SYS_GROWTH_001",
+        "system_name": "Skill 技能"
+      },
+      {
+        "ui_name": "vip ctrl",
+        "module": "vip",
+        "system_id": "SYS_ROLE_004",
+        "system_name": "VIP 系统"
+      }
+    ],
+    "B_unverified": [
+      {
+        "ui_name": "achieve panel",
+        "module": "achieve",
+        "system_id": "SYS_QUEST_003",
+        "system_name": "Achievement 成就",
+        "client_entry_luac": "assets/src/game/achieve/achieve_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action panel",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action attention view",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_attention_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action base view",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_base_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action breakeggs panel",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_breakeggs_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action buy view",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_buy_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action card view",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_card_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action cash view",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_cash_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action desc view",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_desc_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action discount panel",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_discount_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action double view",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_double_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action doublemoney panel",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_doublemoney_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action dragontreasure panel",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_dragontreasure_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action exchange view",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_exchange_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action exshop view",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_exshop_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action get reward panel",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_get_reward_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action gift back panel",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_gift_back_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action goldentower panel",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_goldentower_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action halloween panel",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_halloween_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action hero view",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_hero_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action jubaodz view",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_jubaodz_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "luckbox left view",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/luckbox_left_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action letter panel",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_letter_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action login view",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_login_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action love rank view",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_love_rank_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action luckday view",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_luckday_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action money buy view",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_money_buy_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action new show panel",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_new_show_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action paper panel",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_paper_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "sky present panel",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/sky_present_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action rank panel",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_rank_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action recharge view",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_recharge_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action refresh zhuan panel",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_refresh_zhuan_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action reputation view",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_reputation_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action reward view",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_reward_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action ride luck view",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_ride_luck_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action secret panel",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_secret_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action self select panel",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_self_select_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action shengdian panel",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_shengdian_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action shouji panel",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_shouji_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action super vip panel",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_super_vip_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action treasure buy panel",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_treasure_buy_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action turntable panel",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_turntable_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action wall panel",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_wall_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "action zhuan panel",
+        "module": "action",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity 节日/运营活动",
+        "client_entry_luac": "assets/src/game/action/action_zhuan_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "actionanswer panel",
+        "module": "actionanswer",
+        "system_id": "SYS_ACT_007",
+        "system_name": "Answer Quiz 答题(活动版)",
+        "client_entry_luac": "assets/src/game/actionanswer/actionanswer_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "activity ctrl",
+        "module": "activity",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity",
+        "client_entry_luac": "assets/src/game/activity/activity_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "advance new panel",
+        "module": "advance",
+        "system_id": "SYS_GROWTH_005",
+        "system_name": "Morale/Advance",
+        "client_entry_luac": "assets/src/game/advance/advance_new_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "alchemy panel",
+        "module": "alchemy",
+        "system_id": "SYS_EQUIP_002",
+        "system_name": "Smith/Forge 锻造/合成",
+        "client_entry_luac": "assets/src/game/alchemy/alchemy_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "animaequip ctrl",
+        "module": "animaequip",
+        "system_id": "SYS_APPEAR_009",
+        "system_name": "Fashion/Skin 时装(动画装备)",
+        "client_entry_luac": "assets/src/game/animaequip/animaequip_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "answer guess panel",
+        "module": "answer",
+        "system_id": "SYS_ACT_007",
+        "system_name": "Answer Quiz 答题",
+        "client_entry_luac": "assets/src/game/answer/answer_guess_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "arena panel",
+        "module": "arena",
+        "system_id": "SYS_COMM_002",
+        "system_name": "Arena 竞技场",
+        "client_entry_luac": "assets/src/game/arena/arena_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "artifact info panel",
+        "module": "artifact",
+        "system_id": "SYS_APPEAR_005",
+        "system_name": "Divine Artifact 神器",
+        "client_entry_luac": "assets/src/game/artifact/artifact_info_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "artifact main ui",
+        "module": "artifact",
+        "system_id": "SYS_APPEAR_005",
+        "system_name": "Divine Artifact 神器",
+        "client_entry_luac": "assets/src/game/artifact/artifact_main_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "artifact state panel",
+        "module": "artifact",
+        "system_id": "SYS_APPEAR_005",
+        "system_name": "Divine Artifact 神器",
+        "client_entry_luac": "assets/src/game/artifact/artifact_state_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "auction bid panel",
+        "module": "auction",
+        "system_id": "SYS_ECON_008",
+        "system_name": "Auction/拍卖",
+        "client_entry_luac": "assets/src/game/auction/auction_bid_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "auction main ui",
+        "module": "auction",
+        "system_id": "SYS_ECON_008",
+        "system_name": "Auction/拍卖",
+        "client_entry_luac": "assets/src/game/auction/auction_main_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "auction record panel",
+        "module": "auction",
+        "system_id": "SYS_ECON_008",
+        "system_name": "Auction/拍卖",
+        "client_entry_luac": "assets/src/game/auction/auction_record_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "base view",
+        "module": "base",
+        "system_id": "SYS_CORE_009",
+        "system_name": "Base View 基础视图",
+        "client_entry_luac": "assets/src/game/base/base_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "battlevideo main panel",
+        "module": "battlevideo",
+        "system_id": "SYS_BATTLE_003",
+        "system_name": "Battle Replay 战报",
+        "client_entry_luac": "assets/src/game/battlevideo/battlevideo_main_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "beast eat panel",
+        "module": "beast",
+        "system_id": "SYS_APPEAR_003",
+        "system_name": "Beast 灵兽",
+        "client_entry_luac": "assets/src/game/beast/beast_eat_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "beast info panel",
+        "module": "beast",
+        "system_id": "SYS_APPEAR_003",
+        "system_name": "Beast 灵兽",
+        "client_entry_luac": "assets/src/game/beast/beast_info_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "beast migration panel",
+        "module": "beast",
+        "system_id": "SYS_APPEAR_003",
+        "system_name": "Beast 灵兽",
+        "client_entry_luac": "assets/src/game/beast/beast_migration_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "beast state panel",
+        "module": "beast",
+        "system_id": "SYS_APPEAR_003",
+        "system_name": "Beast 灵兽",
+        "client_entry_luac": "assets/src/game/beast/beast_state_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "blackmarketeer main panel",
+        "module": "blackmarketeer",
+        "system_id": "SYS_ECON_006",
+        "system_name": "Black Market 黑市",
+        "client_entry_luac": "assets/src/game/blackmarketeer/blackmarketeer_main_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "boss ctrl",
+        "module": "boss",
+        "system_id": "SYS_BATTLE_005",
+        "system_name": "Boss System BOSS",
+        "client_entry_luac": "assets/src/game/boss/boss_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "build ctrl",
+        "module": "build",
+        "system_id": "SYS_APPEAR_008",
+        "system_name": "Chair/座驾(cook/cut/forge/mojo UI)",
+        "client_entry_luac": "assets/src/game/build/build_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "cash exchange panel",
+        "module": "cash",
+        "system_id": "SYS_ECON_003",
+        "system_name": "Mall/Shop 现金商城",
+        "client_entry_luac": "assets/src/game/cash/cash_exchange_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "cash record panel",
+        "module": "cash",
+        "system_id": "SYS_ECON_003",
+        "system_name": "Mall/Shop 现金商城",
+        "client_entry_luac": "assets/src/game/cash/cash_record_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "cash shop panel",
+        "module": "cash",
+        "system_id": "SYS_ECON_003",
+        "system_name": "Mall/Shop 现金商城",
+        "client_entry_luac": "assets/src/game/cash/cash_shop_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "chair ctrl",
+        "module": "chair",
+        "system_id": "SYS_APPEAR_008",
+        "system_name": "Vehicle/Chair 座驾",
+        "client_entry_luac": "assets/src/game/chair/chair_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "chat panel",
+        "module": "chat",
+        "system_id": "SYS_SOCIAL_001",
+        "system_name": "Chat 聊天",
+        "client_entry_luac": "assets/src/game/chat/chat_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "chat private panel",
+        "module": "chat",
+        "system_id": "SYS_SOCIAL_001",
+        "system_name": "Chat 聊天",
+        "client_entry_luac": "assets/src/game/chat/chat_private_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "chief result panel",
+        "module": "chief",
+        "system_id": "SYS_HIDDEN_003",
+        "system_name": "Chief 会长/百官",
+        "client_entry_luac": "assets/src/game/chief/chief_result_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "chongzhi panel",
+        "module": "chongzhi",
+        "system_id": "SYS_ECON_010",
+        "system_name": "Recharge/充值",
+        "client_entry_luac": "assets/src/game/chongzhi/chongzhi_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "circle ctrl",
+        "module": "circle",
+        "system_id": "SYS_SOCIAL_003",
+        "system_name": "Moments/朋友圈",
+        "client_entry_luac": "assets/src/game/circle/circle_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "circle decorate panel",
+        "module": "circle",
+        "system_id": "SYS_SOCIAL_003",
+        "system_name": "Moments/朋友圈",
+        "client_entry_luac": "assets/src/game/circle/circle_decorate_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "circle detail ui",
+        "module": "circle",
+        "system_id": "SYS_SOCIAL_003",
+        "system_name": "Moments/朋友圈",
+        "client_entry_luac": "assets/src/game/circle/circle_detail_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "circle dyna ui",
+        "module": "circle",
+        "system_id": "SYS_SOCIAL_003",
+        "system_name": "Moments/朋友圈",
+        "client_entry_luac": "assets/src/game/circle/circle_dyna_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "circle gift panel",
+        "module": "circle",
+        "system_id": "SYS_SOCIAL_003",
+        "system_name": "Moments/朋友圈",
+        "client_entry_luac": "assets/src/game/circle/circle_gift_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "circle hot ui",
+        "module": "circle",
+        "system_id": "SYS_SOCIAL_003",
+        "system_name": "Moments/朋友圈",
+        "client_entry_luac": "assets/src/game/circle/circle_hot_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "circle info ui",
+        "module": "circle",
+        "system_id": "SYS_SOCIAL_003",
+        "system_name": "Moments/朋友圈",
+        "client_entry_luac": "assets/src/game/circle/circle_info_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "circle list flower ui",
+        "module": "circle",
+        "system_id": "SYS_SOCIAL_003",
+        "system_name": "Moments/朋友圈",
+        "client_entry_luac": "assets/src/game/circle/circle_list_flower_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "circle main panel",
+        "module": "circle",
+        "system_id": "SYS_SOCIAL_003",
+        "system_name": "Moments/朋友圈",
+        "client_entry_luac": "assets/src/game/circle/circle_main_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "circle msg ui",
+        "module": "circle",
+        "system_id": "SYS_SOCIAL_003",
+        "system_name": "Moments/朋友圈",
+        "client_entry_luac": "assets/src/game/circle/circle_msg_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "circle say panel",
+        "module": "circle",
+        "system_id": "SYS_SOCIAL_003",
+        "system_name": "Moments/朋友圈",
+        "client_entry_luac": "assets/src/game/circle/circle_say_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "circle send panel",
+        "module": "circle",
+        "system_id": "SYS_SOCIAL_003",
+        "system_name": "Moments/朋友圈",
+        "client_entry_luac": "assets/src/game/circle/circle_send_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "circle zone panel",
+        "module": "circle",
+        "system_id": "SYS_SOCIAL_003",
+        "system_name": "Moments/朋友圈",
+        "client_entry_luac": "assets/src/game/circle/circle_zone_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "shortcut equip panel",
+        "module": "common",
+        "system_id": "SYS_CORE_009",
+        "system_name": "Common UI 通用组件",
+        "client_entry_luac": "assets/src/game/common/shortcut_equip_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "config arena data",
+        "module": "config",
+        "system_id": "SYS_BACK_001",
+        "system_name": "Config Tables 配置表",
+        "client_entry_luac": "assets/src/game/config/config_arena_data.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "contact ctrl",
+        "module": "contact",
+        "system_id": "SYS_SOCIAL_002",
+        "system_name": "Friend 联系人",
+        "client_entry_luac": "assets/src/game/contact/contact_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "convoy guess panel",
+        "module": "convoy",
+        "system_id": "SYS_COMM_009",
+        "system_name": "Freight/Escort 押镖",
+        "client_entry_luac": "assets/src/game/convoy/convoy_guess_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "convoy panel",
+        "module": "convoy",
+        "system_id": "SYS_COMM_009",
+        "system_name": "Freight/Escort 押镖",
+        "client_entry_luac": "assets/src/game/convoy/convoy_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "cross dungeon box menber view",
+        "module": "crossdungeon",
+        "system_id": "SYS_DUNGEON_005",
+        "system_name": "Cross-server Dungeon 跨服副本",
+        "client_entry_luac": "assets/src/game/crossdungeon/cross_dungeon_box_menber_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "cross panel",
+        "module": "crossserver",
+        "system_id": "SYS_COMM_005",
+        "system_name": "Cross-server 跨服",
+        "client_entry_luac": "assets/src/game/crossserver/cross_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "prog panel",
+        "module": "crossserver",
+        "system_id": "SYS_COMM_005",
+        "system_name": "Cross-server 跨服",
+        "client_entry_luac": "assets/src/game/crossserver/prog_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "daily calendar panel",
+        "module": "daily",
+        "system_id": "SYS_QUEST_002",
+        "system_name": "Daily/Active 日常活跃",
+        "client_entry_luac": "assets/src/game/daily/daily_calendar_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "dailysign panel",
+        "module": "dailysign",
+        "system_id": "SYS_ACT_001",
+        "system_name": "Sign-in 签到",
+        "client_entry_luac": "assets/src/game/dailysign/dailysign_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "seven day view",
+        "module": "dailysign",
+        "system_id": "SYS_ACT_001",
+        "system_name": "Sign-in 签到",
+        "client_entry_luac": "assets/src/game/dailysign/seven_day_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "day login panel",
+        "module": "dailysign",
+        "system_id": "SYS_ACT_001",
+        "system_name": "Sign-in 签到",
+        "client_entry_luac": "assets/src/game/dailysign/day_login_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "daily reward view",
+        "module": "dailysign",
+        "system_id": "SYS_ACT_001",
+        "system_name": "Sign-in 签到",
+        "client_entry_luac": "assets/src/game/dailysign/daily_reward_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "demontower ctrl",
+        "module": "demontower",
+        "system_id": "SYS_DUNGEON_003",
+        "system_name": "Tower 镇魂塔",
+        "client_entry_luac": "assets/src/game/demontower/demontower_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "mount result panel",
+        "module": "diguowar",
+        "system_id": "SYS_BATTLE_004",
+        "system_name": "God War 帝国战",
+        "client_entry_luac": "assets/src/game/diguowar/mount_result_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "drop ctrl",
+        "module": "drop",
+        "system_id": "SYS_ECON_012",
+        "system_name": "Drop/Loot 掉落",
+        "client_entry_luac": "assets/src/game/drop/drop_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "failure panel",
+        "module": "dungeon",
+        "system_id": "SYS_DUNGEON_001",
+        "system_name": "Dungeon 副本",
+        "client_entry_luac": "assets/src/game/dungeon/failure_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "fire acc ui",
+        "module": "dungeon",
+        "system_id": "SYS_DUNGEON_001",
+        "system_name": "Dungeon 副本",
+        "client_entry_luac": "assets/src/game/dungeon/fire_acc_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "fb alert ui",
+        "module": "dungeon",
+        "system_id": "SYS_DUNGEON_001",
+        "system_name": "Dungeon 副本",
+        "client_entry_luac": "assets/src/game/dungeon/fb_alert_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "fb boss ui",
+        "module": "dungeon",
+        "system_id": "SYS_DUNGEON_001",
+        "system_name": "Dungeon 副本",
+        "client_entry_luac": "assets/src/game/dungeon/fb_boss_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "fire buff ui",
+        "module": "dungeon",
+        "system_id": "SYS_DUNGEON_001",
+        "system_name": "Dungeon 副本",
+        "client_entry_luac": "assets/src/game/dungeon/fire_buff_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "vip fb one key panel",
+        "module": "dungeon",
+        "system_id": "SYS_DUNGEON_001",
+        "system_name": "Dungeon 副本",
+        "client_entry_luac": "assets/src/game/dungeon/vip_fb_one_key_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "fire hard ui",
+        "module": "dungeon",
+        "system_id": "SYS_DUNGEON_001",
+        "system_name": "Dungeon 副本",
+        "client_entry_luac": "assets/src/game/dungeon/fire_hard_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "fb info ui",
+        "module": "dungeon",
+        "system_id": "SYS_DUNGEON_001",
+        "system_name": "Dungeon 副本",
+        "client_entry_luac": "assets/src/game/dungeon/fb_info_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "fire main ui",
+        "module": "dungeon",
+        "system_id": "SYS_DUNGEON_001",
+        "system_name": "Dungeon 副本",
+        "client_entry_luac": "assets/src/game/dungeon/fire_main_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "fb pick ui",
+        "module": "dungeon",
+        "system_id": "SYS_DUNGEON_001",
+        "system_name": "Dungeon 副本",
+        "client_entry_luac": "assets/src/game/dungeon/fb_pick_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "door question panel",
+        "module": "dungeon",
+        "system_id": "SYS_DUNGEON_001",
+        "system_name": "Dungeon 副本",
+        "client_entry_luac": "assets/src/game/dungeon/door_question_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "door side ui",
+        "module": "dungeon",
+        "system_id": "SYS_DUNGEON_001",
+        "system_name": "Dungeon 副本",
+        "client_entry_luac": "assets/src/game/dungeon/door_side_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "fb team ui",
+        "module": "dungeon",
+        "system_id": "SYS_DUNGEON_001",
+        "system_name": "Dungeon 副本",
+        "client_entry_luac": "assets/src/game/dungeon/fb_team_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "fb ying ui",
+        "module": "dungeon",
+        "system_id": "SYS_DUNGEON_001",
+        "system_name": "Dungeon 副本",
+        "client_entry_luac": "assets/src/game/dungeon/fb_ying_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "endless form help panel",
+        "module": "endless",
+        "system_id": "SYS_DUNGEON_002",
+        "system_name": "Endless Dungeon 无尽",
+        "client_entry_luac": "assets/src/game/endless/endless_form_help_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "endless form panel",
+        "module": "endless",
+        "system_id": "SYS_DUNGEON_002",
+        "system_name": "Endless Dungeon 无尽",
+        "client_entry_luac": "assets/src/game/endless/endless_form_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "endless hire panel",
+        "module": "endless",
+        "system_id": "SYS_DUNGEON_002",
+        "system_name": "Endless Dungeon 无尽",
+        "client_entry_luac": "assets/src/game/endless/endless_hire_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "endless main panel",
+        "module": "endless",
+        "system_id": "SYS_DUNGEON_002",
+        "system_name": "Endless Dungeon 无尽",
+        "client_entry_luac": "assets/src/game/endless/endless_main_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "endless preview panel",
+        "module": "endless",
+        "system_id": "SYS_DUNGEON_002",
+        "system_name": "Endless Dungeon 无尽",
+        "client_entry_luac": "assets/src/game/endless/endless_preview_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "endless send panel",
+        "module": "endless",
+        "system_id": "SYS_DUNGEON_002",
+        "system_name": "Endless Dungeon 无尽",
+        "client_entry_luac": "assets/src/game/endless/endless_send_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "equip ctrl",
+        "module": "equip",
+        "system_id": "SYS_EQUIP_001",
+        "system_name": "Equipment 装备",
+        "client_entry_luac": "assets/src/game/equip/equip_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "fengce ctrl",
+        "module": "fengce",
+        "system_id": "SYS_UNKNOWN_002",
+        "system_name": "封测/活动运营",
+        "client_entry_luac": "assets/src/game/fengce/fengce_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "flyup gift panel",
+        "module": "flyup",
+        "system_id": "SYS_ACT_006",
+        "system_name": "FlyUp 飞升成神活动",
+        "client_entry_luac": "assets/src/game/flyup/flyup_gift_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "flyup main panel",
+        "module": "flyup",
+        "system_id": "SYS_ACT_006",
+        "system_name": "FlyUp 飞升成神活动",
+        "client_entry_luac": "assets/src/game/flyup/flyup_main_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "footmark ctrl",
+        "module": "footmark",
+        "system_id": "SYS_APPEAR_001",
+        "system_name": "Wing/Footmark 足迹",
+        "client_entry_luac": "assets/src/game/footmark/footmark_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "form defence panel",
+        "module": "form",
+        "system_id": "SYS_FRIEND_002",
+        "system_name": "Formation 阵法",
+        "client_entry_luac": "assets/src/game/form/form_defence_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "form help panel",
+        "module": "form",
+        "system_id": "SYS_FRIEND_002",
+        "system_name": "Formation 阵法",
+        "client_entry_luac": "assets/src/game/form/form_help_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "form panel",
+        "module": "form",
+        "system_id": "SYS_FRIEND_002",
+        "system_name": "Formation 阵法",
+        "client_entry_luac": "assets/src/game/form/form_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "friend black list ui",
+        "module": "friend",
+        "system_id": "SYS_SOCIAL_002",
+        "system_name": "Friend 好友",
+        "client_entry_luac": "assets/src/game/friend/friend_black_list_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "friend contact ui",
+        "module": "friend",
+        "system_id": "SYS_SOCIAL_002",
+        "system_name": "Friend 好友",
+        "client_entry_luac": "assets/src/game/friend/friend_contact_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "friend list ui",
+        "module": "friend",
+        "system_id": "SYS_SOCIAL_002",
+        "system_name": "Friend 好友",
+        "client_entry_luac": "assets/src/game/friend/friend_list_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "friend say panel",
+        "module": "friend",
+        "system_id": "SYS_SOCIAL_002",
+        "system_name": "Friend 好友",
+        "client_entry_luac": "assets/src/game/friend/friend_say_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "fb bind panel",
+        "module": "friendback",
+        "system_id": "SYS_ACT_012",
+        "system_name": "Return/Back Flow 回归",
+        "client_entry_luac": "assets/src/game/friendback/fb_bind_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "fb main panel",
+        "module": "friendback",
+        "system_id": "SYS_ACT_012",
+        "system_name": "Return/Back Flow 回归",
+        "client_entry_luac": "assets/src/game/friendback/fb_main_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "fb tips panel",
+        "module": "friendback",
+        "system_id": "SYS_ACT_012",
+        "system_name": "Return/Back Flow 回归",
+        "client_entry_luac": "assets/src/game/friendback/fb_tips_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "gangwars list panel",
+        "module": "gangwars",
+        "system_id": "SYS_SOCIAL_009",
+        "system_name": "Guild Wars 公会战",
+        "client_entry_luac": "assets/src/game/gangwars/gangwars_list_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "gangwars panel",
+        "module": "gangwars",
+        "system_id": "SYS_SOCIAL_009",
+        "system_name": "Guild Wars 公会战",
+        "client_entry_luac": "assets/src/game/gangwars/gangwars_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "ghost ctrl",
+        "module": "ghost",
+        "system_id": "SYS_HIDDEN_002",
+        "system_name": "XiuLuo/Ghost 修罗",
+        "client_entry_luac": "assets/src/game/ghost/ghost_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "gm report ctrl",
+        "module": "gm_report",
+        "system_id": "SYS_GM_001",
+        "system_name": "GM Tools",
+        "client_entry_luac": "assets/src/game/gm_report/gm_report_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "godredeem panel",
+        "module": "godredeem",
+        "system_id": "SYS_HIDDEN_005",
+        "system_name": "God Redemption 神位",
+        "client_entry_luac": "assets/src/game/godredeem/godredeem_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "godwar panel",
+        "module": "godwar",
+        "system_id": "SYS_BATTLE_004",
+        "system_name": "God War Battle 神魔战",
+        "client_entry_luac": "assets/src/game/godwar/godwar_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "godwar battle result panel",
+        "module": "godwar",
+        "system_id": "SYS_BATTLE_004",
+        "system_name": "God War Battle 神魔战",
+        "client_entry_luac": "assets/src/game/godwar/godwar_battle_result_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "godwar hall ui",
+        "module": "godwar",
+        "system_id": "SYS_BATTLE_004",
+        "system_name": "God War Battle 神魔战",
+        "client_entry_luac": "assets/src/game/godwar/godwar_hall_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "godwar msg view",
+        "module": "godwar",
+        "system_id": "SYS_BATTLE_004",
+        "system_name": "God War Battle 神魔战",
+        "client_entry_luac": "assets/src/game/godwar/godwar_msg_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "godwar plan view",
+        "module": "godwar",
+        "system_id": "SYS_BATTLE_004",
+        "system_name": "God War Battle 神魔战",
+        "client_entry_luac": "assets/src/game/godwar/godwar_plan_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "godwar reward panel",
+        "module": "godwar",
+        "system_id": "SYS_BATTLE_004",
+        "system_name": "God War Battle 神魔战",
+        "client_entry_luac": "assets/src/game/godwar/godwar_reward_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "godwar rule view",
+        "module": "godwar",
+        "system_id": "SYS_BATTLE_004",
+        "system_name": "God War Battle 神魔战",
+        "client_entry_luac": "assets/src/game/godwar/godwar_rule_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "godwar side ui",
+        "module": "godwar",
+        "system_id": "SYS_BATTLE_004",
+        "system_name": "God War Battle 神魔战",
+        "client_entry_luac": "assets/src/game/godwar/godwar_side_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "godwar team check panel",
+        "module": "godwar",
+        "system_id": "SYS_BATTLE_004",
+        "system_name": "God War Battle 神魔战",
+        "client_entry_luac": "assets/src/game/godwar/godwar_team_check_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "gradebreak rank panel",
+        "module": "gradebreak",
+        "system_id": "SYS_ROLE_005",
+        "system_name": "Grade Break 等级突破",
+        "client_entry_luac": "assets/src/game/gradebreak/gradebreak_rank_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "gradebreak reward panel",
+        "module": "gradebreak",
+        "system_id": "SYS_ROLE_005",
+        "system_name": "Grade Break 等级突破",
+        "client_entry_luac": "assets/src/game/gradebreak/gradebreak_reward_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "gradebreak seal panel",
+        "module": "gradebreak",
+        "system_id": "SYS_ROLE_005",
+        "system_name": "Grade Break 等级突破",
+        "client_entry_luac": "assets/src/game/gradebreak/gradebreak_seal_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guider ctrl",
+        "module": "guider",
+        "system_id": "SYS_QUEST_005",
+        "system_name": "Guide System 新手引导",
+        "client_entry_luac": "assets/src/game/guider/guider_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "target panel",
+        "module": "guild",
+        "system_id": "SYS_SOCIAL_004",
+        "system_name": "Guild 公会",
+        "client_entry_luac": "assets/src/game/guild/target_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guild action view",
+        "module": "guild",
+        "system_id": "SYS_SOCIAL_004",
+        "system_name": "Guild 公会",
+        "client_entry_luac": "assets/src/game/guild/guild_action_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guild aim panel",
+        "module": "guild",
+        "system_id": "SYS_SOCIAL_004",
+        "system_name": "Guild 公会",
+        "client_entry_luac": "assets/src/game/guild/guild_aim_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guild allocate panel",
+        "module": "guild",
+        "system_id": "SYS_SOCIAL_004",
+        "system_name": "Guild 公会",
+        "client_entry_luac": "assets/src/game/guild/guild_allocate_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guild apply view",
+        "module": "guild",
+        "system_id": "SYS_SOCIAL_004",
+        "system_name": "Guild 公会",
+        "client_entry_luac": "assets/src/game/guild/guild_apply_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guild build panel",
+        "module": "guild",
+        "system_id": "SYS_SOCIAL_004",
+        "system_name": "Guild 公会",
+        "client_entry_luac": "assets/src/game/guild/guild_build_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guild create panel",
+        "module": "guild",
+        "system_id": "SYS_SOCIAL_004",
+        "system_name": "Guild 公会",
+        "client_entry_luac": "assets/src/game/guild/guild_create_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guild flower panel",
+        "module": "guild",
+        "system_id": "SYS_SOCIAL_004",
+        "system_name": "Guild 公会",
+        "client_entry_luac": "assets/src/game/guild/guild_flower_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guild fortune panel",
+        "module": "guild",
+        "system_id": "SYS_SOCIAL_004",
+        "system_name": "Guild 公会",
+        "client_entry_luac": "assets/src/game/guild/guild_fortune_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "lgf gang panel",
+        "module": "guild",
+        "system_id": "SYS_SOCIAL_004",
+        "system_name": "Guild 公会",
+        "client_entry_luac": "assets/src/game/guild/lgf_gang_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guild info view",
+        "module": "guild",
+        "system_id": "SYS_SOCIAL_004",
+        "system_name": "Guild 公会",
+        "client_entry_luac": "assets/src/game/guild/guild_info_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guild lists panel",
+        "module": "guild",
+        "system_id": "SYS_SOCIAL_004",
+        "system_name": "Guild 公会",
+        "client_entry_luac": "assets/src/game/guild/guild_lists_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guild mgr panel",
+        "module": "guild",
+        "system_id": "SYS_SOCIAL_004",
+        "system_name": "Guild 公会",
+        "client_entry_luac": "assets/src/game/guild/guild_mgr_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guild mis panel",
+        "module": "guild",
+        "system_id": "SYS_SOCIAL_004",
+        "system_name": "Guild 公会",
+        "client_entry_luac": "assets/src/game/guild/guild_mis_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guild mission panel",
+        "module": "guild",
+        "system_id": "SYS_SOCIAL_004",
+        "system_name": "Guild 公会",
+        "client_entry_luac": "assets/src/game/guild/guild_mission_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guild notice panel",
+        "module": "guild",
+        "system_id": "SYS_SOCIAL_004",
+        "system_name": "Guild 公会",
+        "client_entry_luac": "assets/src/game/guild/guild_notice_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "lgf own panel",
+        "module": "guild",
+        "system_id": "SYS_SOCIAL_004",
+        "system_name": "Guild 公会",
+        "client_entry_luac": "assets/src/game/guild/lgf_own_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "water record panel",
+        "module": "guild",
+        "system_id": "SYS_SOCIAL_004",
+        "system_name": "Guild 公会",
+        "client_entry_luac": "assets/src/game/guild/water_record_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guild sign panel",
+        "module": "guild",
+        "system_id": "SYS_SOCIAL_004",
+        "system_name": "Guild 公会",
+        "client_entry_luac": "assets/src/game/guild/guild_sign_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guild skill limit panel",
+        "module": "guild",
+        "system_id": "SYS_SOCIAL_004",
+        "system_name": "Guild 公会",
+        "client_entry_luac": "assets/src/game/guild/guild_skill_limit_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guild trainee panel",
+        "module": "guild",
+        "system_id": "SYS_SOCIAL_004",
+        "system_name": "Guild 公会",
+        "client_entry_luac": "assets/src/game/guild/guild_trainee_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guild union panel",
+        "module": "guild",
+        "system_id": "SYS_SOCIAL_004",
+        "system_name": "Guild 公会",
+        "client_entry_luac": "assets/src/game/guild/guild_union_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guild welcome view",
+        "module": "guild",
+        "system_id": "SYS_SOCIAL_004",
+        "system_name": "Guild 公会",
+        "client_entry_luac": "assets/src/game/guild/guild_welcome_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guild welfare view",
+        "module": "guild",
+        "system_id": "SYS_SOCIAL_004",
+        "system_name": "Guild 公会",
+        "client_entry_luac": "assets/src/game/guild/guild_welfare_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guild race super panel",
+        "module": "guildrace",
+        "system_id": "SYS_COMM_004",
+        "system_name": "Race/Guild Race 竞速",
+        "client_entry_luac": "assets/src/game/guildrace/guild_race_super_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guild secret area roll panel",
+        "module": "guildsecretarea",
+        "system_id": "SYS_SOCIAL_010",
+        "system_name": "Guild Secret Area 公会秘境",
+        "client_entry_luac": "assets/src/game/guildsecretarea/guild_secret_area_roll_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guild target main panel",
+        "module": "guildtarget",
+        "system_id": "SYS_SOCIAL_010",
+        "system_name": "Guild Target 公会目标",
+        "client_entry_luac": "assets/src/game/guildtarget/guild_target_main_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guild target mon panel",
+        "module": "guildtarget",
+        "system_id": "SYS_SOCIAL_010",
+        "system_name": "Guild Target 公会目标",
+        "client_entry_luac": "assets/src/game/guildtarget/guild_target_mon_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guildwars panel",
+        "module": "guildwars",
+        "system_id": "SYS_SOCIAL_009",
+        "system_name": "Guild Wars 公会战",
+        "client_entry_luac": "assets/src/game/guildwars/guildwars_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guildwars result panel",
+        "module": "guildwars",
+        "system_id": "SYS_SOCIAL_009",
+        "system_name": "Guild Wars 公会战",
+        "client_entry_luac": "assets/src/game/guildwars/guildwars_result_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "halo ctrl",
+        "module": "halo",
+        "system_id": "SYS_APPEAR_010",
+        "system_name": "Halo 光环",
+        "client_entry_luac": "assets/src/game/halo/halo_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "head ctrl",
+        "module": "head",
+        "system_id": "SYS_ROLE_006",
+        "system_name": "Avatar/Head 头像",
+        "client_entry_luac": "assets/src/game/head/head_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "partner aptitude ui",
+        "module": "hero",
+        "system_id": "SYS_FRIEND_001",
+        "system_name": "Partner/Hero 伙伴",
+        "client_entry_luac": "assets/src/game/hero/partner_aptitude_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "hero artifact panel",
+        "module": "hero",
+        "system_id": "SYS_FRIEND_001",
+        "system_name": "Partner/Hero 伙伴",
+        "client_entry_luac": "assets/src/game/hero/hero_artifact_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "partner atlas aptitude ui",
+        "module": "hero",
+        "system_id": "SYS_FRIEND_001",
+        "system_name": "Partner/Hero 伙伴",
+        "client_entry_luac": "assets/src/game/hero/partner_atlas_aptitude_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "partner base panel",
+        "module": "hero",
+        "system_id": "SYS_FRIEND_001",
+        "system_name": "Partner/Hero 伙伴",
+        "client_entry_luac": "assets/src/game/hero/partner_base_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "hero equip panel",
+        "module": "hero",
+        "system_id": "SYS_FRIEND_001",
+        "system_name": "Partner/Hero 伙伴",
+        "client_entry_luac": "assets/src/game/hero/hero_equip_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "tfcard exchange panel",
+        "module": "hero",
+        "system_id": "SYS_FRIEND_001",
+        "system_name": "Partner/Hero 伙伴",
+        "client_entry_luac": "assets/src/game/hero/tfcard_exchange_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "partner fetter eat panel",
+        "module": "hero",
+        "system_id": "SYS_FRIEND_001",
+        "system_name": "Partner/Hero 伙伴",
+        "client_entry_luac": "assets/src/game/hero/partner_fetter_eat_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "partner gain panel",
+        "module": "hero",
+        "system_id": "SYS_FRIEND_001",
+        "system_name": "Partner/Hero 伙伴",
+        "client_entry_luac": "assets/src/game/hero/partner_gain_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "partner grow panel",
+        "module": "hero",
+        "system_id": "SYS_FRIEND_001",
+        "system_name": "Partner/Hero 伙伴",
+        "client_entry_luac": "assets/src/game/hero/partner_grow_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "partner hp view",
+        "module": "hero",
+        "system_id": "SYS_FRIEND_001",
+        "system_name": "Partner/Hero 伙伴",
+        "client_entry_luac": "assets/src/game/hero/partner_hp_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "partner item backpack panel",
+        "module": "hero",
+        "system_id": "SYS_FRIEND_001",
+        "system_name": "Partner/Hero 伙伴",
+        "client_entry_luac": "assets/src/game/hero/partner_item_backpack_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "partner join panel",
+        "module": "hero",
+        "system_id": "SYS_FRIEND_001",
+        "system_name": "Partner/Hero 伙伴",
+        "client_entry_luac": "assets/src/game/hero/partner_join_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "partner juling panel",
+        "module": "hero",
+        "system_id": "SYS_FRIEND_001",
+        "system_name": "Partner/Hero 伙伴",
+        "client_entry_luac": "assets/src/game/hero/partner_juling_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "partner learn skill panel",
+        "module": "hero",
+        "system_id": "SYS_FRIEND_001",
+        "system_name": "Partner/Hero 伙伴",
+        "client_entry_luac": "assets/src/game/hero/partner_learn_skill_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "hero list view",
+        "module": "hero",
+        "system_id": "SYS_FRIEND_001",
+        "system_name": "Partner/Hero 伙伴",
+        "client_entry_luac": "assets/src/game/hero/hero_list_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "partner mission view",
+        "module": "hero",
+        "system_id": "SYS_FRIEND_001",
+        "system_name": "Partner/Hero 伙伴",
+        "client_entry_luac": "assets/src/game/hero/partner_mission_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "partner pack view",
+        "module": "hero",
+        "system_id": "SYS_FRIEND_001",
+        "system_name": "Partner/Hero 伙伴",
+        "client_entry_luac": "assets/src/game/hero/partner_pack_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "hero show panel",
+        "module": "hero",
+        "system_id": "SYS_FRIEND_001",
+        "system_name": "Partner/Hero 伙伴",
+        "client_entry_luac": "assets/src/game/hero/hero_show_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "partner skill pack view",
+        "module": "hero",
+        "system_id": "SYS_FRIEND_001",
+        "system_name": "Partner/Hero 伙伴",
+        "client_entry_luac": "assets/src/game/hero/partner_skill_pack_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "partner train item panel",
+        "module": "hero",
+        "system_id": "SYS_FRIEND_001",
+        "system_name": "Partner/Hero 伙伴",
+        "client_entry_luac": "assets/src/game/hero/partner_train_item_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "partner xisui skill ui",
+        "module": "hero",
+        "system_id": "SYS_FRIEND_001",
+        "system_name": "Partner/Hero 伙伴",
+        "client_entry_luac": "assets/src/game/hero/partner_xisui_skill_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "hide view",
+        "module": "hide",
+        "system_id": "SYS_CORE_008",
+        "system_name": "Red Dot/Hide 红点隐藏",
+        "client_entry_luac": "assets/src/game/hide/hide_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "horse eat panel",
+        "module": "horse",
+        "system_id": "SYS_APPEAR_002",
+        "system_name": "Mount 坐骑",
+        "client_entry_luac": "assets/src/game/horse/horse_eat_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "horse fashion panel",
+        "module": "horse",
+        "system_id": "SYS_APPEAR_002",
+        "system_name": "Mount 坐骑",
+        "client_entry_luac": "assets/src/game/horse/horse_fashion_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "horse info panel",
+        "module": "horse",
+        "system_id": "SYS_APPEAR_002",
+        "system_name": "Mount 坐骑",
+        "client_entry_luac": "assets/src/game/horse/horse_info_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "horse state panel",
+        "module": "horse",
+        "system_id": "SYS_APPEAR_002",
+        "system_name": "Mount 坐骑",
+        "client_entry_luac": "assets/src/game/horse/horse_state_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "invest panel",
+        "module": "invest",
+        "system_id": "SYS_ACT_003",
+        "system_name": "Invest 投资",
+        "client_entry_luac": "assets/src/game/invest/invest_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "invest sec panel",
+        "module": "invest",
+        "system_id": "SYS_ACT_003",
+        "system_name": "Invest 投资",
+        "client_entry_luac": "assets/src/game/invest/invest_sec_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "jewelvip activate panel",
+        "module": "jewelvip",
+        "system_id": "SYS_ROLE_004",
+        "system_name": "VIP/宝石VIP",
+        "client_entry_luac": "assets/src/game/jewelvip/jewelvip_activate_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "jewelvip base panel",
+        "module": "jewelvip",
+        "system_id": "SYS_ROLE_004",
+        "system_name": "VIP/宝石VIP",
+        "client_entry_luac": "assets/src/game/jewelvip/jewelvip_base_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "jewelvip becoming panel",
+        "module": "jewelvip",
+        "system_id": "SYS_ROLE_004",
+        "system_name": "VIP/宝石VIP",
+        "client_entry_luac": "assets/src/game/jewelvip/jewelvip_becoming_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "jewelvip forever panel",
+        "module": "jewelvip",
+        "system_id": "SYS_ROLE_004",
+        "system_name": "VIP/宝石VIP",
+        "client_entry_luac": "assets/src/game/jewelvip/jewelvip_forever_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "jewelvip limitvip panel",
+        "module": "jewelvip",
+        "system_id": "SYS_ROLE_004",
+        "system_name": "VIP/宝石VIP",
+        "client_entry_luac": "assets/src/game/jewelvip/jewelvip_limitvip_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "jewelvip rebate panel",
+        "module": "jewelvip",
+        "system_id": "SYS_ROLE_004",
+        "system_name": "VIP/宝石VIP",
+        "client_entry_luac": "assets/src/game/jewelvip/jewelvip_rebate_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "jewelvip shop panel",
+        "module": "jewelvip",
+        "system_id": "SYS_ROLE_004",
+        "system_name": "VIP/宝石VIP",
+        "client_entry_luac": "assets/src/game/jewelvip/jewelvip_shop_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "jubaopen ctrl",
+        "module": "jubaopen",
+        "system_id": "SYS_ACT_006",
+        "system_name": "聚宝盆活动",
+        "client_entry_luac": "assets/src/game/jubaopen/jubaopen_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "kunshentower ctrl",
+        "module": "kunshentower",
+        "system_id": "SYS_DUNGEON_003",
+        "system_name": "KunShen Tower 坤神塔",
+        "client_entry_luac": "assets/src/game/kunshentower/kunshentower_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "res download mgr",
+        "module": "loadres",
+        "system_id": "SYS_CORE_007",
+        "system_name": "Resource Update 资源更新",
+        "client_entry_luac": "assets/src/game/loadres/res_download_mgr.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "platform panel",
+        "module": "login",
+        "system_id": "SYS_CORE_001",
+        "system_name": "Account Login 登录",
+        "client_entry_luac": "assets/src/game/login/platform_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "server panel",
+        "module": "login",
+        "system_id": "SYS_CORE_001",
+        "system_name": "Account Login 登录",
+        "client_entry_luac": "assets/src/game/login/server_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "user panel",
+        "module": "login",
+        "system_id": "SYS_CORE_001",
+        "system_name": "Account Login 登录",
+        "client_entry_luac": "assets/src/game/login/user_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "mail ctrl",
+        "module": "mail",
+        "system_id": "SYS_ECON_009",
+        "system_name": "Mail 邮件",
+        "client_entry_luac": "assets/src/game/mail/mail_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "durable panel",
+        "module": "main",
+        "system_id": "SYS_CORE_003",
+        "system_name": "Role Main UI 主界面",
+        "client_entry_luac": "assets/src/game/main/durable_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "market buy more panel",
+        "module": "market",
+        "system_id": "SYS_ECON_005",
+        "system_name": "Trade Market 市场",
+        "client_entry_luac": "assets/src/game/market/market_buy_more_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "mine panel",
+        "module": "mine",
+        "system_id": "SYS_COMM_006",
+        "system_name": "Mining 采矿",
+        "client_entry_luac": "assets/src/game/mine/mine_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "mine base panel",
+        "module": "mine",
+        "system_id": "SYS_COMM_006",
+        "system_name": "Mining 采矿",
+        "client_entry_luac": "assets/src/game/mine/mine_base_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "mine common view",
+        "module": "mine",
+        "system_id": "SYS_COMM_006",
+        "system_name": "Mining 采矿",
+        "client_entry_luac": "assets/src/game/mine/mine_common_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "mine fetter panel",
+        "module": "mine",
+        "system_id": "SYS_COMM_006",
+        "system_name": "Mining 采矿",
+        "client_entry_luac": "assets/src/game/mine/mine_fetter_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "mine form main panel",
+        "module": "mine",
+        "system_id": "SYS_COMM_006",
+        "system_name": "Mining 采矿",
+        "client_entry_luac": "assets/src/game/mine/mine_form_main_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "mine guild view",
+        "module": "mine",
+        "system_id": "SYS_COMM_006",
+        "system_name": "Mining 采矿",
+        "client_entry_luac": "assets/src/game/mine/mine_guild_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "mine message panel",
+        "module": "mine",
+        "system_id": "SYS_COMM_006",
+        "system_name": "Mining 采矿",
+        "client_entry_luac": "assets/src/game/mine/mine_message_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "mine partner panel",
+        "module": "mine",
+        "system_id": "SYS_COMM_006",
+        "system_name": "Mining 采矿",
+        "client_entry_luac": "assets/src/game/mine/mine_partner_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "mine result panel",
+        "module": "mine",
+        "system_id": "SYS_COMM_006",
+        "system_name": "Mining 采矿",
+        "client_entry_luac": "assets/src/game/mine/mine_result_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "mine reward panel",
+        "module": "mine",
+        "system_id": "SYS_COMM_006",
+        "system_name": "Mining 采矿",
+        "client_entry_luac": "assets/src/game/mine/mine_reward_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "mine rob panel",
+        "module": "mine",
+        "system_id": "SYS_COMM_006",
+        "system_name": "Mining 采矿",
+        "client_entry_luac": "assets/src/game/mine/mine_rob_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "mine search panel",
+        "module": "mine",
+        "system_id": "SYS_COMM_006",
+        "system_name": "Mining 采矿",
+        "client_entry_luac": "assets/src/game/mine/mine_search_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "mine wild panel",
+        "module": "mine",
+        "system_id": "SYS_COMM_006",
+        "system_name": "Mining 采矿",
+        "client_entry_luac": "assets/src/game/mine/mine_wild_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "mission nycollect panel",
+        "module": "mission",
+        "system_id": "SYS_QUEST_001",
+        "system_name": "Mission 任务",
+        "client_entry_luac": "assets/src/game/mission/mission_nycollect_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "nav ctrl",
+        "module": "nav",
+        "system_id": "SYS_MAP_001",
+        "system_name": "Nav 导航",
+        "client_entry_luac": "assets/src/game/nav/nav_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "guide ctrl",
+        "module": "newguide",
+        "system_id": "SYS_QUEST_005",
+        "system_name": "New Guide 新手指引",
+        "client_entry_luac": "assets/src/game/newguide/guide_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "notice view",
+        "module": "notice",
+        "system_id": "SYS_CORE_008",
+        "system_name": "Notice 公告",
+        "client_entry_luac": "assets/src/game/notice/notice_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "npc ctrl",
+        "module": "npc",
+        "system_id": "SYS_CORE_005",
+        "system_name": "NPC 交互",
+        "client_entry_luac": "assets/src/game/npc/npc_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "peakwar ctrl",
+        "module": "peakwar",
+        "system_id": "SYS_COMM_003",
+        "system_name": "Peakwar 巅峰战",
+        "client_entry_luac": "assets/src/game/peakwar/peakwar_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "pwar award ui",
+        "module": "peakwar",
+        "system_id": "SYS_COMM_003",
+        "system_name": "Peakwar 巅峰战",
+        "client_entry_luac": "assets/src/game/peakwar/pwar_award_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "pwar box panel",
+        "module": "peakwar",
+        "system_id": "SYS_COMM_003",
+        "system_name": "Peakwar 巅峰战",
+        "client_entry_luac": "assets/src/game/peakwar/pwar_box_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "pwar grade ui",
+        "module": "peakwar",
+        "system_id": "SYS_COMM_003",
+        "system_name": "Peakwar 巅峰战",
+        "client_entry_luac": "assets/src/game/peakwar/pwar_grade_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "pwar group ui",
+        "module": "peakwar",
+        "system_id": "SYS_COMM_003",
+        "system_name": "Peakwar 巅峰战",
+        "client_entry_luac": "assets/src/game/peakwar/pwar_group_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "pwar hall ui",
+        "module": "peakwar",
+        "system_id": "SYS_COMM_003",
+        "system_name": "Peakwar 巅峰战",
+        "client_entry_luac": "assets/src/game/peakwar/pwar_hall_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "pwar main ui",
+        "module": "peakwar",
+        "system_id": "SYS_COMM_003",
+        "system_name": "Peakwar 巅峰战",
+        "client_entry_luac": "assets/src/game/peakwar/pwar_main_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "pwar rank panel",
+        "module": "peakwar",
+        "system_id": "SYS_COMM_003",
+        "system_name": "Peakwar 巅峰战",
+        "client_entry_luac": "assets/src/game/peakwar/pwar_rank_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "pwar record info ui",
+        "module": "peakwar",
+        "system_id": "SYS_COMM_003",
+        "system_name": "Peakwar 巅峰战",
+        "client_entry_luac": "assets/src/game/peakwar/pwar_record_info_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "pwar result ui",
+        "module": "peakwar",
+        "system_id": "SYS_COMM_003",
+        "system_name": "Peakwar 巅峰战",
+        "client_entry_luac": "assets/src/game/peakwar/pwar_result_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "pwar side ui",
+        "module": "peakwar",
+        "system_id": "SYS_COMM_003",
+        "system_name": "Peakwar 巅峰战",
+        "client_entry_luac": "assets/src/game/peakwar/pwar_side_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "pwar upgrade ui",
+        "module": "peakwar",
+        "system_id": "SYS_COMM_003",
+        "system_name": "Peakwar 巅峰战",
+        "client_entry_luac": "assets/src/game/peakwar/pwar_upgrade_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "pwar upprogress ui",
+        "module": "peakwar",
+        "system_id": "SYS_COMM_003",
+        "system_name": "Peakwar 巅峰战",
+        "client_entry_luac": "assets/src/game/peakwar/pwar_upprogress_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "pwar wait ui",
+        "module": "peakwar",
+        "system_id": "SYS_COMM_003",
+        "system_name": "Peakwar 巅峰战",
+        "client_entry_luac": "assets/src/game/peakwar/pwar_wait_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "prompt ctrl",
+        "module": "prompt",
+        "system_id": "SYS_CORE_008",
+        "system_name": "Prompt 提示",
+        "client_entry_luac": "assets/src/game/prompt/prompt_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "race ctrl",
+        "module": "race",
+        "system_id": "SYS_COMM_004",
+        "system_name": "Race 竞速",
+        "client_entry_luac": "assets/src/game/race/race_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "linshi rank panel",
+        "module": "rank",
+        "system_id": "SYS_COMM_001",
+        "system_name": "Rank 排行榜",
+        "client_entry_luac": "assets/src/game/rank/linshi_rank_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "recharge first panel",
+        "module": "recharge",
+        "system_id": "SYS_ECON_010",
+        "system_name": "Recharge/Payment 充值",
+        "client_entry_luac": "assets/src/game/recharge/recharge_first_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "recharge weapon panel",
+        "module": "recharge",
+        "system_id": "SYS_ECON_010",
+        "system_name": "Recharge/Payment 充值",
+        "client_entry_luac": "assets/src/game/recharge/recharge_weapon_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "role changename view",
+        "module": "role",
+        "system_id": "SYS_ROLE_001",
+        "system_name": "Role Attribute 角色属性",
+        "client_entry_luac": "assets/src/game/role/role_changename_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "role check panel",
+        "module": "role",
+        "system_id": "SYS_ROLE_001",
+        "system_name": "Role Attribute 角色属性",
+        "client_entry_luac": "assets/src/game/role/role_check_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "role decorate panel",
+        "module": "role",
+        "system_id": "SYS_ROLE_001",
+        "system_name": "Role Attribute 角色属性",
+        "client_entry_luac": "assets/src/game/role/role_decorate_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "role display panel",
+        "module": "role",
+        "system_id": "SYS_ROLE_001",
+        "system_name": "Role Attribute 角色属性",
+        "client_entry_luac": "assets/src/game/role/role_display_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "role fashion view",
+        "module": "role",
+        "system_id": "SYS_ROLE_001",
+        "system_name": "Role Attribute 角色属性",
+        "client_entry_luac": "assets/src/game/role/role_fashion_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "weapon gain panel",
+        "module": "role",
+        "system_id": "SYS_ROLE_001",
+        "system_name": "Role Attribute 角色属性",
+        "client_entry_luac": "assets/src/game/role/weapon_gain_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "fashion grow panel",
+        "module": "role",
+        "system_id": "SYS_ROLE_001",
+        "system_name": "Role Attribute 角色属性",
+        "client_entry_luac": "assets/src/game/role/fashion_grow_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "role hero panel",
+        "module": "role",
+        "system_id": "SYS_ROLE_001",
+        "system_name": "Role Attribute 角色属性",
+        "client_entry_luac": "assets/src/game/role/role_hero_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "role main view",
+        "module": "role",
+        "system_id": "SYS_ROLE_001",
+        "system_name": "Role Attribute 角色属性",
+        "client_entry_luac": "assets/src/game/role/role_main_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "fashion pack view",
+        "module": "role",
+        "system_id": "SYS_ROLE_001",
+        "system_name": "Role Attribute 角色属性",
+        "client_entry_luac": "assets/src/game/role/fashion_pack_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "role show panel",
+        "module": "role",
+        "system_id": "SYS_ROLE_001",
+        "system_name": "Role Attribute 角色属性",
+        "client_entry_luac": "assets/src/game/role/role_show_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "role weapon view",
+        "module": "role",
+        "system_id": "SYS_ROLE_001",
+        "system_name": "Role Attribute 角色属性",
+        "client_entry_luac": "assets/src/game/role/role_weapon_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "rotatetable panel",
+        "module": "rotatetable",
+        "system_id": "SYS_ACT_004",
+        "system_name": "Turntable 转盘",
+        "client_entry_luac": "assets/src/game/rotatetable/rotatetable_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "scene view",
+        "module": "scene",
+        "system_id": "SYS_CORE_005",
+        "system_name": "Scene 场景",
+        "client_entry_luac": "assets/src/game/scene/scene_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "set channel panel",
+        "module": "set",
+        "system_id": "SYS_CORE_009",
+        "system_name": "Settings 设置",
+        "client_entry_luac": "assets/src/game/set/set_channel_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "bushou tips panel",
+        "module": "sidebar",
+        "system_id": "SYS_CORE_009",
+        "system_name": "Sidebar 侧边栏",
+        "client_entry_luac": "assets/src/game/sidebar/bushou_tips_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "soulstar ctrl",
+        "module": "soulstar",
+        "system_id": "SYS_HIDDEN_004",
+        "system_name": "Star Soul 星魂",
+        "client_entry_luac": "assets/src/game/soulstar/soulstar_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "soulstar artifice panel",
+        "module": "soulstar",
+        "system_id": "SYS_HIDDEN_004",
+        "system_name": "Star Soul 星魂",
+        "client_entry_luac": "assets/src/game/soulstar/soulstar_artifice_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "soulstar form panel",
+        "module": "soulstar",
+        "system_id": "SYS_HIDDEN_004",
+        "system_name": "Star Soul 星魂",
+        "client_entry_luac": "assets/src/game/soulstar/soulstar_form_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "soulstar list view",
+        "module": "soulstar",
+        "system_id": "SYS_HIDDEN_004",
+        "system_name": "Star Soul 星魂",
+        "client_entry_luac": "assets/src/game/soulstar/soulstar_list_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "soulstar main panel",
+        "module": "soulstar",
+        "system_id": "SYS_HIDDEN_004",
+        "system_name": "Star Soul 星魂",
+        "client_entry_luac": "assets/src/game/soulstar/soulstar_main_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "soulstar pack view",
+        "module": "soulstar",
+        "system_id": "SYS_HIDDEN_004",
+        "system_name": "Star Soul 星魂",
+        "client_entry_luac": "assets/src/game/soulstar/soulstar_pack_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "soulstar review panel",
+        "module": "soulstar",
+        "system_id": "SYS_HIDDEN_004",
+        "system_name": "Star Soul 星魂",
+        "client_entry_luac": "assets/src/game/soulstar/soulstar_review_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "soulstar select panel",
+        "module": "soulstar",
+        "system_id": "SYS_HIDDEN_004",
+        "system_name": "Star Soul 星魂",
+        "client_entry_luac": "assets/src/game/soulstar/soulstar_select_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "soulstar side ui",
+        "module": "soulstar",
+        "system_id": "SYS_HIDDEN_004",
+        "system_name": "Star Soul 星魂",
+        "client_entry_luac": "assets/src/game/soulstar/soulstar_side_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "soulstar success panel",
+        "module": "soulstar",
+        "system_id": "SYS_HIDDEN_004",
+        "system_name": "Star Soul 星魂",
+        "client_entry_luac": "assets/src/game/soulstar/soulstar_success_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "soulstar viewstar panel",
+        "module": "soulstar",
+        "system_id": "SYS_HIDDEN_004",
+        "system_name": "Star Soul 星魂",
+        "client_entry_luac": "assets/src/game/soulstar/soulstar_viewstar_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "story ctrl",
+        "module": "story",
+        "system_id": "SYS_QUEST_005",
+        "system_name": "Story 剧情",
+        "client_entry_luac": "assets/src/game/story/story_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "sworn ctrl",
+        "module": "sworn",
+        "system_id": "SYS_SOCIAL_006",
+        "system_name": "Jiebai 结拜",
+        "client_entry_luac": "assets/src/game/sworn/sworn_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "sworn base panel",
+        "module": "sworn",
+        "system_id": "SYS_SOCIAL_006",
+        "system_name": "Jiebai 结拜",
+        "client_entry_luac": "assets/src/game/sworn/sworn_base_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "sworn confirm panel",
+        "module": "sworn",
+        "system_id": "SYS_SOCIAL_006",
+        "system_name": "Jiebai 结拜",
+        "client_entry_luac": "assets/src/game/sworn/sworn_confirm_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "sworn introduce panel",
+        "module": "sworn",
+        "system_id": "SYS_SOCIAL_006",
+        "system_name": "Jiebai 结拜",
+        "client_entry_luac": "assets/src/game/sworn/sworn_introduce_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "sworn invite panel",
+        "module": "sworn",
+        "system_id": "SYS_SOCIAL_006",
+        "system_name": "Jiebai 结拜",
+        "client_entry_luac": "assets/src/game/sworn/sworn_invite_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "sworn leave panel",
+        "module": "sworn",
+        "system_id": "SYS_SOCIAL_006",
+        "system_name": "Jiebai 结拜",
+        "client_entry_luac": "assets/src/game/sworn/sworn_leave_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "sworn main panel",
+        "module": "sworn",
+        "system_id": "SYS_SOCIAL_006",
+        "system_name": "Jiebai 结拜",
+        "client_entry_luac": "assets/src/game/sworn/sworn_main_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "sworn message view",
+        "module": "sworn",
+        "system_id": "SYS_SOCIAL_006",
+        "system_name": "Jiebai 结拜",
+        "client_entry_luac": "assets/src/game/sworn/sworn_message_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "sworn notice panel",
+        "module": "sworn",
+        "system_id": "SYS_SOCIAL_006",
+        "system_name": "Jiebai 结拜",
+        "client_entry_luac": "assets/src/game/sworn/sworn_notice_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "sworn rule view",
+        "module": "sworn",
+        "system_id": "SYS_SOCIAL_006",
+        "system_name": "Jiebai 结拜",
+        "client_entry_luac": "assets/src/game/sworn/sworn_rule_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "sworn side ui",
+        "module": "sworn",
+        "system_id": "SYS_SOCIAL_006",
+        "system_name": "Jiebai 结拜",
+        "client_entry_luac": "assets/src/game/sworn/sworn_side_ui.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "sworn skill view",
+        "module": "sworn",
+        "system_id": "SYS_SOCIAL_006",
+        "system_name": "Jiebai 结拜",
+        "client_entry_luac": "assets/src/game/sworn/sworn_skill_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "sworn title panel",
+        "module": "sworn",
+        "system_id": "SYS_SOCIAL_006",
+        "system_name": "Jiebai 结拜",
+        "client_entry_luac": "assets/src/game/sworn/sworn_title_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "sworn vote panel",
+        "module": "sworn",
+        "system_id": "SYS_SOCIAL_006",
+        "system_name": "Jiebai 结拜",
+        "client_entry_luac": "assets/src/game/sworn/sworn_vote_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "sworn votething panel",
+        "module": "sworn",
+        "system_id": "SYS_SOCIAL_006",
+        "system_name": "Jiebai 结拜",
+        "client_entry_luac": "assets/src/game/sworn/sworn_votething_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "language mgr",
+        "module": "sys",
+        "system_id": "SYS_CORE_006",
+        "system_name": "System 系统层",
+        "client_entry_luac": "assets/src/game/sys/language_mgr.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "team screen panel",
+        "module": "team",
+        "system_id": "SYS_MAP_002",
+        "system_name": "Team 组队",
+        "client_entry_luac": "assets/src/game/team/team_screen_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "title ctrl",
+        "module": "title",
+        "system_id": "SYS_ROLE_003",
+        "system_name": "Title 称号",
+        "client_entry_luac": "assets/src/game/title/title_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "tower select panel",
+        "module": "tower",
+        "system_id": "SYS_DUNGEON_003",
+        "system_name": "Tower 塔",
+        "client_entry_luac": "assets/src/game/tower/tower_select_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "treasure ctrl",
+        "module": "treasure",
+        "system_id": "SYS_ACT_011",
+        "system_name": "Treasure 夺宝",
+        "client_entry_luac": "assets/src/game/treasure/treasure_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "tp menu view",
+        "module": "treasure_plane",
+        "system_id": "SYS_MAP_001",
+        "system_name": "Treasure Plane 秘境",
+        "client_entry_luac": "assets/src/game/treasure_plane/tp_menu_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "trial ui panel",
+        "module": "trial",
+        "system_id": "SYS_DUNGEON_005",
+        "system_name": "Trial 试炼",
+        "client_entry_luac": "assets/src/game/trial/trial_ui_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "turntable ctrl",
+        "module": "turntable",
+        "system_id": "SYS_ACT_004",
+        "system_name": "Turntable 转盘",
+        "client_entry_luac": "assets/src/game/turntable/turntable_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "plist mgr",
+        "module": "util",
+        "system_id": "SYS_CORE_006",
+        "system_name": "Util 工具",
+        "client_entry_luac": "assets/src/game/util/plist_mgr.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "warehouse panel",
+        "module": "warehouse",
+        "system_id": "SYS_ECON_004",
+        "system_name": "Storage 仓库",
+        "client_entry_luac": "assets/src/game/warehouse/warehouse_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "weapon panel",
+        "module": "weapon",
+        "system_id": "SYS_FRIEND_006",
+        "system_name": "Partner Weapon 伙伴武器",
+        "client_entry_luac": "assets/src/game/weapon/weapon_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "wedding ring panel",
+        "module": "wedding",
+        "system_id": "SYS_SOCIAL_005",
+        "system_name": "Marriage 结婚",
+        "client_entry_luac": "assets/src/game/wedding/wedding_ring_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "wing fashion star panel",
+        "module": "wing",
+        "system_id": "SYS_APPEAR_001",
+        "system_name": "Wing 翅膀",
+        "client_entry_luac": "assets/src/game/wing/wing_fashion_star_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "xianmo ctrl",
+        "module": "xianmo",
+        "system_id": "SYS_BATTLE_004",
+        "system_name": "XianMo 仙魔",
+        "client_entry_luac": "assets/src/game/xianmo/xianmo_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "xianzun ctrl",
+        "module": "xianzun",
+        "system_id": "SYS_HIDDEN_005",
+        "system_name": "XianZun 仙尊",
+        "client_entry_luac": "assets/src/game/xianzun/xianzun_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "xuan panel",
+        "module": "xuan",
+        "system_id": "SYS_UNKNOWN_002",
+        "system_name": "Xuan 选服",
+        "client_entry_luac": "assets/src/game/xuan/xuan_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "yuangu ctrl",
+        "module": "yuangu",
+        "system_id": "SYS_DUNGEON_005",
+        "system_name": "YuanGu 远古",
+        "client_entry_luac": "assets/src/game/yuangu/yuangu_ctrl.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "yuanshen panel",
+        "module": "yuanshen",
+        "system_id": "SYS_APPEAR_004",
+        "system_name": "Yuanshen 元神",
+        "client_entry_luac": "assets/src/game/yuanshen/yuanshen_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "yuanshen gain view",
+        "module": "yuanshen",
+        "system_id": "SYS_APPEAR_004",
+        "system_name": "Yuanshen 元神",
+        "client_entry_luac": "assets/src/game/yuanshen/yuanshen_gain_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "yuanshen gongming panel",
+        "module": "yuanshen",
+        "system_id": "SYS_APPEAR_004",
+        "system_name": "Yuanshen 元神",
+        "client_entry_luac": "assets/src/game/yuanshen/yuanshen_gongming_panel.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "yuanshen handbook view",
+        "module": "yuanshen",
+        "system_id": "SYS_APPEAR_004",
+        "system_name": "Yuanshen 元神",
+        "client_entry_luac": "assets/src/game/yuanshen/yuanshen_handbook_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "yuanshen mingpan view",
+        "module": "yuanshen",
+        "system_id": "SYS_APPEAR_004",
+        "system_name": "Yuanshen 元神",
+        "client_entry_luac": "assets/src/game/yuanshen/yuanshen_mingpan_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "yuanshen pack view",
+        "module": "yuanshen",
+        "system_id": "SYS_APPEAR_004",
+        "system_name": "Yuanshen 元神",
+        "client_entry_luac": "assets/src/game/yuanshen/yuanshen_pack_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "yuanshen show view",
+        "module": "yuanshen",
+        "system_id": "SYS_APPEAR_004",
+        "system_name": "Yuanshen 元神",
+        "client_entry_luac": "assets/src/game/yuanshen/yuanshen_show_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      },
+      {
+        "ui_name": "yuanshen soul view",
+        "module": "yuanshen",
+        "system_id": "SYS_APPEAR_004",
+        "system_name": "Yuanshen 元神",
+        "client_entry_luac": "assets/src/game/yuanshen/yuanshen_soul_view.luac",
+        "restore_difficulty": "中",
+        "confidence": "LOW"
+      }
+    ],
+    "C_icon_only": [
+      {
+        "ui_name": "运营活动-新消耗排行榜 (xfphb)",
+        "module": "xfphb",
+        "system_id": "SYS_COMM_001",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='新消耗排行榜' name='xfphb'；1.4.11 ui_by_module 无独立 'xfphb' 模块，由 activity_ctrl 按 proto#30 分派"
+      },
+      {
+        "ui_name": "运营活动-新充值排行榜 (czphb)",
+        "module": "czphb",
+        "system_id": "SYS_COMM_001",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='新充值排行榜' name='czphb'；1.4.11 ui_by_module 无独立 'czphb' 模块，由 activity_ctrl 按 proto#30 分派"
+      },
+      {
+        "ui_name": "运营活动-合服首充 (hfsc)",
+        "module": "hfsc",
+        "system_id": "SYS_ECON_010",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='合服首充' name='hfsc'；1.4.11 ui_by_module 无独立 'hfsc' 模块，由 activity_ctrl 按 proto#30 分派"
+      },
+      {
+        "ui_name": "运营活动-飞升返利礼包 (flyUp_gift)",
+        "module": "flyUp_gift",
+        "system_id": "SYS_ACT_013",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='飞升返利礼包' name='flyUp_gift'；1.4.11 ui_by_module 无独立 'flyUp_gift' 模块，由 activity_ctrl 按 proto#30 分派"
+      },
+      {
+        "ui_name": "运营活动-奖池转盘 (jiangchi)",
+        "module": "jiangchi",
+        "system_id": "SYS_ACT_004",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='奖池转盘' name='jiangchi'；1.4.11 ui_by_module 无独立 'jiangchi' 模块，由 activity_ctrl 按 proto#30 分派"
+      },
+      {
+        "ui_name": "运营活动-充值翻倍 (charge_double)",
+        "module": "charge_double",
+        "system_id": "SYS_ACT_013",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='充值翻倍' name='charge_double'；1.4.11 ui_by_module 无独立 'charge_double' 模块，由 activity_ctrl 按 proto#30 分派"
+      },
+      {
+        "ui_name": "运营活动-老玩家回归 (recruit)",
+        "module": "recruit",
+        "system_id": "SYS_ACT_012",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='老玩家回归' name='recruit'；1.4.11 ui_by_module 无独立 'recruit' 模块，由 activity_ctrl 按 proto#30 分派"
+      },
+      {
+        "ui_name": "运营活动-合服 (hefu)",
+        "module": "hefu",
+        "system_id": "SYS_UNKNOWN_002",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='合服' name='hefu'；1.4.11 ui_by_module 无独立 'hefu' 模块，由 activity_ctrl 按 proto#30 分派"
+      },
+      {
+        "ui_name": "运营活动-竞猜 (guess)",
+        "module": "guess",
+        "system_id": "SYS_ACT_008",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='竞猜' name='guess'；1.4.11 ui_by_module 无独立 'guess' 模块，由 activity_ctrl 按 proto#30 分派"
+      },
+      {
+        "ui_name": "运营活动-幸运转盘 (lucky_turntable)",
+        "module": "lucky_turntable",
+        "system_id": "SYS_ACT_004",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='幸运转盘' name='lucky_turntable'；1.4.11 ui_by_module 无独立 'lucky_turntable' 模块，由 activity_ctrl 按 proto#30 分派"
+      },
+      {
+        "ui_name": "运营活动-众神联赛场景 (godwarscene)",
+        "module": "godwarscene",
+        "system_id": "SYS_BATTLE_004",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='众神联赛场景' name='godwarscene'；1.4.11 ui_by_module 无独立 'godwarscene' 模块，由 activity_ctrl 按 proto#30 分派"
+      },
+      {
+        "ui_name": "运营活动-FC (fc)",
+        "module": "fc",
+        "system_id": "SYS_UNKNOWN_002",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='FC' name='fc'；1.4.11 ui_by_module 无独立 'fc' 模块，由 activity_ctrl 按 proto#30 分派"
+      },
+      {
+        "ui_name": "运营活动-门派 (menpai)",
+        "module": "menpai",
+        "system_id": "SYS_ROLE_002",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='门派' name='menpai'；1.4.11 ui_by_module 无独立 'menpai' 模块，由 activity_ctrl 按 proto#30 分派"
+      },
+      {
+        "ui_name": "运营活动-跨服公会战 (kuafu_guildwars)",
+        "module": "kuafu_guildwars",
+        "system_id": "SYS_SOCIAL_009",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='跨服公会战' name='kuafu_guildwars'；1.4.11 ui_by_module 无独立 'kuafu_guildwars' 模块，由 activity_ctrl 按 proto#30 分派"
+      },
+      {
+        "ui_name": "运营活动-活动排行榜 (actionrank)",
+        "module": "actionrank",
+        "system_id": "SYS_COMM_001",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='活动排行榜' name='actionrank'；1.4.11 ui_by_module 无独立 'actionrank' 模块，由 activity_ctrl 按 proto#30 分派"
+      },
+      {
+        "ui_name": "运营活动-投资_sec (invest_sec)",
+        "module": "invest_sec",
+        "system_id": "SYS_ACT_003",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='投资_sec' name='invest_sec'；1.4.11 ui_by_module 无独立 'invest_sec' 模块，由 activity_ctrl 按 proto#30 分派"
+      },
+      {
+        "ui_name": "运营活动-奖励 (reward)",
+        "module": "reward",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='奖励' name='reward'；1.4.11 ui_by_module 无独立 'reward' 模块，由 activity_ctrl 按 proto#30 分派"
+      },
+      {
+        "ui_name": "运营活动-跨服仙魔 (kuafu_xianmo)",
+        "module": "kuafu_xianmo",
+        "system_id": "SYS_BATTLE_004",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='跨服仙魔' name='kuafu_xianmo'；1.4.11 ui_by_module 无独立 'kuafu_xianmo' 模块，由 activity_ctrl 按 proto#30 分派"
+      },
+      {
+        "ui_name": "运营活动-运营兑换 (yunyingduihuan)",
+        "module": "yunyingduihuan",
+        "system_id": "SYS_ECON_007",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='运营兑换' name='yunyingduihuan'；1.4.11 ui_by_module 无独立 'yunyingduihuan' 模块，由 activity_ctrl 按 proto#30 分派"
+      },
+      {
+        "ui_name": "运营活动-送花 (flower)",
+        "module": "flower",
+        "system_id": "SYS_SOCIAL_007",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='送花' name='flower'；1.4.11 ui_by_module 无独立 'flower' 模块，由 activity_ctrl 按 proto#30 分派"
+      },
+      {
+        "ui_name": "运营活动-幸运宝箱 (luckbox)",
+        "module": "luckbox",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='幸运宝箱' name='luckbox'；1.4.11 ui_by_module 无独立 'luckbox' 模块，由 activity_ctrl 按 proto#30 分派"
+      },
+      {
+        "ui_name": "运营活动-祈福墙 (zhufuqiang)",
+        "module": "zhufuqiang",
+        "system_id": "SYS_ACT_010",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='祈福墙' name='zhufuqiang'；1.4.11 ui_by_module 无独立 'zhufuqiang' 模块，由 activity_ctrl 按 proto#30 分派"
+      },
+      {
+        "ui_name": "运营活动-幸运翻牌 (xingyunfanpai)",
+        "module": "xingyunfanpai",
+        "system_id": "SYS_ACT_006",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='幸运翻牌' name='xingyunfanpai'；1.4.11 ui_by_module 无独立 'xingyunfanpai' 模块，由 activity_ctrl 按 proto#30 分派"
+      },
+      {
+        "ui_name": "运营活动-密令 (miling)",
+        "module": "miling",
+        "system_id": "SYS_UNKNOWN_002",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='密令' name='miling'；1.4.11 ui_by_module 无独立 'miling' 模块，由 activity_ctrl 按 proto#30 分派"
+      },
+      {
+        "ui_name": "运营活动-巨龙/神龙 (julong)",
+        "module": "julong",
+        "system_id": "SYS_HIDDEN_006",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='巨龙/神龙' name='julong'；1.4.11 ui_by_module 无独立 'julong' 模块，由 activity_ctrl 按 proto#30 分派"
+      },
+      {
+        "ui_name": "运营活动-成长目标 (target)",
+        "module": "target",
+        "system_id": "SYS_QUEST_004",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='成长目标' name='target'；1.4.11 ui_by_module 无独立 'target' 模块，由 activity_ctrl 按 proto#30 分派"
+      },
+      {
+        "ui_name": "运营活动-一元夺宝 (duobao)",
+        "module": "duobao",
+        "system_id": "SYS_ACT_011",
+        "system_name": "Operation Activity",
+        "evidence": "extraction/client_activity_icon_registry.md：活动图标注册表含 label='一元夺宝' name='duobao'；1.4.11 ui_by_module 无独立 'duobao' 模块，由 activity_ctrl 按 proto#30 分派"
+      }
+    ],
+    "D_removed_1_4_11": [
+      {
+        "ui_name": "garden (1.3.0 已移除)",
+        "module": "garden",
+        "system_id": "SYS_UNKNOWN_002",
+        "system_name": "Legacy/garden",
+        "evidence": "diff.game_modules_only_in_1.3.0 含 'garden'；version_compare/1.3.0/extracted/game/garden/ 下有 ctrl/data/view 文件"
+      },
+      {
+        "ui_name": "jingjie (1.3.0 已移除)",
+        "module": "jingjie",
+        "system_id": "SYS_UNKNOWN_002",
+        "system_name": "Legacy/jingjie",
+        "evidence": "diff.game_modules_only_in_1.3.0 含 'jingjie'；version_compare/1.3.0/extracted/game/jingjie/ 下有 ctrl/data/view 文件"
+      },
+      {
+        "ui_name": "moneytree (1.3.0 已移除)",
+        "module": "moneytree",
+        "system_id": "SYS_ACT_009",
+        "system_name": "Money Tree",
+        "evidence": "diff.game_modules_only_in_1.3.0 含 'moneytree'；version_compare/1.3.0/extracted/game/moneytree/ 下有 ctrl/data/view 文件"
+      },
+      {
+        "ui_name": "xiulianhulu (1.3.0 已移除)",
+        "module": "xiulianhulu",
+        "system_id": "SYS_UNKNOWN_002",
+        "system_name": "Legacy/xiulianhulu",
+        "evidence": "diff.game_modules_only_in_1.3.0 含 'xiulianhulu'；version_compare/1.3.0/extracted/game/xiulianhulu/ 下有 ctrl/data/view 文件"
+      },
+      {
+        "ui_name": "glz main ui ",
+        "module": "dungeon",
+        "system_id": "SYS_UNKNOWN_002",
+        "system_name": "Legacy file (glz_main_ui.luac)",
+        "evidence": "diff.ui_files_only_in_1.3.0 含 'assets/src/game/dungeon/gaolaozhuang/glz_main_ui.luac'"
+      },
+      {
+        "ui_name": "friend view ",
+        "module": "friend",
+        "system_id": "SYS_UNKNOWN_002",
+        "system_name": "Legacy file (friend_view.luac)",
+        "evidence": "diff.ui_files_only_in_1.3.0 含 'assets/src/game/friend/friend_view.luac'"
+      },
+      {
+        "ui_name": "mail panel ",
+        "module": "mail",
+        "system_id": "SYS_UNKNOWN_002",
+        "system_name": "Legacy file (mail_panel.luac)",
+        "evidence": "diff.ui_files_only_in_1.3.0 含 'assets/src/game/mail/mail_panel.luac'"
+      },
+      {
+        "ui_name": "libao view ",
+        "module": "shop",
+        "system_id": "SYS_UNKNOWN_002",
+        "system_name": "Legacy file (libao_view.luac)",
+        "evidence": "diff.ui_files_only_in_1.3.0 含 'assets/src/game/shop/libao_view.luac'"
+      }
+    ],
+    "counts": {
+      "A": 18,
+      "B": 338,
+      "C": 27,
+      "D": 8
+    }
+  },
+  "data_inventory": {
+    "unconfirmed_ids": [
+      "item_fashion",
+      "item_currency",
+      "skill_raw",
+      "attr_meta",
+      "role_career",
+      "wing_data",
+      "shenqi",
+      "formation",
+      "buff_data",
+      "mon_data",
+      "npc_main",
+      "npcs_10001",
+      "map_main",
+      "dungeon_corpus",
+      "mall_zhenbao",
+      "mall_exchange",
+      "answer_key"
+    ],
+    "unconfirmed_detail": [
+      {
+        "data_id": "item_gem",
+        "name": "宝石类物品（item_config type 11-19 分组）",
+        "parse_confidence": "LIKELY",
+        "missing_information": "无独立宝石属性表（truth_values: NO_SEPARATE_GEM_TABLE）；type 12/20 采样呈纯数字，疑似货币，未计入宝石组",
+        "evidence": "server/item_config.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_item.luac, 470884 字节）；统计注记: type=[11, 12, 13, 14, 15, 16, 19] 分组合计"
+      },
+      {
+        "data_id": "item_hungu",
+        "name": "魂骨类物品（item_config type 108/120/121/22 分组）",
+        "parse_confidence": "LIKELY",
+        "missing_information": "魂骨强化/进阶规则表未在已提取清单中定位",
+        "evidence": "server/item_config.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_item.luac, 470884 字节）；统计注记: type=[22, 108, 120, 121] 分组合计"
+      },
+      {
+        "data_id": "item_fashion",
+        "name": "时装表（客户端解构）+ 时装类物品",
+        "parse_confidence": "PARTIAL",
+        "missing_information": "未逐条统计时装表条目数（通用统计）；时装进阶消耗表 config_fashion_up.json 仅 2 字节（空表）",
+        "evidence": "server/cfg/config_fashion.json；统计注记: 顶层子表1个；条目合计48"
+      },
+      {
+        "data_id": "item_currency",
+        "name": "货币类物品（item_config type 0/12/20 疑似分组）",
+        "parse_confidence": "UNVERIFIED",
+        "missing_information": "货币类型枚举表未找到；服务端代码中 coin/hero_coin/vip_exp 等账目与物品 bid 的对应关系未成文",
+        "evidence": "server/item_config.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_item.luac, 470884 字节）；统计注记: type=[0, 12, 20] 分组合计"
+      },
+      {
+        "data_id": "skill_raw",
+        "name": "技能原始表（4000 行结构化数组）",
+        "parse_confidence": "PARTIAL",
+        "missing_information": "列语义未完全定义；学习/升级消耗字段不存在（truth_values: NOT_FOUND_IN_CONFIG）",
+        "evidence": "server/_skill_raw.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_skill_xiulian.luac, 97451 字节）；统计注记: 行内第2列=技能ID"
+      },
+      {
+        "data_id": "mingge_cfg",
+        "name": "命格配置（开/阶/其他子表）",
+        "parse_confidence": "LIKELY",
+        "missing_information": "子表逐行语义未逐条成文",
+        "evidence": "server/_mingge_cfg.json；统计注记: 子表合计"
+      },
+      {
+        "data_id": "attr_meta",
+        "name": "属性数组元数据（向量长度）",
+        "parse_confidence": "PARTIAL",
+        "missing_information": "items 条目逐属性含义未逐条核对",
+        "evidence": "server/_attr_meta.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_attr.luac, 5191 字节）；统计注记: 子表 items"
+      },
+      {
+        "data_id": "role_career",
+        "name": "职业配置表（客户端解构）",
+        "parse_confidence": "UNVERIFIED",
+        "missing_information": "未逐条统计；职业 ID 与伙伴 career 字段（1-4）对应关系未成文",
+        "evidence": "server/cfg/config_role_career.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_role_career.luac, 11703 字节）；统计注记: 顶层子表4个；条目合计164"
+      },
+      {
+        "data_id": "wing_data",
+        "name": "翅膀数据（客户端解构）",
+        "parse_confidence": "UNVERIFIED",
+        "missing_information": "未逐条统计；翅膀系统消费曲线未成文",
+        "evidence": "server/cfg/config_wing_data.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_wing_data.luac, 16192 字节）；统计注记: 顶层子表9个；条目合计71"
+      },
+      {
+        "data_id": "shenqi",
+        "name": "神器表（客户端解构，574KB）",
+        "parse_confidence": "UNVERIFIED",
+        "missing_information": "未逐条统计",
+        "evidence": "server/cfg/config_shenqi.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_shenqi.luac, 163441 字节）；统计注记: 顶层子表7个；条目合计127"
+      },
+      {
+        "data_id": "formation",
+        "name": "阵法表（客户端解构）",
+        "parse_confidence": "UNVERIFIED",
+        "missing_information": "未逐条统计",
+        "evidence": "server/cfg/config_formation.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_formation.luac, 14916 字节）；统计注记: 顶层子表4个；条目合计18"
+      },
+      {
+        "data_id": "buff_data",
+        "name": "Buff/增幅数据表（客户端解构，102KB）",
+        "parse_confidence": "UNVERIFIED",
+        "missing_information": "\"增幅\"类别无直接命名证据；映射到 buff_data 为最佳推断，需人工确认",
+        "evidence": "server/cfg/config_buff_data.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_buff_data.luac, 53242 字节）；统计注记: 顶层子表1个；条目合计363"
+      },
+      {
+        "data_id": "mon_data",
+        "name": "怪物表（1.4.11 解构部分失败；1.4.9 参考 2645 怪）",
+        "parse_confidence": "PARTIAL",
+        "missing_information": "1.4.11 主表解构失败；怪物 HP/ATK 由服务端公式计算，静态不可得",
+        "evidence": "server/cfg/config_mon_data.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_mon_data.luac, 513571 字节）；统计注记: 1.4.11 主表空（311B）；1.4.9 参考 2645 条（见 monster_values.json）"
+      },
+      {
+        "data_id": "npc_main",
+        "name": "NPC 主表（客户端解构，195KB）",
+        "parse_confidence": "UNVERIFIED",
+        "missing_information": "未逐条统计",
+        "evidence": "server/cfg/config_npc.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_npc.luac, 116497 字节）；统计注记: 顶层子表3个；条目合计593"
+      },
+      {
+        "data_id": "npcs_10001",
+        "name": "单地图 NPC 坐标快照（地图10001，提取残缺）",
+        "parse_confidence": "FAILED",
+        "missing_information": "JSON 不可解析；仅能按 \"id\" 出现次数统计（21 次=19 个数值 NPC + 2 哨兵）；真实条数可能更多",
+        "evidence": "server/_npcs_10001.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_npc.luac, 116497 字节）；统计注记: 正则统计（文件截断，JSON 不可解析）"
+      },
+      {
+        "data_id": "mapnpc_10001",
+        "name": "地图 NPC 放置表（地图10001）",
+        "parse_confidence": "LIKELY",
+        "missing_information": "仅覆盖地图 10001 一张图",
+        "evidence": "server/_mapnpc_10001.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_map_npc.luac, 1894 字节）"
+      },
+      {
+        "data_id": "map_main",
+        "name": "地图主表（客户端解构，83KB）",
+        "parse_confidence": "UNVERIFIED",
+        "missing_information": "未逐条统计",
+        "evidence": "server/cfg/config_map.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_map.luac, 23184 字节）；统计注记: 顶层子表1个；条目合计124"
+      },
+      {
+        "data_id": "mission_route",
+        "name": "任务链/主线路由表",
+        "parse_confidence": "LIKELY",
+        "missing_information": "与 config_mission.luac 的确切子表对应关系未定位",
+        "evidence": "server/_mission_route.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_mission.luac, 325400 字节）"
+      },
+      {
+        "data_id": "dungeon_corpus",
+        "name": "副本群解构语料（config_dungeon_* 系列）",
+        "parse_confidence": "UNVERIFIED",
+        "missing_information": "未逐条统计",
+        "evidence": "server/cfg/config_dungeon_new.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_dungeon_new.luac, 4616 字节）；统计注记: 顶层子表9个；条目合计169"
+      },
+      {
+        "data_id": "mall_zhenbao",
+        "name": "珍宝阁商品（实现回退数据）",
+        "parse_confidence": "PARTIAL",
+        "missing_information": "非原版配置真值；原版珍宝阁配方是否在 APK 内未确认",
+        "evidence": "server/mall_zhenbao.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_mall.luac, 17598 字节）"
+      },
+      {
+        "data_id": "mall_exchange",
+        "name": "商城兑换配方（APK 内无此表，实现回退）",
+        "parse_confidence": "PARTIAL",
+        "missing_information": "非原版配置真值；config_exchange.json(40KB) 解构表存在但未与该文件对齐",
+        "evidence": "server/mall_exchange.json"
+      },
+      {
+        "data_id": "chengjiu_map",
+        "name": "成就分组映射（手工整理）",
+        "parse_confidence": "LIKELY",
+        "missing_information": "分组为人工整理，与原版分组定义对应关系未逐条验证",
+        "evidence": "server/_chengjiu_map.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_chengjiu.luac, 13848 字节）；统计注记: 子表 groups"
+      },
+      {
+        "data_id": "answer_key",
+        "name": "答题答案表（项目手工推导）",
+        "parse_confidence": "PARTIAL",
+        "missing_information": "非客户端 config_answer.luac 直提；与原版答案一致性未验证",
+        "evidence": "server/answer_key.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_answer.luac, 24513 字节）；统计注记: 子表 answers"
+      },
+      {
+        "data_id": "rune_cfg",
+        "name": "符文配置（交换/静态/基础三子表）",
+        "parse_confidence": "LIKELY",
+        "missing_information": "—",
+        "evidence": "server/_rune_cfg.json；统计注记: 子表合计"
+      },
+      {
+        "data_id": "invest_cfg",
+        "name": "投资计划配置（6 子表）",
+        "parse_confidence": "LIKELY",
+        "missing_information": "—",
+        "evidence": "server/_invest_cfg.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_invest.luac, 3260 字节）；统计注记: 子表合计"
+      }
+    ],
+    "count": 17
+  },
+  "protocol_inventory": {
+    "total": 1707,
+    "with_unresolved_count": 759,
+    "no_fields_count": 73,
+    "inference_count": 55,
+    "related_system_UNKNOWN_count": 1561,
+    "no_fields_samples": [
+      {
+        "cmd": "10300",
+        "name": "客户端初始化完毕",
+        "direction": "cs"
+      },
+      {
+        "cmd": "10312",
+        "name": "角色强制下线",
+        "direction": "cs"
+      },
+      {
+        "cmd": "10396",
+        "name": "强制关闭客户端",
+        "direction": "sc"
+      },
+      {
+        "cmd": "10556",
+        "name": "提示客户端一键穿装",
+        "direction": "sc"
+      },
+      {
+        "cmd": "10705",
+        "name": "进入内城",
+        "direction": "cs"
+      },
+      {
+        "cmd": "13050",
+        "name": "无底洞进入下一层",
+        "direction": "cs"
+      },
+      {
+        "cmd": "13509",
+        "name": "获取帮会邀请列表",
+        "direction": "bidirectional"
+      },
+      {
+        "cmd": "13512",
+        "name": "被踢出帮会通知",
+        "direction": "bidirectional"
+      },
+      {
+        "cmd": "13548",
+        "name": "有新公告的时候，服务端推送本协议，告诉客户端",
+        "direction": "bidirectional"
+      },
+      {
+        "cmd": "13788",
+        "name": "通知活力达到上限",
+        "direction": "bidirectional"
+      },
+      {
+        "cmd": "13819",
+        "name": "物品出售成功",
+        "direction": "sc"
+      },
+      {
+        "cmd": "14300",
+        "name": "弹出转职界面",
+        "direction": "bidirectional"
+      },
+      {
+        "cmd": "18761",
+        "name": "通知活动结束退出战斗",
+        "direction": "sc"
+      },
+      {
+        "cmd": "20011",
+        "name": "客户端加载完成",
+        "direction": "cs"
+      },
+      {
+        "cmd": "20014",
+        "name": "客户端动画播放完成通知",
+        "direction": "cs"
+      },
+      {
+        "cmd": "20021",
+        "name": "闭关战斗结束界面",
+        "direction": "cs"
+      },
+      {
+        "cmd": "20729",
+        "name": "被邀请的显示红点",
+        "direction": "sc"
+      },
+      {
+        "cmd": "30106",
+        "name": "获取当前角色排行信息",
+        "direction": "sc"
+      },
+      {
+        "cmd": "10926",
+        "name": "UNKNOWN",
+        "direction": "cs (inferred from systems_master token prefix)"
+      },
+      {
+        "cmd": "10927",
+        "name": "UNKNOWN",
+        "direction": "cs (inferred from systems_master token prefix)"
+      }
+    ],
+    "inference_cmds": [
+      {
+        "cmd": "10926",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "10927",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "10928",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "10929",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "11310",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "11999",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12804",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12806",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12807",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12808",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12809",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12810",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12811",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12812",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12813",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12814",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12815",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12816",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12817",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12818",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12819",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12820",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12824",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12825",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12826",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12827",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12828",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12829",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12830",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12833",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12834",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12835",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12844",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12845",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12846",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12847",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12848",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12849",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12850",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12851",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "12852",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "13404",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "13405",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "13406",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "13407",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "13408",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "13409",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "13412",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "13413",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "13414",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "16902",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "17500",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "30100",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "31299",
+        "name": "UNKNOWN"
+      },
+      {
+        "cmd": "13752",
+        "name": "UNKNOWN"
+      }
+    ],
+    "unresolved_reason_examples": [
+      {
+        "cmd": "1199",
+        "name": "心跳包",
+        "unresolved": [
+          "cs 方向无字段定义"
+        ]
+      },
+      {
+        "cmd": "10111",
+        "name": "客户端版本号",
+        "unresolved": [
+          "cs 方向无字段定义"
+        ]
+      },
+      {
+        "cmd": "10201",
+        "name": "场景图块信息()",
+        "unresolved": [
+          "cs 方向无字段定义",
+          "含 8 条嵌套子消息描述符(reader/fmt)，未计入顶层 fields"
+        ]
+      },
+      {
+        "cmd": "10202",
+        "name": "附近有角色进入场景",
+        "unresolved": [
+          "含 6 条嵌套子消息描述符(reader/fmt)，未计入顶层 fields"
+        ]
+      },
+      {
+        "cmd": "10207",
+        "name": "回到上个场景(用于退出副本或者内城)",
+        "unresolved": [
+          "cs 方向无字段定义"
+        ]
+      },
+      {
+        "cmd": "10221",
+        "name": "获取当前场景所有怪物坐标(挂机用)",
+        "unresolved": [
+          "cs 方向无字段定义"
+        ]
+      },
+      {
+        "cmd": "10230",
+        "name": "NPC进入场景",
+        "unresolved": [
+          "含 1 条嵌套子消息描述符(reader/fmt)，未计入顶层 fields"
+        ]
+      },
+      {
+        "cmd": "10239",
+        "name": "更新场景NPC",
+        "unresolved": [
+          "含 1 条嵌套子消息描述符(reader/fmt)，未计入顶层 fields"
+        ]
+      },
+      {
+        "cmd": "10296",
+        "name": "设置挂机、取消挂机",
+        "unresolved": [
+          "cs 方向无字段定义"
+        ]
+      },
+      {
+        "cmd": "10297",
+        "name": "挂机状态",
+        "unresolved": [
+          "cs 方向无字段定义"
+        ]
+      },
+      {
+        "cmd": "10299",
+        "name": "测试",
+        "unresolved": [
+          "含 2 条嵌套子消息描述符(reader/fmt)，未计入顶层 fields"
+        ]
+      },
+      {
+        "cmd": "10300",
+        "name": "客户端初始化完毕",
+        "unresolved": [
+          "cs 方向无字段定义"
+        ]
+      },
+      {
+        "cmd": "10301",
+        "name": "获取角色基础信息",
+        "unresolved": [
+          "cs 方向无字段定义",
+          "含 1 条嵌套子消息描述符(reader/fmt)，未计入顶层 fields"
+        ]
+      },
+      {
+        "cmd": "10302",
+        "name": "角色资产信息",
+        "unresolved": [
+          "cs 方向无字段定义"
+        ]
+      },
+      {
+        "cmd": "10303",
+        "name": "自己角色面板属性(相当于前面2条 加 10306 合起来的属性)",
+        "unresolved": [
+          "cs 方向无字段定义"
+        ]
+      }
+    ]
+  },
+  "client_server_matrix": {
+    "UNKNOWN_evidence_tier": [
+      {
+        "system_id": "SYS_UNKNOWN_001",
+        "system_name": "Dan War 丹药战",
+        "impl_status": "未实现",
+        "evidence_tier": "UNKNOWN",
+        "current_impl": "mock_server 无 handler；unimplemented SYS_UNKNOWN_001",
+        "remaining": "需取证入口/协议"
+      },
+      {
+        "system_id": "SYS_UNKNOWN_002",
+        "system_name": "YunYing Ops 运营活动",
+        "impl_status": "未实现",
+        "evidence_tier": "UNKNOWN",
+        "current_impl": "mock_server 无 handler；unimplemented SYS_UNKNOWN_002",
+        "remaining": "需逐个识别功能 id"
+      },
+      {
+        "system_id": "SYS_UNKNOWN_004",
+        "system_name": "Color/Head 染色",
+        "impl_status": "未实现",
+        "evidence_tier": "UNKNOWN",
+        "current_impl": "mock_server 无 handler；unimplemented SYS_UNKNOWN_004",
+        "remaining": "需染色状态/协议"
+      },
+      {
+        "system_id": "SYS_EQUIP_005",
+        "system_name": "Equip Refine 装备洗练",
+        "impl_status": "未实现",
+        "evidence_tier": "UNKNOWN",
+        "current_impl": "unimplemented SYS_EQUIP_005: named in PHASE0 checklist; 无 config/module/protocol；mock_server 无 handler",
+        "remaining": "需先取证客户端入口与协议"
+      },
+      {
+        "system_id": "SYS_GROWTH_006",
+        "system_name": "Soul Bone 魂骨",
+        "impl_status": "未实现",
+        "evidence_tier": "UNKNOWN",
+        "current_impl": "HANDOFF 文件地图: server/soulbone/；mock_server 无接入 handler；unimplemented SYS_GROWTH_006",
+        "remaining": "需魂骨模块接线/协议取证"
+      },
+      {
+        "system_id": "SYS_GROWTH_007",
+        "system_name": "Augment/Amplify 增幅",
+        "impl_status": "未实现",
+        "evidence_tier": "UNKNOWN",
+        "current_impl": "HANDOFF 文件地图: server/amplification/；mock_server 无接入 handler；unimplemented SYS_GROWTH_007",
+        "remaining": "需增幅模块接线"
+      },
+      {
+        "system_id": "SYS_CORE_008",
+        "system_name": "Red Dot/Badge 红点",
+        "impl_status": "未实现",
+        "evidence_tier": "UNKNOWN",
+        "current_impl": "unimplemented SYS_CORE_008: 无 config/module/protocol；mock_server 无 handler",
+        "remaining": "需红点推送/聚合协议"
+      },
+      {
+        "system_id": "SYS_CORE_009",
+        "system_name": "UI State Sync UI状态",
+        "impl_status": "未实现",
+        "evidence_tier": "UNKNOWN",
+        "current_impl": "unimplemented SYS_CORE_009: 无 config/module/protocol",
+        "remaining": "需 UI 状态同步帧"
+      },
+      {
+        "system_id": "SYS_FRIEND_006",
+        "system_name": "Partner Training 伙伴培养",
+        "impl_status": "部分实现",
+        "evidence_tier": "UNKNOWN",
+        "current_impl": "mock_server.py:16292 cmd==11216；P8 partner_feed；FINAL_REGRESSION 缺口#2 喂养消耗 UNKNOWN",
+        "remaining": "喂养消耗真值需实机喂养取证"
+      }
+    ],
+    "INFERENCE_evidence_tier": [
+      {
+        "system_id": "SYS_ROLE_006",
+        "system_name": "Avatar/Head & Chat Bubble 头像框气泡",
+        "impl_status": "部分实现",
+        "evidence_tier": "INFERENCE"
+      },
+      {
+        "system_id": "SYS_FRIEND_004",
+        "system_name": "Partner Recruit 伙伴招募/抽卡",
+        "impl_status": "部分实现",
+        "evidence_tier": "INFERENCE"
+      },
+      {
+        "system_id": "SYS_APPEAR_008",
+        "system_name": "Vehicle/Chair 座驾",
+        "impl_status": "已实现",
+        "evidence_tier": "INFERENCE"
+      },
+      {
+        "system_id": "SYS_ECON_007",
+        "system_name": "Exchange 兑换",
+        "impl_status": "部分实现",
+        "evidence_tier": "INFERENCE"
+      },
+      {
+        "system_id": "SYS_MAP_001",
+        "system_name": "World Map 世界地图",
+        "impl_status": "已实现",
+        "evidence_tier": "INFERENCE"
+      },
+      {
+        "system_id": "SYS_DUNGEON_002",
+        "system_name": "Endless Dungeon 无尽/深渊",
+        "impl_status": "部分实现",
+        "evidence_tier": "INFERENCE"
+      },
+      {
+        "system_id": "SYS_ACT_002",
+        "system_name": "Seven-Day Login 七日签到",
+        "impl_status": "部分实现",
+        "evidence_tier": "INFERENCE"
+      },
+      {
+        "system_id": "SYS_ACT_004",
+        "system_name": "Turntable/Lucky Draw 转盘",
+        "impl_status": "部分实现",
+        "evidence_tier": "INFERENCE"
+      },
+      {
+        "system_id": "SYS_ACT_009",
+        "system_name": "Money Tree 摇钱树",
+        "impl_status": "已实现",
+        "evidence_tier": "INFERENCE"
+      },
+      {
+        "system_id": "SYS_ACT_010",
+        "system_name": "Pray/QiFu 祈福",
+        "impl_status": "已实现",
+        "evidence_tier": "INFERENCE"
+      },
+      {
+        "system_id": "SYS_ACT_014",
+        "system_name": "Point/QingFu 点/dnf/live",
+        "impl_status": "部分实现",
+        "evidence_tier": "INFERENCE"
+      },
+      {
+        "system_id": "SYS_SOCIAL_003",
+        "system_name": "Moments 朋友圈",
+        "impl_status": "已实现",
+        "evidence_tier": "INFERENCE"
+      },
+      {
+        "system_id": "SYS_SOCIAL_010",
+        "system_name": "Guild Tree/Animal/Skill 公会科技神兽",
+        "impl_status": "部分实现",
+        "evidence_tier": "INFERENCE"
+      },
+      {
+        "system_id": "SYS_HIDDEN_004",
+        "system_name": "Star Soul 星魂",
+        "impl_status": "部分实现",
+        "evidence_tier": "INFERENCE"
+      },
+      {
+        "system_id": "SYS_UNKNOWN_003",
+        "system_name": "Insight 顿悟/洞察",
+        "impl_status": "部分实现",
+        "evidence_tier": "INFERENCE"
+      },
+      {
+        "system_id": "SYS_EQUIP_006",
+        "system_name": "Gem/Socket 宝石",
+        "impl_status": "部分实现",
+        "evidence_tier": "INFERENCE"
+      },
+      {
+        "system_id": "SYS_ECON_012",
+        "system_name": "Drop/Loot Table 掉落",
+        "impl_status": "部分实现",
+        "evidence_tier": "INFERENCE"
+      }
+    ],
+    "UNKNOWN_count": 9,
+    "INFERENCE_count": 17
+  },
+  "version_diff_matrix": {
+    "UNKNOWN_cells": [
+      {
+        "dimension": "item 配置条数",
+        "column": "v130",
+        "evidence": "VERIFIED",
+        "notes": "1.4.11=server/item_config.json 顶层键数（本脚本实测）；1.3.0/1.4.9 仅 config 表存在性证据，条数 UNKNOWN。"
+      },
+      {
+        "dimension": "item 配置条数",
+        "column": "v149",
+        "evidence": "VERIFIED",
+        "notes": "1.4.11=server/item_config.json 顶层键数（本脚本实测）；1.3.0/1.4.9 仅 config 表存在性证据，条数 UNKNOWN。"
+      },
+      {
+        "dimension": "mission 配置条数",
+        "column": "v130",
+        "evidence": "VERIFIED",
+        "notes": "1.4.11=server/mission_config.json 顶层键数（本脚本实测）；1.3.0/1.4.9 条数 UNKNOWN。"
+      },
+      {
+        "dimension": "mission 配置条数",
+        "column": "v149",
+        "evidence": "VERIFIED",
+        "notes": "1.4.11=server/mission_config.json 顶层键数（本脚本实测）；1.3.0/1.4.9 条数 UNKNOWN。"
+      },
+      {
+        "dimension": "mall 配置条数",
+        "column": "v130",
+        "evidence": "VERIFIED",
+        "notes": "1.4.11=server/mall_config.json 顶层条数（本脚本实测）；1.3.0/1.4.9 条数 UNKNOWN。"
+      },
+      {
+        "dimension": "mall 配置条数",
+        "column": "v149",
+        "evidence": "VERIFIED",
+        "notes": "1.4.11=server/mall_config.json 顶层条数（本脚本实测）；1.3.0/1.4.9 条数 UNKNOWN。"
+      },
+      {
+        "dimension": "partner 配置条数",
+        "column": "v130",
+        "evidence": "VERIFIED",
+        "notes": "1.4.11=server/partner_config.json 顶层条数（本脚本实测）；1.3.0/1.4.9 条数 UNKNOWN。"
+      },
+      {
+        "dimension": "partner 配置条数",
+        "column": "v149",
+        "evidence": "VERIFIED",
+        "notes": "1.4.11=server/partner_config.json 顶层条数（本脚本实测）；1.3.0/1.4.9 条数 UNKNOWN。"
+      }
+    ],
+    "count": 8
+  },
+  "reference_capability_table": {
+    "UNKNOWN_cells": [
+      {
+        "project": "chivalrousman",
+        "dimension": "测试和日志",
+        "status": "无",
+        "evidence_level": "UNKNOWN",
+        "implementation": "无测试体系。",
+        "borrowable": "无。"
+      },
+      {
+        "project": "mahatma",
+        "dimension": "测试和日志",
+        "status": "无",
+        "evidence_level": "UNKNOWN",
+        "implementation": "WinForms 调试输出；无测试体系。",
+        "borrowable": "无。"
+      },
+      {
+        "project": "yzxy",
+        "dimension": "任务",
+        "status": "UNKNOWN",
+        "evidence_level": "VERIFIED",
+        "implementation": "scripts/client/addon/quest.lua 从未被任何审计读过(R5 已登记‘未取证’)；无服务端任务域文件记录。",
+        "borrowable": "无可确认借鉴点——任务参考已改为 kongkongxiyou domain/task + chivalrousman。"
+      },
+      {
+        "project": "yzxy",
+        "dimension": "持久化",
+        "status": "部分",
+        "evidence_level": "UNKNOWN",
+        "implementation": "脚本层服务端含持久化；具体存储引擎/表结构未在本轮逐文件读取。",
+        "borrowable": "无可确认具体机制。"
+      }
+    ],
+    "count": 4
+  },
+  "server_capability_needs": {
+    "parsed": [
+      {
+        "system_id": "SYS_CORE_001",
+        "name": "Account Login 账号登录",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_CORE_002",
+        "name": "Role Creation 创建角色",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_CORE_003",
+        "name": "Role Base/Init 角色基础",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_CORE_004",
+        "name": "Role Login 进入游戏",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_CORE_005",
+        "name": "Scene & Movement 场景移动",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_CORE_006",
+        "name": "Protocol/Network Layer 网络层",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_CORE_007",
+        "name": "Version/Resource Update 版本更新",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_ROLE_001",
+        "name": "Role Attribute 角色属性",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_ROLE_002",
+        "name": "Career/Job 职业",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_ROLE_003",
+        "name": "Title System 称号",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_ROLE_004",
+        "name": "VIP System 贵族/VIP",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_ROLE_005",
+        "name": "Experience/Level 经验等级",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_ROLE_006",
+        "name": "Avatar/Head & Chat Bubble 头像框气泡",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_GROWTH_001",
+        "name": "Skill System 技能",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_GROWTH_002",
+        "name": "Talent/天赋",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_GROWTH_003",
+        "name": "Practice/修炼 Buff",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_GROWTH_004",
+        "name": "Buff System Buff",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_GROWTH_005",
+        "name": "Morale 士气",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_BATTLE_001",
+        "name": "Turn-based Battle 回合战斗",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_BATTLE_002",
+        "name": "Auto-battle/AFK 挂机",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_BATTLE_003",
+        "name": "Battle Replay/Video 战报回放",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_BATTLE_004",
+        "name": "God War Battle 神魔战",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_BATTLE_005",
+        "name": "Boss System BOSS",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_EQUIP_001",
+        "name": "Equipment System 装备",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_EQUIP_002",
+        "name": "Smith/Forge/Fuse 锻造合成",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_EQUIP_003",
+        "name": "Rune System 符文",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_EQUIP_004",
+        "name": "Equip StarUp/强化 装备升星",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_FRIEND_001",
+        "name": "Partner/Hero System 伙伴",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_FRIEND_002",
+        "name": "Formation 阵法",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_FRIEND_003",
+        "name": "Partner Atlas 伙伴图鉴",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_FRIEND_004",
+        "name": "Partner Recruit 伙伴招募/抽卡",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_FRIEND_005",
+        "name": "Partner Fetter 伙伴羁绊",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_APPEAR_001",
+        "name": "Wing System 翅膀",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_APPEAR_002",
+        "name": "Mount 坐骑",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_APPEAR_003",
+        "name": "Beast 灵兽",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_APPEAR_004",
+        "name": "Soul 元神",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_APPEAR_005",
+        "name": "Divine Artifact 神器",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_APPEAR_006",
+        "name": "Fate/Natal 命格",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_APPEAR_007",
+        "name": "Magic Weapon 法宝",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_APPEAR_008",
+        "name": "Vehicle/Chair 座驾",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_APPEAR_009",
+        "name": "Fashion/Skin 时装",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_APPEAR_010",
+        "name": "Halo 光环",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_ECON_001",
+        "name": "Assets/Currency 货币资产",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_ECON_002",
+        "name": "Inventory/Bag 背包",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_ECON_003",
+        "name": "Mall/Shop 商城",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_ECON_004",
+        "name": "Storage/Warehouse 仓库",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_ECON_005",
+        "name": "Trade Market 市场/交易",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_ECON_006",
+        "name": "Black Market 黑市",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_ECON_007",
+        "name": "Exchange 兑换",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_ECON_008",
+        "name": "Auction 拍卖",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_ECON_009",
+        "name": "Mail 邮件",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_ECON_010",
+        "name": "Recharge/Payment 充值",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_ECON_011",
+        "name": "Gift Item 礼包/宝箱",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_QUEST_001",
+        "name": "Mission/Quest 任务",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_QUEST_002",
+        "name": "Daily/Active 日常活跃",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_QUEST_003",
+        "name": "Achievement 成就",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_QUEST_004",
+        "name": "Growth Target 成长目标",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_QUEST_005",
+        "name": "Guide System 新手引导",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_MAP_001",
+        "name": "World Map 世界地图",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_MAP_002",
+        "name": "Team Group 组队",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_DUNGEON_001",
+        "name": "Dungeon 副本",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_DUNGEON_002",
+        "name": "Endless Dungeon 无尽/深渊",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_DUNGEON_003",
+        "name": "Tower 塔/爬塔",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_DUNGEON_004",
+        "name": "Mystic Realm 秘境/遗迹",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_DUNGEON_005",
+        "name": "Shadow/Palace dungeon 其余副本",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_ACT_001",
+        "name": "Sign-in/Check-in 签到",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_ACT_002",
+        "name": "Seven-Day Login 七日签到",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_ACT_003",
+        "name": "Invest 投资",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_ACT_004",
+        "name": "Turntable/Lucky Draw 转盘",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_ACT_005",
+        "name": "Scratch Card 刮刮乐",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_ACT_006",
+        "name": "Festival/Operation 节日运营活动",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_ACT_007",
+        "name": "Answer Quiz 答题",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_ACT_008",
+        "name": "Guess 竞猜",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_ACT_009",
+        "name": "Money Tree 摇钱树",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_ACT_010",
+        "name": "Pray/QiFu 祈福",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_ACT_011",
+        "name": "Treasure Hunt 夺宝探宝",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_ACT_012",
+        "name": "Return/Back Flow 回归",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_ACT_013",
+        "name": "Gift Recharge 累计充值活动",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_ACT_014",
+        "name": "Point/QingFu 点/dnf/live",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_ACT_015",
+        "name": "Global Wish 全球许愿",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_SOCIAL_001",
+        "name": "Chat System 聊天",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_SOCIAL_002",
+        "name": "Friend System 好友",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_SOCIAL_003",
+        "name": "Moments 朋友圈",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_SOCIAL_004",
+        "name": "Guild 公会",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_SOCIAL_005",
+        "name": "Marriage 结婚",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_SOCIAL_006",
+        "name": "Jiebai 结拜",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_SOCIAL_007",
+        "name": "Flower/Gift 送花",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_SOCIAL_008",
+        "name": "Party 宴会/派对",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_SOCIAL_009",
+        "name": "Guild Wars 公会战",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_SOCIAL_010",
+        "name": "Guild Tree/Animal/Skill 公会科技神兽",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_COMM_001",
+        "name": "Rank 排行榜",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_COMM_002",
+        "name": "Arena 竞技场",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_COMM_003",
+        "name": "Peakwar 巅峰战",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_COMM_004",
+        "name": "Race 竞速/魂师大赛",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_COMM_005",
+        "name": "Cross-server 跨服",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_COMM_006",
+        "name": "Mining 采矿",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_COMM_007",
+        "name": "Manor/Oasis 庄园",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_COMM_008",
+        "name": "Attack City 攻城/领土战",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_COMM_009",
+        "name": "Freight/Escort 押镖",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_COMM_010",
+        "name": "Gold/JinYin Tower 金银塔",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_GM_001",
+        "name": "GM Tools GM 工具",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_BACK_001",
+        "name": "Server Backend/DB 后台数据库",
+        "status": "已具备"
+      },
+      {
+        "system_id": "SYS_BACK_002",
+        "name": "Cross-server backend 跨服后台",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_HIDDEN_001",
+        "name": "Seal System 封印",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_HIDDEN_002",
+        "name": "XiuLuo 修罗",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_HIDDEN_003",
+        "name": "Chief 会长/百官",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_HIDDEN_004",
+        "name": "Star Soul 星魂",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_HIDDEN_005",
+        "name": "God Redemption 神位/神减免",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_HIDDEN_006",
+        "name": "Dragon 神龙/巨龙",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_HIDDEN_007",
+        "name": "Balloon 气球/活动",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_UNKNOWN_001",
+        "name": "Dan War 丹药战",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_UNKNOWN_002",
+        "name": "YunYing Ops 运营活动",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_UNKNOWN_003",
+        "name": "Insight 顿悟/洞察",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_UNKNOWN_004",
+        "name": "Color/Head 染色",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_EQUIP_005",
+        "name": "Equip Refine 装备洗练",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_EQUIP_006",
+        "name": "Gem/Socket 宝石",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_GROWTH_006",
+        "name": "Soul Bone 魂骨",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_GROWTH_007",
+        "name": "Augment/Amplify 增幅",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_ECON_012",
+        "name": "Drop/Loot Table 掉落",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_CORE_008",
+        "name": "Red Dot/Badge 红点",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_CORE_009",
+        "name": "UI State Sync UI状态",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_ROLE_007",
+        "name": "Combat Power 战力",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_FRIEND_006",
+        "name": "Partner Training 伙伴培养",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_FRIEND_007",
+        "name": "Partner Equipment 伙伴装备",
+        "status": "部分"
+      }
+    ],
+    "缺失": [
+      {
+        "system_id": "SYS_GROWTH_005",
+        "name": "Morale 士气",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_BATTLE_003",
+        "name": "Battle Replay/Video 战报回放",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_BATTLE_004",
+        "name": "God War Battle 神魔战",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_FRIEND_003",
+        "name": "Partner Atlas 伙伴图鉴",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_FRIEND_005",
+        "name": "Partner Fetter 伙伴羁绊",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_QUEST_005",
+        "name": "Guide System 新手引导",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_DUNGEON_004",
+        "name": "Mystic Realm 秘境/遗迹",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_DUNGEON_005",
+        "name": "Shadow/Palace dungeon 其余副本",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_ACT_006",
+        "name": "Festival/Operation 节日运营活动",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_ACT_008",
+        "name": "Guess 竞猜",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_ACT_012",
+        "name": "Return/Back Flow 回归",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_ACT_013",
+        "name": "Gift Recharge 累计充值活动",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_ACT_015",
+        "name": "Global Wish 全球许愿",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_SOCIAL_007",
+        "name": "Flower/Gift 送花",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_SOCIAL_008",
+        "name": "Party 宴会/派对",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_COMM_005",
+        "name": "Cross-server 跨服",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_COMM_006",
+        "name": "Mining 采矿",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_COMM_008",
+        "name": "Attack City 攻城/领土战",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_COMM_009",
+        "name": "Freight/Escort 押镖",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_COMM_010",
+        "name": "Gold/JinYin Tower 金银塔",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_BACK_002",
+        "name": "Cross-server backend 跨服后台",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_HIDDEN_001",
+        "name": "Seal System 封印",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_HIDDEN_002",
+        "name": "XiuLuo 修罗",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_HIDDEN_003",
+        "name": "Chief 会长/百官",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_HIDDEN_005",
+        "name": "God Redemption 神位/神减免",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_HIDDEN_006",
+        "name": "Dragon 神龙/巨龙",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_HIDDEN_007",
+        "name": "Balloon 气球/活动",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_UNKNOWN_001",
+        "name": "Dan War 丹药战",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_UNKNOWN_002",
+        "name": "YunYing Ops 运营活动",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_UNKNOWN_004",
+        "name": "Color/Head 染色",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_EQUIP_005",
+        "name": "Equip Refine 装备洗练",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_GROWTH_006",
+        "name": "Soul Bone 魂骨",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_GROWTH_007",
+        "name": "Augment/Amplify 增幅",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_CORE_008",
+        "name": "Red Dot/Badge 红点",
+        "status": "缺失"
+      },
+      {
+        "system_id": "SYS_CORE_009",
+        "name": "UI State Sync UI状态",
+        "status": "缺失"
+      }
+    ],
+    "部分": [
+      {
+        "system_id": "SYS_CORE_007",
+        "name": "Version/Resource Update 版本更新",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_ROLE_004",
+        "name": "VIP System 贵族/VIP",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_ROLE_006",
+        "name": "Avatar/Head & Chat Bubble 头像框气泡",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_GROWTH_002",
+        "name": "Talent/天赋",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_EQUIP_002",
+        "name": "Smith/Forge/Fuse 锻造合成",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_EQUIP_004",
+        "name": "Equip StarUp/强化 装备升星",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_FRIEND_004",
+        "name": "Partner Recruit 伙伴招募/抽卡",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_APPEAR_010",
+        "name": "Halo 光环",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_ECON_006",
+        "name": "Black Market 黑市",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_ECON_007",
+        "name": "Exchange 兑换",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_ECON_008",
+        "name": "Auction 拍卖",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_ECON_010",
+        "name": "Recharge/Payment 充值",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_QUEST_004",
+        "name": "Growth Target 成长目标",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_DUNGEON_002",
+        "name": "Endless Dungeon 无尽/深渊",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_DUNGEON_003",
+        "name": "Tower 塔/爬塔",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_ACT_002",
+        "name": "Seven-Day Login 七日签到",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_ACT_004",
+        "name": "Turntable/Lucky Draw 转盘",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_ACT_011",
+        "name": "Treasure Hunt 夺宝探宝",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_ACT_014",
+        "name": "Point/QingFu 点/dnf/live",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_SOCIAL_009",
+        "name": "Guild Wars 公会战",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_SOCIAL_010",
+        "name": "Guild Tree/Animal/Skill 公会科技神兽",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_COMM_001",
+        "name": "Rank 排行榜",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_HIDDEN_004",
+        "name": "Star Soul 星魂",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_UNKNOWN_003",
+        "name": "Insight 顿悟/洞察",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_EQUIP_006",
+        "name": "Gem/Socket 宝石",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_ECON_012",
+        "name": "Drop/Loot Table 掉落",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_ROLE_007",
+        "name": "Combat Power 战力",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_FRIEND_006",
+        "name": "Partner Training 伙伴培养",
+        "status": "部分"
+      },
+      {
+        "system_id": "SYS_FRIEND_007",
+        "name": "Partner Equipment 伙伴装备",
+        "status": "部分"
+      }
+    ]
+  }
+}

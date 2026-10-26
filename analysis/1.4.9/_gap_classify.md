@@ -1,0 +1,544 @@
+# 潜在缺口（1144 条）的分类总览
+
+命令总数：**1057**
+
+| 家族 | 条数 | 代表命令 |
+|---|---|---|
+| `13xxx` | 225 | 13000, 13001, 13004, 13008, 13010, 13011, 13012, 13015 |
+| `18xxx` | 127 | 18000, 18001, 18002, 18003, 18004, 18005, 18006, 18007 |
+| `12xxx` | 108 | 1201, 12000, 12001, 12002, 12003, 12004, 12005, 12006 |
+| `10xxx` | 101 | 10111, 10207, 10210, 10211, 10216, 10221, 10222, 10232 |
+| `11xxx` | 77 | 11000, 11001, 11002, 11003, 11004, 11005, 11006, 11007 |
+| `16xxx` | 72 | 16000, 16001, 16002, 16100, 16101, 16102, 16110, 16111 |
+| `20xxx` | 62 | 20010, 20025, 20026, 20027, 20029, 20030, 20200, 20201 |
+| `30xxx` | 58 | 30000, 30001, 30101, 30102, 30103, 30104, 30105, 30107 |
+| `17xxx` | 57 | 17000, 17101, 17199, 17201, 17302, 17307, 17311, 17400 |
+| `19xxx` | 48 | 19000, 19001, 19002, 19003, 19005, 19100, 19101, 19102 |
+| `14xxx` | 42 | 14020, 14021, 14022, 14023, 14028, 14200, 14201, 14202 |
+| `15xxx` | 38 | 15000, 15001, 15002, 15003, 15012, 15015, 15016, 15101 |
+| `31xxx` | 24 | 31000, 31001, 31002, 31003, 31004, 31005, 31006, 31007 |
+| `21xxx` | 18 | 21302, 21305, 21308, 21309, 21310, 21311, 21313, 21399 |
+
+## 有配置字段线索的 235 条
+
+- `1201` SC[time,id,msg]
+  - `time` ← config_black_market
+- `10233` SC[code,msg,id,time]
+  - `time` ← config_black_market
+- `10334` SC[coin]
+  - `coin` ← config_game_data
+- `10409` SC[hero_bid,exp]
+  - `exp` ← config_game_data
+- `10411` SC[bid,skills]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+- `10422` SC[count,gold,add_point]
+  - `gold` ← config_game_data, config_golden_tower, config_mission_escort
+- `10424` SC[code,msg,bid,skill_bid,new_skill_bid]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+- `10601` SC[p,skill_bid,lev,hero_list]
+  - `lev` ← config_answer, config_lantern_answer
+- `10710` SC[lev,store_num,status,left_time,total_time]
+  - `lev` ← config_answer, config_lantern_answer
+- `10731` SC[Type,lev,gold,next_time]
+  - `lev` ← config_answer, config_lantern_answer
+  - `gold` ← config_game_data, config_golden_tower, config_mission_escort
+- `10734` SC[code,msg,gold]
+  - `gold` ← config_game_data, config_golden_tower, config_mission_escort
+- `10741` SC[lev,status,flag,time,all_time,can_get,be_rob]
+  - `lev` ← config_answer, config_lantern_answer
+  - `time` ← config_black_market
+- `10761` SC[lev,can_get,be_rob,next_time]
+  - `lev` ← config_answer, config_lantern_answer
+- `10762` SC[code,msg,gold]
+  - `gold` ← config_game_data, config_golden_tower, config_mission_escort
+- `10946` SC[code,msg,item_bid]
+  - `item_bid` ← config_mission_escort, config_partner_shenqi
+- `10947` SC[rid,srv_id,name,lev,career,sex,is_vip,vip_lev,gname,cur_title,marry_state,spouse_name,attr,power,all_power,face_id,ride,lingshou,wing,has_shenqi,refine_suit,refine_suit_next,misc_uint32,animate_res,jiebai_title,jiebai_lev,halo_stage,chair_stage,spirit,flyup_lev]
+  - `lev` ← config_answer, config_lantern_answer
+  - `vip_lev` ← config_intensify
+  - `all_power` ← config_yuanshen
+  - `halo_stage` ← config_eqm_ancient
+  - `chair_stage` ← config_eqm_ancient
+- `10949` SC[rid,srv_id,jie,jie_luck,grow,zz,face,use,skill_list,attr_list,can_item_list,items,surface_list,surface_star]
+  - `grow` ← config_shenqi
+- `10950` SC[rid,srv_id,jie,jie_luck,grow,zz,face,use,skill_list,attr_list,can_item_list,items,surface_list,surface_star]
+  - `grow` ← config_shenqi
+- `11006` SC[code,msg,type,value,item_bid]
+  - `item_bid` ← config_mission_escort, config_partner_shenqi
+- `11008` SC[code,msg,status,time,hero_list]
+  - `time` ← config_black_market
+- `11010` SC[code,msg,name,lev,face_id,sex,ceng,shield_time,be_hero_list,be_tr_hero_list,reward,dnf_base]
+  - `lev` ← config_answer, config_lantern_answer
+- `11212` SC[code,msg,bid,type]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+- `11237` SC[code,msg,stage,star,open_index,rune_data,formation_type,partner_list,exp,crit_cnt,not_crit_cnt,break]
+  - `exp` ← config_game_data
+- `11238` SC[code,msg,stage,star,open_index,rune_data,exp,crit_cnt,not_crit_cnt,break,is_crit]
+  - `exp` ← config_game_data
+- `11241` SC[code,msg,index,rune_index,item_id,item_lev,item_exp,item_list]
+  - `item_list` ← config_jiebai_data
+- `11242` SC[code,msg,stage,star,open_index,rune_data,exp,crit_cnt,not_crit_cnt,break]
+  - `exp` ← config_game_data
+- `11500` SC[lingqi,garden_work]
+  - `lingqi` ← config_game_data
+- `11706` SC[time]
+  - `time` ← config_black_market
+- `12000` SC[tips,msg,mon_list,item_list]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+  - `item_list` ← config_jiebai_data
+- `12001` SC[bid,star_lev,gain,items]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+- `12006` SC[bid,left_times]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+- `12007` SC[bid,buy_times]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+- `12202` SC[code,msg,coin]
+  - `coin` ← config_game_data
+- `12210` SC[code,msg,type,lev,item_id,total]
+  - `lev` ← config_answer, config_lantern_answer
+- `12213` SC[type,lev,item_id,total]
+  - `lev` ← config_answer, config_lantern_answer
+- `12404` SC[code,msg,mission_bid]
+  - `mission_bid` ← config_mission_escort
+- `12412` SC[bid,assets,items,guild_assets,guild_wage]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+- `12413` SC[bid,progress_list]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+- `12415` SC[mission_bid,item_bid,item_num,code,msg]
+  - `mission_bid` ← config_mission_escort
+  - `item_bid` ← config_mission_escort, config_partner_shenqi
+  - `item_num` ← config_mission_escort
+- `12416` SC[mission_bid]
+  - `mission_bid` ← config_mission_escort
+- `12417` SC[mission_bid,partner_id,partner_num,code,msg]
+  - `mission_bid` ← config_mission_escort
+- `12418` SC[uniq_id,mission_bid]
+  - `mission_bid` ← config_mission_escort
+- `12419` SC[mission_bid,mission_status,commit_num,loop_count,loop_num,code,process_status,target,target_value,value,show_lave_time,lave_time,accept_time]
+  - `mission_bid` ← config_mission_escort
+- `12422` SC[mission_bid,code,msg]
+  - `mission_bid` ← config_mission_escort
+- `12440` SC[bid,items]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+- `12604` SC[bid,code,msg]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+- `12721` SC[flag,rid,srv_id,name,lev,career,face_id,len,msg,sex,vip_lev,capacity,head_bid,bubble_bid,tick]
+  - `lev` ← config_answer, config_lantern_answer
+  - `vip_lev` ← config_intensify
+- `12726` SC[srv_id,voice_id,time,voice,type]
+  - `time` ← config_black_market
+- `12822` SC[code,msg,id,bid]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+- `12934` SC[my_ord,my_val,my_hero_bid,grow,rank_list]
+  - `grow` ← config_shenqi
+- `12980` SC[bid,my_ord,my_val,my_sec,my_team_member,rank_list]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+- `13000` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13001` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13017` SC[bid,role_out,hero_out,mon_out]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+- `13021` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13026` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13037` SC[Bid,ceng,tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13043` SC[tips,msg,count]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13044` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13051` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13055` SC[tips,msg,star,effect_type_per]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13057` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13060` SC[tips,msg,round]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13062` SC[tips,msg,ceng]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13079` SC[code,msg,bid,enter_count,buy_count]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+- `13082` SC[tips,msg,time]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+  - `time` ← config_black_market
+- `13083` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13084` SC[max_wave,rank,partner_list,goods_index,goods_flag,max_passed]
+  - `max_wave` ← config_dungeon_endless_data, config_ycj
+- `13086` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13098` SC[Bid,ceng,tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13101` SC[tips,msg,pos_info]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13102` SC[tips,msg,pos_info]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13103` SC[tips,msg,f_lev,f_info]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13104` SC[tips,msg,s_type]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13105` SC[experience]
+  - `experience` ← config_game_data
+- `13202` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13204` SC[tips,msg,id,srv_id]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13205` SC[tips,msg,team_id,team_srv_id]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13206` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13209` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13210` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13211` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13213` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13214` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13216` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13217` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13219` SC[tips,msg,flag,role_list]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13220` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13223` SC[tips,msg,purpose,arg,min_lev,max_lev,leader_new]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+  - `max_lev` ← config_fly_up, config_rune_data
+- `13225` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13226` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13228` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13229` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13231` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13238` SC[tips,msg,time]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+  - `time` ← config_black_market
+- `13251` SC[tips,msg,pos_info]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13253` SC[tips,msg,s_type]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13256` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13258` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `13304` SC[rid,srv_id,name,sex,lev]
+  - `lev` ← config_answer, config_lantern_answer
+- `13324` SC[code,string,bid,num]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+- `13328` SC[rid,srv_id,name,career,b_rid,b_srv_id,b_name,b_career,item_bid]
+  - `item_bid` ← config_mission_escort, config_partner_shenqi
+- `13349` SC[code,msg,name,lev,career,sex,sign,guild_name,title,spouse_name,per_name,zone,city,gift_num,nice_num,flower,is_nice,zone_skin,head_skin,use_badge_list]
+  - `lev` ← config_answer, config_lantern_answer
+- `13362` SC[code,msg,bid]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+- `13363` SC[code,msg,type,bid]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+- `13502` SC[index,gid,srv_id,realm,vip,guild_name,head_name,head_career,lev,role_count,max_role_count,applyed,power,assets,is_recommend,head_sex,is_invited]
+  - `vip` ← config_rune_treasure_data
+  - `lev` ← config_answer, config_lantern_answer
+- `13518` SC[guild_name,lev,role_count,max_role_count,stu_count,max_stu_count,aim,sign,qq,yy,head_name,maintain,all_assets,max_assets,member_lev,health,week_wage,max_week_wage,all_request]
+  - `lev` ← config_answer, config_lantern_answer
+- `13601` SC[tips,msg,uid,role_id,role_srv_id,role_name]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+  - `role_name` ← config_color_code
+- `13742` SC[code,msg,item_bid]
+  - `item_bid` ← config_mission_escort, config_partner_shenqi
+- `13813` SC[code,msg,market_id,item_num,sell_num,sell_type]
+  - `item_num` ← config_mission_escort
+- `13815` SC[price,gold]
+  - `gold` ← config_game_data, config_golden_tower, config_mission_escort
+- `14021` SC[tips,msg,flag,pos_info]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `14022` SC[tips,msg,flag,pos_info]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `14023` SC[tips,msg,flag,s_type]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `14028` SC[tips,msg,flag,pos_info]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `14203` SC[rid,srv_id,name,mission_bid,status,quality,refresh_count,all_refresh_count,brush_count]
+  - `mission_bid` ← config_mission_escort
+- `14206` SC[mission_bid,type2,code,msg]
+  - `mission_bid` ← config_mission_escort
+- `14210` SC[reward_list,total_star,mission_list,free_times,free_refresh_time]
+  - `free_times` ← config_holiday_dial_reward_data, config_holiday_lucky_turntable_data, config_mission_escort
+- `14211` SC[code,msg,bid,star,free_times]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+  - `free_times` ← config_holiday_dial_reward_data, config_holiday_lucky_turntable_data, config_mission_escort
+- `14212` SC[code,msg,bid,total_star]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+- `14299` SC[code,msg,bid,mission]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+- `14501` SC[mission_bid,map_bid,x,y]
+  - `mission_bid` ← config_mission_escort
+  - `map_bid` ← config_dungeon_endless_data, config_marry_data
+- `14503` SC[exp,coin]
+  - `exp` ← config_game_data
+  - `coin` ← config_game_data
+- `14505` SC[mission_bid]
+  - `mission_bid` ← config_mission_escort
+- `14906` SC[code,msg,bid]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+- `15000` SC[pos,item_list,event_list]
+  - `item_list` ← config_jiebai_data
+- `15201` SC[mission_bid,map_bid,x,y]
+  - `mission_bid` ← config_mission_escort
+  - `map_bid` ← config_dungeon_endless_data, config_marry_data
+- `15207` SC[item_list]
+  - `item_list` ← config_jiebai_data
+- `15208` SC[times,item_list]
+  - `item_list` ← config_jiebai_data
+- `15301` SC[mission_bid,map_bid,x,y]
+  - `mission_bid` ← config_mission_escort
+  - `map_bid` ← config_dungeon_endless_data, config_marry_data
+- `15303` SC[mission_bid]
+  - `mission_bid` ← config_mission_escort
+- `15607` SC[bid,code]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+- `16001` SC[tips,msg,item_list]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+  - `item_list` ← config_jiebai_data
+- `16002` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `16202` SC[mon_bid,kill,map_bid,x,y,left_time,award]
+  - `map_bid` ← config_dungeon_endless_data, config_marry_data
+- `16401` SC[code,msg,bid]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+- `16501` SC[tips,msg,type,get_info,can_get_info]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `16502` SC[tips,msg,type,val]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `16610` SC[code,msg,end_date,cost_item,cost_num,reward_list]
+  - `end_date` ← config_global_wish_data, config_lucky_box_data
+  - `cost_num` ← config_lucky_box_data
+- `16621` SC[code,msg,end_date,reward_list,card_list]
+  - `end_date` ← config_global_wish_data, config_lucky_box_data
+- `16630` SC[holiday_bid,time_str,page,list,end_time,remain_sec]
+  - `end_time` ← config_auction_data
+- `16632` SC[code,msg,order_bid,version,type,buy_cnt,sell_out,home_page]
+  - `version` ← config_global_wish_data, config_lucky_box_data
+- `16634` SC[code,type,order_bid,version,tag,status,rest,total,dead_line,item_list,shelf]
+  - `version` ← config_global_wish_data, config_lucky_box_data
+  - `item_list` ← config_jiebai_data
+- `16636` SC[type,order_bid,version,buy_cnt,buy_time,rest,total,item_list,number,role_id,srv_id,role_name,open_time,dead_line,order_status,shelf]
+  - `version` ← config_global_wish_data, config_lucky_box_data
+  - `item_list` ← config_jiebai_data
+  - `role_name` ← config_color_code
+  - `open_time` ← config_xiuluo_data
+- `16637` SC[order_bid,version,buy_cnt,status,num_list]
+  - `version` ← config_global_wish_data, config_lucky_box_data
+- `16638` SC[order_bid,version,rand_num,change_num,tot_time]
+  - `version` ← config_global_wish_data, config_lucky_box_data
+- `16640` SC[holiday_bid,choose_list,coin_type,refresh_cost,refresh_status,reward_list,status,client_reward,item_effect_list]
+  - `refresh_cost` ← config_guild_mission_data
+- `16641` SC[code,msg,holiday_bid,coin_type,refresh_cost,choose_list]
+  - `refresh_cost` ← config_guild_mission_data
+- `16651` SC[code,msg,remain_sec,cash_reward,card_list,item_list,item_effect_list,client_reward]
+  - `item_list` ← config_jiebai_data
+- `16665` SC[code,msg,end_time,score,level,index,record_list]
+  - `end_time` ← config_auction_data
+- `16693` SC[end_time,info,records]
+  - `end_time` ← config_auction_data
+- `16695` SC[status,item_list]
+  - `item_list` ← config_jiebai_data
+- `16696` SC[code,msg,item_list]
+  - `item_list` ← config_jiebai_data
+- `16697` SC[num,end_time,need_item_bid,need_item_num,trun_list,ext_list]
+  - `end_time` ← config_auction_data
+- `16699` SC[type,item_list]
+  - `item_list` ← config_jiebai_data
+- `16700` SC[vip_lev,get_award]
+  - `vip_lev` ← config_intensify
+- `16702` SC[tips,msg,get_award]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `17000` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `17101` SC[tips,msg,type,item_list]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+  - `item_list` ← config_jiebai_data
+- `17201` SC[tips,msg,item_list]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+  - `item_list` ← config_jiebai_data
+- `17302` SC[tips,msg,act_type,is_match]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `17307` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `17400` SC[code,msg,enemy_guild_id,enemy_guild_srv_id,enemy_guild_name,status,time,total_star,max_star,total_attack,enemy_total_star,enemy_max_star,enemy_total_attack,left_times]
+  - `time` ← config_black_market
+  - `max_star` ← config_marry_eqm_data
+- `17401` SC[divide_num,guild_id,guild_srv_id,member_list]
+  - `divide_num` ← config_attack_city
+- `17507` SC[code,msg,time]
+  - `time` ← config_black_market
+- `17509` SC[code,msg,role_name,lev,career,sex]
+  - `role_name` ← config_color_code
+  - `lev` ← config_answer, config_lantern_answer
+- `17518` SC[exp,hero_exp,coin]
+  - `exp` ← config_game_data
+  - `hero_exp` ← config_game_data
+  - `coin` ← config_game_data
+- `17700` SC[code,msg,from_code,item_id,lev]
+  - `lev` ← config_answer, config_lantern_answer
+- `17706` SC[code,msg,bag_code,item_list]
+  - `item_list` ← config_jiebai_data
+- `17707` SC[code,msg,item_list]
+  - `item_list` ← config_jiebai_data
+- `17709` SC[tips,msg,item_id]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `17710` SC[tips,msg,item_id]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `17711` SC[tips,msg,bag_code,item_id]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `17712` SC[tips,msg,bag_code,item_id,stage]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `17713` SC[tips,msg,bag_code,item_id]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `17714` SC[tips,msg,bag_code,item_id]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `17715` SC[tips,msg,bag_code,item_id,list]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `17716` SC[tips,msg,bag_code1,id1,intensify_lev1,bag_code2,id2,intensify_lev2]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `17905` SC[res,rank,msg]
+  - `res` ← config_attr
+- `18011` SC[code,msg,type,lev]
+  - `lev` ← config_answer, config_lantern_answer
+- `18012` SC[code,msg,type,lev_limit]
+  - `lev_limit` ← config_holiday_dial_reward_data, config_holiday_lucky_turntable_data, config_jiebai_data
+- `18020` SC[code,msg,buy_list,notice_list,item_list]
+  - `item_list` ← config_jiebai_data
+- `18021` SC[type,item_list]
+  - `item_list` ← config_jiebai_data
+- `18026` SC[code,msg,item_bid,type,notice_list]
+  - `item_bid` ← config_mission_escort, config_partner_shenqi
+- `18200` SC[tips,msg]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `18319` SC[qifen,total_qifen,rest_time,exp,coin,use_list]
+  - `exp` ← config_game_data
+  - `coin` ← config_game_data
+- `18502` SC[mission_bid,map_bid,x,y]
+  - `mission_bid` ← config_mission_escort
+  - `map_bid` ← config_dungeon_endless_data, config_marry_data
+- `18701` SC[tips,msg,flag,pos_info]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `18702` SC[tips,msg,flag,pos_info]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `18703` SC[tips,msg,flag,s_type]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `18706` SC[tips,msg,flag,cheer_hero]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `18708` SC[tips,msg,flag,pos_info]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `18709` SC[code,tips]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `18710` SC[code,tips,refresh_times,partner_list]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `18711` SC[code,tips]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `18712` SC[code,tips]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `18713` SC[code,tips,rid,srv_id,role_list]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `18715` SC[code,tips,goods_index]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `18736` SC[code,msg,buff_bid]
+  - `buff_bid` ← config_mission_escort
+- `18750` SC[end_time,boss_hp,status,boss_bid,max_hp,boss_time,role_time,info_list,self_list]
+  - `end_time` ← config_auction_data
+- `18756` SC[code,msg,protect_time,rid,srv_id]
+  - `protect_time` ← config_mine_new
+- `18826` SC[code,msg,floor,rest_time,kill_number,win_coin,rest_wave]
+  - `floor` ← config_rune_treasure_data
+- `18828` SC[code,msg,rid,srv_id,name,career,sex,lev,power,disagree,animate_res,items,team_member,floor,use_sec,my_floor,my_use_sec,my_count,leader_name,my_team_member]
+  - `lev` ← config_answer, config_lantern_answer
+  - `floor` ← config_rune_treasure_data
+- `18864` SC[floor,score,dan_score,end_time,reward_flag]
+  - `floor` ← config_rune_treasure_data
+  - `end_time` ← config_auction_data
+- `18886` SC[rid,srv_id,role_name,career,sex,win_times,total_times,score,index,end_time,cont_win_times,best_friend,max_score,kill_num]
+  - `role_name` ← config_color_code
+  - `end_time` ← config_auction_data
+  - `max_score` ← config_golden_tower
+- `19100` SC[stage,power,luck,res_stage,grow,skill_list,items,looks,surface_star]
+  - `grow` ← config_shenqi
+- `19514` SC[code,msg,jid,j_srv_id,front_name,member_len,end_name,lev,leader_name,exp,common_notice,member_list,vote_type,vote_status,vote_end_time,host_rid,host_srv_id,vote_host,member_rid,member_srv_id,vote_member,vote_list]
+  - `member_len` ← config_god_unite_data
+  - `lev` ← config_answer, config_lantern_answer
+  - `exp` ← config_game_data
+- `19516` SC[code,msg,bid,lev]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+  - `lev` ← config_answer, config_lantern_answer
+- `19530` SC[code,msg,member_list,end_time]
+  - `end_time` ← config_auction_data
+- `19534` SC[jid,j_srv_id,front_name,member_len,end_name,lev,exp]
+  - `member_len` ← config_god_unite_data
+  - `lev` ← config_answer, config_lantern_answer
+  - `exp` ← config_game_data
+- `19902` SC[code,msg,round,status,end_time,role_num,balloon_num,right_num,rank_list]
+  - `end_time` ← config_auction_data
+- `20200` SC[search_times,rob_times,occupy_time,occupy_num,mine_list,search_cost,hero_exp,search_assets]
+  - `hero_exp` ← config_game_data
+- `20204` SC[search_times,rob_times,occupy_time,occupy_num,reward,search_cost,hero_exp,search_assets]
+  - `hero_exp` ← config_game_data
+- `20212` SC[code,msg,hero_exp]
+  - `hero_exp` ← config_game_data
+- `20301` SC[code,msg,type,id,msrv_id,index,bid,quality,rid,srv_id,name,gname,val,rob_val,end_time,lose_count,win_count,rest_sec,role_lev,sex,career,face_id,formation]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+  - `end_time` ← config_auction_data
+  - `role_lev` ← config_god_unite_data, config_golden_tower, config_huaguo_mountain_data
+- `20503` SC[code,msg,role_id,srv_id,name,lev,sex,career,intimacy]
+  - `lev` ← config_answer, config_lantern_answer
+- `20717` SC[flag,round,start_time,end_time,team_name,member_list,enemy_team_name,enemy_member_list,next_start_time,fight_state]
+  - `start_time` ← config_auction_data
+  - `end_time` ← config_auction_data
+- `20724` SC[team_id,team_srv_id,team_name,state,team_id2,team_srv_id2,team_name2,state2,flag,round,status,end_time]
+  - `end_time` ← config_auction_data
+- `21305` SC[code,msg,bid,enter_count,buy_count]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+- `21308` SC[tips,msg,time]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+  - `time` ← config_black_market
+- `21309` SC[tips,msg,bid]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+- `21310` SC[tips,msg,one_key_sweep_list]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `21311` SC[tips,msg,one_key_sweep_list]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `21313` SC[tips,msg,one_key_sweep_list]
+  - `tips` ← config_arena_msg, config_attack_city, config_money_tree
+- `21600` SC[stage,power,luck,res_stage,grow,skill_list,items,surface_list,surface_star]
+  - `grow` ← config_shenqi
+- `30105` SC[career,idx,num,rank,hurt,role_list]
+  - `hurt` ← config_attr
+- `30109` SC[career,idx,num,rank,career_rank,hurt,role_list]
+  - `hurt` ← config_attr
+- `30205` SC[bid,hp,max_hp,wave,max_wave,mon_num]
+  - `bid` ← config_global_wish_data, config_golden_tower, config_rune_treasure_data
+  - `hp` ← config_attr
+  - `max_wave` ← config_dungeon_endless_data, config_ycj
+- `30207` SC[end_time,item_list]
+  - `end_time` ← config_auction_data
+  - `item_list` ← config_jiebai_data
+- `30220` SC[wave,rank,score,item_list,role_list]
+  - `item_list` ← config_jiebai_data
+- `30703` SC[group,start_time,count,season,guild_match_list]
+  - `start_time` ← config_auction_data
+- `30707` SC[group,gid1,gsrv_id1,gname1,gid2,gsrv_id2,gname2,time,ret]
+  - `time` ← config_black_market
+- `30713` SC[elem_id,cd_time,time,max_time,play_effect]
+  - `time` ← config_black_market
+- `31006` SC[career,idx,num,rank,hurt,name,my_lev,role_list]
+  - `hurt` ← config_attr
+- `31102` SC[point,insight_bid,lev]
+  - `lev` ← config_answer, config_lantern_answer

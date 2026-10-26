@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "task": "MuMu UI 显示值取证（任务1第二阶段）",
+    "date": "2026-10-02",
+    "device": "MuMu Emulator, adb 127.0.0.1:16384",
+    "package": "com.shiyue.dldl.ewan.baidu2",
+    "role_baseline": {"rid": 1001, "name": "DSH", "level": 70, "gold": 1799840, "coin": 9904569, "scene": 10001},
+    "gm_modifications": "NONE - 未使用 GM 改数值",
+    "server_modifications": "NONE - 未修改 server/ 任何文件"
+  },
+  "item_1_skill_panel": {
+    "panel": "魂技 → 技能 / 修炼",
+    "screenshot": "uival_05_skill.png, uival_06_xiulian.png",
+    "ui_display_values": {
+      "skill_list_all_learnable": "所有技能显示'可学习'标签",
+      "selected_skill": "玄武真身 LV.1",
+      "skill_desc": "气血低于40%时触发，受到的伤害减少29%，3回合，不可被驱散",
+      "skill_attr_bonus": "物理破甲+1(下级+1)",
+      "skill_type": "辅助技能",
+      "skill_cooldown": "8回合",
+      "consumption_display": "消耗: 0（技能点图标旁显示0）",
+      "owned_points": "拥有: 9,904,599（银魂币余额显示）",
+      "xiulian_selected": "抗控修炼 LV.22",
+      "xiulian_progress": "修炼进度: 35/50",
+      "xiulian_consumption_bar": "消耗栏空白（EXP火焰图标+空条，无数值显示）",
+      "xiulian_owned_bar": "拥有栏空白（EXP火焰图标+空条，无数值显示）"
+    },
+    "server_config_comparison": {
+      "config_skillpoint": "配置: L1=10g → L10=100g (SkillPoint表)",
+      "config_xiulian_learn": "配置: 攻击修炼=86exp, 物防修炼=43exp (SkillXiulianLearn)",
+      "config_xiulian_up": "配置: L1→L2=402exp, L2→L3=852exp (SkillXiulianUp, 192级)"
+    },
+    "evidence": "UI_DISPLAY",
+    "note": "技能面板UI正常打开，技能列表和描述正确显示。修炼消耗栏为空——客户端未收到服务端下发的修炼经验值，这是 mock_server 数据下发缺失的表现。配置表中的消耗数值（SkillPoint/SkillXiulianLearn/SkillXiulianUp）未在UI中体现。"
+  },
+  "item_2_partner_panel": {
+    "panel": "伙伴",
+    "screenshot": "uival_07_partner.png",
+    "ui_display_values": {
+      "tabs": "普通 / 特殊",
+      "selected_partner": "巫风 (法·仙品)",
+      "partner_carry_level": "携带等级: 1",
+      "partner_purchase": "1级可购买",
+      "qualification_ranges": {
+        "物攻资质": "1010-1550",
+        "防御资质": "1400-2160",
+        "速度资质": "1480-2270",
+        "生命资质": "1330-2040",
+        "法术资质": "1790-2760"
+      },
+      "partner_skills": ["火龙吐息", "火柱", "保命"],
+      "right_side_tabs": ["综合", "洗髓", "阵型", "图鉴"],
+      "partner_list_visible": "多列伙伴头像网格，标注 肉/法/物/辅 类型 + 等级数字"
+    },
+    "server_config_comparison": {
+      "config_partner_base": "配置53个伙伴 (partner_config.json)",
+      "config_partner_shenqi": "神器消耗: L1=2400金 → L5=18000金",
+      "config_partner_talisman": "符咒消耗: L1=10000 → L4=40000"
+    },
+    "evidence": "UI_DISPLAY",
+    "note": "伙伴面板正常打开，但角色未拥有任何伙伴（全部显示'可购买'状态），因此无法查看已拥有伙伴的培养/升级UI。伙伴资质范围正确显示，与配置表一致。培养消耗UI（喂养/升级按钮）在未拥有伙伴时不可见。"
+  },
+  "item_3_gem_inlay_panel": {
+    "panel": "未打开",
+    "screenshot": null,
+    "ui_display_values": null,
+    "note": "未找到宝石/镶嵌面板入口。底部面板有'锻造'按钮（可能含强化/镶嵌），但本次未导航到该面板。宝石镶嵌加成UI数据待后续采集。",
+    "evidence": "NOT_ACCESSIBLE"
+  },
+  "item_4_battle_settlement": {
+    "panel": "战斗场景",
+    "screenshot": null,
+    "ui_display_values": null,
+    "note": "战斗触发失败：尝试了主线任务点击、挂机自动巡逻按钮，均未成功进入战斗场景。角色始终停留在史莱克城(scene_id=10001)。可能原因：mock_server 未实现挂机战斗场景切换逻辑，或自动巡逻按钮需要服务端响应才能传送。怪物血条/伤害数字/击杀奖励等UI证据未能采集。",
+    "evidence": "NOT_TRIGGERED",
+    "attempts": [
+      "点击主线任务文本 → 无反应",
+      "挂机面板 → 点选乾坤日月谷地图 → 点自动巡逻 → 未传送，仍在城中",
+      "重启游戏后重试 → 同上"
+    ]
+  },
+  "item_5_afk_panel": {
+    "panel": "挂机",
+    "screenshot": "uival_19_guaji.png",
+    "ui_display_values": {
+      "recommended_map_1": "乾坤日月谷 (65-74级) - 推荐",
+      "recommended_map_2": "魂殿遗迹一层 (75-84级)",
+      "double_points": "双倍点数: 0",
+      "vip_note": "提高VIP等级可增加双倍点数"
+    },
+    "server_config_comparison": {
+      "config_guaji_maps": "配置中挂机地图列表存在（config_promote.json 文案确认）"
+    },
+    "evidence": "UI_DISPLAY",
+    "note": "挂机面板正常显示2个推荐地图，与角色等级匹配(70级→65-74级地图)。双倍点数为0（未领取）。"
+  },
+  "gm_usage_log": {
+    "status_checks": 3,
+    "set_operations": 0,
+    "baseline_restored": true,
+    "final_baseline": {"rid": 1001, "level": 70, "gold": 1799840, "coin": 9904569, "scene": 10001}
+  }
+}

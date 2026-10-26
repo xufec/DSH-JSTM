@@ -1,0 +1,235 @@
+{
+ "systems": [
+  {
+   "system": "Lua模块",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "1.3.0: 1557 luac / 92 game 模块; 1.4.9: 2234/116; 1.4.11: 2297/119. 1.4.11 新增 31 模块, 含大量 _ctrl/_panel/_view UI 模块; 1.4.9 仅部分反编译. 三版均直接读 APK."
+  },
+  {
+   "system": "cmd",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "共享同一 cmd registry 结构; 条目随 cmd_resolve 增长(89->122->124). registry cmd_table.json=1643 为 1.4.9-based, 不视为与 1.4.11 wire 格式相等; 1.4.11 cmd-diff 仅 INFERENCE."
+  },
+  {
+   "system": "protocol",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "共享 registry fields.json=3553; 1.4.9 已分系统整理. 1.3.0 解包内含 all_proto.luac(落于 extracted/config/protocal/). 存在性 CONFIRMED; 1.4.11 wire 一致性 INFERENCE."
+  },
+  {
+   "system": "cmd_resolve",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "计数 1.3.0:89; 1.4.9:122; 1.4.11:124. 1.4.11 较 1.3.0 新增 35 个(187..221/300..313 段); 1.3.0 无独有. 1.4.11 另有 server_cmds.json/protocalrulesmgr.luac."
+  },
+  {
+   "system": "config",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "config_*.luac 计数 1.3.0:168; 1.4.9:227; 1.4.11:233. 1.4.11 新增 66 表(auction/black_market/fashion/holiday_*/mine/partner_fetter/score/shenqi 等)."
+  },
+  {
+   "system": "item",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "三版均含 config_item.luac 及 fuse/gift/misc/type_name 族. 1.4.9 server item_config=3535 (VERIFIED); 1.4.11 item 条数未逐表提取=UNKNOWN. 存在性 CONFIRMED."
+  },
+  {
+   "system": "equipment",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "三版均含 config_intensify.luac/config_eqm_starup_data.luac. 1.4.11 新增 config_eqm_ancient.luac/config_red_eqm.luac/config_fabao.luac. 存在性 CONFIRMED."
+  },
+  {
+   "system": "skill",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "三版均含 config_skill.luac + bullet/magic/scene/talent/trigger/xiulian 全家. 存在性 CONFIRMED."
+  },
+  {
+   "system": "task",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "三版均含 config_mission.luac + buffy/escort/help/kill_demon/loop/marry/treasure 族. 1.4.9 server mission_config=846 (VERIFIED); 1.4.11 mission 条数未提取=UNKNOWN. 存在性 CONFIRMED."
+  },
+  {
+   "system": "partner",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "1.3.0 含 hero 模块 + config_partner_base/misc/skill.luac; 1.4.11 新增 fetter/score/shenqi(共6表). 1.4.9 server partner_config=53 (VERIFIED); 1.4.11 partner 条数未提取=UNKNOWN. 存在性 CONFIRMED."
+  },
+  {
+   "system": "dungeon",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "1.3.0 已有 config_dungeon_new/tower/vip_single.luac. 1.4.11 新增 endless/gods/jieyi/rune/seal_demon/vip_single2 + kunshentower/crossdungeon 模块. 存在性 CONFIRMED."
+  },
+  {
+   "system": "activity",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "三版 config_function.luac 入口均为 91(id-count, VERIFIED). 1.3.0 无 auction/peakwar/holiday_* 系列; 1.4.11 新增 config_act/fest_data/holiday_*(由 config_holiday 重命名/拆分)等. 存在性 CONFIRMED."
+  },
+  {
+   "system": "shop",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "三版均含 config_mall.luac/config_shop.luac/config_market.luac. 1.4.9 server mall_config=142 (VERIFIED); 1.4.11 mall 条数未提取=UNKNOWN. 存在性 CONFIRMED."
+  },
+  {
+   "system": "currency",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "STRONG_INFERENCE",
+   "notes": "三版同源 config_game_data.luac(AssetsEnToCode 资产/货币枚举); 精确货币 id 集合未逐一枚举. 存在性 STRONG_INFERENCE(同源引擎), 集合粒度 UNKNOWN."
+  },
+  {
+   "system": "UI",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "1.3.0 存在 UI 模块(1557 luac 内)但少于 1.4.11; 1.4.9 UI corpus 仅部分反编译(_mission/_npc/_story 等后代文件); 1.4.11 有完整 _ctrl/_panel/_view. 存在性 CONFIRMED; 1.4.9 覆盖度部分为提取层面, 非 UI 不存在."
+  },
+  {
+   "system": "scene",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "三版均含 map 模块 + config_map.luac/map_block/map_npc/map_icon_pos/map_partical/world_map. 存在性 CONFIRMED."
+  },
+  {
+   "system": "NPC",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "三版均含 npc 模块 + config_npc.luac. 存在性 CONFIRMED."
+  },
+  {
+   "system": "monster",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "三版均含 ghost/boss 模块 + config_mon_data.luac. 存在性 CONFIRMED."
+  },
+  {
+   "system": "GM",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "三版均含 gm_report 模块 + config_gm_cmd.luac. 存在性 CONFIRMED."
+  },
+  {
+   "system": "system entry",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "config_function.luac 入口三版均为 91(VERIFIED); 但 1.4.11 功能模块总数多于 1.3.0(game 模块 92 vs 119). 存在性 CONFIRMED."
+  },
+  {
+   "system": "resources",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "1.3.0 assets 135.1MB vs 1.4.11 276.2MB(直接读 APK 字节数); 1.4.9 有 _assets_config.json, 资源清单完整性未全枚举. 存在性 CONFIRMED."
+  },
+  {
+   "system": "strings",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "三版均含文案/常量表: 1.3.0 config_color.luac/config_color_code.luac/config_notice.luac; 1.4.11 另增 config_chat_bubble.luac 等. 存在性 CONFIRMED."
+  },
+  {
+   "system": "assets",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "总条目 1.3.0:10670; 1.4.9:16379; 1.4.11:19106(直接读 APK). 旧版本表曾误标 1.4.11=未知, 已修正. 单个资产文件清单未逐一枚举. 存在性 CONFIRMED."
+  },
+  {
+   "system": "data tables",
+   "v130": "存在",
+   "v149": "存在",
+   "v1411": "存在",
+   "change": "修改",
+   "evidence": "CONFIRMED",
+   "notes": "1.3.0 168 配置表 ⊂ 1.4.11 233(仅 config_holiday.luac 为 1.3.0 独有, 1.4.11 拆为 config_holiday_* 系列=重命名/拆分); item/skill/partner/mission/dungeon/activity 等大量重叠. 行级 table-count diff UNKNOWN. 存在性 CONFIRMED."
+  }
+ ],
+ "system_count": 24,
+ "evidence_legend": {
+  "CONFIRMED": "直接读 APK / 解包数据（主源证据）",
+  "VERIFIED": "实机 + 服务器验证（次级但可靠）",
+  "STRONG_INFERENCE": "同源/强推断，无逐字段直接核对",
+  "INFERENCE": "合理推断，无直接核对",
+  "UNKNOWN": "缺少直接证据"
+ },
+ "caveats": [
+  "protocol registry (cmd_table.json 1643, fields.json 3553) 跨版本共享且偏 1.4.9-based —— 不可视为与 1.4.11 wire protocol 相等；1.4.11 的 cmd-diff 结论仅 INFERENCE，直到做 1.4.11 提取。",
+  "1.3.0 已解包（extracted/，293 文件/6.95MB，本次审计已核实目录树），各格存在性现为 CONFIRMED；仅「1.3.0」这一工程代号本身为 INFERENCE（内部版本串 NOW_VERSION=35/VERSION=100）。",
+  "1.4.9 与 1.4.11 的 config_function 均为 91 条（id-count），但各行内容 delta 未在此对比。",
+  "1.4.11 的 item/task/partner/mall 逐条计数未提取 ⇒ 相关 count 标 UNKNOWN（仅存在性 CONFIRMED）；1.4.9 对应 count（item 3535 / mission 846 / partner 53 / mall 142）为 VERIFIED（服务器）。",
+  "1.3.0 cmd_resolve 解包实际落于 extracted/config/protocal/（非 extracted/protocal/）。"
+ ]
+}

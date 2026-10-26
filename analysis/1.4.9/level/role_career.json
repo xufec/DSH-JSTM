@@ -1,0 +1,1456 @@
+{
+ "Config": {
+  "RoleCareer": {
+   "1": {
+    "weapon_res": "W20200",
+    "name": "玄武",
+    "die_effect": "E62931",
+    "career": 1,
+    "res_2": "R01000",
+    "anime_die": "die",
+    "res": "R10100",
+    "height": 170,
+    "weapon_res_2": "W20200",
+    "width": 0,
+    "skill_list": {
+     "1": null,
+     "2": 10100,
+     "3": 10200,
+     "4": 10300,
+     "5": 11300,
+     "6": 10400,
+     "7": 11100,
+     "8": 11500,
+     "9": 11400,
+     "10": 11200,
+     "11": 12600
+    },
+    "born_skill_list": {
+     "1": null,
+     "2": 10100
+    },
+    "attr": {},
+    "turn_career_attr": {}
+   },
+   "2": {
+    "weapon_res": "W22100",
+    "name": "火凤",
+    "die_effect": "E62931",
+    "career": 2,
+    "res_2": "R10600",
+    "anime_die": "die",
+    "res": "R02100",
+    "height": 170,
+    "weapon_res_2": "W22100",
+    "width": 0,
+    "skill_list": {
+     "1": null,
+     "2": 13100,
+     "3": 13200,
+     "4": 13400,
+     "5": 14100,
+     "6": 14200,
+     "7": 14400,
+     "8": 14300,
+     "9": 14600,
+     "10": 14500,
+     "11": 12700
+    },
+    "born_skill_list": {
+     "1": null,
+     "2": 13100
+    },
+    "attr": {},
+    "turn_career_attr": {}
+   },
+   "3": {
+    "weapon_res": "W23100",
+    "name": "白虎",
+    "die_effect": "E62931",
+    "career": 3,
+    "res_2": "R03000",
+    "anime_die": "die",
+    "res": "R11000",
+    "height": 170,
+    "weapon_res_2": "W23100",
+    "width": 0,
+    "skill_list": {
+     "1": null,
+     "2": 16100,
+     "3": 17300,
+     "4": 16300,
+     "5": 17200,
+     "6": 18200,
+     "7": 16200,
+     "8": 18100,
+     "9": 17400,
+     "10": 17500,
+     "11": 12800
+    },
+    "born_skill_list": {
+     "1": null,
+     "2": 16100
+    },
+    "attr": {},
+    "turn_career_attr": {}
+   },
+   "4": {
+    "weapon_res": "W24100",
+    "name": "琉璃",
+    "die_effect": "E62931",
+    "career": 4,
+    "res_2": "R10500",
+    "anime_die": "die",
+    "res": "R04100",
+    "height": 170,
+    "weapon_res_2": "W24100",
+    "width": 0,
+    "skill_list": {
+     "1": null,
+     "2": 15600,
+     "3": 15700,
+     "4": 13300,
+     "5": 15800,
+     "6": 15400,
+     "7": 15100,
+     "8": 15300,
+     "9": 15200,
+     "10": 15500,
+     "11": 12900
+    },
+    "born_skill_list": {
+     "1": null,
+     "2": 15600
+    },
+    "attr": {},
+    "turn_career_attr": {}
+   },
+   "5": {
+    "weapon_res": "W25100",
+    "name": "神机",
+    "die_effect": "E62931",
+    "career": 5,
+    "res_2": "R05000",
+    "anime_die": "die",
+    "res": "R05100",
+    "height": 170,
+    "weapon_res_2": "W25100",
+    "width": 0,
+    "skill_list": {
+     "1": null,
+     "2": 90100,
+     "3": 90200,
+     "4": 90300,
+     "5": 90400,
+     "6": 90500,
+     "7": 90600,
+     "8": 90700,
+     "9": 90800,
+     "10": 90900,
+     "11": 91000
+    },
+    "born_skill_list": {
+     "1": null,
+     "2": 90100
+    },
+    "attr": {},
+    "turn_career_attr": {}
+   },
+   "9": {
+    "weapon_res": "W21500",
+    "name": "测试",
+    "die_effect": "E62931",
+    "career": 9,
+    "res_2": "R11500",
+    "anime_die": "die",
+    "res": "R11500",
+    "height": 170,
+    "weapon_res_2": "W21500",
+    "width": 0,
+    "skill_list": {
+     "1": null,
+     "2": 99091,
+     "3": 99092,
+     "4": 99093,
+     "5": 99094,
+     "6": 99095
+    },
+    "born_skill_list": {
+     "1": null,
+     "2": 99091
+    },
+    "attr": {},
+    "turn_career_attr": {}
+   }
+  },
+  "RoleCareerSkill": {
+   "1": {
+    "10100": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "普通攻击",
+     "max_lev": 1,
+     "unlock_role_lev": 1,
+     "skill_name": "挥砍"
+    },
+    "10200": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "前排攻击",
+     "max_lev": 100,
+     "unlock_role_lev": 3,
+     "skill_name": "旋风斩"
+    },
+    "10300": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "单体攻击",
+     "max_lev": 100,
+     "unlock_role_lev": 13,
+     "skill_name": "玄冥·震"
+    },
+    "11300": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "单体攻击",
+     "max_lev": 100,
+     "unlock_role_lev": 22,
+     "skill_name": "龟神撞"
+    },
+    "10400": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "群体控制",
+     "max_lev": 100,
+     "unlock_role_lev": 32,
+     "skill_name": "玄冥·吼"
+    },
+    "11100": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "群体减防",
+     "max_lev": 100,
+     "unlock_role_lev": 38,
+     "skill_name": "玄冥·破"
+    },
+    "11500": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "辅助技能",
+     "max_lev": 100,
+     "unlock_role_lev": 43,
+     "skill_name": "玄武盾阵"
+    },
+    "11400": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "辅助技能",
+     "max_lev": 100,
+     "unlock_role_lev": 48,
+     "skill_name": "玄冥守护"
+    },
+    "11200": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "辅助技能",
+     "max_lev": 100,
+     "unlock_role_lev": 57,
+     "skill_name": "玄武真身"
+    },
+    "12600": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "天赋技能",
+     "max_lev": 30,
+     "unlock_role_lev": 40,
+     "skill_name": "玄武之力"
+    }
+   },
+   "2": {
+    "13100": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "普通攻击",
+     "max_lev": 1,
+     "unlock_role_lev": 1,
+     "skill_name": "凤凰火线"
+    },
+    "13200": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "群体攻击",
+     "max_lev": 100,
+     "unlock_role_lev": 3,
+     "skill_name": "凤翼天翔"
+    },
+    "13400": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "单体控制",
+     "max_lev": 100,
+     "unlock_role_lev": 13,
+     "skill_name": "凤凰啸天击"
+    },
+    "14100": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "群体控制",
+     "max_lev": 100,
+     "unlock_role_lev": 22,
+     "skill_name": "凤凰流星雨"
+    },
+    "14200": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "辅助技能",
+     "max_lev": 100,
+     "unlock_role_lev": 32,
+     "skill_name": "玄火盾"
+    },
+    "14400": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "辅助技能",
+     "max_lev": 100,
+     "unlock_role_lev": 38,
+     "skill_name": "净化火焰"
+    },
+    "14300": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "单体攻击",
+     "max_lev": 100,
+     "unlock_role_lev": 43,
+     "skill_name": "凤凰穿云击"
+    },
+    "14600": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "辅助技能",
+     "max_lev": 100,
+     "unlock_role_lev": 48,
+     "skill_name": "浴火藏形"
+    },
+    "14500": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "辅助技能",
+     "max_lev": 100,
+     "unlock_role_lev": 57,
+     "skill_name": "火焰连矢"
+    },
+    "12700": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "天赋技能",
+     "max_lev": 30,
+     "unlock_role_lev": 40,
+     "skill_name": "极致之火"
+    }
+   },
+   "4": {
+    "15600": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "普通攻击",
+     "max_lev": 1,
+     "unlock_role_lev": 1,
+     "skill_name": "回风流雪"
+    },
+    "15700": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "群体攻击",
+     "max_lev": 100,
+     "unlock_role_lev": 3,
+     "skill_name": "施毒"
+    },
+    "13300": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "群体加血",
+     "max_lev": 100,
+     "unlock_role_lev": 13,
+     "skill_name": "七宝琉璃"
+    },
+    "15800": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "群体攻击",
+     "max_lev": 100,
+     "unlock_role_lev": 22,
+     "skill_name": "毒藤缠绕"
+    },
+    "15400": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "复活技能",
+     "max_lev": 100,
+     "unlock_role_lev": 32,
+     "skill_name": "返魂术"
+    },
+    "15100": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "目标受到伤害，睡眠状态会解除",
+     "type": "群体控制",
+     "max_lev": 100,
+     "unlock_role_lev": 38,
+     "skill_name": "离魂曲"
+    },
+    "15300": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "单体加血",
+     "max_lev": 100,
+     "unlock_role_lev": 43,
+     "skill_name": "圣疗术"
+    },
+    "15200": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "辅助技能",
+     "max_lev": 100,
+     "unlock_role_lev": 48,
+     "skill_name": "武魂剥夺"
+    },
+    "15500": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "辅助技能",
+     "max_lev": 100,
+     "unlock_role_lev": 57,
+     "skill_name": "圣心"
+    },
+    "12900": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "天赋技能",
+     "max_lev": 30,
+     "unlock_role_lev": 40,
+     "skill_name": "庇佑"
+    }
+   },
+   "3": {
+    "16100": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "普通攻击",
+     "max_lev": 1,
+     "unlock_role_lev": 1,
+     "skill_name": "白虎爪"
+    },
+    "16200": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "群体攻击",
+     "max_lev": 100,
+     "unlock_role_lev": 38,
+     "skill_name": "白虎破灭杀"
+    },
+    "16300": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "单体攻击",
+     "max_lev": 100,
+     "unlock_role_lev": 13,
+     "skill_name": "狂暴连击"
+    },
+    "17200": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "辅助技能",
+     "max_lev": 100,
+     "unlock_role_lev": 22,
+     "skill_name": "白虎金刚变"
+    },
+    "18200": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "单体控制",
+     "max_lev": 100,
+     "unlock_role_lev": 32,
+     "skill_name": "幽冥突袭"
+    },
+    "17300": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "直线攻击",
+     "max_lev": 100,
+     "unlock_role_lev": 3,
+     "skill_name": "白虎烈光波"
+    },
+    "18100": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "单体攻击",
+     "max_lev": 100,
+     "unlock_role_lev": 43,
+     "skill_name": "破天一剑"
+    },
+    "17400": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "单体攻击",
+     "max_lev": 100,
+     "unlock_role_lev": 48,
+     "skill_name": "烈虎剑气"
+    },
+    "17500": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "辅助技能",
+     "max_lev": 100,
+     "unlock_role_lev": 57,
+     "skill_name": "狂虎"
+    },
+    "12800": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "天赋技能",
+     "max_lev": 30,
+     "unlock_role_lev": 40,
+     "skill_name": "闪电追击"
+    }
+   },
+   "5": {
+    "91029": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "普通攻击",
+     "max_lev": 1,
+     "unlock_role_lev": 1,
+     "skill_name": "爆裂弹"
+    },
+    "91028": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "单体攻击",
+     "max_lev": 100,
+     "unlock_role_lev": 3,
+     "skill_name": "狙击"
+    },
+    "91027": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "群体攻击",
+     "max_lev": 100,
+     "unlock_role_lev": 13,
+     "skill_name": "泯灭射线"
+    },
+    "91026": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "单体攻击",
+     "max_lev": 100,
+     "unlock_role_lev": 22,
+     "skill_name": "死神之光"
+    },
+    "91025": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "单体攻击",
+     "max_lev": 100,
+     "unlock_role_lev": 32,
+     "skill_name": "干扰弹"
+    },
+    "91024": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "辅助技能",
+     "max_lev": 100,
+     "unlock_role_lev": 38,
+     "skill_name": "魂导压缩"
+    },
+    "91023": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "群体攻击",
+     "max_lev": 100,
+     "unlock_role_lev": 43,
+     "skill_name": "诸葛神弩"
+    },
+    "91022": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "单体攻击",
+     "max_lev": 100,
+     "unlock_role_lev": 48,
+     "skill_name": "烈焰天罗"
+    },
+    "91021": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "辅助技能",
+     "max_lev": 100,
+     "unlock_role_lev": 57,
+     "skill_name": "魂力存储"
+    },
+    "91020": {
+     "attr_desc": "",
+     "quality": 4,
+     "ex_desc": "",
+     "type": "天赋技能",
+     "max_lev": 30,
+     "unlock_role_lev": 40,
+     "skill_name": "潜伏"
+    }
+   },
+   "9": {
+    "91019": {
+     "attr_desc": "",
+     "quality": 5,
+     "ex_desc": "",
+     "type": "",
+     "max_lev": 1,
+     "unlock_role_lev": 1,
+     "skill_name": "测试1"
+    },
+    "91018": {
+     "attr_desc": "",
+     "quality": 5,
+     "ex_desc": "",
+     "type": "",
+     "max_lev": 1,
+     "unlock_role_lev": 1,
+     "skill_name": "测试2"
+    },
+    "91017": {
+     "attr_desc": "",
+     "quality": 5,
+     "ex_desc": "",
+     "type": "",
+     "max_lev": 1,
+     "unlock_role_lev": 1,
+     "skill_name": "测试3"
+    },
+    "91016": {
+     "attr_desc": "",
+     "quality": 5,
+     "ex_desc": "",
+     "type": "",
+     "max_lev": 1,
+     "unlock_role_lev": 1,
+     "skill_name": "测试4"
+    },
+    "91015": {
+     "attr_desc": "",
+     "quality": 5,
+     "ex_desc": "",
+     "type": "",
+     "max_lev": 1,
+     "unlock_role_lev": 1,
+     "skill_name": "测试5"
+    }
+   }
+  },
+  "TianmingSkill": {
+   "12600": {
+    "career": 1,
+    "lev": 40,
+    "buff_bid": 40101
+   },
+   "12601": {
+    "career": 1,
+    "lev": 41,
+    "buff_bid": 40102
+   },
+   "12602": {
+    "career": 1,
+    "lev": 42,
+    "buff_bid": 40103
+   },
+   "12603": {
+    "career": 1,
+    "lev": 43,
+    "buff_bid": 40104
+   },
+   "12604": {
+    "career": 1,
+    "lev": 44,
+    "buff_bid": 40105
+   },
+   "12605": {
+    "career": 1,
+    "lev": 45,
+    "buff_bid": 40106
+   },
+   "12606": {
+    "career": 1,
+    "lev": 46,
+    "buff_bid": 40107
+   },
+   "12607": {
+    "career": 1,
+    "lev": 47,
+    "buff_bid": 40108
+   },
+   "12608": {
+    "career": 1,
+    "lev": 48,
+    "buff_bid": 40109
+   },
+   "12609": {
+    "career": 1,
+    "lev": 49,
+    "buff_bid": 40110
+   },
+   "12610": {
+    "career": 1,
+    "lev": 50,
+    "buff_bid": 40111
+   },
+   "12611": {
+    "career": 1,
+    "lev": 51,
+    "buff_bid": 40112
+   },
+   "12612": {
+    "career": 1,
+    "lev": 52,
+    "buff_bid": 40113
+   },
+   "12613": {
+    "career": 1,
+    "lev": 53,
+    "buff_bid": 40114
+   },
+   "12614": {
+    "career": 1,
+    "lev": 54,
+    "buff_bid": 40115
+   },
+   "12615": {
+    "career": 1,
+    "lev": 55,
+    "buff_bid": 40116
+   },
+   "12616": {
+    "career": 1,
+    "lev": 56,
+    "buff_bid": 40117
+   },
+   "12617": {
+    "career": 1,
+    "lev": 57,
+    "buff_bid": 40118
+   },
+   "12618": {
+    "career": 1,
+    "lev": 58,
+    "buff_bid": 40119
+   },
+   "12619": {
+    "career": 1,
+    "lev": 59,
+    "buff_bid": 40120
+   },
+   "12620": {
+    "career": 1,
+    "lev": 60,
+    "buff_bid": 40121
+   },
+   "12621": {
+    "career": 1,
+    "lev": 61,
+    "buff_bid": 40122
+   },
+   "12622": {
+    "career": 1,
+    "lev": 62,
+    "buff_bid": 40123
+   },
+   "12623": {
+    "career": 1,
+    "lev": 63,
+    "buff_bid": 40124
+   },
+   "12624": {
+    "career": 1,
+    "lev": 64,
+    "buff_bid": 40125
+   },
+   "12625": {
+    "career": 1,
+    "lev": 65,
+    "buff_bid": 40126
+   },
+   "12626": {
+    "career": 1,
+    "lev": 66,
+    "buff_bid": 40127
+   },
+   "12627": {
+    "career": 1,
+    "lev": 67,
+    "buff_bid": 40128
+   },
+   "12628": {
+    "career": 1,
+    "lev": 68,
+    "buff_bid": 40129
+   },
+   "12629": {
+    "career": 1,
+    "lev": 69,
+    "buff_bid": 40130
+   },
+   "12700": {
+    "career": 2,
+    "lev": 40,
+    "buff_bid": 40201
+   },
+   "12701": {
+    "career": 2,
+    "lev": 41,
+    "buff_bid": 40202
+   },
+   "12702": {
+    "career": 2,
+    "lev": 42,
+    "buff_bid": 40203
+   },
+   "12703": {
+    "career": 2,
+    "lev": 43,
+    "buff_bid": 40204
+   },
+   "12704": {
+    "career": 2,
+    "lev": 44,
+    "buff_bid": 40205
+   },
+   "12705": {
+    "career": 2,
+    "lev": 45,
+    "buff_bid": 40206
+   },
+   "12706": {
+    "career": 2,
+    "lev": 46,
+    "buff_bid": 40207
+   },
+   "12707": {
+    "career": 2,
+    "lev": 47,
+    "buff_bid": 40208
+   },
+   "12708": {
+    "career": 2,
+    "lev": 48,
+    "buff_bid": 40209
+   },
+   "12709": {
+    "career": 2,
+    "lev": 49,
+    "buff_bid": 40210
+   },
+   "12710": {
+    "career": 2,
+    "lev": 50,
+    "buff_bid": 40211
+   },
+   "12711": {
+    "career": 2,
+    "lev": 51,
+    "buff_bid": 40212
+   },
+   "12712": {
+    "career": 2,
+    "lev": 52,
+    "buff_bid": 40213
+   },
+   "12713": {
+    "career": 2,
+    "lev": 53,
+    "buff_bid": 40214
+   },
+   "12714": {
+    "career": 2,
+    "lev": 54,
+    "buff_bid": 40215
+   },
+   "12715": {
+    "career": 2,
+    "lev": 55,
+    "buff_bid": 40216
+   },
+   "12716": {
+    "career": 2,
+    "lev": 56,
+    "buff_bid": 40217
+   },
+   "12717": {
+    "career": 2,
+    "lev": 57,
+    "buff_bid": 40218
+   },
+   "12718": {
+    "career": 2,
+    "lev": 58,
+    "buff_bid": 40219
+   },
+   "12719": {
+    "career": 2,
+    "lev": 59,
+    "buff_bid": 40220
+   },
+   "12720": {
+    "career": 2,
+    "lev": 60,
+    "buff_bid": 40221
+   },
+   "12721": {
+    "career": 2,
+    "lev": 61,
+    "buff_bid": 40222
+   },
+   "12722": {
+    "career": 2,
+    "lev": 62,
+    "buff_bid": 40223
+   },
+   "12723": {
+    "career": 2,
+    "lev": 63,
+    "buff_bid": 40224
+   },
+   "12724": {
+    "career": 2,
+    "lev": 64,
+    "buff_bid": 40225
+   },
+   "12725": {
+    "career": 2,
+    "lev": 65,
+    "buff_bid": 40226
+   },
+   "12726": {
+    "career": 2,
+    "lev": 66,
+    "buff_bid": 40227
+   },
+   "12727": {
+    "career": 2,
+    "lev": 67,
+    "buff_bid": 40228
+   },
+   "12728": {
+    "career": 2,
+    "lev": 68,
+    "buff_bid": 40229
+   },
+   "12729": {
+    "career": 2,
+    "lev": 69,
+    "buff_bid": 40230
+   },
+   "12800": {
+    "career": 3,
+    "lev": 40,
+    "buff_bid": 40301
+   },
+   "12801": {
+    "career": 3,
+    "lev": 41,
+    "buff_bid": 40302
+   },
+   "12802": {
+    "career": 3,
+    "lev": 42,
+    "buff_bid": 40303
+   },
+   "12803": {
+    "career": 3,
+    "lev": 43,
+    "buff_bid": 40304
+   },
+   "12804": {
+    "career": 3,
+    "lev": 44,
+    "buff_bid": 40305
+   },
+   "12805": {
+    "career": 3,
+    "lev": 45,
+    "buff_bid": 40306
+   },
+   "12806": {
+    "career": 3,
+    "lev": 46,
+    "buff_bid": 40307
+   },
+   "12807": {
+    "career": 3,
+    "lev": 47,
+    "buff_bid": 40308
+   },
+   "12808": {
+    "career": 3,
+    "lev": 48,
+    "buff_bid": 40309
+   },
+   "12809": {
+    "career": 3,
+    "lev": 49,
+    "buff_bid": 40310
+   },
+   "12810": {
+    "career": 3,
+    "lev": 50,
+    "buff_bid": 40311
+   },
+   "12811": {
+    "career": 3,
+    "lev": 51,
+    "buff_bid": 40312
+   },
+   "12812": {
+    "career": 3,
+    "lev": 52,
+    "buff_bid": 40313
+   },
+   "12813": {
+    "career": 3,
+    "lev": 53,
+    "buff_bid": 40314
+   },
+   "12814": {
+    "career": 3,
+    "lev": 54,
+    "buff_bid": 40315
+   },
+   "12815": {
+    "career": 3,
+    "lev": 55,
+    "buff_bid": 40316
+   },
+   "12816": {
+    "career": 3,
+    "lev": 56,
+    "buff_bid": 40317
+   },
+   "12817": {
+    "career": 3,
+    "lev": 57,
+    "buff_bid": 40318
+   },
+   "12818": {
+    "career": 3,
+    "lev": 58,
+    "buff_bid": 40319
+   },
+   "12819": {
+    "career": 3,
+    "lev": 59,
+    "buff_bid": 40320
+   },
+   "12820": {
+    "career": 3,
+    "lev": 60,
+    "buff_bid": 40321
+   },
+   "12821": {
+    "career": 3,
+    "lev": 61,
+    "buff_bid": 40322
+   },
+   "12822": {
+    "career": 3,
+    "lev": 62,
+    "buff_bid": 40323
+   },
+   "12823": {
+    "career": 3,
+    "lev": 63,
+    "buff_bid": 40324
+   },
+   "12824": {
+    "career": 3,
+    "lev": 64,
+    "buff_bid": 40325
+   },
+   "12825": {
+    "career": 3,
+    "lev": 65,
+    "buff_bid": 40326
+   },
+   "12826": {
+    "career": 3,
+    "lev": 66,
+    "buff_bid": 40327
+   },
+   "12827": {
+    "career": 3,
+    "lev": 67,
+    "buff_bid": 40328
+   },
+   "12828": {
+    "career": 3,
+    "lev": 68,
+    "buff_bid": 40329
+   },
+   "12829": {
+    "career": 3,
+    "lev": 69,
+    "buff_bid": 40330
+   },
+   "12900": {
+    "career": 4,
+    "lev": 40,
+    "buff_bid": 40401
+   },
+   "12901": {
+    "career": 4,
+    "lev": 41,
+    "buff_bid": 40402
+   },
+   "12902": {
+    "career": 4,
+    "lev": 42,
+    "buff_bid": 40403
+   },
+   "12903": {
+    "career": 4,
+    "lev": 43,
+    "buff_bid": 40404
+   },
+   "12904": {
+    "career": 4,
+    "lev": 44,
+    "buff_bid": 40405
+   },
+   "12905": {
+    "career": 4,
+    "lev": 45,
+    "buff_bid": 40406
+   },
+   "12906": {
+    "career": 4,
+    "lev": 46,
+    "buff_bid": 40407
+   },
+   "12907": {
+    "career": 4,
+    "lev": 47,
+    "buff_bid": 40408
+   },
+   "12908": {
+    "career": 4,
+    "lev": 48,
+    "buff_bid": 40409
+   },
+   "12909": {
+    "career": 4,
+    "lev": 49,
+    "buff_bid": 40410
+   },
+   "12910": {
+    "career": 4,
+    "lev": 50,
+    "buff_bid": 40411
+   },
+   "12911": {
+    "career": 4,
+    "lev": 51,
+    "buff_bid": 40412
+   },
+   "12912": {
+    "career": 4,
+    "lev": 52,
+    "buff_bid": 40413
+   },
+   "12913": {
+    "career": 4,
+    "lev": 53,
+    "buff_bid": 40414
+   },
+   "12914": {
+    "career": 4,
+    "lev": 54,
+    "buff_bid": 40415
+   },
+   "12915": {
+    "career": 4,
+    "lev": 55,
+    "buff_bid": 40416
+   },
+   "12916": {
+    "career": 4,
+    "lev": 56,
+    "buff_bid": 40417
+   },
+   "12917": {
+    "career": 4,
+    "lev": 57,
+    "buff_bid": 40418
+   },
+   "12918": {
+    "career": 4,
+    "lev": 58,
+    "buff_bid": 40419
+   },
+   "12919": {
+    "career": 4,
+    "lev": 59,
+    "buff_bid": 40420
+   },
+   "12920": {
+    "career": 4,
+    "lev": 60,
+    "buff_bid": 40421
+   },
+   "12921": {
+    "career": 4,
+    "lev": 61,
+    "buff_bid": 40422
+   },
+   "12922": {
+    "career": 4,
+    "lev": 62,
+    "buff_bid": 40423
+   },
+   "12923": {
+    "career": 4,
+    "lev": 63,
+    "buff_bid": 40424
+   },
+   "12924": {
+    "career": 4,
+    "lev": 64,
+    "buff_bid": 40425
+   },
+   "12925": {
+    "career": 4,
+    "lev": 65,
+    "buff_bid": 40426
+   },
+   "12926": {
+    "career": 4,
+    "lev": 66,
+    "buff_bid": 40427
+   },
+   "12927": {
+    "career": 4,
+    "lev": 67,
+    "buff_bid": 40428
+   },
+   "12928": {
+    "career": 4,
+    "lev": 68,
+    "buff_bid": 40429
+   },
+   "12929": {
+    "career": 4,
+    "lev": 69,
+    "buff_bid": 40430
+   },
+   "91020": {
+    "career": 5,
+    "lev": 40,
+    "buff_bid": 40601
+   },
+   "91014": {
+    "career": 5,
+    "lev": 41,
+    "buff_bid": 40602
+   },
+   "91013": {
+    "career": 5,
+    "lev": 42,
+    "buff_bid": 40603
+   },
+   "91012": {
+    "career": 5,
+    "lev": 43,
+    "buff_bid": 40604
+   },
+   "91011": {
+    "career": 5,
+    "lev": 44,
+    "buff_bid": 40605
+   },
+   "91010": {
+    "career": 5,
+    "lev": 45,
+    "buff_bid": 40606
+   },
+   "91009": {
+    "career": 5,
+    "lev": 46,
+    "buff_bid": 40607
+   },
+   "91008": {
+    "career": 5,
+    "lev": 47,
+    "buff_bid": 40608
+   },
+   "91007": {
+    "career": 5,
+    "lev": 48,
+    "buff_bid": 40609
+   },
+   "91006": {
+    "career": 5,
+    "lev": 49,
+    "buff_bid": 40610
+   },
+   "91005": {
+    "career": 5,
+    "lev": 50,
+    "buff_bid": 40611
+   },
+   "91004": {
+    "career": 5,
+    "lev": 51,
+    "buff_bid": 40612
+   },
+   "91003": {
+    "career": 5,
+    "lev": 52,
+    "buff_bid": 40613
+   },
+   "91002": {
+    "career": 5,
+    "lev": 53,
+    "buff_bid": 40614
+   },
+   "91001": {
+    "career": 5,
+    "lev": 54,
+    "buff_bid": 40615
+   },
+   "99095": {
+    "career": 5,
+    "lev": 55,
+    "buff_bid": 40616
+   },
+   "99094": {
+    "career": 5,
+    "lev": 56,
+    "buff_bid": 40617
+   },
+   "99093": {
+    "career": 5,
+    "lev": 57,
+    "buff_bid": 40618
+   },
+   "99092": {
+    "career": 5,
+    "lev": 58,
+    "buff_bid": 40619
+   },
+   "99091": {
+    "career": 5,
+    "lev": 59,
+    "buff_bid": 40620
+   },
+   "91000": {
+    "career": 5,
+    "lev": 60,
+    "buff_bid": 40621
+   },
+   "90900": {
+    "career": 5,
+    "lev": 61,
+    "buff_bid": 40622
+   },
+   "90800": {
+    "career": 5,
+    "lev": 62,
+    "buff_bid": 40623
+   },
+   "90700": {
+    "career": 5,
+    "lev": 63,
+    "buff_bid": 40624
+   },
+   "90600": {
+    "career": 5,
+    "lev": 64,
+    "buff_bid": 40625
+   },
+   "90500": {
+    "career": 5,
+    "lev": 65,
+    "buff_bid": 40626
+   },
+   "90400": {
+    "career": 5,
+    "lev": 66,
+    "buff_bid": 40627
+   },
+   "90300": {
+    "career": 5,
+    "lev": 67,
+    "buff_bid": 40628
+   },
+   "90200": {
+    "career": 5,
+    "lev": 68,
+    "buff_bid": 40629
+   },
+   "90100": {
+    "career": 5,
+    "lev": 69,
+    "buff_bid": 40630
+   }
+  },
+  "Tianming": {
+   "buff_name_1": "玄武之力",
+   "buff_name_5": "潜伏",
+   "buff_name_2": "极致之火",
+   "buff_name_3": "闪电追击",
+   "buff_lev": "30",
+   "buff_name_4": "法灵庇佑"
+  }
+ }
+}

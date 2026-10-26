@@ -1,0 +1,27 @@
+Warning: unknown opcode 00000080
+Traceback (most recent call last):
+  File "C:\Users\xu\Desktop\DSH\tools\ljd\main.py", line 123, in <module>
+    retval = main()
+             ^^^^^^
+  File "C:\Users\xu\Desktop\DSH\tools\ljd\main.py", line 77, in main
+    header, prototype = ljd.rawdump.parser.parse(file_in)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xu\Desktop\DSH\tools\ljd\ljd\rawdump\parser.py", line 34, in parse
+    r = r and _read_prototypes(parser, parser.prototypes)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xu\Desktop\DSH\tools\ljd\ljd\rawdump\parser.py", line 72, in _read_prototypes
+    if not ljd.rawdump.prototype.read(state, prototype):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xu\Desktop\DSH\tools\ljd\ljd\rawdump\prototype.py", line 52, in read
+    r = r and _read_constants(parser, prototype)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xu\Desktop\DSH\tools\ljd\ljd\rawdump\prototype.py", line 140, in _read_constants
+    return ljd.rawdump.constants.read(parser, prototype.constants)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xu\Desktop\DSH\tools\ljd\ljd\rawdump\constants.py", line 31, in read
+    r = r and _read_complex_constants(parser, constants.complex_constants)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xu\Desktop\DSH\tools\ljd\ljd\rawdump\constants.py", line 85, in _read_complex_constants
+    complex_constants.append(parser.prototypes.pop())
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: pop from empty list

@@ -1,0 +1,2726 @@
+{
+ "summary": {
+  "log": "C:\\Users\\xu\\Desktop\\DSH\\server\\logs\\tcp.log",
+  "log_bytes": 42642,
+  "cs_frames": 138,
+  "sc_frames": 122,
+  "cs_unique": 72,
+  "sc_unique": 73,
+  "answered": [
+   1110,
+   1199,
+   10103,
+   10204,
+   10301,
+   10302,
+   10303,
+   10331,
+   10502,
+   10527,
+   10589,
+   10621,
+   10650,
+   10800,
+   10921,
+   10922,
+   10923,
+   10924,
+   10932,
+   11200,
+   11215,
+   11300,
+   11301,
+   11600,
+   11700,
+   12403,
+   13042,
+   13200,
+   13300,
+   13321,
+   13340,
+   13369,
+   13579,
+   13580,
+   13704,
+   13771,
+   13806,
+   14000,
+   14009,
+   14100,
+   14600,
+   14901,
+   15203,
+   15501,
+   15700,
+   15801,
+   16400,
+   16500,
+   16602,
+   16605,
+   16664,
+   16701,
+   16704,
+   16706,
+   16903,
+   17100,
+   17200,
+   17600,
+   17800,
+   18803,
+   18900,
+   19400,
+   19406,
+   19600,
+   20500,
+   20504,
+   20800,
+   20809,
+   30715
+  ],
+  "cs_without_sc": [
+   10001,
+   10300,
+   10999
+  ],
+  "sc_without_cs_push": [
+   10200,
+   10201,
+   10305,
+   12400
+  ],
+  "cs_counts": {
+   "10502": 24,
+   "1199": 16,
+   "16400": 8,
+   "16605": 4,
+   "10924": 3,
+   "16500": 3,
+   "19400": 3,
+   "10001": 2,
+   "1110": 2,
+   "10921": 2,
+   "10922": 2,
+   "13200": 2,
+   "20504": 2,
+   "17200": 2,
+   "11200": 2,
+   "17800": 2,
+   "16903": 2,
+   "16602": 2,
+   "11215": 2,
+   "10302": 1,
+   "13340": 1,
+   "14901": 1,
+   "10331": 1,
+   "10303": 1,
+   "15203": 1,
+   "12403": 1,
+   "10103": 1,
+   "10300": 1,
+   "10800": 1,
+   "13300": 1,
+   "10923": 1,
+   "10301": 1,
+   "18803": 1,
+   "11300": 1,
+   "11301": 1,
+   "14000": 1,
+   "14009": 1,
+   "20500": 1,
+   "19600": 1,
+   "14600": 1,
+   "14100": 1,
+   "17600": 1,
+   "11700": 1,
+   "10527": 1,
+   "13806": 1,
+   "13579": 1,
+   "13580": 1,
+   "13704": 1,
+   "10589": 1,
+   "20800": 1,
+   "16701": 1,
+   "16704": 1,
+   "13042": 1,
+   "17100": 1,
+   "10621": 1,
+   "10650": 1,
+   "13321": 1,
+   "15801": 1,
+   "15700": 1,
+   "11600": 1,
+   "15501": 1,
+   "13771": 1,
+   "16706": 1,
+   "10932": 1,
+   "18900": 1,
+   "10999": 1,
+   "16664": 1,
+   "19406": 1,
+   "30715": 1,
+   "13369": 1,
+   "10204": 1,
+   "20809": 1
+  },
+  "first_frames": [
+   {
+    "ts": "13:00:13",
+    "dir": "CS",
+    "cmd": 1199,
+    "note": "heartbeast 心跳",
+    "body_len": 4,
+    "body_hex": "00 00 27 4c",
+    "raw_hex": null
+   },
+   {
+    "ts": "13:00:13",
+    "dir": "SC",
+    "cmd": 1199,
+    "note": "<< 1199 heartbeat reply (10 bytes)",
+    "body_len": null,
+    "body_hex": null,
+    "raw_hex": null
+   },
+   {
+    "ts": "13:01:27",
+    "dir": "CS",
+    "cmd": 10001,
+    "note": "FirstPack 连接首包",
+    "body_len": 17,
+    "body_hex": "00 0b 67 61 6d 65 5f 63 6c 69 65 6e 74 00 00 00 00",
+    "raw_hex": null
+   },
+   {
+    "ts": "13:01:27",
+    "dir": "CS",
+    "cmd": 1110,
+    "note": "CSAccountLogin 帐号登录",
+    "body_len": 219,
+    "body_hex": "00 0a 00 07 61 63 63 6f 75 6e 74 00 09 64 73 68 5f 6c 6f 63 61 6c 00 09 74 69 6d 65 73 74 61 6d 70 00 0a 31 37 39 31 39 35 34 30 38 33 00 0c 65",
+    "raw_hex": null
+   },
+   {
+    "ts": "13:01:27",
+    "dir": "SC",
+    "cmd": 1110,
+    "note": "<< 1110 SCAccountLogin account=dsh_local roles=1 keys=['account', 'channelId', 'device_id', 'enter_srv_id', 'gettui_cid', 'idfa', 'platform', 'sign', 'timestamp', 'token'] ver=1.4.9 (30 bytes)",
+    "body_len": null,
+    "body_hex": null,
+    "raw_hex": null
+   },
+   {
+    "ts": "13:01:31",
+    "dir": "CS",
+    "cmd": 10001,
+    "note": "FirstPack 连接首包",
+    "body_len": 17,
+    "body_hex": "00 0b 67 61 6d 65 5f 63 6c 69 65 6e 74 64 73 68 5f",
+    "raw_hex": null
+   },
+   {
+    "ts": "13:01:31",
+    "dir": "CS",
+    "cmd": 1110,
+    "note": "CSAccountLogin 帐号登录",
+    "body_len": 219,
+    "body_hex": "00 0a 00 07 61 63 63 6f 75 6e 74 00 09 64 73 68 5f 6c 6f 63 61 6c 00 09 74 69 6d 65 73 74 61 6d 70 00 0a 31 37 39 31 39 35 34 30 38 33 00 0c 65",
+    "raw_hex": null
+   },
+   {
+    "ts": "13:01:31",
+    "dir": "SC",
+    "cmd": 1110,
+    "note": "<< 1110 SCAccountLogin account=dsh_local roles=1 keys=['account', 'channelId', 'device_id', 'enter_srv_id', 'gettui_cid', 'idfa', 'platform', 'sign', 'timestamp', 'token'] ver=1.4.9 (30 bytes)",
+    "body_len": null,
+    "body_hex": null,
+    "raw_hex": null
+   },
+   {
+    "ts": "13:01:31",
+    "dir": "CS",
+    "cmd": 10302,
+    "note": "?",
+    "body_len": 4,
+    "body_hex": "00 0a 00 07",
+    "raw_hex": null
+   },
+   {
+    "ts": "13:01:31",
+    "dir": "SC",
+    "cmd": 10302,
+    "note": "<< 10302 SC_10302 lev=70 exp=13339 gold=1800140 gold_acc=5000 (128 bytes)",
+    "body_len": null,
+    "body_hex": null,
+    "raw_hex": null
+   },
+   {
+    "ts": "13:01:31",
+    "dir": "CS",
+    "cmd": 13340,
+    "note": "?",
+    "body_len": 4,
+    "body_hex": "00 0a 00 07",
+    "raw_hex": null
+   },
+   {
+    "ts": "13:01:31",
+    "dir": "SC",
+    "cmd": 13340,
+    "note": "<< 13340 SC_13340 profile name=DSH lev=70 (76 bytes)",
+    "body_len": null,
+    "body_hex": null,
+    "raw_hex": null
+   },
+   {
+    "ts": "13:01:31",
+    "dir": "CS",
+    "cmd": 14901,
+    "note": "?",
+    "body_len": 4,
+    "body_hex": "00 0a 00 07",
+    "raw_hex": null
+   },
+   {
+    "ts": "13:01:31",
+    "dir": "SC",
+    "cmd": 14901,
+    "note": "<< 14901 SC_14901 cur_bid=0 titles=0（role_title 真值）",
+    "body_len": null,
+    "body_hex": null,
+    "raw_hex": null
+   },
+   {
+    "ts": "13:01:31",
+    "dir": "CS",
+    "cmd": 10331,
+    "note": "?",
+    "body_len": 8,
+    "body_hex": "00 00 03 e9 61 63 63 6f",
+    "raw_hex": null
+   },
+   {
+    "ts": "13:01:31",
+    "dir": "SC",
+    "cmd": 10331,
+    "note": "<< 10331 SC_10331 skill_bid=1001 code=0 (9 bytes)",
+    "body_len": null,
+    "body_hex": null,
+    "raw_hex": null
+   },
+   {
+    "ts": "13:01:31",
+    "dir": "CS",
+    "cmd": 10303,
+    "note": "?",
+    "body_len": 4,
+    "body_hex": "00 00 03 e9",
+    "raw_hex": null
+   },
+   {
+    "ts": "13:01:31",
+    "dir": "SC",
+    "cmd": 10303,
+    "note": "<< 10303 SC_10303 attr (hp_max=7305 atk_s=1813) (204 bytes)",
+    "body_len": null,
+    "body_hex": null,
+    "raw_hex": null
+   },
+   {
+    "ts": "13:01:31",
+    "dir": "CS",
+    "cmd": 15203,
+    "note": "?",
+    "body_len": 4,
+    "body_hex": "00 00 03 e9",
+    "raw_hex": null
+   },
+   {
+    "ts": "13:01:31",
+    "dir": "SC",
+    "cmd": 15203,
+    "note": "<< 15203 SC_15203 code=0 (9 bytes)",
+    "body_len": null,
+    "body_hex": null,
+    "raw_hex": null
+   },
+   {
+    "ts": "13:01:31",
+    "dir": "CS",
+    "cmd": 12403,
+    "note": "?",
+    "body_len": 8,
+    "body_hex": "00 00 27 24 61 63 63 6f",
+    "raw_hex": null
+   },
+   {
+    "ts": "13:01:31",
+    "dir": "SC",
+    "cmd": 12403,
+    "note": "<< 12403 SC_12403 mission_bid=10020 code=1(TRUE) (already committed, idempotent)",
+    "body_len": null,
+    "body_hex": null,
+    "raw_hex": null
+   },
+   {
+    "ts": "13:01:33",
+    "dir": "CS",
+    "cmd": 10103,
+    "note": "RoleReLogin 角色重连",
+    "body_len": 11,
+    "body_hex": "00 00 03 e9 00 01 31 6f 75 6e 74",
+    "raw_hex": null
+   },
+   {
+    "ts": "13:01:33",
+    "dir": "SC",
+    "cmd": 10103,
+    "note": "<< 10103 SCRoleReLogin reply (15 bytes)",
+    "body_len": null,
+    "body_hex": null,
+    "raw_hex": null
+   }
+  ]
+ },
+ "frames": [
+  {
+   "ts": "13:00:13",
+   "dir": "CS",
+   "cmd": 1199,
+   "note": "heartbeast 心跳",
+   "body_len": 4,
+   "body_hex": "00 00 27 4c",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:00:13",
+   "dir": "SC",
+   "cmd": 1199,
+   "note": "<< 1199 heartbeat reply (10 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:27",
+   "dir": "CS",
+   "cmd": 10001,
+   "note": "FirstPack 连接首包",
+   "body_len": 17,
+   "body_hex": "00 0b 67 61 6d 65 5f 63 6c 69 65 6e 74 00 00 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:27",
+   "dir": "CS",
+   "cmd": 1110,
+   "note": "CSAccountLogin 帐号登录",
+   "body_len": 219,
+   "body_hex": "00 0a 00 07 61 63 63 6f 75 6e 74 00 09 64 73 68 5f 6c 6f 63 61 6c 00 09 74 69 6d 65 73 74 61 6d 70 00 0a 31 37 39 31 39 35 34 30 38 33 00 0c 65",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:27",
+   "dir": "SC",
+   "cmd": 1110,
+   "note": "<< 1110 SCAccountLogin account=dsh_local roles=1 keys=['account', 'channelId', 'device_id', 'enter_srv_id', 'gettui_cid', 'idfa', 'platform', 'sign', 'timestamp', 'token'] ver=1.4.9 (30 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:31",
+   "dir": "CS",
+   "cmd": 10001,
+   "note": "FirstPack 连接首包",
+   "body_len": 17,
+   "body_hex": "00 0b 67 61 6d 65 5f 63 6c 69 65 6e 74 64 73 68 5f",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:31",
+   "dir": "CS",
+   "cmd": 1110,
+   "note": "CSAccountLogin 帐号登录",
+   "body_len": 219,
+   "body_hex": "00 0a 00 07 61 63 63 6f 75 6e 74 00 09 64 73 68 5f 6c 6f 63 61 6c 00 09 74 69 6d 65 73 74 61 6d 70 00 0a 31 37 39 31 39 35 34 30 38 33 00 0c 65",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:31",
+   "dir": "SC",
+   "cmd": 1110,
+   "note": "<< 1110 SCAccountLogin account=dsh_local roles=1 keys=['account', 'channelId', 'device_id', 'enter_srv_id', 'gettui_cid', 'idfa', 'platform', 'sign', 'timestamp', 'token'] ver=1.4.9 (30 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:31",
+   "dir": "CS",
+   "cmd": 10302,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "00 0a 00 07",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:31",
+   "dir": "SC",
+   "cmd": 10302,
+   "note": "<< 10302 SC_10302 lev=70 exp=13339 gold=1800140 gold_acc=5000 (128 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:31",
+   "dir": "CS",
+   "cmd": 13340,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "00 0a 00 07",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:31",
+   "dir": "SC",
+   "cmd": 13340,
+   "note": "<< 13340 SC_13340 profile name=DSH lev=70 (76 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:31",
+   "dir": "CS",
+   "cmd": 14901,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "00 0a 00 07",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:31",
+   "dir": "SC",
+   "cmd": 14901,
+   "note": "<< 14901 SC_14901 cur_bid=0 titles=0（role_title 真值）",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:31",
+   "dir": "CS",
+   "cmd": 10331,
+   "note": "?",
+   "body_len": 8,
+   "body_hex": "00 00 03 e9 61 63 63 6f",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:31",
+   "dir": "SC",
+   "cmd": 10331,
+   "note": "<< 10331 SC_10331 skill_bid=1001 code=0 (9 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:31",
+   "dir": "CS",
+   "cmd": 10303,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "00 00 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:31",
+   "dir": "SC",
+   "cmd": 10303,
+   "note": "<< 10303 SC_10303 attr (hp_max=7305 atk_s=1813) (204 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:31",
+   "dir": "CS",
+   "cmd": 15203,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "00 00 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:31",
+   "dir": "SC",
+   "cmd": 15203,
+   "note": "<< 15203 SC_15203 code=0 (9 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:31",
+   "dir": "CS",
+   "cmd": 12403,
+   "note": "?",
+   "body_len": 8,
+   "body_hex": "00 00 27 24 61 63 63 6f",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:31",
+   "dir": "SC",
+   "cmd": 12403,
+   "note": "<< 12403 SC_12403 mission_bid=10020 code=1(TRUE) (already committed, idempotent)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 10103,
+   "note": "RoleReLogin 角色重连",
+   "body_len": 11,
+   "body_hex": "00 00 03 e9 00 01 31 6f 75 6e 74",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 10103,
+   "note": "<< 10103 SCRoleReLogin reply (15 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 10200,
+   "note": "<< 10200 SCRoleEnter (server push) bid=10001 (112,44) (19 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 10201,
+   "note": "<< 10201 SCMapGird (server push) roles=1 npcs=25 mons=1 elems=2 (653 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 10305,
+   "note": "<< 10305 SC_10305 资产增量推送（58 bytes，含 practice_exp）",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 10921,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "00 00 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 10921,
+   "note": "<< 10921 SC_10921 world_lev=1 (17 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 10300,
+   "note": "RoleInit 客户端初始化完毕",
+   "body_len": 4,
+   "body_hex": "00 00 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 10200,
+   "note": "<< 10200 SCRoleEnter (server push) bid=10001 (112,44) (19 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 10201,
+   "note": "<< 10201 SCMapGird (server push) roles=1 npcs=25 mons=1 elems=2 (653 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 10200,
+   "note": "<< 10200 re-push after 10300 (client ready)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 12400,
+   "note": "<< 12400 SC_12400 mission_list=1 (42 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 10800,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "00 00 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 10800,
+   "note": "<< 10800 SC_10800 mail=1 欢迎邮件(真实物品) (154 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 13300,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "00 00 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 13300,
+   "note": "<< 13300 SC_13300 friend_list=0（role_friend 真值）",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 10923,
+   "note": "?",
+   "body_len": 6,
+   "body_hex": "00 01 03 e9 00 01",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 10923,
+   "note": "<< 10923 SC_10923 id=1 status=0 int_args=0（按 config_function 门槛）",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 10502,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "01 01 03 e9 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 10502,
+   "note": "<< 10502 SC_10502 bag_code=1 items=6 [(309, 28560, 2), (310, 28515, 2), (312, 21403, 3), (315, 13001, 1), (316, 46022, 1), (318, 33001, 2)]",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 10301,
+   "note": "角色基础信息",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 10301,
+   "note": "<< 10301 SC_10301 role info (122 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 10922,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 10922,
+   "note": "<< 10922 SC_10922 act_list=9 (全服活动状态; 全量=19) (89 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 10924,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 10924,
+   "note": "<< 10924 SC_10924 act_list=0 (R49 修复：抑制活动预告弹窗)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 13200,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 13200,
+   "note": "<< 13200 SC_13200 tid=0 members=0",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 18803,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 18803,
+   "note": "<< 18803 SC_18803 win=0/0 score=0 rank=0 max=0 (38 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 11300,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 11300,
+   "note": "<< 11300 trophy=0 times=0 opps=0 records=0 (10 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 11301,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 11301,
+   "note": "<< 11301 SC_11301 lev=0 num=0 (8 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 10924,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 10924,
+   "note": "<< 10924 SC_10924 act_list=0 (R49 修复：抑制活动预告弹窗)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 14000,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "01 01 03 e9 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 14000,
+   "note": "<< 14000 flag=1 阵型=6 上阵伙伴=5 (35 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 14009,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "01 01 03 e9 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 14009,
+   "note": "<< 14009 SC_14009 flag=1 cheer_hero=0 (9 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 20500,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 20500,
+   "note": "<< 20500 SC_20500 R191升级（19 bytes）",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 20504,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "01 01 03 e9 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 20504,
+   "note": "<< 20504 SC_20504 R191升级（3 bytes）",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 20504,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "02 01 03 e9 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 20504,
+   "note": "<< 20504 SC_20504 R191升级（3 bytes）",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 19600,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "01 01 03 e9 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 19600,
+   "note": "<< 19600 SC_19600 签到档位=95（来自 config_checkin）",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 14600,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 14600,
+   "note": "<< 14600 SC_14600 days=5 get_day=5 (15 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 14100,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 14100,
+   "note": "<< 14100 SC_14100 days=1 (9 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 17600,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 17600,
+   "note": "<< 17600 SC_17600 days=1 get_day=0 (11 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 11700,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 11700,
+   "note": "<< 11700 SC_11700 record_server=0 record_self=0 (22 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 10527,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 10527,
+   "note": "<< 10527 SC_10527 state_list=0 (8 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 10502,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "01 01 03 e9 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 10502,
+   "note": "<< 10502 SC_10502 bag_code=1 items=6 [(309, 28560, 2), (310, 28515, 2), (312, 21403, 3), (315, 13001, 1), (316, 46022, 1), (318, 33001, 2)]",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 13806,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 13806,
+   "note": "<< 13806 SC_13806 goods_list=1",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 17200,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 17200,
+   "note": "<< 17200 SC_17200 day=0 status=0（itype=0 里程碑=0）",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 13579,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 13579,
+   "note": "<< 13579 SC_13579 tree_lev=0 strength_rest=48 name='北斗'",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 13580,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 13580,
+   "note": "<< 13580 SC_13580 worship_list=5（WorshipType 真实条目）",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 13704,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 13704,
+   "note": "<< 13704 SC_13704 堆叠等级(0,0,0,0) (10 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 10589,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 10589,
+   "note": "<< 10589 SC_10589 flyup_lev=0 stage=0 exp=0 dan=0 (13 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 20800,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 20800,
+   "note": "<< 20800 SC_20800 stage=5 power=0 luck=0",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 16701,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "01 01 03 e9 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 16701,
+   "note": "<< 16701 SC_16701 vip_lev=1 get_award=0 (10 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 16704,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 16704,
+   "note": "<< 16704 SC_16704 vip_lev=0 status=0 (8 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 13042,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 13042,
+   "note": "<< 13042 high_floor=1 clear=[] (15 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 13200,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 13200,
+   "note": "<< 13200 SC_13200 tid=0 members=0",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 17100,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 17100,
+   "note": "<< 17100 SC_17100 day=1 gold_num=0（当日真实充值钻石） types=[1, 2, 3, 4, 5, 6] (22 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 10621,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 10621,
+   "note": "<< 10621 SC_10621 world_lev=1 skill_list=4 (42 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 10650,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 01 03 e9",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 10650,
+   "note": "<< 10650 SC_10650 talent_list=0 (8 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "CS",
+   "cmd": 16605,
+   "note": "?",
+   "body_len": 438,
+   "body_hex": "00 6c 00 00 13 8f 00 00 13 90 00 00 17 67 00 00 17 68 00 00 13 92 00 00 13 ad 00 00 17 6b 00 00 13 93 00 01 73 22 00 00 13 8c 00 01 73 43 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:33",
+   "dir": "SC",
+   "cmd": 16605,
+   "note": "<< 16605 SC_16605 status=108 code=1（客户端语义：code!=0=开启）",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 11200,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "00 6c 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 11200,
+   "note": "<< 11200 SC_11200 volume=200 volume_open=200 partner_bag=0 (12 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 13321,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "00 6c 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 13321,
+   "note": "<< 13321 SC_13321 request_list=0",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 15801,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "00 6c 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 15801,
+   "note": "<< 15801 SC_15801 jie=2 lev=5（标量真实；6 表空，待定位分歧）",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 15700,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "00 6c 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 15700,
+   "note": "<< 15700 SC_15700 use_id=10001 shenqi_list=2",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 16400,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "01 6c 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 16400,
+   "note": "<< 16400 SC_16400 type=1 chengjiu=4 rate=4 (67 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 16400,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "02 6c 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 16400,
+   "note": "<< 16400 SC_16400 type=2 chengjiu=4 rate=4 (67 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 16400,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "03 6c 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 16400,
+   "note": "<< 16400 SC_16400 type=3 chengjiu=4 rate=4 (67 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 16400,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "04 6c 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 16400,
+   "note": "<< 16400 SC_16400 type=4 chengjiu=4 rate=4 (67 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 16400,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "05 6c 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 16400,
+   "note": "<< 16400 SC_16400 type=5 chengjiu=4 rate=4 (67 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 16400,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "06 6c 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 16400,
+   "note": "<< 16400 SC_16400 type=6 chengjiu=4 rate=4 (67 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 16400,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "07 6c 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 16400,
+   "note": "<< 16400 SC_16400 type=7 chengjiu=4 rate=4 (67 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 16400,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "08 6c 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 16400,
+   "note": "<< 16400 SC_16400 type=8 chengjiu=4 rate=4 (67 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 11600,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "08 6c 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 11600,
+   "note": "<< 11600 SC_11600 wing color=3 wing_id=8801 power=999 star=0（growth.service 真表）(31 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 15501,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "08 6c 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 15501,
+   "note": "<< 15501 SC_15501 jie=1 lev=10（标量真实；6 表空，待定位门禁分歧）",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 13771,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "08 6c 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 13771,
+   "note": "<< 13771 SC_13771 银魂币补充 val=65535 price=0(未实现扣费) (12 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 10921,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "08 6c 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 10921,
+   "note": "<< 10921 SC_10921 world_lev=1 (17 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 10922,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "08 6c 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 10922,
+   "note": "<< 10922 SC_10922 act_list=9 (全服活动状态; 全量=19) (89 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 10924,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "08 6c 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 10924,
+   "note": "<< 10924 SC_10924 act_list=0 (R49 修复：抑制活动预告弹窗)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 16706,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "08 6c 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 16706,
+   "note": "<< 16706 SC_16706 status=0（vip_level=0）",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 10932,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "08 6c 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 10932,
+   "note": "<< 10932 SC_10932 double=0 off_state=1 (14 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 16500,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "08 6c 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 16500,
+   "note": "<< 16500 SC_16500 info=4 档（等级 70）(56 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 17200,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "08 6c 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 17200,
+   "note": "<< 17200 SC_17200 day=0 status=0（itype=0 里程碑=0）",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 18900,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "08 6c 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 18900,
+   "note": "<< 18900 SC_18900 fabao_list=4",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 17800,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "08 6c 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 17800,
+   "note": "<< 17800 SC_17800 (13 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 16903,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "08 6c 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 16903,
+   "note": "<< 16903 SC_16903 (20 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 16605,
+   "note": "?",
+   "body_len": 438,
+   "body_hex": "00 6c 00 00 13 8f 00 00 13 90 00 00 17 67 00 00 17 68 00 00 13 92 00 00 13 ad 00 00 17 6b 00 00 13 93 00 01 73 22 00 00 13 8c 00 01 73 43 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 16605,
+   "note": "<< 16605 SC_16605 status=108 code=1（客户端语义：code!=0=开启）",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 16602,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "03 6c 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 16602,
+   "note": "<< 16602 SC_16602 活动列表=91 条（来自 config_function）",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 11200,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "03 6c 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 11200,
+   "note": "<< 11200 SC_11200 volume=200 volume_open=200 partner_bag=0 (12 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "CS",
+   "cmd": 11215,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "03 6c 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:35",
+   "dir": "SC",
+   "cmd": 11215,
+   "note": "<< 11215 SC_11215 partner_list=53（partner.service 配置驱动）(2554 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:36",
+   "dir": "CS",
+   "cmd": 10999,
+   "note": "?",
+   "body_len": 448,
+   "body_hex": "01 ba 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:36",
+   "dir": "CS",
+   "cmd": 16500,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 ba 2d 2d",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:36",
+   "dir": "SC",
+   "cmd": 16500,
+   "note": "<< 16500 SC_16500 info=4 档（等级 70）(56 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:36",
+   "dir": "CS",
+   "cmd": 11215,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "01 ba 2d 2d",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:36",
+   "dir": "SC",
+   "cmd": 11215,
+   "note": "<< 11215 SC_11215 partner_list=53（partner.service 配置驱动）(2554 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:36",
+   "dir": "CS",
+   "cmd": 10502,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "02 ba 2d 2d 2d",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:36",
+   "dir": "SC",
+   "cmd": 10502,
+   "note": "<< 10502 SC_10502 bag_code=2 items=6 [(319, 40003, 1), (316, 41803, 1), (314, 41403, 1), (315, 41603, 1), (318, 41003, 1), (317, 41213, 1)]",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:36",
+   "dir": "CS",
+   "cmd": 10502,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "02 ba 2d 2d 2d",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:36",
+   "dir": "SC",
+   "cmd": 10502,
+   "note": "<< 10502 SC_10502 bag_code=2 items=6 [(319, 40003, 1), (316, 41803, 1), (314, 41403, 1), (315, 41603, 1), (318, 41003, 1), (317, 41213, 1)]",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:37",
+   "dir": "CS",
+   "cmd": 16605,
+   "note": "?",
+   "body_len": 438,
+   "body_hex": "00 6c 00 00 13 8f 00 00 13 90 00 00 17 67 00 00 17 68 00 00 13 92 00 00 13 ad 00 00 17 6b 00 00 13 93 00 01 73 22 00 00 13 8c 00 01 73 43 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:37",
+   "dir": "SC",
+   "cmd": 16605,
+   "note": "<< 16605 SC_16605 status=108 code=1（客户端语义：code!=0=开启）",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:37",
+   "dir": "CS",
+   "cmd": 17800,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "00 6c 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:37",
+   "dir": "SC",
+   "cmd": 17800,
+   "note": "<< 17800 SC_17800 (13 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:37",
+   "dir": "CS",
+   "cmd": 16903,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "00 6c 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:37",
+   "dir": "SC",
+   "cmd": 16903,
+   "note": "<< 16903 SC_16903 (20 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:37",
+   "dir": "CS",
+   "cmd": 16605,
+   "note": "?",
+   "body_len": 438,
+   "body_hex": "00 6c 00 00 13 8f 00 00 13 90 00 00 17 67 00 00 17 68 00 00 13 92 00 00 13 ad 00 00 17 6b 00 00 13 93 00 01 73 22 00 00 13 8c 00 01 73 43 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:37",
+   "dir": "SC",
+   "cmd": 16605,
+   "note": "<< 16605 SC_16605 status=108 code=1（客户端语义：code!=0=开启）",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:37",
+   "dir": "CS",
+   "cmd": 16602,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "03 6c 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:37",
+   "dir": "SC",
+   "cmd": 16602,
+   "note": "<< 16602 SC_16602 活动列表=91 条（来自 config_function）",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:37",
+   "dir": "CS",
+   "cmd": 19400,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "ff 6c 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:37",
+   "dir": "SC",
+   "cmd": 19400,
+   "note": "<< 19400 SC_19400 bag=255 stage=1 mingge_list=3 (97 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:37",
+   "dir": "CS",
+   "cmd": 16500,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "ff 6c 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:37",
+   "dir": "SC",
+   "cmd": 16500,
+   "note": "<< 16500 SC_16500 info=4 档（等级 70）(56 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:37",
+   "dir": "CS",
+   "cmd": 10502,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "03 6c 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:37",
+   "dir": "CS",
+   "cmd": 10502,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "03 6c 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:37",
+   "dir": "CS",
+   "cmd": 16664,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "03 6c 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:37",
+   "dir": "SC",
+   "cmd": 16664,
+   "note": "<< 16664 SC_16664 R191升级（177 bytes）",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:37",
+   "dir": "CS",
+   "cmd": 10502,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "04 6c 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:37",
+   "dir": "CS",
+   "cmd": 19406,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "04 6c 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:37",
+   "dir": "SC",
+   "cmd": 19406,
+   "note": "<< 19406 SC_19406 soul=100 soul_max=500",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:37",
+   "dir": "CS",
+   "cmd": 10502,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "04 6c 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:38",
+   "dir": "CS",
+   "cmd": 30715,
+   "note": "?",
+   "body_len": 8,
+   "body_hex": "00 00 00 00 13 8f 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:38",
+   "dir": "SC",
+   "cmd": 30715,
+   "note": "<< 30715 SC_30715 R191升级（0 bytes）",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:38",
+   "dir": "CS",
+   "cmd": 10502,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "11 00 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:38",
+   "dir": "CS",
+   "cmd": 10502,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "10 00 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:38",
+   "dir": "CS",
+   "cmd": 10502,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "0d 00 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:38",
+   "dir": "CS",
+   "cmd": 19400,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "09 00 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:38",
+   "dir": "SC",
+   "cmd": 19400,
+   "note": "<< 19400 SC_19400 bag=9 stage=1 mingge_list=3 (97 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:38",
+   "dir": "CS",
+   "cmd": 10502,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "11 00 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:38",
+   "dir": "CS",
+   "cmd": 10502,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "10 00 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:38",
+   "dir": "CS",
+   "cmd": 10502,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "0d 00 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:38",
+   "dir": "CS",
+   "cmd": 10502,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "05 00 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:38",
+   "dir": "CS",
+   "cmd": 10502,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "05 00 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:39",
+   "dir": "CS",
+   "cmd": 19400,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "0a 00 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:39",
+   "dir": "SC",
+   "cmd": 19400,
+   "note": "<< 19400 SC_19400 bag=10 stage=1 mingge_list=3 (97 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:39",
+   "dir": "CS",
+   "cmd": 13369,
+   "note": "?",
+   "body_len": 4,
+   "body_hex": "0a 00 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:39",
+   "dir": "SC",
+   "cmd": 13369,
+   "note": "<< 13369 SC_13369 black_list=0 (8 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:39",
+   "dir": "CS",
+   "cmd": 10502,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "0c 00 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:39",
+   "dir": "CS",
+   "cmd": 10502,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "08 00 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:39",
+   "dir": "CS",
+   "cmd": 10502,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "06 00 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:39",
+   "dir": "CS",
+   "cmd": 10502,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "07 00 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:39",
+   "dir": "CS",
+   "cmd": 10502,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "0c 00 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:39",
+   "dir": "CS",
+   "cmd": 10502,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "08 00 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:39",
+   "dir": "CS",
+   "cmd": 10502,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "06 00 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:39",
+   "dir": "CS",
+   "cmd": 10502,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "07 00 00 00 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:43",
+   "dir": "CS",
+   "cmd": 10204,
+   "note": "?",
+   "body_len": 8,
+   "body_hex": "00 70 00 2c 13 8f 00 00",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:44",
+   "dir": "SC",
+   "cmd": 10204,
+   "note": "<< 10204 SCMove_10204 rid=1001 -> (112,44) [saved] bcast=0 watchers=0 (17 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:44",
+   "dir": "CS",
+   "cmd": 1199,
+   "note": "heartbeast 心跳",
+   "body_len": 4,
+   "body_hex": "00 70 00 2c",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:44",
+   "dir": "SC",
+   "cmd": 1199,
+   "note": "<< 1199 heartbeat reply (10 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:52",
+   "dir": "CS",
+   "cmd": 1199,
+   "note": "heartbeast 心跳",
+   "body_len": 4,
+   "body_hex": "00 70 00 2c",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:52",
+   "dir": "SC",
+   "cmd": 1199,
+   "note": "<< 1199 heartbeat reply (10 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:01:52",
+   "dir": "SC",
+   "cmd": 12400,
+   "note": "<< 12400 SC_12400 mission_list=1 (42 bytes) [补推/NpcCtrl 就绪后]",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:02:00",
+   "dir": "CS",
+   "cmd": 1199,
+   "note": "heartbeast 心跳",
+   "body_len": 4,
+   "body_hex": "00 70 00 2c",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:02:00",
+   "dir": "SC",
+   "cmd": 1199,
+   "note": "<< 1199 heartbeat reply (10 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:02:07",
+   "dir": "CS",
+   "cmd": 20809,
+   "note": "?",
+   "body_len": 5,
+   "body_hex": "01 70 00 2c 13",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:02:07",
+   "dir": "SC",
+   "cmd": 20809,
+   "note": "<< 20809 SC_20809 flag=1",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:02:08",
+   "dir": "CS",
+   "cmd": 1199,
+   "note": "heartbeast 心跳",
+   "body_len": 4,
+   "body_hex": "01 70 00 2c",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:02:08",
+   "dir": "SC",
+   "cmd": 1199,
+   "note": "<< 1199 heartbeat reply (10 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:02:16",
+   "dir": "CS",
+   "cmd": 1199,
+   "note": "heartbeast 心跳",
+   "body_len": 4,
+   "body_hex": "01 70 00 2c",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:02:16",
+   "dir": "SC",
+   "cmd": 1199,
+   "note": "<< 1199 heartbeat reply (10 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:02:24",
+   "dir": "CS",
+   "cmd": 1199,
+   "note": "heartbeast 心跳",
+   "body_len": 4,
+   "body_hex": "01 70 00 2c",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:02:24",
+   "dir": "SC",
+   "cmd": 1199,
+   "note": "<< 1199 heartbeat reply (10 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:02:32",
+   "dir": "CS",
+   "cmd": 1199,
+   "note": "heartbeast 心跳",
+   "body_len": 4,
+   "body_hex": "01 70 00 2c",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:02:32",
+   "dir": "SC",
+   "cmd": 1199,
+   "note": "<< 1199 heartbeat reply (10 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:02:40",
+   "dir": "CS",
+   "cmd": 1199,
+   "note": "heartbeast 心跳",
+   "body_len": 4,
+   "body_hex": "01 70 00 2c",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:02:40",
+   "dir": "SC",
+   "cmd": 1199,
+   "note": "<< 1199 heartbeat reply (10 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:02:48",
+   "dir": "CS",
+   "cmd": 1199,
+   "note": "heartbeast 心跳",
+   "body_len": 4,
+   "body_hex": "01 70 00 2c",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:02:48",
+   "dir": "SC",
+   "cmd": 1199,
+   "note": "<< 1199 heartbeat reply (10 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:02:56",
+   "dir": "CS",
+   "cmd": 1199,
+   "note": "heartbeast 心跳",
+   "body_len": 4,
+   "body_hex": "01 70 00 2c",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:02:56",
+   "dir": "SC",
+   "cmd": 1199,
+   "note": "<< 1199 heartbeat reply (10 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:03:04",
+   "dir": "CS",
+   "cmd": 1199,
+   "note": "heartbeast 心跳",
+   "body_len": 4,
+   "body_hex": "01 70 00 2c",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:03:04",
+   "dir": "SC",
+   "cmd": 1199,
+   "note": "<< 1199 heartbeat reply (10 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:03:12",
+   "dir": "CS",
+   "cmd": 1199,
+   "note": "heartbeast 心跳",
+   "body_len": 4,
+   "body_hex": "01 70 00 2c",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:03:12",
+   "dir": "SC",
+   "cmd": 1199,
+   "note": "<< 1199 heartbeat reply (10 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:03:20",
+   "dir": "CS",
+   "cmd": 1199,
+   "note": "heartbeast 心跳",
+   "body_len": 4,
+   "body_hex": "01 70 00 2c",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:03:20",
+   "dir": "SC",
+   "cmd": 1199,
+   "note": "<< 1199 heartbeat reply (10 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:03:28",
+   "dir": "CS",
+   "cmd": 1199,
+   "note": "heartbeast 心跳",
+   "body_len": 4,
+   "body_hex": "01 70 00 2c",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:03:28",
+   "dir": "SC",
+   "cmd": 1199,
+   "note": "<< 1199 heartbeat reply (10 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  },
+  {
+   "ts": "13:03:36",
+   "dir": "CS",
+   "cmd": 1199,
+   "note": "heartbeast 心跳",
+   "body_len": 4,
+   "body_hex": "01 70 00 2c",
+   "raw_hex": null
+  },
+  {
+   "ts": "13:03:36",
+   "dir": "SC",
+   "cmd": 1199,
+   "note": "<< 1199 heartbeat reply (10 bytes)",
+   "body_len": null,
+   "body_hex": null,
+   "raw_hex": null
+  }
+ ]
+}

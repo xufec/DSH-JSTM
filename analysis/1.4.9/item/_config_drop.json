@@ -1,0 +1,907 @@
+{
+ "Config": {
+  "Drop": {
+   "20001": {
+    "holiday_key": 0,
+    "mon_bid": 20001,
+    "core_interval": 0,
+    "holiday": 3001,
+    "first_p_sum": 0,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{1000}",
+    "holiday_p": "[{1,1000}]",
+    "drop_type": 1,
+    "wood": "{500}",
+    "core_p_sum": 0,
+    "first": 0,
+    "core": 0,
+    "first_p": {},
+    "core_p": {},
+    "normal": {},
+    "normal_sum": {}
+   },
+   "20002": {
+    "holiday_key": 0,
+    "mon_bid": 20002,
+    "core_interval": 0,
+    "holiday": 3001,
+    "first_p_sum": 0,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{1000}",
+    "holiday_p": "[{1,1000}]",
+    "drop_type": 1,
+    "wood": "{500}",
+    "core_p_sum": 0,
+    "first": 0,
+    "core": 0,
+    "first_p": {},
+    "core_p": {},
+    "normal": {},
+    "normal_sum": {}
+   },
+   "20003": {
+    "holiday_key": 0,
+    "mon_bid": 20003,
+    "core_interval": 0,
+    "holiday": 3001,
+    "first_p_sum": 0,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{1000}",
+    "holiday_p": "[{1,1000}]",
+    "drop_type": 1,
+    "wood": "{500}",
+    "core_p_sum": 0,
+    "first": 0,
+    "core": 0,
+    "first_p": {},
+    "core_p": {},
+    "normal": {
+     "4001": {
+      "1": {
+       "num": 1,
+       "min": 1,
+       "pp": 1000,
+       "max": 1000
+      }
+     }
+    },
+    "normal_sum": {
+     "4001.0": 1000
+    }
+   },
+   "20004": {
+    "holiday_key": 0,
+    "mon_bid": 20004,
+    "core_interval": 3,
+    "holiday": 3001,
+    "first_p_sum": 0,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{1000}",
+    "holiday_p": "[{1,1000}]",
+    "drop_type": 1,
+    "wood": "{500}",
+    "core_p_sum": 1000,
+    "first": 0,
+    "core": 2001,
+    "first_p": {},
+    "core_p": {
+     "1": {
+      "num": 1,
+      "min": 1,
+      "pp": 1000,
+      "max": 1000
+     }
+    },
+    "normal": {
+     "4001": {
+      "1": {
+       "num": 1,
+       "min": 1,
+       "pp": 1000,
+       "max": 1000
+      }
+     },
+     "4003": {
+      "1": {
+       "num": 1,
+       "min": 1,
+       "pp": 1000,
+       "max": 1000
+      }
+     }
+    },
+    "normal_sum": {
+     "4003.0": 1000,
+     "4001.0": 1000
+    }
+   },
+   "20005": {
+    "holiday_key": 0,
+    "mon_bid": 20005,
+    "core_interval": 0,
+    "holiday": 3001,
+    "first_p_sum": 0,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{2000}",
+    "holiday_p": "[{1,1000}]",
+    "drop_type": 1,
+    "wood": "{600}",
+    "core_p_sum": 0,
+    "first": 0,
+    "core": 0,
+    "first_p": {},
+    "core_p": {},
+    "normal": {},
+    "normal_sum": {}
+   },
+   "20006": {
+    "holiday_key": 0,
+    "mon_bid": 20006,
+    "core_interval": 0,
+    "holiday": 3001,
+    "first_p_sum": 0,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{2000}",
+    "holiday_p": "[{1,1000}]",
+    "drop_type": 1,
+    "wood": "{600}",
+    "core_p_sum": 0,
+    "first": 0,
+    "core": 0,
+    "first_p": {},
+    "core_p": {},
+    "normal": {},
+    "normal_sum": {}
+   },
+   "20007": {
+    "holiday_key": 0,
+    "mon_bid": 20007,
+    "core_interval": 0,
+    "holiday": 3001,
+    "first_p_sum": 0,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{2000}",
+    "holiday_p": "[{1,1000}]",
+    "drop_type": 1,
+    "wood": "{600}",
+    "core_p_sum": 0,
+    "first": 0,
+    "core": 0,
+    "first_p": {},
+    "core_p": {},
+    "normal": {
+     "4001": {
+      "1": {
+       "num": 1,
+       "min": 1,
+       "pp": 1000,
+       "max": 1000
+      }
+     }
+    },
+    "normal_sum": {
+     "4001.0": 1000
+    }
+   },
+   "20008": {
+    "holiday_key": 0,
+    "mon_bid": 20008,
+    "core_interval": 3,
+    "holiday": 3001,
+    "first_p_sum": 0,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{2000}",
+    "holiday_p": "[{1,1000}]",
+    "drop_type": 1,
+    "wood": "{600}",
+    "core_p_sum": 1000,
+    "first": 0,
+    "core": 2002,
+    "first_p": {},
+    "core_p": {
+     "1": {
+      "num": 1,
+      "min": 1,
+      "pp": 1000,
+      "max": 1000
+     }
+    },
+    "normal": {
+     "4001": {
+      "1": {
+       "num": 1,
+       "min": 1,
+       "pp": 1000,
+       "max": 1000
+      }
+     },
+     "4003": {
+      "1": {
+       "num": 1,
+       "min": 1,
+       "pp": 1000,
+       "max": 1000
+      }
+     }
+    },
+    "normal_sum": {
+     "4003.0": 1000,
+     "4001.0": 1000
+    }
+   },
+   "20009": {
+    "holiday_key": 0,
+    "mon_bid": 20009,
+    "core_interval": 0,
+    "holiday": 3001,
+    "first_p_sum": 0,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{3000}",
+    "holiday_p": "[{1,1000}]",
+    "drop_type": 1,
+    "wood": "{700}",
+    "core_p_sum": 0,
+    "first": 0,
+    "core": 0,
+    "first_p": {},
+    "core_p": {},
+    "normal": {},
+    "normal_sum": {}
+   },
+   "20010": {
+    "holiday_key": 0,
+    "mon_bid": 20010,
+    "core_interval": 0,
+    "holiday": 3001,
+    "first_p_sum": 0,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{3000}",
+    "holiday_p": "[{1,1000}]",
+    "drop_type": 1,
+    "wood": "{700}",
+    "core_p_sum": 0,
+    "first": 0,
+    "core": 0,
+    "first_p": {},
+    "core_p": {},
+    "normal": {},
+    "normal_sum": {}
+   },
+   "20011": {
+    "holiday_key": 0,
+    "mon_bid": 20011,
+    "core_interval": 0,
+    "holiday": 3001,
+    "first_p_sum": 0,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{3000}",
+    "holiday_p": "[{1,1000}]",
+    "drop_type": 1,
+    "wood": "{700}",
+    "core_p_sum": 0,
+    "first": 0,
+    "core": 0,
+    "first_p": {},
+    "core_p": {},
+    "normal": {
+     "4001": {
+      "1": {
+       "num": 1,
+       "min": 1,
+       "pp": 1000,
+       "max": 1000
+      }
+     }
+    },
+    "normal_sum": {
+     "4001.0": 1000
+    }
+   },
+   "20012": {
+    "holiday_key": 0,
+    "mon_bid": 20012,
+    "core_interval": 3,
+    "holiday": 3001,
+    "first_p_sum": 1000,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{3000}",
+    "holiday_p": "[{1,1000}]",
+    "drop_type": 1,
+    "wood": "{700}",
+    "core_p_sum": 1000,
+    "first": 1001,
+    "core": 2003,
+    "first_p": {
+     "1": {
+      "num": 1,
+      "min": 1,
+      "pp": 1000,
+      "max": 1000
+     }
+    },
+    "core_p": {
+     "1": {
+      "num": 1,
+      "min": 1,
+      "pp": 500,
+      "max": 500
+     },
+     "2": {
+      "num": 2,
+      "min": 501,
+      "pp": 500,
+      "max": 1000
+     }
+    },
+    "normal": {
+     "4001": {
+      "1": {
+       "num": 1,
+       "min": 1,
+       "pp": 1000,
+       "max": 1000
+      }
+     },
+     "4003": {
+      "1": {
+       "num": 1,
+       "min": 1,
+       "pp": 1000,
+       "max": 1000
+      }
+     }
+    },
+    "normal_sum": {
+     "4003.0": 1000,
+     "4001.0": 1000
+    }
+   },
+   "20013": {
+    "holiday_key": 0,
+    "mon_bid": 20013,
+    "core_interval": 0,
+    "holiday": 3001,
+    "first_p_sum": 0,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{4000}",
+    "holiday_p": "[{1,1000}]",
+    "drop_type": 1,
+    "wood": "{800}",
+    "core_p_sum": 0,
+    "first": 0,
+    "core": 0,
+    "first_p": {},
+    "core_p": {},
+    "normal": {},
+    "normal_sum": {}
+   },
+   "20014": {
+    "holiday_key": 0,
+    "mon_bid": 20014,
+    "core_interval": 0,
+    "holiday": 3001,
+    "first_p_sum": 0,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{4000}",
+    "holiday_p": "[{1,1000}]",
+    "drop_type": 1,
+    "wood": "{800}",
+    "core_p_sum": 0,
+    "first": 0,
+    "core": 0,
+    "first_p": {},
+    "core_p": {},
+    "normal": {},
+    "normal_sum": {}
+   },
+   "20015": {
+    "holiday_key": 0,
+    "mon_bid": 20015,
+    "core_interval": 0,
+    "holiday": 3001,
+    "first_p_sum": 0,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{4000}",
+    "holiday_p": "[{1,1000}]",
+    "drop_type": 1,
+    "wood": "{800}",
+    "core_p_sum": 0,
+    "first": 0,
+    "core": 0,
+    "first_p": {},
+    "core_p": {},
+    "normal": {
+     "4002": {
+      "1": {
+       "num": 1,
+       "min": 1,
+       "pp": 1000,
+       "max": 1000
+      }
+     }
+    },
+    "normal_sum": {
+     "4002.0": 1000
+    }
+   },
+   "20016": {
+    "holiday_key": 0,
+    "mon_bid": 20016,
+    "core_interval": 6,
+    "holiday": 3001,
+    "first_p_sum": 0,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{4000}",
+    "holiday_p": "[{1,1000}]",
+    "drop_type": 1,
+    "wood": "{800}",
+    "core_p_sum": 1000,
+    "first": 0,
+    "core": 2004,
+    "first_p": {},
+    "core_p": {
+     "1": {
+      "num": 1,
+      "min": 1,
+      "pp": 1000,
+      "max": 1000
+     }
+    },
+    "normal": {
+     "4002": {
+      "1": {
+       "num": 1,
+       "min": 1,
+       "pp": 1000,
+       "max": 1000
+      }
+     },
+     "4004": {
+      "1": {
+       "num": 1,
+       "min": 1,
+       "pp": 1000,
+       "max": 1000
+      }
+     }
+    },
+    "normal_sum": {
+     "4004.0": 1000,
+     "4002.0": 1000
+    }
+   },
+   "20017": {
+    "holiday_key": 0,
+    "mon_bid": 20017,
+    "core_interval": 0,
+    "holiday": 3001,
+    "first_p_sum": 0,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{5000}",
+    "holiday_p": "[{1,1000}]",
+    "drop_type": 1,
+    "wood": "{900}",
+    "core_p_sum": 0,
+    "first": 0,
+    "core": 0,
+    "first_p": {},
+    "core_p": {},
+    "normal": {},
+    "normal_sum": {}
+   },
+   "20018": {
+    "holiday_key": 0,
+    "mon_bid": 20018,
+    "core_interval": 0,
+    "holiday": 3001,
+    "first_p_sum": 0,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{5000}",
+    "holiday_p": "[{1,1000}]",
+    "drop_type": 1,
+    "wood": "{900}",
+    "core_p_sum": 0,
+    "first": 0,
+    "core": 0,
+    "first_p": {},
+    "core_p": {},
+    "normal": {},
+    "normal_sum": {}
+   },
+   "20019": {
+    "holiday_key": 0,
+    "mon_bid": 20019,
+    "core_interval": 0,
+    "holiday": 3001,
+    "first_p_sum": 0,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{5000}",
+    "holiday_p": "[{1,1000}]",
+    "drop_type": 1,
+    "wood": "{900}",
+    "core_p_sum": 0,
+    "first": 0,
+    "core": 0,
+    "first_p": {},
+    "core_p": {},
+    "normal": {
+     "4002": {
+      "1": {
+       "num": 1,
+       "min": 1,
+       "pp": 1000,
+       "max": 1000
+      }
+     }
+    },
+    "normal_sum": {
+     "4002.0": 1000
+    }
+   },
+   "20020": {
+    "holiday_key": 0,
+    "mon_bid": 20020,
+    "core_interval": 6,
+    "holiday": 3001,
+    "first_p_sum": 0,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{5000}",
+    "holiday_p": "[{1,1000}]",
+    "drop_type": 1,
+    "wood": "{900}",
+    "core_p_sum": 1000,
+    "first": 0,
+    "core": 2004,
+    "first_p": {},
+    "core_p": {
+     "1": {
+      "num": 1,
+      "min": 1,
+      "pp": 1000,
+      "max": 1000
+     }
+    },
+    "normal": {
+     "4002": {
+      "1": {
+       "num": 1,
+       "min": 1,
+       "pp": 1000,
+       "max": 1000
+      }
+     },
+     "4004": {
+      "1": {
+       "num": 1,
+       "min": 1,
+       "pp": 1000,
+       "max": 1000
+      }
+     }
+    },
+    "normal_sum": {
+     "4004.0": 1000,
+     "4002.0": 1000
+    }
+   },
+   "20021": {
+    "holiday_key": 0,
+    "mon_bid": 20021,
+    "core_interval": 0,
+    "holiday": 3001,
+    "first_p_sum": 0,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{6000}",
+    "holiday_p": "[{1,1000}]",
+    "drop_type": 1,
+    "wood": "{1000}",
+    "core_p_sum": 0,
+    "first": 0,
+    "core": 0,
+    "first_p": {},
+    "core_p": {},
+    "normal": {},
+    "normal_sum": {}
+   },
+   "20022": {
+    "holiday_key": 0,
+    "mon_bid": 20022,
+    "core_interval": 0,
+    "holiday": 3001,
+    "first_p_sum": 0,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{6000}",
+    "holiday_p": "[{1,1000}]",
+    "drop_type": 1,
+    "wood": "{1000}",
+    "core_p_sum": 0,
+    "first": 0,
+    "core": 0,
+    "first_p": {},
+    "core_p": {},
+    "normal": {},
+    "normal_sum": {}
+   },
+   "20023": {
+    "holiday_key": 0,
+    "mon_bid": 20023,
+    "core_interval": 0,
+    "holiday": 3001,
+    "first_p_sum": 0,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{6000}",
+    "holiday_p": "[{1,1000}]",
+    "drop_type": 1,
+    "wood": "{1000}",
+    "core_p_sum": 0,
+    "first": 0,
+    "core": 0,
+    "first_p": {},
+    "core_p": {},
+    "normal": {
+     "4002": {
+      "1": {
+       "num": 1,
+       "min": 1,
+       "pp": 1000,
+       "max": 1000
+      }
+     }
+    },
+    "normal_sum": {
+     "4002.0": 1000
+    }
+   },
+   "20024": {
+    "holiday_key": 0,
+    "mon_bid": 20024,
+    "core_interval": 6,
+    "holiday": 3001,
+    "first_p_sum": 1000,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{6000}",
+    "holiday_p": "[{1,1000}]",
+    "drop_type": 1,
+    "wood": "{1000}",
+    "core_p_sum": 1000,
+    "first": 1002,
+    "core": 2004,
+    "first_p": {
+     "1": {
+      "num": 1,
+      "min": 1,
+      "pp": 500,
+      "max": 500
+     },
+     "2": {
+      "num": 2,
+      "min": 501,
+      "pp": 500,
+      "max": 1000
+     }
+    },
+    "core_p": {
+     "1": {
+      "num": 1,
+      "min": 1,
+      "pp": 500,
+      "max": 500
+     },
+     "2": {
+      "num": 2,
+      "min": 501,
+      "pp": 500,
+      "max": 1000
+     }
+    },
+    "normal": {
+     "4002": {
+      "1": {
+       "num": 1,
+       "min": 1,
+       "pp": 1000,
+       "max": 1000
+      }
+     },
+     "4004": {
+      "1": {
+       "num": 1,
+       "min": 1,
+       "pp": 1000,
+       "max": 1000
+      }
+     }
+    },
+    "normal_sum": {
+     "4004.0": 1000,
+     "4002.0": 1000
+    }
+   },
+   "30001": {
+    "holiday_key": 0,
+    "mon_bid": 30001,
+    "core_interval": 0,
+    "holiday": 0,
+    "first_p_sum": 0,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{0}",
+    "holiday_p": "[]",
+    "drop_type": 1,
+    "wood": "{0}",
+    "core_p_sum": 0,
+    "first": 0,
+    "core": 0,
+    "first_p": {},
+    "core_p": {},
+    "normal": {
+     "4011": {
+      "1": {
+       "num": 1,
+       "min": 1,
+       "pp": 1000,
+       "max": 1000
+      }
+     }
+    },
+    "normal_sum": {
+     "4011.0": 1000
+    }
+   },
+   "30002": {
+    "holiday_key": 0,
+    "mon_bid": 30002,
+    "core_interval": 0,
+    "holiday": 0,
+    "first_p_sum": 0,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{0}",
+    "holiday_p": "[]",
+    "drop_type": 1,
+    "wood": "{0}",
+    "core_p_sum": 0,
+    "first": 0,
+    "core": 0,
+    "first_p": {},
+    "core_p": {},
+    "normal": {
+     "4012": {
+      "1": {
+       "num": 1,
+       "min": 1,
+       "pp": 500,
+       "max": 500
+      },
+      "2": {
+       "num": 2,
+       "min": 501,
+       "pp": 500,
+       "max": 1000
+      }
+     }
+    },
+    "normal_sum": {
+     "4012.0": 1000
+    }
+   },
+   "30003": {
+    "holiday_key": 0,
+    "mon_bid": 30003,
+    "core_interval": 3,
+    "holiday": 0,
+    "first_p_sum": 0,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{0}",
+    "holiday_p": "[]",
+    "drop_type": 1,
+    "wood": "{0}",
+    "core_p_sum": 1000,
+    "first": 0,
+    "core": 2012,
+    "first_p": {},
+    "core_p": {
+     "1": {
+      "num": 1,
+      "min": 1,
+      "pp": 1000,
+      "max": 1000
+     }
+    },
+    "normal": {},
+    "normal_sum": {}
+   },
+   "30004": {
+    "holiday_key": 0,
+    "mon_bid": 30004,
+    "core_interval": 3,
+    "holiday": 0,
+    "first_p_sum": 0,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{0}",
+    "holiday_p": "[]",
+    "drop_type": 1,
+    "wood": "{0}",
+    "core_p_sum": 1000,
+    "first": 0,
+    "core": 2012,
+    "first_p": {},
+    "core_p": {
+     "1": {
+      "num": 1,
+      "min": 1,
+      "pp": 500,
+      "max": 500
+     },
+     "2": {
+      "num": 2,
+      "min": 501,
+      "pp": 500,
+      "max": 1000
+     }
+    },
+    "normal": {},
+    "normal_sum": {}
+   },
+   "30005": {
+    "holiday_key": 0,
+    "mon_bid": 30005,
+    "core_interval": 0,
+    "holiday": 0,
+    "first_p_sum": 1000,
+    "over_type": 0,
+    "morale": "",
+    "coin": "{0}",
+    "holiday_p": "[]",
+    "drop_type": 0,
+    "wood": "{0}",
+    "core_p_sum": 0,
+    "first": 1011,
+    "core": 0,
+    "first_p": {
+     "1": {
+      "num": 1,
+      "min": 1,
+      "pp": 500,
+      "max": 500
+     },
+     "2": {
+      "num": 2,
+      "min": 501,
+      "pp": 500,
+      "max": 1000
+     }
+    },
+    "core_p": {},
+    "normal": {},
+    "normal_sum": {}
+   }
+  }
+ }
+}

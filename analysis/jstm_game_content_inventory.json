@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "project": "JSTM Full Gameplay Restoration",
+    "phase": "PHASE 0 audit",
+    "primary_version": "1.4.11",
+    "generated": "PHASE 0",
+    "evidence_note": "Counts are from extracted/deconstructed corpora already present in the workspace. Sources tagged per metric. 1.4.11 config corpus is _tmp_cfg (295 config_*.luac extracted of 355 in APK). server/cfg/*.json = deconstructed linear JSON derived from _tmp_cfg luac files [CONFIRMED by file_update_1411.json marker + matching table names]. Where a metric is 1.4.9-derived it is marked.",
+    "status_legend": ["implemented", "partial", "unimplemented", "unknown"],
+    "last_audit_update": "PHASE 0 content inventory count audit (server/cfg 1.4.11 deconstructed JSON)"
+  },
+  "systems": {
+    "total": 114,
+    "implemented": 45,
+    "partial": 15,
+    "client_only_or_config_only": 34,
+    "not_implemented": 2,
+    "unknown_or_unidentified": 3,
+    "detail_file": "analysis/jstm_game_systems/systems_master.json"
+  },
+  "protocol": {
+    "commands_total": 1643,
+    "field_entries_total": 3553,
+    "source": "protocol/cmd_table.json, protocol/fields.json",
+    "note": "Shared registry; appears 1.4.9-based. Not confirmed == 1.4.11 wire protocol.",
+    "mock_server_implemented_commands": {
+      "value": 1446,
+      "unit": "dedicated handler branches",
+      "source": "analysis/1.4.9/round230_final_summary.md",
+      "note": "0 generic-default and 0 unsupported-action fallback sets remaining (CS+SC coverage 100%)."
+    }
+  },
+  "config_tables": {
+    "apk_1_4_11_config_luac_in_apk": 355,
+    "extracted_1_4_11_config_luac": 295,
+    "deconstructed_linear_cfg": 231,
+    "deconstructed_kconst_raw": 285,
+    "usable_kconfig_tables": 245,
+    "source": "_tmp_cfg/, server/cfg/, server/cfg_kconst/, server/cfg_kconfig/",
+    "note": "server/cfg/*.json confirmed as 1.4.11 deconstructed output (file_update_1411.json present, table names match _tmp_cfg luac filenames)."
+  },
+  "content": {
+    "maps": {"value": 124, "version": "1.4.9", "source": "analysis/1.4.9/task/config_map.json", "evidence": "VERIFIED", "cross_check_1_4_11": {"source": "server/cfg/config_map.json Map table", "value": 124, "evidence": "CONFIRMED"}},
+    "scenes_with_collision": {"value": 26, "of": 124, "source": "server/map_block.json", "evidence": "VERIFIED"},
+    "npcs": {"value": 456, "version": "1.4.9", "source": "analysis/1.4.9/task/config_npc.json", "evidence": "VERIFIED", "cross_check_1_4_11": {"source": "server/cfg/config_npc.json Npc table", "value": 456, "evidence": "CONFIRMED"}},
+    "monsters": {"value": 2645, "version": "1.4.9", "source": "analysis/1.4.9/task/config_mon.json", "evidence": "VERIFIED"},
+    "items": {"value": 3535, "source": "server/item_config.json", "evidence": "VERIFIED", "note_1_4_11": {"source": "server/cfg/config_item.json ItemData table", "value": 3013, "evidence": "CONFIRMED", "note": "1.4.11 has fewer total items than 1.4.9 (3013 vs 3535); likely some items removed/consolidated."}},
+    "missions": {"value": 846, "source": "server/mission_config.json", "evidence": "CONFIRMED", "cross_check_1_4_11": {"source": "server/cfg/config_mission.json Mission table", "value": 846, "evidence": "CONFIRMED"}},
+    "mall_goods": {"value": 142, "version": "1.4.9", "source": "server/mall_config.json", "evidence": "VERIFIED", "note_1_4_11": {"source": "server/cfg/config_mall.json", "value": {"MallGoods": 110, "MallXian": 45, "MallWeek": 24, "total": 179}, "evidence": "CONFIRMED"}},
+    "mall_exchange": {"value": 28, "source": "server/mall_exchange.json"},
+    "mall_zhenbao": {"value": 45, "source": "server/mall_zhenbao.json", "note": "原版商品数据不在 APK ⇒ 判定不实现 (12836)."},
+    "partners": {"value": 53, "source": "server/partner_config.json", "evidence": "VERIFIED", "cross_check_1_4_11": {"source": "server/cfg/config_partner_base.json PartnerBase table", "value": 53, "evidence": "CONFIRMED"}},
+    "gifts_packages": {"value": 496, "source": "server/item_gift.json", "evidence": "VERIFIED", "note_1_4_11": {"source": "server/cfg/config_item_gift.json ItemGift table", "value": 766, "evidence": "CONFIRMED", "note": "1.4.11 has 766 gift packages vs 496 in 1.4.9."}},
+    "activities_1_4_11": {"value": 91, "source": "_tmp_cfg/config_function.json", "evidence": "VERIFIED"},
+    "activity_entries_1_4_11": {"value": 219, "source": "_tmp_cfg/config_act.json", "evidence": "VERIFIED"},
+    "drop_groups": {"value": 34, "source": "server/cfg_drop.json", "evidence": "STRONG_INFERENCE", "note": "drop 表客户端不读；数值 [APK_CONFIG/未实机验证]."},
+    "skills": {
+      "value": 105,
+      "unit": "talent skill entries (SkillTalent primary table)",
+      "source": "server/cfg/config_skill_talent.json SkillTalent table",
+      "evidence": "CONFIRMED",
+      "subtables": {
+        "config_skill.json": {"SkillPoint": 10, "note": "升级点数配置，非技能本体"},
+        "config_skill_talent.json": {"SkillTalent": 105, "TalentRune": 35, "TalentRuneActivity": 105, "note": "天赋技能主表 (primary)"},
+        "config_skill_xiulian.json": {"SkillXiulianLearn": 8, "SkillXiulianUp": 192, "SkillXiulianLev": 8, "note": "修炼技能 (8 class skill bases × levels)"},
+        "config_skill_bullet.json": {"SkillBullet": 16, "note": "弹道/投射物技能"},
+        "config_skill_magic.json": {"SkillMagicType": 2, "SkillMagic": 0, "note": "魔法技能主表为空"},
+        "config_skill_scene.json": {"SkillScene": 9, "note": "场景技能"},
+        "config_skill_trigger.json": {"SkillTrigger": 4, "note": "触发技能"}
+      },
+      "note": "Primary count = SkillTalent=105 (天赋技能树主表). All skill-related unique definitions across tables ≈ 142 (105 talent + 8 xiulian bases + 16 bullet + 9 scene + 4 trigger)."
+    },
+    "equipment": {
+      "value": 362,
+      "unit": "wearable character gear items",
+      "source": "server/cfg/config_item.json ItemData table (classified by type field at array index [3])",
+      "evidence": "CONFIRMED",
+      "classification_basis": "ItemData entries are 32-element arrays (deconstructed luac format). Type at index [3] determines equipment category. Wearable character equipment types: 100(武器)=63, 103(腰带)=13, 104(头盔)=12, 105(衣服)=12, 106(护手)=13, 107(靴子)=16, 108(基础魂骨)=5, 109(魂环)=36, 110(戒指/饰品)=6, 120(进阶魂骨)=11, 121(魂骨饰品)=11, 200(时装头饰)=32, 201(时装衣服)=20, 204(神器武器)=28, 240-246(进阶装备6类)=74.",
+      "sub_equipment_note": "Ride/pet/fabao gear (types 150-153, 160-163, 170-173, 180-183, 190-193, 210-213, 215-218) = 196 additional sub-equipment items, excluded from primary equipment count.",
+      "total_itemdata": 3013
+    },
+    "wings": {
+      "value": 19,
+      "unit": "wing base entries",
+      "source": "server/cfg/config_wing_data.json WingBase table",
+      "evidence": "CONFIRMED",
+      "subtables": {"WingBase": 19, "WingColor": 8, "WingAllSkill": 8, "WingAttrs": 8, "WingUpstar": 2}
+    },
+    "soulbones": {
+      "value": 124,
+      "unit": "rune/soulbone base entries",
+      "source": "server/cfg/config_rune_data.json RuneBase table",
+      "evidence": "CONFIRMED",
+      "subtables": {"RuneBase": 124, "RuneOpenLimit1": 84, "RuneHeroDesc": 53, "RuneExchange": 20, "RuneOpenLimit": 10, "RuneGridOpen": 8},
+      "note": "config_rune_data.json is the 符文/魂骨 system table. RuneBase=124 is the primary soulbone/rune count."
+    },
+    "artifacts": {
+      "value": 35,
+      "unit": "shenqi (神器) entries",
+      "source": "server/cfg/config_shenqi.json Shenqi table",
+      "evidence": "CONFIRMED",
+      "subtables": {"Shenqi": 35, "ShenqiUpgrade": 35, "ShenqiMark": 35, "ShenqiMedalList": 8, "ShenqiMedal": 7, "ShenqiList": 5}
+    },
+    "destiny_mingge": {
+      "value": 25,
+      "unit": "mingge (命格) entries",
+      "source": "server/cfg/config_mingge.json Mingge table",
+      "evidence": "CONFIRMED",
+      "subtables": {"Mingge": 25, "MinggeLevup": 25, "MinggeTuiJian": 25, "MinggeHandBook": 25, "MinggeGongming": 6, "MinggeStage": 5, "MinggeOpen": 2}
+    },
+    "formations": {
+      "value": 7,
+      "unit": "formation types",
+      "source": "server/cfg/config_formation.json Formation table",
+      "evidence": "CONFIRMED",
+      "subtables": {"Formation": 7, "FormationType": 7, "RoleNum": 2, "RoleCheerNum": 2},
+      "note": "7 formation types, each with 10 level configurations = 70 total formation level entries. Value=7 counts distinct formation types."
+    },
+    "bosses": {
+      "value": 36,
+      "unit": "boss instances",
+      "source": "server/cfg/config_boss.json + config_demon.json",
+      "evidence": "CONFIRMED",
+      "breakdown": {"config_boss.json Boss": 27, "config_demon.json Demon": 9},
+      "subtables_extra": {"config_demon.json DemonStarUp": 5, "DemonActionPower": 6}
+    },
+    "dungeons": {
+      "value": 34,
+      "unit": "main dungeon instances (Dungeon table)",
+      "source": "server/cfg/config_dungeon_new.json Dungeon table",
+      "evidence": "CONFIRMED",
+      "breakdown": {
+        "config_dungeon_new.json": {"Dungeon": 34, "MapDung": 76, "TypeGroup": 20},
+        "config_dungeon_tower.json": {"DungeonTower": 9, "DungeonTowerHard": 9},
+        "config_dungeon_gods.json": {"DungeonGods": 9},
+        "config_dungeon_rune.json": {"DungRuneTower": 10, "DungRuneFloor": 9},
+        "config_single_tower.json": {"SingleTower": 70, "NtmTitle": 70},
+        "config_golden_tower.json": {"GoldenTowerRes": 10, "GoldenTowerReward": 6},
+        "config_primus.json": {"Primus": 6},
+        "config_dungeon_vip_single.json": {"DungeonVipSingleShow": 6, "DungeonVipSingleSweep": 6},
+        "config_dungeon_vip_single2.json": {"DungeonVipSingle2Show": 4, "DungeonVipSingle2Sweep": 4},
+        "config_dungeon_endless_data.json": {"DungeonEndlessShop": 44, "DungeonEndlessRankReward": 11, "note": "无尽副本商店/奖励表"},
+        "config_dungeon_seal_demon_data.json": {"DungeonSealDemonSceneType": 6, "note": "封魔副本配置"}
+      },
+      "note": "Primary value = 34 main dungeon instances from the Dungeon table. Including all special modes (tower, gods, single tower floors, primus, VIP single, golden tower, rune tower), total dungeon-related entries = 158+."
+    },
+    "gm_commands": {
+      "value": 211,
+      "unit": "GM command entries",
+      "source": "server/cfg/config_gm_cmd.json GmCmd table",
+      "evidence": "CONFIRMED"
+    },
+    "fashion": {
+      "value": 48,
+      "unit": "fashion entries",
+      "source": "server/cfg/config_fashion.json Fashion table",
+      "evidence": "CONFIRMED",
+      "optional": true
+    }
+  },
+  "server": {
+    "file": "server/mock_server.py",
+    "lines_approx": 16274,
+    "sqlite_tables": 47,
+    "modules": ["aoi.py", "pathfind.py", "power.py", "battle.py"],
+    "ports": {"tcp": 9000, "http": 8080},
+    "admin_api": "/DSH_ADMIN/*",
+    "gates_passing": 7,
+    "regression_items_passing": 66
+  },
+  "miniloop": {
+    "file": "server/minloop/min_loop_server.py",
+    "commands": 11,
+    "selftest_checks": 44,
+    "role": "compatibility measuring stick + regression base"
+  },
+  "reference_projects": {
+    "count": 5,
+    "names": ["Survive", "kongkongxiyou", "CXEngine(YZXY)", "MahatmaComeBack", "ChivalrousMan"],
+    "code_reuse_allowed": false,
+    "note": "4 without LICENSE, Mahatma=GPL-3.0; design-only."
+  }
+}

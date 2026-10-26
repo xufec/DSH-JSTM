@@ -1,0 +1,307 @@
+do
+  local s = [====[
+-- ============================================================================
+--  《绝世唐门》单机版 —— 内置本机服务端 (embedded local server)
+-- ============================================================================
+--  运行位置：游戏进程自己的 Lua VM（由 tools/patch_apk.py 注入到明文的
+--            assets/src/config.luac 末尾，游戏启动时自动执行）。
+--  传输层  ：libcocos2dlua.so 里静态链接的 LuaSocket（socket.core）。
+--  监听    ：0.0.0.0:PORT，客户端被改包为连 127.0.0.1:PORT，因此全部闭环在
+--            本机进程内，不需要 PC、不需要网络。
+--
+--  设计要点
+--   * 主线程非阻塞：用 select(timeout) 轮转，绝不阻塞渲染/逻辑线程。
+--   * 由 cc.Director 的 scheduler 每 50ms 驱动一次 tick（不依赖线程）。
+--   * 所有失败都通过 __dsh_rep 上报（HTTP 自请求 + print/logcat 双通道），
+--     因为这个文件运行在启动早期，任何错都要能远程看见。
+--
+--  本文件是「源代码」形态：config.luac 是明文 Lua，注入后可读可改。
+-- ============================================================================
+
+local M = {}
+
+-- 这些全局由 patch_apk.py 注入时替换（不要手改这里的默认值以外的东西）
+M.PORT = 18080
+M.HOST_IP = "127.0.0.1"        -- 下发给客户端的游戏服地址
+M.GAME_PORT = 19000            -- 游戏服（TCP 协议）端口
+M.REPORT_URL = ""              -- 留空 = 不向外部上报（单机时无网可用）
+
+local function rep(tag, val)
+    -- 双通道：logcat（adb logcat -s DSH） + 外部 HTTP（若配置了 REPORT_URL）
+    pcall(function() print("[DSH_SRV] " .. tostring(tag) .. " " .. tostring(val)) end)
+    local url = M.REPORT_URL
+    if url == nil or url == "" then return end
+    pcall(function()
+        local r = cc.XMLHttpRequest:new()
+        r.responseType = cc.XMLHTTPREQUEST_RESPONSE_STRING
+        local v = tostring(val)
+        if #v > 170 then v = v:sub(1, 170) end
+        r:open("GET", url .. "/DSH_SRV?tag=" .. tostring(tag) .. "&v=" ..
+               v:gsub("[^%w%.%:/-]", "_"))
+        r:send()
+    end)
+end
+M.rep = rep
+
+local function r16(s, i)
+    local a, b = s:byte(i, i + 1)
+    if not a or not b then return 0 end
+    return a + b * 256
+end
+
+local function jstr(v)
+    if type(v) == "string" then
+        return '"' .. v:gsub('\\', '\\\\'):gsub('"', '\\"'):gsub('\n', '\\n') .. '"'
+    end
+    if type(v) == "number" then
+        if v == math.floor(v) then return string.format("%d", v) end
+        return tostring(v)
+    end
+    if v == nil then return "null" end
+    if v == true then return "true" end
+    if v == false then return "false" end
+    if type(v) == "table" then
+        local isarr = true
+        local n = 0
+        for k in pairs(v) do
+            n = n + 1
+            if type(k) ~= "number" then isarr = false break end
+        end
+        if isarr then
+            local out = {}
+            for i = 1, #v do out[#out + 1] = jstr(v[i]) end
+            return "[" .. table.concat(out, ",") .. "]"
+        end
+        local out = {}
+        for k, x in pairs(v) do out[#out + 1] = jstr(tostring(k)) .. ":" .. jstr(x) end
+        return "{" .. table.concat(out, ",") .. "}"
+    end
+    return '"?"'
+end
+
+-- ---------------------------------------------------------------------------
+-- 载荷（先照抄 PC 版 mock_server.py 的形状，验证通了再按客户端真实需求收窄）
+-- ---------------------------------------------------------------------------
+function M.server_list()
+    return { {
+        id = "1", name = "单机本地服", ip = M.HOST_IP, port = M.GAME_PORT,
+        state = 1, is_new = 1, world_lev = 1,
+    } }
+end
+
+function M.gateway_payload()
+    local sl = M.server_list()
+    -- 客户端历史上用过多种字段名，全部给出，避免再猜 schema
+    return {
+        code = 0, msg = "ok", status = 0, result = 1,
+        servers = sl, serverlist = sl, server_list = sl, list = sl,
+        rolelist = {}, roles = {},
+    }
+end
+
+local CONF = { code = 0, msg = "ok", status = 0, result = 1,
+               maintain = 0, is_maintain = 0, white = 1 }
+
+-- ---------------------------------------------------------------------------
+-- HTTP 路由：完全对照 PC 版 mock_server.py 已跑通的行为
+-- ---------------------------------------------------------------------------
+function M.handle_http(req)
+    local p = req.path
+    if p:find("url_config", 1, true) then
+        return 200, M.url_config_body(), "application/x-lua; charset=utf-8"
+    end
+    if p:find("version2.txt", 1, true) or p:find("version.txt", 1, true) then
+        return 200, "208", "text/plain; charset=utf-8"
+    end
+    if p:find("/app/mobile/conf", 1, true) or p:find("/gateway/mobile/conf", 1, true)
+       or p:find("/app/mobile/hft", 1, true) or p:find("/gateway/mobile/hft", 1, true) then
+        return 200, jstr(CONF), "application/json; charset=utf-8"
+    end
+    if p:find("notice", 1, true) then
+        return 200, jstr({ notice = "单机本地服测试" }), "application/json; charset=utf-8"
+    end
+    if p:find("gateway/mobile", 1, true) or p:find("app/mobile", 1, true) then
+        return 200, jstr(M.gateway_payload()), "application/json; charset=utf-8"
+    end
+    -- 兜底：宽容的"无需更新"应答
+    return 200, jstr({ code = 0, msg = "ok", status = 0, result = 1,
+                       update = 0, version = 0 }), "application/json; charset=utf-8"
+end
+
+-- url_config_ewan.lua：客户端下载后当 Lua 载入，用它把 CDN/网关全部指回本机
+function M.url_config_body()
+    local b = "http://" .. M.HOST_IP .. ":" .. tostring(M.PORT)
+    return table.concat({
+        '-- generated by DSH embedded server',
+        'URL_PATH = {',
+        '  update = "' .. b .. '/update",',
+        '  voice = "' .. b .. '/voice",',
+        '  register = "' .. b .. '/register",',
+        '  is_shenhe = false,',
+        '  server = "' .. b .. '",',
+        '}',
+        'URL_PATH_ALL = { get = function(platform) return URL_PATH end }',
+        'CDN_PATH_BASE = "' .. b .. '"',
+        'CDN_URL = "' .. b .. '/cdn/"',
+        'url_res_config = "' .. b .. '/cdn/"',
+        'get_servers_url = "' .. b .. '/gateway/mobile/json"',
+        'get_notice_url = "' .. b .. '/notice.json"',
+        'WIN_UPDATE = false',
+        'UPDATE_SKIP = false',
+    }, "\n")
+end
+
+-- ---------------------------------------------------------------------------
+-- 请求解析
+-- ---------------------------------------------------------------------------
+function M.parse_request(buf)
+    local head, rest = buf:match("^(.-)\r?\n\r?\n(.*)$")
+    if not head then return nil end
+    local method, path = head:match("^(%u+)%s+(%S+)")
+    if not method then return nil end
+    local headers = {}
+    for k, v in head:gmatch("\r?\n([%w%-]+):%s*([^\r\n]*)") do
+        headers[k:lower()] = v
+    end
+    local n = tonumber(headers["content-length"] or "0") or 0
+    if #rest < n then return nil end                              -- body 未收全
+    path = path:gsub("^https?://[^/]+", "")
+    local q = path:find("?", 1, true)
+    if q then path = path:sub(1, q - 1) end
+    return { method = method, path = path, headers = headers,
+             body = rest:sub(1, n), used = #head + 4 + n }
+end
+
+local function http_response(status, body, ctype)
+    local reason = (status == 200 and "OK") or (status == 404 and "Not Found") or "ERR"
+    return table.concat({
+        "HTTP/1.1 " .. status .. " " .. reason,
+        "Content-Type: " .. ctype,
+        "Content-Length: " .. tostring(#body),
+        "Connection: close",
+        "", body,
+    }, "\r\n")
+end
+M.http_response = http_response
+
+-- ---------------------------------------------------------------------------
+-- 非阻塞服务器
+-- ---------------------------------------------------------------------------
+local state = {
+    listening = false, server = nil, clients = {}, tick_count = 0,
+    http_count = 0, err = nil, started = false,
+}
+
+local function close_client(c)
+    pcall(function() c.sock:close() end)
+end
+
+function M.tick()
+    if not state.listening then return end
+    state.tick_count = state.tick_count + 1
+
+    local rd = { state.server }
+    for _, c in ipairs(state.clients) do rd[#rd + 1] = c.sock end
+
+    local ready = socket.select(rd, nil, 0)
+    for _, s in ipairs(ready or {}) do
+        if s == state.server then
+            local cs = state.server:accept()
+            if cs then
+                cs:settimeout(0)
+                cs:setoption("tcp-nodelay", true)
+                state.clients[#state.clients + 1] = { sock = cs, buf = "", t0 = os.time() }
+            end
+        else
+            for i = #state.clients, 1, -1 do
+                local c = state.clients[i]
+                if c.sock == s then
+                    local data, err, partial = c.sock:receive(65536)
+                    c.buf = c.buf .. (data or partial or "")
+                    if err and err ~= "timeout" then
+                        close_client(c)
+                        table.remove(state.clients, i)
+                    elseif #c.buf > 0 then
+                        local req = M.parse_request(c.buf)
+                        if req then
+                            c.buf = c.buf:sub(req.used + 1)
+                            state.http_count = state.http_count + 1
+                            local st, body, ct = M.handle_http(req)
+                            pcall(function()
+                                c.sock:send(http_response(st, body, ct))
+                            end)
+                            if #c.buf == 0 then
+                                close_client(c)
+                                table.remove(state.clients, i)
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+
+    -- 清理超时连接（避免 fd 泄漏）
+    local now = os.time()
+    for i = #state.clients, 1, -1 do
+        if now - state.clients[i].t0 > 30 then
+            close_client(state.clients[i])
+            table.remove(state.clients, i)
+        end
+    end
+end
+
+function M.start()
+    if state.started then return state.listening end
+    state.started = true
+    local ok, err = pcall(function()
+        socket = require("socket")            -- 游戏自带 LuaSocket
+        local srv = assert(socket.bind("*", M.PORT))
+        srv:settimeout(0)
+        state.server = srv
+        state.listening = true
+    end)
+    if not ok then
+        state.err = tostring(err)
+        rep("bind_fail", state.err)
+        return false
+    end
+    rep("listening", tostring(M.PORT) .. " http=" .. tostring(state.listening))
+    return true
+end
+
+-- ---------------------------------------------------------------------------
+-- 启动：交给 cc.Director 的 scheduler，每 50ms 转一次
+-- ---------------------------------------------------------------------------
+function M.install(interval)
+    if _G.__dsh_srv_installed then return end
+    _G.__dsh_srv_installed = true
+    rep("install", "starting embedded server on port " .. tostring(M.PORT))
+    local ok, err = pcall(function()
+        local d = cc and cc.Director and cc.Director:getInstance()
+        local sch = d and d:getScheduler()
+        if not sch then error("no scheduler") end
+        M.start()
+        local entry = sch:scheduleScriptFunc(function()
+            pcall(M.tick)
+            -- 每 10 秒汇报一次心跳（确认 tick 还活着）
+            if state.tick_count > 0 and state.tick_count % 200 == 0 then
+                rep("heartbeat", "ticks=" .. state.tick_count ..
+                    " http=" .. state.http_count .. " clients=" .. #state.clients)
+            end
+        end, interval or 0.05, false)
+        rep("scheduler", "entry=" .. tostring(entry))
+    end)
+    if not ok then rep("install_fail", tostring(err)) end
+end
+
+-- 立即尝试启动一次（此时 socket 可能还没注册，失败也没关系，scheduler 里会重试）
+pcall(function() M.start() end)
+M.install(0.05)
+
+return M
+
+]====]
+  local c, e = loadstring(s, "x")
+  if not c then error(e) end
+end

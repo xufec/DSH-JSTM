@@ -1,0 +1,7800 @@
+{
+ "10010": {
+  "bid": 10010,
+  "button": [
+   9001
+  ],
+  "dir": 4,
+  "enter_map_effect": 0,
+  "face": "N10023",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "玄老",
+  "nature": 0,
+  "res_id": "N10052",
+  "talk": "鸡腿……我的鸡腿哪去了？",
+  "talk2": "唯美食与美酒不可辜负也！",
+  "type": 1
+ },
+ "10020": {
+  "bid": 10020,
+  "button": [
+   1012
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10027",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "言少哲",
+  "nature": 0,
+  "res_id": "N10027",
+  "talk": "在下言少哲，史莱克学院第二百六十一任院长！",
+  "talk2": "守护史莱克的荣耀可不是喊喊口号就可以的。",
+  "type": 1
+ },
+ "10030": {
+  "bid": 10030,
+  "button": [
+   4019,
+   1015
+  ],
+  "dir": 4,
+  "enter_map_effect": 0,
+  "face": "N10042",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "周漪",
+  "nature": 0,
+  "res_id": "N10042",
+  "talk": "我们史莱克学院只养怪物不养废物，我会每天给你们布置<div fontcolor=#01fe01>10环学院任务</div>，全部完成的话我会奖励<div fontcolor=#01fe01>4000金魂币</div>。",
+  "talk2": "快，绕着史莱克城跑30圈，下课铃响前跑完！",
+  "type": 1
+ },
+ "10040": {
+  "bid": 10040,
+  "button": [
+   9060,
+   9061,
+   9062,
+   9063
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10021",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "贝贝",
+  "nature": 0,
+  "res_id": "N10021",
+  "talk": "我们唐门曾经是大陆第一宗门，自从魂导器出现后，宗门开始没落了！（玩家48级可领取结拜任务进行结拜）",
+  "talk2": "如果你看到一个名叫唐雅的姑娘，一定要告诉我，她是我的求婚妻！（玩家48级可领取结拜任务进行结拜）",
+  "type": 1
+ },
+ "10050": {
+  "bid": 10050,
+  "button": [
+   4021
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10015",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "久久公主",
+  "nature": 0,
+  "res_id": "N10015",
+  "talk": "我们星罗帝国搜集各种材料，如果有需要记得找我哦。",
+  "talk2": "日月帝国对我国虎视眈眈，真让人担心呢！",
+  "type": 1
+ },
+ "10060": {
+  "bid": 10060,
+  "button": [
+   9008,
+   7030
+  ],
+  "dir": 4,
+  "enter_map_effect": 0,
+  "face": "N10013",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "张乐萱",
+  "nature": 0,
+  "res_id": "N10048",
+  "talk": "我好像忘记了什么很重要的事情一样。",
+  "talk2": "海神湖上海神缘，我的有缘人又在何处呢？",
+  "type": 1
+ },
+ "10070": {
+  "bid": 10070,
+  "button": [
+   9020,
+   9031,
+   4015,
+   4030
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10022",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "唐舞桐",
+  "nature": 0,
+  "res_id": "N10022",
+  "talk": "奇怪，为什么所有人都喊我叫王冬儿？",
+  "talk2": "哼，我才不喜欢那个呆瓜霍雨浩呢！",
+  "type": 1
+ },
+ "10080": {
+  "bid": 10080,
+  "button": [
+   1032
+  ],
+  "dir": 4,
+  "enter_map_effect": 0,
+  "face": "N10034",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "和菜头",
+  "nature": 0,
+  "res_id": "N10034",
+  "talk": "老子有根大雪茄……这里没人，躲着抽一根！",
+  "talk2": "我想好了，等我成就封号斗罗，就叫毁灭之源好了",
+  "type": 1
+ },
+ "10081": {
+  "bid": 10081,
+  "button": [
+   4001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10030",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "史莱克商人",
+  "nature": 0,
+  "res_id": "N10030",
+  "talk": "",
+  "talk2": "",
+  "type": 1
+ },
+ "10090": {
+  "bid": 10090,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10017",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "唐雅",
+  "nature": 0,
+  "res_id": "N10017",
+  "talk": "我要让唐门重新崛起于斗罗大陆之上。",
+  "talk2": "好想吃小雨浩做的烤鱼呀",
+  "type": 1
+ },
+ "10100": {
+  "bid": 10100,
+  "button": [
+   4024,
+   4032
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10019",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "墨轩",
+  "nature": 0,
+  "res_id": "N10019",
+  "talk": "辅助魂师不是酱油魂师，也有着拯救世界的梦想！",
+  "talk2": "要提防星斗大森林的魂兽力量，它们可不是好惹的！",
+  "type": 1
+ },
+ "10110": {
+  "bid": 10110,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10043",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "钱多多",
+  "nature": 0,
+  "res_id": "N10043",
+  "talk": "有什么想买卖的都可以来找我。",
+  "talk2": "魂导系可不比魂师系弱，哼，我比言少哲强多了！",
+  "type": 1
+ },
+ "10120": {
+  "bid": 10120,
+  "button": [
+   9002
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10020",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "萧萧",
+  "nature": 0,
+  "res_id": "N10020",
+  "talk": "妈妈说做人低调准没错，我从来就不张扬自己呢！",
+  "talk2": "我是集美貌与智慧的双生武魂天才少女，嘻嘻嘻嘻",
+  "type": 1
+ },
+ "10130": {
+  "bid": 10130,
+  "button": [],
+  "dir": 4,
+  "enter_map_effect": 0,
+  "face": "N10025",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "霍雨浩",
+  "nature": 0,
+  "res_id": "N10025",
+  "talk": "我的直觉告诉我，舞桐就是我的冬儿！",
+  "talk2": "冰帝、冰女、天梦哥、伊老你们快别打麻将了，我头都大了。",
+  "type": 1
+ },
+ "10140": {
+  "bid": 10140,
+  "button": [
+   9014,
+   7031,
+   7032
+  ],
+  "dir": 4,
+  "enter_map_effect": 0,
+  "face": "N10031",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "天梦冰蚕",
+  "nature": 0,
+  "res_id": "N10031",
+  "talk": "我可是斗罗大陆唯一的百万年魂兽，只可惜战斗力差了一点",
+  "talk2": "你天梦哥想当年那是吃了睡睡了吃呀",
+  "type": 1
+ },
+ "10150": {
+  "bid": 10150,
+  "button": [
+   4017,
+   4018,
+   4020
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10016",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "季绝尘",
+  "nature": 0,
+  "res_id": "N10016",
+  "talk": "真是寂寞啊，找个人打架都不成，咦，我看你似乎挺强的！",
+  "talk2": "剑是我最重要……除了紫烟外最重要的伙伴。",
+  "type": 1
+ },
+ "10160": {
+  "bid": 10160,
+  "button": [
+   1016,
+   2002,
+   2003
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10033",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "穆老",
+  "nature": 0,
+  "res_id": "N10033",
+  "talk": "花开花落，不过刹那烟华，我龙神斗罗将永远庇佑着史莱克学院。",
+  "talk2": "我有一个好兄弟，可是我们已经一百多年没见面了。",
+  "type": 1
+ },
+ "10170": {
+  "bid": 10170,
+  "button": [
+   4011
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10041",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "帆羽",
+  "nature": 0,
+  "res_id": "N10041",
+  "talk": "魂导系要是多来几个天才少年就好了，菜头也不用这么寂寞了！",
+  "talk2": "你听说过极限单兵吗？",
+  "type": 1
+ },
+ "10175": {
+  "bid": 10175,
+  "button": [
+   9041
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10056",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "黑市商贩",
+  "nature": 0,
+  "res_id": "N10056",
+  "talk": "高价收购各类资源，另有丰富商品出售！（60级开放黑市）",
+  "talk2": "高价收购各类资源，另有丰富商品出售！（60级开放黑市）",
+  "type": 1
+ },
+ "10180": {
+  "bid": 10180,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10057",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "兽神帝天",
+  "nature": 0,
+  "res_id": "N10057",
+  "talk": "渺小的凡人，你们对力量一无所知！",
+  "talk2": "龙神陛下，我们魂兽必将统治整个大陆。",
+  "type": 1
+ },
+ "10190": {
+  "bid": 10190,
+  "button": [],
+  "dir": 4,
+  "enter_map_effect": 0,
+  "face": "N50080",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "妖眼魔树",
+  "nature": 0,
+  "res_id": "N50080",
+  "talk": "我之所以成为最长寿的植物系魂兽，就是因为我从不管闲事。",
+  "talk2": "别看我只是一棵树，绿草都为我变得芬芳。",
+  "type": 1
+ },
+ "10200": {
+  "bid": 10200,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10028",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "王秋儿",
+  "nature": 0,
+  "res_id": "N10028",
+  "talk": "我叫王秋儿，想挨揍的话就继续盯着我看！",
+  "talk2": "爱究竟是怎样的滋味呢？",
+  "type": 1
+ },
+ "10210": {
+  "bid": 10210,
+  "button": [],
+  "dir": 4,
+  "enter_map_effect": 0,
+  "face": "N10058",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "翡翠碧姬",
+  "nature": 0,
+  "res_id": "N10058",
+  "talk": "为什么人类与魂兽总是要打打杀杀，不能和平共处呢？",
+  "talk2": "帝天大人似乎最近心情不错呢。",
+  "type": 1
+ },
+ "10220": {
+  "bid": 10220,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10010",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "泰坦雪魔",
+  "nature": 0,
+  "res_id": "N10050",
+  "talk": "这极冰之领地，是属于永恒的雪帝陛下的。",
+  "talk2": "我好歹也是极北三大天王之一啊。",
+  "type": 1
+ },
+ "10230": {
+  "bid": 10230,
+  "button": [],
+  "dir": 4,
+  "enter_map_effect": 0,
+  "face": "N10010",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "凌落宸",
+  "nature": 0,
+  "res_id": "N10044",
+  "talk": "传说在这里可以找到将我的冰武魂提升到极致之冰的宝物。",
+  "talk2": "我可不会堕了史莱克的威风。",
+  "type": 1
+ },
+ "10240": {
+  "bid": 10240,
+  "button": [],
+  "dir": 4,
+  "enter_map_effect": 0,
+  "face": "N10013",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "冰帝",
+  "nature": 0,
+  "res_id": "N10013",
+  "talk": "吾心即为极冰宝典。",
+  "talk2": "不想死就离我远点。",
+  "type": 1
+ },
+ "10250": {
+  "bid": 10250,
+  "button": [
+   1033
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10010",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "镜红尘",
+  "nature": 0,
+  "res_id": "N10046",
+  "talk": "十万年魂兽的魂环与魂骨，我一定要为我的孙子拿到。",
+  "talk2": "魂导器总有一天会取代斗罗魂师的地位。",
+  "type": 1
+ },
+ "10251": {
+  "bid": 10251,
+  "button": [
+   4002
+  ],
+  "dir": 4,
+  "enter_map_effect": 0,
+  "face": "N10010",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "冰境商人",
+  "nature": 0,
+  "res_id": "N10030",
+  "talk": "",
+  "talk2": "",
+  "type": 1
+ },
+ "10260": {
+  "bid": 10260,
+  "button": [],
+  "dir": 4,
+  "enter_map_effect": 0,
+  "face": "N10010",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "雪帝",
+  "nature": 0,
+  "res_id": "N10053",
+  "talk": "我似乎已经触摸到那个层次的瓶颈，但是我却不知道如何打破它。",
+  "talk2": "或许转世为人才能成为真正的神。",
+  "type": 1
+ },
+ "10270": {
+  "bid": 10270,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10010",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "戴浩",
+  "nature": 0,
+  "res_id": "N10023",
+  "talk": "日月帝国的实力已经大大超出了我的预料。",
+  "talk2": "男人就要无所畏惧。",
+  "type": 1
+ },
+ "10271": {
+  "bid": 10271,
+  "button": [
+   4003
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10010",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "星罗商人",
+  "nature": 0,
+  "res_id": "N10051",
+  "talk": "",
+  "talk2": "",
+  "type": 1
+ },
+ "10280": {
+  "bid": 10280,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10011",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "徐三石",
+  "nature": 0,
+  "res_id": "N10011",
+  "talk": "江楠楠会不会原谅我呢？",
+  "talk2": "我可没写过什么xx笔记",
+  "type": 1
+ },
+ "10290": {
+  "bid": 10290,
+  "button": [],
+  "dir": 4,
+  "enter_map_effect": 0,
+  "face": "N10010",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "霍雨浩",
+  "nature": 0,
+  "res_id": "N10025",
+  "talk": "那个人就在我面前，我一定会让他后悔的。",
+  "talk2": "妈妈，我会成为大陆最强者。",
+  "type": 1
+ },
+ "10300": {
+  "bid": 10300,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10012",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "叶夕水",
+  "nature": 0,
+  "res_id": "N10012",
+  "talk": "你想要加入圣教吗？",
+  "talk2": "逍遥，你可知我心？",
+  "type": 1
+ },
+ "10310": {
+  "bid": 10310,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10010",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "王冬儿",
+  "nature": 0,
+  "res_id": "N10022",
+  "talk": "如果要牺牲的话，就牺牲我一个人吧。",
+  "talk2": "雨浩，我好想再吃一口烤鱼。",
+  "type": 1
+ },
+ "10320": {
+  "bid": 10320,
+  "button": [
+   9015
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10010",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "张乐萱",
+  "nature": 0,
+  "res_id": "N10048",
+  "talk": "有人说，这世上最快乐的事情就是忘记。",
+  "talk2": "我好像忘了一件重要的事情。",
+  "type": 1
+ },
+ "10330": {
+  "bid": 10330,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10010",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "戴华斌",
+  "nature": 0,
+  "res_id": "N10036",
+  "talk": "朱露，我会永远保护你的。",
+  "talk2": "我戴家男儿，没有一个孬种。",
+  "type": 1
+ },
+ "10340": {
+  "bid": 10340,
+  "button": [
+   4004
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10010",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "云游商人",
+  "nature": 0,
+  "res_id": "N10030",
+  "talk": "",
+  "talk2": "",
+  "type": 1
+ },
+ "10400": {
+  "bid": 10400,
+  "button": [
+   2004,
+   2005
+  ],
+  "dir": 4,
+  "enter_map_effect": 0,
+  "face": "N10054",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "唐三",
+  "nature": 0,
+  "res_id": "N10054",
+  "talk": "能来到神界之人，莫不是潜力无限，未来的神祗之位继承者将从你们之中挑选！",
+  "talk2": "能来到神界之人，莫不是潜力无限，未来的神祗之位继承者将从你们之中挑选！",
+  "type": 1
+ },
+ "10401": {
+  "bid": 10401,
+  "button": [],
+  "dir": 4,
+  "enter_map_effect": 0,
+  "face": "N10055",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "神界执法者",
+  "nature": 0,
+  "res_id": "N10055",
+  "talk": "未来神祗之位继承人，无不身经百战，独挡一面。",
+  "talk2": "未来神祗之位继承人，无不身经百战，独挡一面。",
+  "type": 1
+ },
+ "10402": {
+  "bid": 10402,
+  "button": [
+   2006,
+   2010,
+   2013
+  ],
+  "dir": 4,
+  "enter_map_effect": 0,
+  "face": "N10055",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "神界试炼官",
+  "nature": 0,
+  "res_id": "N10055",
+  "talk": "神界试炼乃是神界对人间精英魂师们的磨练之地，经得起考验的人必将收获丰富。",
+  "talk2": "神界试炼乃是神界对人间精英魂师们的磨练之地，经得起考验的人必将收获丰富。",
+  "type": 1
+ },
+ "10403": {
+  "bid": 10403,
+  "button": [
+   2007
+  ],
+  "dir": 6,
+  "enter_map_effect": 0,
+  "face": "N10055",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "普通试炼霸主",
+  "nature": 0,
+  "res_id": "N10055",
+  "talk": "通过神界试炼选出的霸主将受万人敬仰！",
+  "talk2": "通过神界试炼选出的霸主将受万人敬仰！",
+  "type": 1
+ },
+ "10404": {
+  "bid": 10404,
+  "button": [
+   2008
+  ],
+  "dir": 6,
+  "enter_map_effect": 0,
+  "face": "N10055",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "精英试炼霸主",
+  "nature": 0,
+  "res_id": "N10055",
+  "talk": "通过神界试炼选出的霸主将受万人敬仰！",
+  "talk2": "通过神界试炼选出的霸主将受万人敬仰！",
+  "type": 1
+ },
+ "10405": {
+  "bid": 10405,
+  "button": [
+   2009
+  ],
+  "dir": 6,
+  "enter_map_effect": 0,
+  "face": "N10055",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "巅峰试炼霸主",
+  "nature": 0,
+  "res_id": "N10055",
+  "talk": "通过神界试炼选出的霸主将受万人敬仰！",
+  "talk2": "通过神界试炼选出的霸主将受万人敬仰！",
+  "type": 1
+ },
+ "20010": {
+  "bid": 20010,
+  "button": [
+   1001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34600",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "少年雨浩",
+  "nature": 0,
+  "res_id": "N10030",
+  "talk": "在下霍雨浩，武魂灵眸，11级控制系战魂师，请指教！",
+  "talk2": "周老师喊集合了，大家快别偷懒！",
+  "type": 1
+ },
+ "20011": {
+  "bid": 20011,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34600",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "少年雨浩",
+  "nature": 0,
+  "res_id": "N10030",
+  "talk": "在下霍雨浩，武魂灵眸，11级控制系战魂师，请指教！",
+  "talk2": "周老师喊集合了，大家快别偷懒！",
+  "type": 1
+ },
+ "20020": {
+  "bid": 20020,
+  "button": [
+   1002,
+   1017,
+   1038
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34800",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "巫风",
+  "nature": 0,
+  "res_id": "N10032",
+  "talk": "本来想着霍雨浩已经是学院魂力最低的学生了，没想到周老师居然特招了一个魂力等级更低的，哈哈哈哈，笑死我了！",
+  "talk2": "什么时候连一环都没有的魂师也能加入史莱克学院了？",
+  "type": 1
+ },
+ "20021": {
+  "bid": 20021,
+  "button": [
+   1003
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10010",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "风狒狒",
+  "nature": 0,
+  "res_id": "M40023",
+  "talk": "弱小的魂师，我要把你撕成碎片！",
+  "talk2": "弱小的魂师，我要把你撕成碎片！",
+  "type": 1
+ },
+ "20030": {
+  "bid": 20030,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10031",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "天梦冰蚕",
+  "nature": 0,
+  "res_id": "N10031",
+  "talk": "你们别想把我当成肥料！",
+  "talk2": "冰帝，我一定要当你的男盆友！",
+  "type": 1
+ },
+ "20031": {
+  "bid": 20031,
+  "button": [
+   1004
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10031",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "天梦冰蚕",
+  "nature": 0,
+  "res_id": "N10031",
+  "talk": "这只是兽神的一缕分身，如果你能帮助我打退他的话，我天梦发誓一定竭尽全力助你登上巅峰魂师。",
+  "talk2": "我还没有与冰帝谈恋爱，怎么可以在这里就死掉？",
+  "type": 1
+ },
+ "20032": {
+  "bid": 20032,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10031",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "天梦冰蚕",
+  "nature": 0,
+  "res_id": "N10031",
+  "talk": "你们别想把我当成肥料！",
+  "talk2": "冰帝，我一定要当你的男盆友！",
+  "type": 1
+ },
+ "20033": {
+  "bid": 20033,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10031",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "天梦冰蚕",
+  "nature": 0,
+  "res_id": "N10031",
+  "talk": "你们别想把我当成肥料！",
+  "talk2": "冰帝，我一定要当你的男盆友！",
+  "type": 1
+ },
+ "20040": {
+  "bid": 20040,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10010",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "兽神帝天",
+  "nature": 0,
+  "res_id": "N10057",
+  "talk": "你们对力量一无所知。",
+  "talk2": "龙神陛下，我们魂兽必将统治整个大陆。",
+  "type": 1
+ },
+ "20050": {
+  "bid": 20050,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "唐雅",
+  "nature": 0,
+  "res_id": "N10017",
+  "talk": "我一定会恢复唐门在斗罗大陆上的荣光！",
+  "talk2": "贝贝，小雅饿了，小雅想吃东西！",
+  "type": 1
+ },
+ "20051": {
+  "bid": 20051,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "唐雅",
+  "nature": 0,
+  "res_id": "N10017",
+  "talk": "我一定会恢复唐门在斗罗大陆上的荣光！",
+  "talk2": "贝贝，小雅饿了，小雅想吃东西！",
+  "type": 1
+ },
+ "20060": {
+  "bid": 20060,
+  "button": [
+   1005
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32200",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "贝贝",
+  "nature": 0,
+  "res_id": "N10021",
+  "talk": "这曼荼罗蛇可不容易对付，一会遇到危险你跟小雅马上离开这里，我一个人断后，放心吧，我自保还是不成问题的。",
+  "talk2": "小雅，有危险你就站我身后就可以了。",
+  "type": 1
+ },
+ "20061": {
+  "bid": 20061,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32200",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "贝贝",
+  "nature": 0,
+  "res_id": "N10021",
+  "talk": "放心，有我在一定会保护你们的。",
+  "talk2": "小雅，有危险你就站我身后就可以了。",
+  "type": 1
+ },
+ "20070": {
+  "bid": 20070,
+  "button": [
+   1006
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30200",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "少年王冬",
+  "nature": 0,
+  "res_id": "N10029",
+  "talk": "宿舍不可一日无老大，哼，刚才我一时失手输给了这个臭雨浩，如果你能打败他，你就是我们宿舍的老大了！",
+  "talk2": "我告诉你们，要是我尽全力的话，你们可不是我的对手！",
+  "type": 1
+ },
+ "20071": {
+  "bid": 20071,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30200",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "少年王冬",
+  "nature": 0,
+  "res_id": "N10029",
+  "talk": "宿舍不可一日无老大，哼，刚才我一时失手输给了这个臭雨浩，如果你能打败他，你就是我们宿舍的老大了！",
+  "talk2": "我告诉你们，要是我尽全力的话，你们可不是我的对手！",
+  "type": 1
+ },
+ "20080": {
+  "bid": 20080,
+  "button": [
+   1007
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34000",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "徐三石",
+  "nature": 0,
+  "res_id": "N10011",
+  "talk": "你们也不打听一下我徐三石是什么人，哼，所有的烤鱼全给我交出来！",
+  "talk2": "楠楠，楠楠，别急，我给你把烤鱼抢回来！",
+  "type": 1
+ },
+ "20081": {
+  "bid": 20081,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31800",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "江楠楠",
+  "nature": 0,
+  "res_id": "N10026",
+  "talk": "你们别听他胡说，我江楠楠从来就不认识徐三石这个淫贼！",
+  "talk2": "别叫我楠楠，我跟你又不熟！",
+  "type": 1
+ },
+ "20082": {
+  "bid": 20082,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34000",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "徐三石",
+  "nature": 0,
+  "res_id": "N10011",
+  "talk": "诶，我的楠楠不理我了。",
+  "talk2": "楠楠，楠楠，别急，我给你把烤鱼抢回来！",
+  "type": 1
+ },
+ "20090": {
+  "bid": 20090,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34700",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "戴华斌",
+  "nature": 0,
+  "res_id": "N10036",
+  "talk": "你们除了躲老师身后还会什么？有本事跟小爷我PK！",
+  "talk2": "我白虎公爵府的威名可不是随便得来的。",
+  "type": 1
+ },
+ "20091": {
+  "bid": 20091,
+  "button": [
+   1008
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34700",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "戴华斌",
+  "nature": 0,
+  "res_id": "N10036",
+  "talk": "在下戴华斌，武魂是邪眸白虎，25级战魂师，你可要小心了",
+  "talk2": "我白虎公爵府的威名可不是随便得来的。",
+  "type": 1
+ },
+ "20100": {
+  "bid": 20100,
+  "button": [
+   1009
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10034",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "和菜头",
+  "nature": 0,
+  "res_id": "N10034",
+  "talk": "我已经是四级魂导师了，不过考虑到你们的魂力等级，我会压制实力不超过三级魂导师。",
+  "talk2": "老子有根大雪茄……",
+  "type": 1
+ },
+ "20110": {
+  "bid": 20110,
+  "button": [
+   1010
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34000",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "徐三石",
+  "nature": 0,
+  "res_id": "N10011",
+  "talk": "贝贝，我们上斗魂场赌战，当着这些学弟学妹的面，看看谁才是外院第一！",
+  "talk2": "江楠楠，我三石哥是不会放弃的",
+  "type": 1
+ },
+ "20111": {
+  "bid": 20111,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "唐雅",
+  "nature": 0,
+  "res_id": "N10017",
+  "talk": "我一定会恢复唐门在斗罗大陆上的荣光！",
+  "talk2": "贝贝，小雅饿了，小雅想吃东西！",
+  "type": 1
+ },
+ "20112": {
+  "bid": 20112,
+  "button": [
+   1010
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34000",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "徐三石",
+  "nature": 0,
+  "res_id": "N10011",
+  "talk": "贝贝，我们上斗魂场赌战，当着这些学弟学妹的面，看看谁才是外院第一！",
+  "talk2": "江楠楠，我三石哥是不会放弃的",
+  "type": 1
+ },
+ "20120": {
+  "bid": 20120,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30200",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "少年王冬",
+  "nature": 0,
+  "res_id": "N10029",
+  "talk": "宿舍不可一日无老大，哼，刚才我一时失手输给了这个臭雨浩，如果你能打败他，你就是我们宿舍的老大了！",
+  "talk2": "我告诉你们，要是我尽全力的话，你们可不是我的对手！",
+  "type": 1
+ },
+ "20121": {
+  "bid": 20121,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30200",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "少年王冬",
+  "nature": 0,
+  "res_id": "N10029",
+  "talk": "宿舍不可一日无老大，哼，刚才我一时失手输给了这个臭雨浩，如果你能打败他，你就是我们宿舍的老大了！",
+  "talk2": "我告诉你们，要是我尽全力的话，你们可不是我的对手！",
+  "type": 1
+ },
+ "20122": {
+  "bid": 20122,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "神秘火女",
+  "nature": 0,
+  "res_id": "N10018",
+  "talk": "邪火上来压不住了！！！",
+  "talk2": "热，好热啊！",
+  "type": 1
+ },
+ "20123": {
+  "bid": 20123,
+  "button": [
+   1029
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "神秘火女",
+  "nature": 0,
+  "res_id": "N10018",
+  "talk": "邪火上来压不住了！！！",
+  "talk2": "热，好热啊！",
+  "type": 1
+ },
+ "20130": {
+  "bid": 20130,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10031",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "天梦冰蚕",
+  "nature": 0,
+  "res_id": "N10031",
+  "talk": "你们别想把我当成肥料！",
+  "talk2": "冰帝，我一定要当你的男盆友！",
+  "type": 1
+ },
+ "20140": {
+  "bid": 20140,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34000",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "徐三石",
+  "nature": 0,
+  "res_id": "N10011",
+  "talk": "我可是排队第一位的，这烤鱼怎么也得卖我两条。",
+  "talk2": "江楠楠，我三石哥是不会放弃的",
+  "type": 1
+ },
+ "20141": {
+  "bid": 20141,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34000",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "徐三石",
+  "nature": 0,
+  "res_id": "N10011",
+  "talk": "我可是排队第一位的，这烤鱼怎么也得卖我两条。",
+  "talk2": "江楠楠，我三石哥是不会放弃的",
+  "type": 1
+ },
+ "20142": {
+  "bid": 20142,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34000",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "徐三石",
+  "nature": 0,
+  "res_id": "N10011",
+  "talk": "我可是排队第一位的，这烤鱼怎么也得卖我两条。",
+  "talk2": "江楠楠，我三石哥是不会放弃的",
+  "type": 1
+ },
+ "20150": {
+  "bid": 20150,
+  "button": [
+   1030
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "神秘火女",
+  "nature": 0,
+  "res_id": "N10018",
+  "talk": "我不喜欢说废话，只会动手！",
+  "talk2": "热，好热啊！",
+  "type": 1
+ },
+ "20151": {
+  "bid": 20151,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "马小桃",
+  "nature": 0,
+  "res_id": "N10018",
+  "talk": "我不喜欢说废话，只会动手！",
+  "talk2": "热，好热啊！",
+  "type": 1
+ },
+ "20152": {
+  "bid": 20152,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "马小桃",
+  "nature": 0,
+  "res_id": "N10018",
+  "talk": "我不喜欢说废话，只会动手！",
+  "talk2": "热，好热啊！",
+  "type": 1
+ },
+ "20160": {
+  "bid": 20160,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10031",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "天梦冰蚕",
+  "nature": 0,
+  "res_id": "N10031",
+  "talk": "相信你天梦哥没错的！",
+  "talk2": "冰帝，我一定要当你的男盆友！",
+  "type": 1
+ },
+ "20161": {
+  "bid": 20161,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10031",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "天梦冰蚕",
+  "nature": 0,
+  "res_id": "N10031",
+  "talk": "相信你天梦哥没错的！",
+  "talk2": "冰帝，我一定要当你的男盆友！",
+  "type": 1
+ },
+ "20170": {
+  "bid": 20170,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10013",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "虚弱的冰帝",
+  "nature": 0,
+  "res_id": "N10013",
+  "talk": "吾心即为极冰宝典。",
+  "talk2": "或许转世为人才能成为真正的神。",
+  "type": 1
+ },
+ "20171": {
+  "bid": 20171,
+  "button": [
+   1031
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10013",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "虚弱的冰帝",
+  "nature": 0,
+  "res_id": "N10013",
+  "talk": "吾心即为极冰宝典。",
+  "talk2": "或许转世为人才能成为真正的神。",
+  "type": 1
+ },
+ "20180": {
+  "bid": 20180,
+  "button": [
+   1011
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10034",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "和菜头",
+  "nature": 0,
+  "res_id": "N10034",
+  "talk": "你似乎又变强了不少，看来这次我可以全力以赴了！",
+  "talk2": "老子有根大雪茄……",
+  "type": 1
+ },
+ "20190": {
+  "bid": 20190,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "马小桃",
+  "nature": 0,
+  "res_id": "N10018",
+  "talk": "我不喜欢说废话，只会动手！",
+  "talk2": "热，好热啊！",
+  "type": 1
+ },
+ "20191": {
+  "bid": 20191,
+  "button": [
+   1013
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "马小桃",
+  "nature": 0,
+  "res_id": "N10018",
+  "talk": "我的邪火又要暴动了，快来帮我压制它！！！",
+  "talk2": "热，好热啊！",
+  "type": 1
+ },
+ "20200": {
+  "bid": 20200,
+  "button": [
+   1014
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "魂导军团",
+  "nature": 0,
+  "res_id": "H31410",
+  "talk": "我们是按日月帝国编制的魂导师小队，如果小看我们的魂导器可是会吃大亏的！",
+  "talk2": "让你见识什么是定装魂导器的威力",
+  "type": 1
+ },
+ "20210": {
+  "bid": 20210,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "马小桃",
+  "nature": 0,
+  "res_id": "N10018",
+  "talk": "我不喜欢说废话，只会动手！",
+  "talk2": "热，好热啊！",
+  "type": 1
+ },
+ "20211": {
+  "bid": 20211,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "马小桃",
+  "nature": 0,
+  "res_id": "N10018",
+  "talk": "我不喜欢说废话，只会动手！",
+  "talk2": "热，好热啊！",
+  "type": 1
+ },
+ "20212": {
+  "bid": 20212,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "马小桃",
+  "nature": 0,
+  "res_id": "N10018",
+  "talk": "我不喜欢说废话，只会动手！",
+  "talk2": "热，好热啊！",
+  "type": 1
+ },
+ "20220": {
+  "bid": 20220,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34700",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "戴钥衡",
+  "nature": 0,
+  "res_id": "N10024",
+  "talk": "我的武魂是邪眸白虎，嗯，外院的华斌是我的弟弟！",
+  "talk2": "我白虎公爵府的威名可不是随便得来的。",
+  "type": 1
+ },
+ "20221": {
+  "bid": 20221,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34700",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "戴钥衡",
+  "nature": 0,
+  "res_id": "N10024",
+  "talk": "我的武魂是邪眸白虎，嗯，外院的华斌是我的弟弟！",
+  "talk2": "我白虎公爵府的威名可不是随便得来的。",
+  "type": 1
+ },
+ "20222": {
+  "bid": 20222,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34700",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "戴钥衡",
+  "nature": 0,
+  "res_id": "N10024",
+  "talk": "我的武魂是邪眸白虎，嗯，外院的华斌是我的弟弟！",
+  "talk2": "我白虎公爵府的威名可不是随便得来的。",
+  "type": 1
+ },
+ "20230": {
+  "bid": 20230,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "马小桃",
+  "nature": 0,
+  "res_id": "N10018",
+  "talk": "这些邪魂师实在可恶，躲躲藏藏的，有种出来和我一决高下！",
+  "talk2": "邪魂师没什么可怕的",
+  "type": 1
+ },
+ "20231": {
+  "bid": 20231,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "马小桃",
+  "nature": 0,
+  "res_id": "N10018",
+  "talk": "这些邪魂师实在可恶，躲躲藏藏的，有种出来和我一决高下！",
+  "talk2": "邪魂师没什么可怕的",
+  "type": 1
+ },
+ "20240": {
+  "bid": 20240,
+  "button": [
+   1018
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "鬼祟女子",
+  "nature": 0,
+  "res_id": "N10012",
+  "talk": "你们这些异教徒，不归于我圣灵门下必将遭受天罚！",
+  "talk2": "圣灵庇护着我",
+  "type": 1
+ },
+ "20250": {
+  "bid": 20250,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "死神使者",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "你们终将成为我的尸奴，不用再挣扎了！",
+  "talk2": "圣灵庇护着我",
+  "type": 1
+ },
+ "20251": {
+  "bid": 20251,
+  "button": [
+   1019
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "死神使者",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "你们终将成为我的尸奴，不用再挣扎了！",
+  "talk2": "圣灵庇护着我",
+  "type": 1
+ },
+ "20252": {
+  "bid": 20252,
+  "button": [
+   1020
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "死神使者",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "他们这些魂帝魂王都奈何不了我，你就乖乖地臣服于我吧！",
+  "talk2": "圣灵庇护着我",
+  "type": 1
+ },
+ "20260": {
+  "bid": 20260,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "马小桃",
+  "nature": 0,
+  "res_id": "N10018",
+  "talk": "都怪我！不知道其他人怎么样了！",
+  "talk2": "都怪我！不知道其他人怎么样了！",
+  "type": 1
+ },
+ "20270": {
+  "bid": 20270,
+  "button": [
+   1024
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "王言",
+  "nature": 0,
+  "res_id": "N10023",
+  "talk": "别怕孩子们，即使你们不是正队队员，你们的实力也不虚其他学院的学生。",
+  "talk2": "史莱克是不会轻言放弃的",
+  "type": 1
+ },
+ "20271": {
+  "bid": 20271,
+  "button": [
+   1021
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "王言",
+  "nature": 0,
+  "res_id": "N10023",
+  "talk": "别怕孩子们，即使你们不是正队队员，你们的实力也不虚其他学院的学生。",
+  "talk2": "史莱克是不会轻言放弃的",
+  "type": 1
+ },
+ "20280": {
+  "bid": 20280,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "马小桃",
+  "nature": 0,
+  "res_id": "N10018",
+  "talk": "史莱克的荣誉就靠你们了",
+  "talk2": "史莱克的荣誉就靠你们了",
+  "type": 1
+ },
+ "20281": {
+  "bid": 20281,
+  "button": [
+   1023
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "马小桃",
+  "nature": 0,
+  "res_id": "N10018",
+  "talk": "史莱克的荣誉就靠你们了",
+  "talk2": "史莱克的荣誉就靠你们了",
+  "type": 1
+ },
+ "20290": {
+  "bid": 20290,
+  "button": [
+   1022
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34000",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "徐三石",
+  "nature": 0,
+  "res_id": "N10011",
+  "talk": "为了史莱克学院，我是绝对不会认输的，我们一起上吧！",
+  "talk2": "为了史莱克学院",
+  "type": 1
+ },
+ "20300": {
+  "bid": 20300,
+  "button": [
+   1025
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34000",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "徐三石",
+  "nature": 0,
+  "res_id": "N10011",
+  "talk": "竟然敢伤我的楠楠，我要让他们付出代价。",
+  "talk2": "为了史莱克学院",
+  "type": 1
+ },
+ "20310": {
+  "bid": 20310,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30600",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "戴钥衡",
+  "nature": 0,
+  "res_id": "N10024",
+  "talk": "戴家男儿没有一个孬种！",
+  "talk2": "我白虎公爵府的威名可不是随便得来的。",
+  "type": 1
+ },
+ "20320": {
+  "bid": 20320,
+  "button": [
+   1026
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "马小桃",
+  "nature": 0,
+  "res_id": "N10018",
+  "talk": "我要让日月皇家学院的人感受一下邪火凤凰真正的恐怖！",
+  "talk2": "史莱克的荣誉就靠你们了",
+  "type": 1
+ },
+ "20321": {
+  "bid": 20321,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "马小桃",
+  "nature": 0,
+  "res_id": "N10018",
+  "talk": "史莱克的荣誉就靠你们了",
+  "talk2": "史莱克的荣誉就靠你们了",
+  "type": 1
+ },
+ "20330": {
+  "bid": 20330,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "王言",
+  "nature": 0,
+  "res_id": "N10023",
+  "talk": "别怕孩子们，即使你们不是正队队员，你们的实力也不虚其他学院的学生。",
+  "talk2": "史莱克是不会轻言放弃的",
+  "type": 1
+ },
+ "20331": {
+  "bid": 20331,
+  "button": [
+   1027
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "王言",
+  "nature": 0,
+  "res_id": "N10023",
+  "talk": "最后的一战就靠你们了，我相信我们一定能获胜！",
+  "talk2": "史莱克是不会轻言放弃的",
+  "type": 1
+ },
+ "20340": {
+  "bid": 20340,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31700",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "毒不死",
+  "nature": 0,
+  "res_id": "H31700",
+  "talk": "老夫成名之时，汝等父母尚未出世，哼！",
+  "talk2": "想不想尝尝老夫的毒",
+  "type": 1
+ },
+ "20341": {
+  "bid": 20341,
+  "button": [
+   1028
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31700",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "毒不死",
+  "nature": 0,
+  "res_id": "H31700",
+  "talk": "老夫成名之时，汝等父母尚未出世，哼！",
+  "talk2": "想不想尝尝老夫的毒",
+  "type": 1
+ },
+ "20350": {
+  "bid": 20350,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10034",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "镜红尘",
+  "nature": 0,
+  "res_id": "H31410",
+  "talk": "老夫执掌明镜堂数十载，你们以为魂导器的威力只有眼前的这种层次吗？",
+  "talk2": "斗罗大陆迟早要改成日月大陆",
+  "type": 1
+ },
+ "20360": {
+  "bid": 20360,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10041",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "轩梓文",
+  "nature": 0,
+  "res_id": "N10041",
+  "talk": "我是一个有理想的魂导师，我的魂导器是艺术！",
+  "talk2": "这才是真正的艺术！",
+  "type": 1
+ },
+ "20370": {
+  "bid": 20370,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10017",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "冷漠师姐",
+  "nature": 0,
+  "res_id": "N10017",
+  "talk": "你就是那个史莱克学院的交换生吗？",
+  "talk2": "",
+  "type": 1
+ },
+ "20371": {
+  "bid": 20371,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10017",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "橘子",
+  "nature": 0,
+  "res_id": "N10017",
+  "talk": "你就是那个史莱克学院的交换生吗？",
+  "talk2": "",
+  "type": 1
+ },
+ "20372": {
+  "bid": 20372,
+  "button": [
+   1034
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10017",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "橘子",
+  "nature": 0,
+  "res_id": "N10017",
+  "talk": "听说你们史莱克学院的学生都很强，我们几个倒想见识见识，如果输了，以后就乖乖听话！",
+  "talk2": "",
+  "type": 1
+ },
+ "20380": {
+  "bid": 20380,
+  "button": [
+   1035
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10026",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "欧阳娜娜",
+  "nature": 0,
+  "res_id": "N10026",
+  "talk": "听说你在我们的地盘上摆擂挑战，真是不把我们放在眼里了！",
+  "talk2": "",
+  "type": 1
+ },
+ "20390": {
+  "bid": 20390,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10027",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "伊莱克斯",
+  "nature": 0,
+  "res_id": "N10027",
+  "talk": "亡灵法术，有意思，这小姑娘的武魂是幽灵。",
+  "talk2": "",
+  "type": 1
+ },
+ "20400": {
+  "bid": 20400,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10016",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "季绝尘",
+  "nature": 0,
+  "res_id": "N10016",
+  "talk": "真是寂寞啊，找个人打架都不成，咦，我看你似乎挺强的！",
+  "talk2": "剑是我最重要……除了紫烟外最重要的伙伴。",
+  "type": 1
+ },
+ "20401": {
+  "bid": 20401,
+  "button": [
+   1036
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10016",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "季绝尘",
+  "nature": 0,
+  "res_id": "N10016",
+  "talk": "真是寂寞啊，找个人打架都不成，咦，我看你似乎挺强的！",
+  "talk2": "剑是我最重要……除了紫烟外最重要的伙伴。",
+  "type": 1
+ },
+ "20410": {
+  "bid": 20410,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10026",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "欧阳娜娜",
+  "nature": 0,
+  "res_id": "N10026",
+  "talk": "你……你怎么会有他们的气息，你难道也是圣灵教的人？",
+  "talk2": "",
+  "type": 1
+ },
+ "20411": {
+  "bid": 20411,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10026",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "欧阳娜娜",
+  "nature": 0,
+  "res_id": "N10026",
+  "talk": "你……你怎么会有他们的气息，你难道也是圣灵教的人？",
+  "talk2": "",
+  "type": 1
+ },
+ "20420": {
+  "bid": 20420,
+  "button": [
+   1037
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "死神使者",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "你是谁，怎么知道我们圣灵教的据点所在？",
+  "talk2": "",
+  "type": 1
+ },
+ "20430": {
+  "bid": 20430,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30200",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "王冬",
+  "nature": 0,
+  "res_id": "N10029",
+  "talk": "哼，你们是不是去了日月帝国认识了漂亮妹子就不理我了？",
+  "talk2": "",
+  "type": 1
+ },
+ "20431": {
+  "bid": 20431,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30200",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "王冬",
+  "nature": 0,
+  "res_id": "N10029",
+  "talk": "哼，你们是不是去了日月帝国认识了漂亮妹子就不理我了？",
+  "talk2": "",
+  "type": 1
+ },
+ "20500": {
+  "bid": 20500,
+  "button": [
+   9050
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10022",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "考验官",
+  "nature": 0,
+  "res_id": "N10022",
+  "talk": "每一个要觉醒武魂真身的学员都必须要通过我的考验！",
+  "talk2": "这几年学员精英似乎多了许多。",
+  "type": 1
+ },
+ "30001": {
+  "bid": 30001,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "憎恶斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "30002": {
+  "bid": 30002,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "假面斗罗",
+  "nature": 0,
+  "res_id": "H32000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "30003": {
+  "bid": 30003,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "天蜈斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "30004": {
+  "bid": 30004,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冥雷斗罗",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "30005": {
+  "bid": 30005,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蓝银圣女",
+  "nature": 0,
+  "res_id": "H34400",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "30006": {
+  "bid": 30006,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "万魂斗罗",
+  "nature": 0,
+  "res_id": "H30000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "30007": {
+  "bid": 30007,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤圣女",
+  "nature": 0,
+  "res_id": "H34400",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "30008": {
+  "bid": 30008,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "幽冥斗罗",
+  "nature": 0,
+  "res_id": "H31000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "30009": {
+  "bid": 30009,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "钟离天",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "30021": {
+  "bid": 30021,
+  "button": [
+   7010,
+   7011,
+   7012,
+   7013,
+   7014,
+   7015,
+   7016,
+   7017,
+   7018,
+   7019,
+   9009
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "R10100",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "玄武学长",
+  "nature": 0,
+  "res_id": "R10100",
+  "talk": "在大师姐张乐萱处接取任务后，3人以上组队方可前来挑战！",
+  "talk2": "",
+  "type": 1
+ },
+ "30022": {
+  "bid": 30022,
+  "button": [
+   7010,
+   7011,
+   7012,
+   7013,
+   7014,
+   7015,
+   7016,
+   7017,
+   7018,
+   7019,
+   9009
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "R01000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "玄武学长",
+  "nature": 0,
+  "res_id": "R01000",
+  "talk": "在大师姐张乐萱处接取任务后，3人以上组队方可前来挑战！",
+  "talk2": "",
+  "type": 1
+ },
+ "30023": {
+  "bid": 30023,
+  "button": [
+   7010,
+   7011,
+   7012,
+   7013,
+   7014,
+   7015,
+   7016,
+   7017,
+   7018,
+   7019,
+   9009
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "R10100",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "玄武学长",
+  "nature": 0,
+  "res_id": "R10100",
+  "talk": "在大师姐张乐萱处接取任务后，3人以上组队方可前来挑战！",
+  "talk2": "",
+  "type": 1
+ },
+ "30024": {
+  "bid": 30024,
+  "button": [
+   7010,
+   7011,
+   7012,
+   7013,
+   7014,
+   7015,
+   7016,
+   7017,
+   7018,
+   7019,
+   9009
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "R02100",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤学长",
+  "nature": 0,
+  "res_id": "R02100",
+  "talk": "在大师姐张乐萱处接取任务后，3人以上组队方可前来挑战！",
+  "talk2": "",
+  "type": 1
+ },
+ "30025": {
+  "bid": 30025,
+  "button": [
+   7010,
+   7011,
+   7012,
+   7013,
+   7014,
+   7015,
+   7016,
+   7017,
+   7018,
+   7019,
+   9009
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "R10600",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤学长",
+  "nature": 0,
+  "res_id": "R10600",
+  "talk": "在大师姐张乐萱处接取任务后，3人以上组队方可前来挑战！",
+  "talk2": "",
+  "type": 1
+ },
+ "30026": {
+  "bid": 30026,
+  "button": [
+   7010,
+   7011,
+   7012,
+   7013,
+   7014,
+   7015,
+   7016,
+   7017,
+   7018,
+   7019,
+   9009
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "R02100",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤学长",
+  "nature": 0,
+  "res_id": "R02100",
+  "talk": "在大师姐张乐萱处接取任务后，3人以上组队方可前来挑战！",
+  "talk2": "",
+  "type": 1
+ },
+ "30027": {
+  "bid": 30027,
+  "button": [
+   7010,
+   7011,
+   7012,
+   7013,
+   7014,
+   7015,
+   7016,
+   7017,
+   7018,
+   7019,
+   9009
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "R11000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "白虎学长",
+  "nature": 0,
+  "res_id": "R11000",
+  "talk": "在大师姐张乐萱处接取任务后，3人以上组队方可前来挑战！",
+  "talk2": "",
+  "type": 1
+ },
+ "30028": {
+  "bid": 30028,
+  "button": [
+   7010,
+   7011,
+   7012,
+   7013,
+   7014,
+   7015,
+   7016,
+   7017,
+   7018,
+   7019,
+   9009
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "R03000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "白虎学长",
+  "nature": 0,
+  "res_id": "R03000",
+  "talk": "在大师姐张乐萱处接取任务后，3人以上组队方可前来挑战！",
+  "talk2": "",
+  "type": 1
+ },
+ "30029": {
+  "bid": 30029,
+  "button": [
+   7010,
+   7011,
+   7012,
+   7013,
+   7014,
+   7015,
+   7016,
+   7017,
+   7018,
+   7019,
+   9009
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "R11000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "白虎学长",
+  "nature": 0,
+  "res_id": "R11000",
+  "talk": "在大师姐张乐萱处接取任务后，3人以上组队方可前来挑战！",
+  "talk2": "",
+  "type": 1
+ },
+ "30030": {
+  "bid": 30030,
+  "button": [
+   7010,
+   7011,
+   7012,
+   7013,
+   7014,
+   7015,
+   7016,
+   7017,
+   7018,
+   7019,
+   9009
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "R04100",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "琉璃学长",
+  "nature": 0,
+  "res_id": "R04100",
+  "talk": "在大师姐张乐萱处接取任务后，3人以上组队方可前来挑战！",
+  "talk2": "",
+  "type": 1
+ },
+ "30031": {
+  "bid": 30031,
+  "button": [
+   7010,
+   7011,
+   7012,
+   7013,
+   7014,
+   7015,
+   7016,
+   7017,
+   7018,
+   7019,
+   9009
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "R10500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "琉璃学长",
+  "nature": 0,
+  "res_id": "R10500",
+  "talk": "在大师姐张乐萱处接取任务后，3人以上组队方可前来挑战！",
+  "talk2": "",
+  "type": 1
+ },
+ "30032": {
+  "bid": 30032,
+  "button": [
+   7010,
+   7011,
+   7012,
+   7013,
+   7014,
+   7015,
+   7016,
+   7017,
+   7018,
+   7019,
+   9009
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "R04100",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "琉璃学长",
+  "nature": 0,
+  "res_id": "R04100",
+  "talk": "在大师姐张乐萱处接取任务后，3人以上组队方可前来挑战！",
+  "talk2": "",
+  "type": 1
+ },
+ "30041": {
+  "bid": 30041,
+  "button": [
+   7020,
+   7021,
+   7022,
+   7023,
+   7024,
+   9013
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32200",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "贝贝",
+  "nature": 0,
+  "res_id": "N10021",
+  "talk": "在天梦冰蚕处接取挑战史莱克七怪任务，<div fontcolor=#00ff00>3人以上组队方可前来挑战</div>",
+  "talk2": "",
+  "type": 1
+ },
+ "30042": {
+  "bid": 30042,
+  "button": [
+   7020,
+   7021,
+   7022,
+   7023,
+   7024,
+   9013
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31800",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "江楠楠",
+  "nature": 0,
+  "res_id": "N10026",
+  "talk": "在天梦冰蚕处接取挑战史莱克七怪任务，<div fontcolor=#00ff00>3人以上组队方可前来挑战</div>",
+  "talk2": "",
+  "type": 1
+ },
+ "30043": {
+  "bid": 30043,
+  "button": [
+   7020,
+   7021,
+   7022,
+   7023,
+   7024,
+   9013
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34300",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "萧萧",
+  "nature": 0,
+  "res_id": "N10020",
+  "talk": "在天梦冰蚕处接取挑战史莱克七怪任务，<div fontcolor=#00ff00>3人以上组队方可前来挑战</div>",
+  "talk2": "",
+  "type": 1
+ },
+ "30044": {
+  "bid": 30044,
+  "button": [
+   7020,
+   7021,
+   7022,
+   7023,
+   7024,
+   9013
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "徐三石",
+  "nature": 0,
+  "res_id": "N10011",
+  "talk": "在天梦冰蚕处接取挑战史莱克七怪任务，<div fontcolor=#00ff00>3人以上组队方可前来挑战</div>",
+  "talk2": "",
+  "type": 1
+ },
+ "30045": {
+  "bid": 30045,
+  "button": [
+   7020,
+   7021,
+   7022,
+   7023,
+   7024,
+   9013
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34100",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "霍雨浩",
+  "nature": 0,
+  "res_id": "N10025",
+  "talk": "在天梦冰蚕处接取挑战史莱克七怪任务，<div fontcolor=#00ff00>3人以上组队方可前来挑战</div>",
+  "talk2": "",
+  "type": 1
+ },
+ "30046": {
+  "bid": 30046,
+  "button": [
+   7020,
+   7021,
+   7022,
+   7023,
+   7024,
+   9013
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H33700",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "和菜头",
+  "nature": 0,
+  "res_id": "N10034",
+  "talk": "在天梦冰蚕处接取挑战史莱克七怪任务，<div fontcolor=#00ff00>3人以上组队方可前来挑战</div>",
+  "talk2": "",
+  "type": 1
+ },
+ "30047": {
+  "bid": 30047,
+  "button": [
+   7020,
+   7021,
+   7022,
+   7023,
+   7024,
+   9013
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34200",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "唐舞桐",
+  "nature": 0,
+  "res_id": "N10022",
+  "talk": "在天梦冰蚕处接取挑战史莱克七怪任务，<div fontcolor=#00ff00>3人以上组队方可前来挑战</div>",
+  "talk2": "",
+  "type": 1
+ },
+ "30048": {
+  "bid": 30048,
+  "button": [
+   7020,
+   7021,
+   7022,
+   7023,
+   7024,
+   9013
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H35800",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "唐三",
+  "nature": 0,
+  "res_id": "N10054",
+  "talk": "在天梦冰蚕处接取挑战史莱克七怪任务，<div fontcolor=#00ff00>3人以上组队方可前来挑战</div>",
+  "talk2": "",
+  "type": 1
+ },
+ "31001": {
+  "bid": 31001,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "憎恶斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31002": {
+  "bid": 31002,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "假面斗罗",
+  "nature": 0,
+  "res_id": "H32000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31003": {
+  "bid": 31003,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "天蜈斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31004": {
+  "bid": 31004,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冥雷斗罗",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31005": {
+  "bid": 31005,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蓝银圣女",
+  "nature": 0,
+  "res_id": "H31500",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31006": {
+  "bid": 31006,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "万魂斗罗",
+  "nature": 0,
+  "res_id": "H30000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31007": {
+  "bid": 31007,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤圣女",
+  "nature": 0,
+  "res_id": "H34400",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31008": {
+  "bid": 31008,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "幽冥斗罗",
+  "nature": 0,
+  "res_id": "H31000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31009": {
+  "bid": 31009,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "钟离天",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31011": {
+  "bid": 31011,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "憎恶斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31012": {
+  "bid": 31012,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "假面斗罗",
+  "nature": 0,
+  "res_id": "H32000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31013": {
+  "bid": 31013,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "天蜈斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31014": {
+  "bid": 31014,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冥雷斗罗",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31015": {
+  "bid": 31015,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蓝银圣女",
+  "nature": 0,
+  "res_id": "H31500",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31016": {
+  "bid": 31016,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "万魂斗罗",
+  "nature": 0,
+  "res_id": "H30000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31017": {
+  "bid": 31017,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤圣女",
+  "nature": 0,
+  "res_id": "H34400",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31018": {
+  "bid": 31018,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "幽冥斗罗",
+  "nature": 0,
+  "res_id": "H31000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31019": {
+  "bid": 31019,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "钟离天",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31021": {
+  "bid": 31021,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "憎恶斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31022": {
+  "bid": 31022,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "假面斗罗",
+  "nature": 0,
+  "res_id": "H32000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31023": {
+  "bid": 31023,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "天蜈斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31024": {
+  "bid": 31024,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冥雷斗罗",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31025": {
+  "bid": 31025,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蓝银圣女",
+  "nature": 0,
+  "res_id": "H31500",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31026": {
+  "bid": 31026,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "万魂斗罗",
+  "nature": 0,
+  "res_id": "H30000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31027": {
+  "bid": 31027,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤圣女",
+  "nature": 0,
+  "res_id": "H34400",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31028": {
+  "bid": 31028,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "幽冥斗罗",
+  "nature": 0,
+  "res_id": "H31000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31029": {
+  "bid": 31029,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "钟离天",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31031": {
+  "bid": 31031,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "憎恶斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31032": {
+  "bid": 31032,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "假面斗罗",
+  "nature": 0,
+  "res_id": "H32000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31033": {
+  "bid": 31033,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "天蜈斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31034": {
+  "bid": 31034,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冥雷斗罗",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31035": {
+  "bid": 31035,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蓝银圣女",
+  "nature": 0,
+  "res_id": "H31500",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31036": {
+  "bid": 31036,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "万魂斗罗",
+  "nature": 0,
+  "res_id": "H30000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31037": {
+  "bid": 31037,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤圣女",
+  "nature": 0,
+  "res_id": "H34400",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31038": {
+  "bid": 31038,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "幽冥斗罗",
+  "nature": 0,
+  "res_id": "H31000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31039": {
+  "bid": 31039,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "钟离天",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31041": {
+  "bid": 31041,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "憎恶斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31042": {
+  "bid": 31042,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "假面斗罗",
+  "nature": 0,
+  "res_id": "H32000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31043": {
+  "bid": 31043,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "天蜈斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31044": {
+  "bid": 31044,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冥雷斗罗",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31045": {
+  "bid": 31045,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蓝银圣女",
+  "nature": 0,
+  "res_id": "H31500",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31046": {
+  "bid": 31046,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "万魂斗罗",
+  "nature": 0,
+  "res_id": "H30000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31047": {
+  "bid": 31047,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤圣女",
+  "nature": 0,
+  "res_id": "H34400",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31048": {
+  "bid": 31048,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "幽冥斗罗",
+  "nature": 0,
+  "res_id": "H31000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31049": {
+  "bid": 31049,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "钟离天",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31051": {
+  "bid": 31051,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "憎恶斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31052": {
+  "bid": 31052,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "假面斗罗",
+  "nature": 0,
+  "res_id": "H32000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31053": {
+  "bid": 31053,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "天蜈斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31054": {
+  "bid": 31054,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冥雷斗罗",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31055": {
+  "bid": 31055,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蓝银圣女",
+  "nature": 0,
+  "res_id": "H31500",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31056": {
+  "bid": 31056,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "万魂斗罗",
+  "nature": 0,
+  "res_id": "H30000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31057": {
+  "bid": 31057,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤圣女",
+  "nature": 0,
+  "res_id": "H34400",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31058": {
+  "bid": 31058,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "幽冥斗罗",
+  "nature": 0,
+  "res_id": "H31000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31059": {
+  "bid": 31059,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "钟离天",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31061": {
+  "bid": 31061,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "憎恶斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31062": {
+  "bid": 31062,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "假面斗罗",
+  "nature": 0,
+  "res_id": "H32000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31063": {
+  "bid": 31063,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "天蜈斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31064": {
+  "bid": 31064,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冥雷斗罗",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31065": {
+  "bid": 31065,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蓝银圣女",
+  "nature": 0,
+  "res_id": "H31500",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31066": {
+  "bid": 31066,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "万魂斗罗",
+  "nature": 0,
+  "res_id": "H30000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31067": {
+  "bid": 31067,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤圣女",
+  "nature": 0,
+  "res_id": "H34400",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31068": {
+  "bid": 31068,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "幽冥斗罗",
+  "nature": 0,
+  "res_id": "H31000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31069": {
+  "bid": 31069,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "钟离天",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31071": {
+  "bid": 31071,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "憎恶斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31072": {
+  "bid": 31072,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "假面斗罗",
+  "nature": 0,
+  "res_id": "H32000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31073": {
+  "bid": 31073,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "天蜈斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31074": {
+  "bid": 31074,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冥雷斗罗",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31075": {
+  "bid": 31075,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蓝银圣女",
+  "nature": 0,
+  "res_id": "H31500",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31076": {
+  "bid": 31076,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "万魂斗罗",
+  "nature": 0,
+  "res_id": "H30000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31077": {
+  "bid": 31077,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤圣女",
+  "nature": 0,
+  "res_id": "H34400",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31078": {
+  "bid": 31078,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "幽冥斗罗",
+  "nature": 0,
+  "res_id": "H31000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31079": {
+  "bid": 31079,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "钟离天",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31081": {
+  "bid": 31081,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "憎恶斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31082": {
+  "bid": 31082,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "假面斗罗",
+  "nature": 0,
+  "res_id": "H32000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31083": {
+  "bid": 31083,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "天蜈斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31084": {
+  "bid": 31084,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冥雷斗罗",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31085": {
+  "bid": 31085,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蓝银圣女",
+  "nature": 0,
+  "res_id": "H31500",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31086": {
+  "bid": 31086,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "万魂斗罗",
+  "nature": 0,
+  "res_id": "H30000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31087": {
+  "bid": 31087,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤圣女",
+  "nature": 0,
+  "res_id": "H34400",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31088": {
+  "bid": 31088,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "幽冥斗罗",
+  "nature": 0,
+  "res_id": "H31000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31089": {
+  "bid": 31089,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "钟离天",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31091": {
+  "bid": 31091,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "憎恶斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31092": {
+  "bid": 31092,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "假面斗罗",
+  "nature": 0,
+  "res_id": "H32000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31093": {
+  "bid": 31093,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "天蜈斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31094": {
+  "bid": 31094,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冥雷斗罗",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31095": {
+  "bid": 31095,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蓝银圣女",
+  "nature": 0,
+  "res_id": "H31500",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31096": {
+  "bid": 31096,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "万魂斗罗",
+  "nature": 0,
+  "res_id": "H30000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31097": {
+  "bid": 31097,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤圣女",
+  "nature": 0,
+  "res_id": "H34400",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31098": {
+  "bid": 31098,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "幽冥斗罗",
+  "nature": 0,
+  "res_id": "H31000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31099": {
+  "bid": 31099,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "钟离天",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31101": {
+  "bid": 31101,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "憎恶斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31102": {
+  "bid": 31102,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "假面斗罗",
+  "nature": 0,
+  "res_id": "H32000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31103": {
+  "bid": 31103,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "天蜈斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31104": {
+  "bid": 31104,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冥雷斗罗",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31105": {
+  "bid": 31105,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蓝银圣女",
+  "nature": 0,
+  "res_id": "H31500",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31106": {
+  "bid": 31106,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "万魂斗罗",
+  "nature": 0,
+  "res_id": "H30000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31107": {
+  "bid": 31107,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤圣女",
+  "nature": 0,
+  "res_id": "H34400",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31108": {
+  "bid": 31108,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "幽冥斗罗",
+  "nature": 0,
+  "res_id": "H31000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31109": {
+  "bid": 31109,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "钟离天",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31111": {
+  "bid": 31111,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "憎恶斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31112": {
+  "bid": 31112,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "假面斗罗",
+  "nature": 0,
+  "res_id": "H32000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31113": {
+  "bid": 31113,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "天蜈斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31114": {
+  "bid": 31114,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冥雷斗罗",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31115": {
+  "bid": 31115,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蓝银圣女",
+  "nature": 0,
+  "res_id": "H31500",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31116": {
+  "bid": 31116,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "万魂斗罗",
+  "nature": 0,
+  "res_id": "H30000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31117": {
+  "bid": 31117,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤圣女",
+  "nature": 0,
+  "res_id": "H34400",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31118": {
+  "bid": 31118,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "幽冥斗罗",
+  "nature": 0,
+  "res_id": "H31000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31119": {
+  "bid": 31119,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "钟离天",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31121": {
+  "bid": 31121,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "憎恶斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31122": {
+  "bid": 31122,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "假面斗罗",
+  "nature": 0,
+  "res_id": "H32000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31123": {
+  "bid": 31123,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "天蜈斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31124": {
+  "bid": 31124,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冥雷斗罗",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31125": {
+  "bid": 31125,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蓝银圣女",
+  "nature": 0,
+  "res_id": "H31500",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31126": {
+  "bid": 31126,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "万魂斗罗",
+  "nature": 0,
+  "res_id": "H30000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31127": {
+  "bid": 31127,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤圣女",
+  "nature": 0,
+  "res_id": "H34400",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31128": {
+  "bid": 31128,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "幽冥斗罗",
+  "nature": 0,
+  "res_id": "H31000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31129": {
+  "bid": 31129,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "钟离天",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31131": {
+  "bid": 31131,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "憎恶斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31132": {
+  "bid": 31132,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "假面斗罗",
+  "nature": 0,
+  "res_id": "H32000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31133": {
+  "bid": 31133,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "天蜈斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31134": {
+  "bid": 31134,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冥雷斗罗",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31135": {
+  "bid": 31135,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蓝银圣女",
+  "nature": 0,
+  "res_id": "H31500",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31136": {
+  "bid": 31136,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "万魂斗罗",
+  "nature": 0,
+  "res_id": "H30000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31137": {
+  "bid": 31137,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤圣女",
+  "nature": 0,
+  "res_id": "H34400",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31138": {
+  "bid": 31138,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "幽冥斗罗",
+  "nature": 0,
+  "res_id": "H31000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31139": {
+  "bid": 31139,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "钟离天",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31141": {
+  "bid": 31141,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "憎恶斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31142": {
+  "bid": 31142,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "假面斗罗",
+  "nature": 0,
+  "res_id": "H32000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31143": {
+  "bid": 31143,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "天蜈斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31144": {
+  "bid": 31144,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冥雷斗罗",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31145": {
+  "bid": 31145,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蓝银圣女",
+  "nature": 0,
+  "res_id": "H31500",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31146": {
+  "bid": 31146,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "万魂斗罗",
+  "nature": 0,
+  "res_id": "H30000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31147": {
+  "bid": 31147,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤圣女",
+  "nature": 0,
+  "res_id": "H34400",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31148": {
+  "bid": 31148,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "幽冥斗罗",
+  "nature": 0,
+  "res_id": "H31000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31149": {
+  "bid": 31149,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "钟离天",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31151": {
+  "bid": 31151,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "憎恶斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31152": {
+  "bid": 31152,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "假面斗罗",
+  "nature": 0,
+  "res_id": "H32000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31153": {
+  "bid": 31153,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "天蜈斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31154": {
+  "bid": 31154,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冥雷斗罗",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31155": {
+  "bid": 31155,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蓝银圣女",
+  "nature": 0,
+  "res_id": "H31500",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31156": {
+  "bid": 31156,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "万魂斗罗",
+  "nature": 0,
+  "res_id": "H30000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31157": {
+  "bid": 31157,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤圣女",
+  "nature": 0,
+  "res_id": "H34400",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31158": {
+  "bid": 31158,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "幽冥斗罗",
+  "nature": 0,
+  "res_id": "H31000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31159": {
+  "bid": 31159,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "钟离天",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31161": {
+  "bid": 31161,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "憎恶斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31162": {
+  "bid": 31162,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "假面斗罗",
+  "nature": 0,
+  "res_id": "H32000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31163": {
+  "bid": 31163,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "天蜈斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31164": {
+  "bid": 31164,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冥雷斗罗",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31165": {
+  "bid": 31165,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蓝银圣女",
+  "nature": 0,
+  "res_id": "H31500",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31166": {
+  "bid": 31166,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "万魂斗罗",
+  "nature": 0,
+  "res_id": "H30000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31167": {
+  "bid": 31167,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤圣女",
+  "nature": 0,
+  "res_id": "H34400",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31168": {
+  "bid": 31168,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "幽冥斗罗",
+  "nature": 0,
+  "res_id": "H31000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31169": {
+  "bid": 31169,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "钟离天",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31171": {
+  "bid": 31171,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "憎恶斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31172": {
+  "bid": 31172,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "假面斗罗",
+  "nature": 0,
+  "res_id": "H32000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31173": {
+  "bid": 31173,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "天蜈斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31174": {
+  "bid": 31174,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冥雷斗罗",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31175": {
+  "bid": 31175,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蓝银圣女",
+  "nature": 0,
+  "res_id": "H31500",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31176": {
+  "bid": 31176,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "万魂斗罗",
+  "nature": 0,
+  "res_id": "H30000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31177": {
+  "bid": 31177,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤圣女",
+  "nature": 0,
+  "res_id": "H34400",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31178": {
+  "bid": 31178,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "幽冥斗罗",
+  "nature": 0,
+  "res_id": "H31000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31179": {
+  "bid": 31179,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "钟离天",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31181": {
+  "bid": 31181,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "憎恶斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31182": {
+  "bid": 31182,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "假面斗罗",
+  "nature": 0,
+  "res_id": "H32000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31183": {
+  "bid": 31183,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "天蜈斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31184": {
+  "bid": 31184,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冥雷斗罗",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31185": {
+  "bid": 31185,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蓝银圣女",
+  "nature": 0,
+  "res_id": "H31500",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31186": {
+  "bid": 31186,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "万魂斗罗",
+  "nature": 0,
+  "res_id": "H30000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31187": {
+  "bid": 31187,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤圣女",
+  "nature": 0,
+  "res_id": "H34400",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31188": {
+  "bid": 31188,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "幽冥斗罗",
+  "nature": 0,
+  "res_id": "H31000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31189": {
+  "bid": 31189,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "钟离天",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31191": {
+  "bid": 31191,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "憎恶斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31192": {
+  "bid": 31192,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "假面斗罗",
+  "nature": 0,
+  "res_id": "H32000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31193": {
+  "bid": 31193,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "天蜈斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31194": {
+  "bid": 31194,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冥雷斗罗",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31195": {
+  "bid": 31195,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蓝银圣女",
+  "nature": 0,
+  "res_id": "H31500",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31196": {
+  "bid": 31196,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "万魂斗罗",
+  "nature": 0,
+  "res_id": "H30000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31197": {
+  "bid": 31197,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤圣女",
+  "nature": 0,
+  "res_id": "H34400",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31198": {
+  "bid": 31198,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "幽冥斗罗",
+  "nature": 0,
+  "res_id": "H31000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31199": {
+  "bid": 31199,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "钟离天",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31201": {
+  "bid": 31201,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "憎恶斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31202": {
+  "bid": 31202,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "假面斗罗",
+  "nature": 0,
+  "res_id": "H32000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31203": {
+  "bid": 31203,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "天蜈斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31204": {
+  "bid": 31204,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冥雷斗罗",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31205": {
+  "bid": 31205,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蓝银圣女",
+  "nature": 0,
+  "res_id": "H31500",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31206": {
+  "bid": 31206,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "万魂斗罗",
+  "nature": 0,
+  "res_id": "H30000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31207": {
+  "bid": 31207,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤圣女",
+  "nature": 0,
+  "res_id": "H34400",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31208": {
+  "bid": 31208,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "幽冥斗罗",
+  "nature": 0,
+  "res_id": "H31000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31209": {
+  "bid": 31209,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "钟离天",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31211": {
+  "bid": 31211,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "憎恶斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31212": {
+  "bid": 31212,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "假面斗罗",
+  "nature": 0,
+  "res_id": "H32000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31213": {
+  "bid": 31213,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "天蜈斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31214": {
+  "bid": 31214,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冥雷斗罗",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31215": {
+  "bid": 31215,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蓝银圣女",
+  "nature": 0,
+  "res_id": "H31500",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31216": {
+  "bid": 31216,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "万魂斗罗",
+  "nature": 0,
+  "res_id": "H30000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31217": {
+  "bid": 31217,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤圣女",
+  "nature": 0,
+  "res_id": "H34400",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31218": {
+  "bid": 31218,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "幽冥斗罗",
+  "nature": 0,
+  "res_id": "H31000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31219": {
+  "bid": 31219,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "钟离天",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31221": {
+  "bid": 31221,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "憎恶斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31222": {
+  "bid": 31222,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "假面斗罗",
+  "nature": 0,
+  "res_id": "H32000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31223": {
+  "bid": 31223,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "天蜈斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31224": {
+  "bid": 31224,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冥雷斗罗",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31225": {
+  "bid": 31225,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蓝银圣女",
+  "nature": 0,
+  "res_id": "H31500",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31226": {
+  "bid": 31226,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "万魂斗罗",
+  "nature": 0,
+  "res_id": "H30000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31227": {
+  "bid": 31227,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤圣女",
+  "nature": 0,
+  "res_id": "H34400",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31228": {
+  "bid": 31228,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "幽冥斗罗",
+  "nature": 0,
+  "res_id": "H31000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31229": {
+  "bid": 31229,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "钟离天",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31231": {
+  "bid": 31231,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "憎恶斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31232": {
+  "bid": 31232,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "假面斗罗",
+  "nature": 0,
+  "res_id": "H32000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31233": {
+  "bid": 31233,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40007",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "天蜈斗罗",
+  "nature": 0,
+  "res_id": "M40007",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31234": {
+  "bid": 31234,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冥雷斗罗",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31235": {
+  "bid": 31235,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蓝银圣女",
+  "nature": 0,
+  "res_id": "H31500",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31236": {
+  "bid": 31236,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "万魂斗罗",
+  "nature": 0,
+  "res_id": "H30000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31237": {
+  "bid": 31237,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H34400",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "火凤圣女",
+  "nature": 0,
+  "res_id": "H34400",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31238": {
+  "bid": 31238,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31000",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "幽冥斗罗",
+  "nature": 0,
+  "res_id": "H31000",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31239": {
+  "bid": 31239,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40003",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "钟离天",
+  "nature": 0,
+  "res_id": "M40003",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31241": {
+  "bid": 31241,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H33900",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "镜红尘",
+  "nature": 0,
+  "res_id": "N10046",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31242": {
+  "bid": 31242,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40012",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "傀儡斗罗",
+  "nature": 0,
+  "res_id": "M40012",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31243": {
+  "bid": 31243,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32900",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "龙逍遥",
+  "nature": 0,
+  "res_id": "H32900",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31244": {
+  "bid": 31244,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32700",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蛊毒斗罗",
+  "nature": 0,
+  "res_id": "H32710",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31245": {
+  "bid": 31245,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30900",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "叶夕水",
+  "nature": 0,
+  "res_id": "N10012",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31251": {
+  "bid": 31251,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H33900",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "镜红尘",
+  "nature": 0,
+  "res_id": "N10046",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31252": {
+  "bid": 31252,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40012",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "傀儡斗罗",
+  "nature": 0,
+  "res_id": "M40012",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31253": {
+  "bid": 31253,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32900",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "龙逍遥",
+  "nature": 0,
+  "res_id": "H32900",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31254": {
+  "bid": 31254,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32700",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蛊毒斗罗",
+  "nature": 0,
+  "res_id": "H32710",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31255": {
+  "bid": 31255,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30900",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "叶夕水",
+  "nature": 0,
+  "res_id": "N10012",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31261": {
+  "bid": 31261,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H33900",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "镜红尘",
+  "nature": 0,
+  "res_id": "N10046",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31262": {
+  "bid": 31262,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40012",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "傀儡斗罗",
+  "nature": 0,
+  "res_id": "M40012",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31263": {
+  "bid": 31263,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32900",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "龙逍遥",
+  "nature": 0,
+  "res_id": "H32900",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31264": {
+  "bid": 31264,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32700",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蛊毒斗罗",
+  "nature": 0,
+  "res_id": "H32710",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31265": {
+  "bid": 31265,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30900",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "叶夕水",
+  "nature": 0,
+  "res_id": "N10012",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31271": {
+  "bid": 31271,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H33900",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "镜红尘",
+  "nature": 0,
+  "res_id": "N10046",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31272": {
+  "bid": 31272,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40012",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "傀儡斗罗",
+  "nature": 0,
+  "res_id": "M40012",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31273": {
+  "bid": 31273,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32900",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "龙逍遥",
+  "nature": 0,
+  "res_id": "H32900",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31274": {
+  "bid": 31274,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32700",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "蛊毒斗罗",
+  "nature": 0,
+  "res_id": "H32710",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31275": {
+  "bid": 31275,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30900",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "叶夕水",
+  "nature": 0,
+  "res_id": "N10012",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31281": {
+  "bid": 31281,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冰天雪女",
+  "nature": 0,
+  "res_id": "N10053",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31282": {
+  "bid": 31282,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H35100",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "泰坦雪魔",
+  "nature": 0,
+  "res_id": "N10050",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31283": {
+  "bid": 31283,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40040",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "熊君",
+  "nature": 0,
+  "res_id": "M40040",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31284": {
+  "bid": 31284,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32800",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "兽神帝天",
+  "nature": 0,
+  "res_id": "N10057",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31291": {
+  "bid": 31291,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32500",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "冰天雪女",
+  "nature": 0,
+  "res_id": "N10053",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31292": {
+  "bid": 31292,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H35100",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "泰坦雪魔",
+  "nature": 0,
+  "res_id": "N10050",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31293": {
+  "bid": 31293,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40040",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "熊君",
+  "nature": 0,
+  "res_id": "M40040",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "31294": {
+  "bid": 31294,
+  "button": [
+   7001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H32800",
+  "filter_id": 0,
+  "lev": 35,
+  "name": "兽神帝天",
+  "nature": 0,
+  "res_id": "N10057",
+  "talk": "接取了悬赏榜单方可前来捉拿我！（建议组队）",
+  "talk2": "接取了悬赏榜单方可前来捉拿我！",
+  "type": 1
+ },
+ "40000": {
+  "bid": 40000,
+  "button": [
+   2001
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N50001",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "极地寻宝",
+  "nature": 0,
+  "res_id": "N50001",
+  "talk": "寻宝者，莫贪心，小心有来无回！",
+  "talk2": "寻宝者，莫贪心，小心有来无回！",
+  "type": 1
+ },
+ "40001": {
+  "bid": 40001,
+  "button": [
+   9005,
+   2012
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31110",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "宗门管理员",
+  "nature": 0,
+  "res_id": "H31110",
+  "talk": "门规一：宗主永远是对的。门规二：如果宗主犯错请参考第一条。",
+  "talk2": "门规一：宗主永远是对的。门规二：如果宗主犯错请参考第一条。",
+  "type": 1
+ },
+ "40002": {
+  "bid": 40002,
+  "button": [
+   9019,
+   9028
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30100",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "宗门军师",
+  "nature": 0,
+  "res_id": "H30100",
+  "talk": "门规一：宗主永远是对的。门规二：如果宗主犯错请参考第一条。",
+  "talk2": "门规一：宗主永远是对的。门规二：如果宗主犯错请参考第一条。",
+  "type": 1
+ },
+ "40004": {
+  "bid": 40004,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N50024",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "四绝仙女",
+  "nature": 0,
+  "res_id": "N50024",
+  "talk": "爱神在此考验世间男女，智慧真诚的人才能经过四关考验，获得丰富奖励！<div fontcolor=#00ff00>2人以上组队方可参与！</div>",
+  "talk2": "",
+  "type": 1
+ },
+ "40005": {
+  "bid": 40005,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N50024",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "玄武仙人",
+  "nature": 0,
+  "res_id": "N50024",
+  "talk": "队伍中至少2人答对所有试炼官的题目！",
+  "talk2": "",
+  "type": 1
+ },
+ "40006": {
+  "bid": 40006,
+  "button": [
+   9017
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H31300",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "白虎仙人",
+  "nature": 0,
+  "res_id": "H31300",
+  "talk": "睁大眼睛，仔细寻找诗词的顺序！",
+  "talk2": "",
+  "type": 1
+ },
+ "40007": {
+  "bid": 40007,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N50024",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "朱雀仙人",
+  "nature": 0,
+  "res_id": "N50024",
+  "talk": "教你快速从宝箱中找到朱雀卫的办法：走心，别走肾！",
+  "talk2": "",
+  "type": 1
+ },
+ "40008": {
+  "bid": 40008,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N50024",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "青龙仙人",
+  "nature": 0,
+  "res_id": "N50024",
+  "talk": "睁大眼睛看清楚，别弄混拉！",
+  "talk2": "",
+  "type": 1
+ },
+ "40009": {
+  "bid": 40009,
+  "button": [
+   9016
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40013",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "萌菇甲",
+  "nature": 0,
+  "res_id": "M40013",
+  "talk": "至少2人组队回答本书的问题！混沌狡诈无比，没有智慧只能前去送菜！",
+  "talk2": "",
+  "type": 1
+ },
+ "40010": {
+  "bid": 40010,
+  "button": [
+   9016
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40013",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "萌菇乙",
+  "nature": 0,
+  "res_id": "M40013",
+  "talk": "至少2人组队回答本书的问题！混沌狡诈无比，没有智慧只能前去送菜！",
+  "talk2": "",
+  "type": 1
+ },
+ "40011": {
+  "bid": 40011,
+  "button": [
+   9016
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40013",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "萌菇丙",
+  "nature": 0,
+  "res_id": "M40013",
+  "talk": "至少2人组队回答本书的问题！混沌狡诈无比，没有智慧只能前去送菜！",
+  "talk2": "",
+  "type": 1
+ },
+ "40012": {
+  "bid": 40012,
+  "button": [
+   9016
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40013",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "萌菇丁",
+  "nature": 0,
+  "res_id": "M40013",
+  "talk": "至少2人组队回答本书的问题！混沌狡诈无比，没有智慧只能前去送菜！",
+  "talk2": "",
+  "type": 1
+ },
+ "40013": {
+  "bid": 40013,
+  "button": [
+   9016
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40013",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "萌菇戊",
+  "nature": 0,
+  "res_id": "M40013",
+  "talk": "至少2人组队回答本书的问题！混沌狡诈无比，没有智慧只能前去送菜！",
+  "talk2": "",
+  "type": 1
+ },
+ "40014": {
+  "bid": 40014,
+  "button": [
+   9016
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40013",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "萌菇己",
+  "nature": 0,
+  "res_id": "M40013",
+  "talk": "至少2人组队回答本书的问题！混沌狡诈无比，没有智慧只能前去送菜！",
+  "talk2": "",
+  "type": 1
+ },
+ "40015": {
+  "bid": 40015,
+  "button": [
+   9016
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40013",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "萌菇庚",
+  "nature": 0,
+  "res_id": "M40013",
+  "talk": "至少2人组队回答本书的问题！混沌狡诈无比，没有智慧只能前去送菜！",
+  "talk2": "",
+  "type": 1
+ },
+ "40016": {
+  "bid": 40016,
+  "button": [
+   9016
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "M40013",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "萌菇辛",
+  "nature": 0,
+  "res_id": "M40013",
+  "talk": "至少2人组队回答本书的问题！混沌狡诈无比，没有智慧只能前去送菜！",
+  "talk2": "",
+  "type": 1
+ },
+ "40017": {
+  "bid": 40017,
+  "button": [
+   9018
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30500",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "诗词",
+  "nature": 0,
+  "res_id": "H30500",
+  "talk": "睁大眼睛看清楚，别弄混拉！",
+  "talk2": "",
+  "type": 1
+ },
+ "40018": {
+  "bid": 40018,
+  "button": [
+   9018
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30500",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "诗词",
+  "nature": 0,
+  "res_id": "H30500",
+  "talk": "睁大眼睛看清楚，别弄混拉！",
+  "talk2": "",
+  "type": 1
+ },
+ "40019": {
+  "bid": 40019,
+  "button": [
+   9018
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30500",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "诗词",
+  "nature": 0,
+  "res_id": "H30500",
+  "talk": "睁大眼睛看清楚，别弄混拉！",
+  "talk2": "",
+  "type": 1
+ },
+ "40020": {
+  "bid": 40020,
+  "button": [
+   9018
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30500",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "诗词",
+  "nature": 0,
+  "res_id": "H30500",
+  "talk": "睁大眼睛看清楚，别弄混拉！",
+  "talk2": "",
+  "type": 1
+ },
+ "40021": {
+  "bid": 40021,
+  "button": [
+   9018
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30500",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "诗词",
+  "nature": 0,
+  "res_id": "H30500",
+  "talk": "睁大眼睛看清楚，别弄混拉！",
+  "talk2": "",
+  "type": 1
+ },
+ "40022": {
+  "bid": 40022,
+  "button": [
+   9018
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30500",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "诗词",
+  "nature": 0,
+  "res_id": "H30500",
+  "talk": "睁大眼睛看清楚，别弄混拉！",
+  "talk2": "",
+  "type": 1
+ },
+ "40023": {
+  "bid": 40023,
+  "button": [
+   9018
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30500",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "诗词",
+  "nature": 0,
+  "res_id": "H30500",
+  "talk": "睁大眼睛看清楚，别弄混拉！",
+  "talk2": "",
+  "type": 1
+ },
+ "40024": {
+  "bid": 40024,
+  "button": [
+   9018
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30500",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "诗词",
+  "nature": 0,
+  "res_id": "H30500",
+  "talk": "睁大眼睛看清楚，别弄混拉！",
+  "talk2": "",
+  "type": 1
+ },
+ "40025": {
+  "bid": 40025,
+  "button": [
+   9018
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30500",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "诗词",
+  "nature": 0,
+  "res_id": "H30500",
+  "talk": "睁大眼睛看清楚，别弄混拉！",
+  "talk2": "",
+  "type": 1
+ },
+ "40026": {
+  "bid": 40026,
+  "button": [
+   9018
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30500",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "诗词",
+  "nature": 0,
+  "res_id": "H30500",
+  "talk": "睁大眼睛看清楚，别弄混拉！",
+  "talk2": "",
+  "type": 1
+ },
+ "40027": {
+  "bid": 40027,
+  "button": [
+   9018
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30500",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "诗词",
+  "nature": 0,
+  "res_id": "H30500",
+  "talk": "睁大眼睛看清楚，别弄混拉！",
+  "talk2": "",
+  "type": 1
+ },
+ "40028": {
+  "bid": 40028,
+  "button": [
+   9018
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30500",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "诗词",
+  "nature": 0,
+  "res_id": "H30500",
+  "talk": "睁大眼睛看清楚，别弄混拉！",
+  "talk2": "",
+  "type": 1
+ },
+ "40029": {
+  "bid": 40029,
+  "button": [
+   9018
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30500",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "诗词",
+  "nature": 0,
+  "res_id": "H30500",
+  "talk": "睁大眼睛看清楚，别弄混拉！",
+  "talk2": "",
+  "type": 1
+ },
+ "40030": {
+  "bid": 40030,
+  "button": [
+   9018
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30500",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "诗词",
+  "nature": 0,
+  "res_id": "H30500",
+  "talk": "睁大眼睛看清楚，别弄混拉！",
+  "talk2": "",
+  "type": 1
+ },
+ "40031": {
+  "bid": 40031,
+  "button": [
+   9018
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30500",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "诗词",
+  "nature": 0,
+  "res_id": "H30500",
+  "talk": "睁大眼睛看清楚，别弄混拉！",
+  "talk2": "",
+  "type": 1
+ },
+ "40032": {
+  "bid": 40032,
+  "button": [
+   9018
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "H30500",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "诗词",
+  "nature": 0,
+  "res_id": "H30500",
+  "talk": "睁大眼睛看清楚，别弄混拉！",
+  "talk2": "",
+  "type": 1
+ },
+ "50000": {
+  "bid": 50000,
+  "button": [
+   5001,
+   5002,
+   5003,
+   5004,
+   5005,
+   5006,
+   5020,
+   5030
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10037",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "牧师",
+  "nature": 0,
+  "res_id": "N10037",
+  "talk": "有缘千里来相会，无缘相逢不相识！",
+  "talk2": "",
+  "type": 1
+ },
+ "50001": {
+  "bid": 50001,
+  "button": [],
+  "dir": 4,
+  "enter_map_effect": 0,
+  "face": "N10037",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "牧师",
+  "nature": 0,
+  "res_id": "N10037",
+  "talk": "我只是过来主持滴！",
+  "talk2": "",
+  "type": 1
+ },
+ "50002": {
+  "bid": 50002,
+  "button": [],
+  "dir": 4,
+  "enter_map_effect": 0,
+  "face": "N10037",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "牧师",
+  "nature": 0,
+  "res_id": "N10037",
+  "talk": "我只是过来主持滴！",
+  "talk2": "",
+  "type": 1
+ },
+ "50003": {
+  "bid": 50003,
+  "button": [
+   9029,
+   9030
+  ],
+  "dir": 6,
+  "enter_map_effect": 0,
+  "face": "N10037",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "玄武首席",
+  "nature": 0,
+  "res_id": "R10100",
+  "talk": "成为职业首席弟子是每一个史莱克精英们的毕生追求！也是未来史莱克七怪的主力，肩负着传承史莱克学院万年荣耀的光荣使命！",
+  "talk2": "",
+  "type": 1
+ },
+ "50004": {
+  "bid": 50004,
+  "button": [
+   9029,
+   9030
+  ],
+  "dir": 6,
+  "enter_map_effect": 0,
+  "face": "N10037",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "火凤首席",
+  "nature": 0,
+  "res_id": "R10600",
+  "talk": "成为职业首席弟子是每一个史莱克精英们的毕生追求！也是未来史莱克七怪的主力，肩负着传承史莱克学院万年荣耀的光荣使命！",
+  "talk2": "",
+  "type": 1
+ },
+ "50005": {
+  "bid": 50005,
+  "button": [
+   9029,
+   9030
+  ],
+  "dir": 6,
+  "enter_map_effect": 0,
+  "face": "N10037",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "白虎首席",
+  "nature": 0,
+  "res_id": "R11000",
+  "talk": "成为职业首席弟子是每一个史莱克精英们的毕生追求！也是未来史莱克七怪的主力，肩负着传承史莱克学院万年荣耀的光荣使命！",
+  "talk2": "",
+  "type": 1
+ },
+ "50006": {
+  "bid": 50006,
+  "button": [
+   9029,
+   9030
+  ],
+  "dir": 6,
+  "enter_map_effect": 0,
+  "face": "N10037",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "琉璃首席",
+  "nature": 0,
+  "res_id": "R10500",
+  "talk": "成为职业首席弟子是每一个史莱克精英们的毕生追求！也是未来史莱克七怪的主力，肩负着传承史莱克学院万年荣耀的光荣使命！",
+  "talk2": "",
+  "type": 1
+ },
+ "50007": {
+  "bid": 50007,
+  "button": [
+   9029,
+   9030
+  ],
+  "dir": 6,
+  "enter_map_effect": 0,
+  "face": "N10037",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "神机首席",
+  "nature": 0,
+  "res_id": "R05100",
+  "talk": "成为职业首席弟子是每一个史莱克精英们的毕生追求！也是未来史莱克七怪的主力，肩负着传承史莱克学院万年荣耀的光荣使命！",
+  "talk2": "",
+  "type": 1
+ },
+ "51001": {
+  "bid": 51001,
+  "button": [
+   4052
+  ],
+  "dir": 6,
+  "enter_map_effect": 0,
+  "face": "N10043",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "神秘商人",
+  "nature": 0,
+  "res_id": "N10043",
+  "talk": "我就是神秘的商人",
+  "talk2": "",
+  "type": 1
+ },
+ "51002": {
+  "bid": 51002,
+  "button": [
+   4051
+  ],
+  "dir": 6,
+  "enter_map_effect": 0,
+  "face": "N10043",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "兑换商人",
+  "nature": 0,
+  "res_id": "N10043",
+  "talk": "我就是兑换商人",
+  "talk2": "",
+  "type": 1
+ },
+ "51003": {
+  "bid": 51003,
+  "button": [
+   4050
+  ],
+  "dir": 6,
+  "enter_map_effect": 0,
+  "face": "N10043",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "神秘商人",
+  "nature": 0,
+  "res_id": "N10043",
+  "talk": "我就是神秘的商人",
+  "talk2": "",
+  "type": 1
+ },
+ "51004": {
+  "bid": 51004,
+  "button": [
+   9032
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10027",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "傀儡阵守卫",
+  "nature": 0,
+  "res_id": "N10027",
+  "talk": "汝等能至此傀儡阵，也是与老夫有缘，便来试试吧！",
+  "talk2": "",
+  "type": 1
+ },
+ "80000": {
+  "bid": 80000,
+  "button": [
+   4029
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N50080",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "宗门神树",
+  "nature": 0,
+  "res_id": "N50080",
+  "talk": "这里好黑，我好害怕…",
+  "talk2": "不要过来…不要呀！",
+  "type": 1
+ },
+ "80001": {
+  "bid": 80001,
+  "button": [
+   4029
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N50081",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "宗门神树",
+  "nature": 0,
+  "res_id": "N50081",
+  "talk": "这里好黑，我好害怕…",
+  "talk2": "不要过来…不要呀！",
+  "type": 1
+ },
+ "80002": {
+  "bid": 80002,
+  "button": [
+   4029
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N50082",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "宗门神树",
+  "nature": 0,
+  "res_id": "N50082",
+  "talk": "这里好黑，我好害怕…",
+  "talk2": "不要过来…不要呀！",
+  "type": 1
+ },
+ "80003": {
+  "bid": 80003,
+  "button": [
+   4029
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N50083",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "宗门神树",
+  "nature": 0,
+  "res_id": "N50083",
+  "talk": "这里好黑，我好害怕…",
+  "talk2": "不要过来…不要呀！",
+  "type": 1
+ },
+ "80004": {
+  "bid": 80004,
+  "button": [
+   4029
+  ],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N50084",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "宗门神树",
+  "nature": 0,
+  "res_id": "N50084",
+  "talk": "这里好黑，我好害怕…",
+  "talk2": "不要过来…不要呀！",
+  "type": 1
+ },
+ "80052": {
+  "bid": 80052,
+  "button": [
+   9022,
+   9023,
+   9025
+  ],
+  "dir": 6,
+  "enter_map_effect": 0,
+  "face": "H30500",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "日月元帅-橘子",
+  "nature": 0,
+  "res_id": "N10045",
+  "talk": "日月帝国的勇士们，来此处上交晶矿！日后拿下星罗帝国，必定重重有赏！<div fontcolor=#00ff00>前3次上交晶矿，有机会获得珍惜道具奖励！</div>",
+  "talk2": "日月帝国的勇士们，来此处上交晶矿！日后拿下星罗帝国，必定重重有赏！",
+  "type": 1
+ },
+ "80053": {
+  "bid": 80053,
+  "button": [
+   9022,
+   9023,
+   9025
+  ],
+  "dir": 6,
+  "enter_map_effect": 0,
+  "face": "H30500",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "星罗元帅-戴浩",
+  "nature": 0,
+  "res_id": "N10023",
+  "talk": "星罗帝国的勇士们，快去采集晶矿交给我！有了足够的晶矿就可以制造大量魂导器，取得战争胜利了！<div fontcolor=#00ff00>前3次上交晶矿，有机会获得珍惜道具奖励！</div>",
+  "talk2": "星罗帝国的勇士们，快去采集晶矿交给我！有了足够的晶矿就可以制造大量魂导器，取得战争胜利了！",
+  "type": 1
+ },
+ "80055": {
+  "bid": 80055,
+  "button": [
+   9027
+  ],
+  "dir": 6,
+  "enter_map_effect": 0,
+  "face": "H30500",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "活动指引人",
+  "nature": 0,
+  "res_id": "N10027",
+  "talk": "为了些晶矿，打打杀杀的做什么呢？这样不好，不好…",
+  "talk2": "为了些晶矿，打打杀杀的做什么呢？这样不好，不好…",
+  "type": 1
+ },
+ "80057": {
+  "bid": 80057,
+  "button": [
+   9027
+  ],
+  "dir": 6,
+  "enter_map_effect": 0,
+  "face": "H30500",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "活动指引人",
+  "nature": 0,
+  "res_id": "N10027",
+  "talk": "为了些晶矿，打打杀杀的做什么呢？这样不好，不好…",
+  "talk2": "为了些晶矿，打打杀杀的做什么呢？这样不好，不好…",
+  "type": 1
+ },
+ "80059": {
+  "bid": 80059,
+  "button": [
+   9027
+  ],
+  "dir": 6,
+  "enter_map_effect": 0,
+  "face": "H30500",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "活动指引人",
+  "nature": 0,
+  "res_id": "N10027",
+  "talk": "为了些晶矿，打打杀杀的做什么呢？这样不好，不好…",
+  "talk2": "为了些晶矿，打打杀杀的做什么呢？这样不好，不好…",
+  "type": 1
+ },
+ "80100": {
+  "bid": 80100,
+  "button": [],
+  "dir": 0,
+  "enter_map_effect": 0,
+  "face": "N10010",
+  "filter_id": 0,
+  "lev": 1,
+  "name": "泰坦雪魔",
+  "nature": 0,
+  "res_id": "N10050",
+  "talk": "",
+  "talk2": "",
+  "type": 1
+ }
+}

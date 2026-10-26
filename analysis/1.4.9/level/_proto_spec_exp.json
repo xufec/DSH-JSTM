@@ -1,0 +1,1538 @@
+{
+ "10301": {
+  "cs": {
+   "fields": [],
+   "raw": [],
+   "proto": 4
+  },
+  "sc": {
+   "fields": [
+    [
+     "rid",
+     "I"
+    ],
+    [
+     "srv_id",
+     "s"
+    ],
+    [
+     "name",
+     "s"
+    ],
+    [
+     "lev",
+     "H"
+    ],
+    [
+     "is_vip",
+     "C"
+    ],
+    [
+     "vip_lev",
+     "C"
+    ],
+    [
+     "sex",
+     "C"
+    ],
+    [
+     "career",
+     "H"
+    ],
+    [
+     "face_id",
+     "H"
+    ],
+    [
+     "cur_title",
+     "H"
+    ],
+    [
+     "ntm_title",
+     "I"
+    ],
+    [
+     "gid",
+     "I"
+    ],
+    [
+     "gsrv_id",
+     "s"
+    ],
+    [
+     "position",
+     "C"
+    ],
+    [
+     "gname",
+     "s"
+    ],
+    [
+     "mspd",
+     "H"
+    ],
+    [
+     "volume",
+     "C"
+    ],
+    [
+     "store_volume",
+     "C"
+    ],
+    [
+     "store_partner_volume",
+     "C"
+    ],
+    [
+     "volume_open",
+     "C"
+    ],
+    [
+     "store_volume_open",
+     "C"
+    ],
+    [
+     "store_partner_volume_open",
+     "C"
+    ],
+    [
+     "exp_max",
+     "I"
+    ],
+    [
+     "exp_total_nextlev",
+     "I"
+    ],
+    [
+     "attr_point",
+     "H"
+    ],
+    [
+     "profit_exp",
+     "I"
+    ],
+    [
+     "marry_state",
+     "C"
+    ],
+    [
+     "spouse_name",
+     "s"
+    ],
+    [
+     "head_bid",
+     "I"
+    ],
+    [
+     "chat_bubble",
+     "I"
+    ],
+    [
+     "skill_list__T",
+     "bid@I"
+    ],
+    [
+     "buffs__T",
+     "bid@I##duration@I##count@C##effect@D|Dsc10301effect|"
+    ],
+    [
+     "animate_res__T",
+     "ant_id@H##ant_val@s##ent_lev@C##dis_method@C"
+    ],
+    [
+     "misc_uint8__T",
+     "key@C##value@C"
+    ],
+    [
+     "misc_uint16__T",
+     "key@C##value@H"
+    ],
+    [
+     "misc_uint32__T",
+     "key@C##value@I"
+    ],
+    [
+     "misc_str__T",
+     "key@C##value@s"
+    ],
+    [
+     "spouse_rid",
+     "I"
+    ],
+    [
+     "spouse_srv_id",
+     "s"
+    ],
+    [
+     "insight_status",
+     "C"
+    ],
+    [
+     "jid",
+     "I"
+    ],
+    [
+     "j_srv_id",
+     "s"
+    ],
+    [
+     "jlev",
+     "C"
+    ],
+    [
+     "j_title",
+     "s"
+    ]
+   ],
+   "raw": [
+    "rid__I",
+    "srv_id__s",
+    "name__s",
+    "lev__H",
+    "is_vip__C",
+    "vip_lev__C",
+    "sex__C",
+    "career__H",
+    "face_id__H",
+    "cur_title__H",
+    "ntm_title__I",
+    "gid__I",
+    "gsrv_id__s",
+    "position__C",
+    "gname__s",
+    "mspd__H",
+    "volume__C",
+    "store_volume__C",
+    "store_partner_volume__C",
+    "volume_open__C",
+    "store_volume_open__C",
+    "store_partner_volume_open__C",
+    "exp_max__I",
+    "exp_total_nextlev__I",
+    "attr_point__H",
+    "profit_exp__I",
+    "marry_state__C",
+    "spouse_name__s",
+    "head_bid__I",
+    "chat_bubble__I",
+    "skill_list__T__bid@I",
+    "buffs__T__bid@I##duration@I##count@C##effect@D|Dsc10301effect|",
+    "animate_res__T__ant_id@H##ant_val@s##ent_lev@C##dis_method@C",
+    "misc_uint8__T__key@C##value@C",
+    "misc_uint16__T__key@C##value@H",
+    "misc_uint32__T__key@C##value@I",
+    "misc_str__T__key@C##value@s",
+    "spouse_rid__I",
+    "spouse_srv_id__s",
+    "insight_status__C",
+    "jid__I",
+    "j_srv_id__s",
+    "jlev__C",
+    "j_title__s"
+   ],
+   "proto": 1
+  }
+ },
+ "10302": {
+  "cs": {
+   "fields": [],
+   "raw": [],
+   "proto": 6
+  },
+  "sc": {
+   "fields": [
+    [
+     "lev",
+     "H"
+    ],
+    [
+     "exp",
+     "I"
+    ],
+    [
+     "gold",
+     "I"
+    ],
+    [
+     "gold_acc",
+     "I"
+    ],
+    [
+     "coin",
+     "I"
+    ],
+    [
+     "sinew",
+     "I"
+    ],
+    [
+     "experience",
+     "I"
+    ],
+    [
+     "coupon",
+     "I"
+    ],
+    [
+     "vitality",
+     "I"
+    ],
+    [
+     "guild_contrib",
+     "I"
+    ],
+    [
+     "practice_exp",
+     "I"
+    ],
+    [
+     "tower_cent",
+     "I"
+    ],
+    [
+     "arena_cent",
+     "I"
+    ],
+    [
+     "integral",
+     "I"
+    ],
+    [
+     "cash_coupon",
+     "I"
+    ],
+    [
+     "dan_point",
+     "I"
+    ],
+    [
+     "guild_active",
+     "I"
+    ],
+    [
+     "marriage",
+     "I"
+    ],
+    [
+     "course",
+     "I"
+    ],
+    [
+     "vip_exp",
+     "I"
+    ],
+    [
+     "lingshi",
+     "I"
+    ],
+    [
+     "peak_point",
+     "I"
+    ],
+    [
+     "black_soul",
+     "I"
+    ],
+    [
+     "lottery_point",
+     "I"
+    ],
+    [
+     "boss_point",
+     "I"
+    ],
+    [
+     "partner_shenqi_point",
+     "I"
+    ],
+    [
+     "jiebai_cent",
+     "I"
+    ],
+    [
+     "rune_exp",
+     "I"
+    ],
+    [
+     "rune_chip",
+     "I"
+    ]
+   ],
+   "raw": [
+    "lev__H",
+    "exp__I",
+    "gold__I",
+    "gold_acc__I",
+    "coin__I",
+    "sinew__I",
+    "experience__I",
+    "coupon__I",
+    "vitality__I",
+    "guild_contrib__I",
+    "practice_exp__I",
+    "tower_cent__I",
+    "arena_cent__I",
+    "integral__I",
+    "cash_coupon__I",
+    "dan_point__I",
+    "guild_active__I",
+    "marriage__I",
+    "course__I",
+    "vip_exp__I",
+    "lingshi__I",
+    "peak_point__I",
+    "black_soul__I",
+    "lottery_point__I",
+    "boss_point__I",
+    "partner_shenqi_point__I",
+    "jiebai_cent__I",
+    "rune_exp__I",
+    "rune_chip__I"
+   ],
+   "proto": 5
+  }
+ },
+ "10303": {
+  "cs": {
+   "fields": [],
+   "raw": [],
+   "proto": 8
+  },
+  "sc": {
+   "fields": [
+    [
+     "rid",
+     "I"
+    ],
+    [
+     "srv_id",
+     "s"
+    ],
+    [
+     "name",
+     "s"
+    ],
+    [
+     "lev",
+     "H"
+    ],
+    [
+     "is_vip",
+     "C"
+    ],
+    [
+     "vip_lev",
+     "C"
+    ],
+    [
+     "sex",
+     "C"
+    ],
+    [
+     "career",
+     "H"
+    ],
+    [
+     "volume",
+     "C"
+    ],
+    [
+     "store_volume",
+     "C"
+    ],
+    [
+     "store_partner_volume",
+     "C"
+    ],
+    [
+     "volume_open",
+     "C"
+    ],
+    [
+     "store_volume_open",
+     "C"
+    ],
+    [
+     "store_partner_volume_open",
+     "C"
+    ],
+    [
+     "attr_point",
+     "H"
+    ],
+    [
+     "skill_list__T",
+     "bid@I"
+    ],
+    [
+     "power",
+     "I"
+    ],
+    [
+     "exp",
+     "I"
+    ],
+    [
+     "gold",
+     "I"
+    ],
+    [
+     "coin",
+     "I"
+    ],
+    [
+     "gold_acc",
+     "I"
+    ],
+    [
+     "sinew",
+     "I"
+    ],
+    [
+     "experience",
+     "I"
+    ],
+    [
+     "coupon",
+     "I"
+    ],
+    [
+     "vitality",
+     "I"
+    ],
+    [
+     "guild_contrib",
+     "I"
+    ],
+    [
+     "practice_exp",
+     "I"
+    ],
+    [
+     "tower_cent",
+     "I"
+    ],
+    [
+     "arena_cent",
+     "I"
+    ],
+    [
+     "attr__T",
+     "strength@H##intellect@H##armor@H##constiution@H##atk_s@I##atk_p@I##def_s@I##def_p@I##hp_max@I##atk_speed@I##hit@I##dodge@I##crit@I##tenacity@I##red_def_s@I##red_def_p@I##atk_abs@I##def_abs@I##reduce@I##hurt@I##hit_rate_show@I##dodge_rate_show@I##crit_rate_show@I##tenacity_rate_show@I"
+    ],
+    [
+     "mspd",
+     "H"
+    ],
+    [
+     "animate_res__T",
+     "ant_id@H##ant_val@s##ent_lev@C##dis_method@C"
+    ],
+    [
+     "vip_exp",
+     "I"
+    ],
+    [
+     "jiebai_title",
+     "s"
+    ],
+    [
+     "jiebai_lev",
+     "C"
+    ]
+   ],
+   "raw": [
+    "rid__I",
+    "srv_id__s",
+    "name__s",
+    "lev__H",
+    "is_vip__C",
+    "vip_lev__C",
+    "sex__C",
+    "career__H",
+    "volume__C",
+    "store_volume__C",
+    "store_partner_volume__C",
+    "volume_open__C",
+    "store_volume_open__C",
+    "store_partner_volume_open__C",
+    "attr_point__H",
+    "skill_list__T__bid@I",
+    "power__I",
+    "exp__I",
+    "gold__I",
+    "coin__I",
+    "gold_acc__I",
+    "sinew__I",
+    "experience__I",
+    "coupon__I",
+    "vitality__I",
+    "guild_contrib__I",
+    "practice_exp__I",
+    "tower_cent__I",
+    "arena_cent__I",
+    "attr__T__strength@H##intellect@H##armor@H##constiution@H##atk_s@I##atk_p@I##def_s@I##def_p@I##hp_max@I##atk_speed@I##hit@I##dodge@I##crit@I##tenacity@I##red_def_s@I##red_def_p@I##atk_abs@I##def_abs@I##reduce@I##hurt@I##hit_rate_show@I##dodge_rate_show@I##crit_rate_show@I##tenacity_rate_show@I",
+    "mspd__H",
+    "animate_res__T__ant_id@H##ant_val@s##ent_lev@C##dis_method@C",
+    "vip_exp__I",
+    "jiebai_title__s",
+    "jiebai_lev__C"
+   ],
+   "proto": 7
+  }
+ },
+ "10304": {
+  "cs": {
+   "fields": [
+    [
+     "rid",
+     "I"
+    ],
+    [
+     "srv_id",
+     "s"
+    ]
+   ],
+   "raw": [
+    "rid__I",
+    "srv_id__s"
+   ],
+   "proto": 10
+  },
+  "sc": {
+   "fields": [
+    [
+     "rid",
+     "I"
+    ],
+    [
+     "srv_id",
+     "s"
+    ],
+    [
+     "name",
+     "s"
+    ],
+    [
+     "lev",
+     "H"
+    ],
+    [
+     "is_vip",
+     "C"
+    ],
+    [
+     "vip_lev",
+     "C"
+    ],
+    [
+     "sex",
+     "C"
+    ],
+    [
+     "career",
+     "H"
+    ],
+    [
+     "volume",
+     "C"
+    ],
+    [
+     "store_volume",
+     "C"
+    ],
+    [
+     "store_partner_volume",
+     "C"
+    ],
+    [
+     "volume_open",
+     "C"
+    ],
+    [
+     "store_volume_open",
+     "C"
+    ],
+    [
+     "store_partner_volume_open",
+     "C"
+    ],
+    [
+     "attr_point",
+     "H"
+    ],
+    [
+     "skill_list__T",
+     "bid@I"
+    ],
+    [
+     "power",
+     "I"
+    ],
+    [
+     "exp",
+     "I"
+    ],
+    [
+     "gold",
+     "I"
+    ],
+    [
+     "coin",
+     "I"
+    ],
+    [
+     "gold_acc",
+     "I"
+    ],
+    [
+     "sinew",
+     "I"
+    ],
+    [
+     "experience",
+     "I"
+    ],
+    [
+     "coupon",
+     "I"
+    ],
+    [
+     "vitality",
+     "I"
+    ],
+    [
+     "guild_contrib",
+     "I"
+    ],
+    [
+     "practice_exp",
+     "I"
+    ],
+    [
+     "tower_cent",
+     "I"
+    ],
+    [
+     "arena_cent",
+     "I"
+    ],
+    [
+     "attr__T",
+     "strength@H##intellect@H##armor@H##constiution@H##atk_s@I##atk_p@I##def_s@I##def_p@I##hp_max@I##atk_speed@I##hit@I##dodge@I##crit@I##tenacity@I##red_def_s@I##red_def_p@I##atk_abs@I##def_abs@I##reduce@I##hurt@I##hit_rate_show@I##dodge_rate_show@I##crit_rate_show@I##tenacity_rate_show@I"
+    ],
+    [
+     "mspd",
+     "H"
+    ],
+    [
+     "animate_res__T",
+     "ant_id@H##ant_val@s##ent_lev@C##dis_method@C"
+    ],
+    [
+     "vip_exp",
+     "I"
+    ],
+    [
+     "jiebai_title",
+     "s"
+    ],
+    [
+     "jiebai_lev",
+     "C"
+    ]
+   ],
+   "raw": [
+    "rid__I",
+    "srv_id__s",
+    "name__s",
+    "lev__H",
+    "is_vip__C",
+    "vip_lev__C",
+    "sex__C",
+    "career__H",
+    "volume__C",
+    "store_volume__C",
+    "store_partner_volume__C",
+    "volume_open__C",
+    "store_volume_open__C",
+    "store_partner_volume_open__C",
+    "attr_point__H",
+    "skill_list__T__bid@I",
+    "power__I",
+    "exp__I",
+    "gold__I",
+    "coin__I",
+    "gold_acc__I",
+    "sinew__I",
+    "experience__I",
+    "coupon__I",
+    "vitality__I",
+    "guild_contrib__I",
+    "practice_exp__I",
+    "tower_cent__I",
+    "arena_cent__I",
+    "attr__T__strength@H##intellect@H##armor@H##constiution@H##atk_s@I##atk_p@I##def_s@I##def_p@I##hp_max@I##atk_speed@I##hit@I##dodge@I##crit@I##tenacity@I##red_def_s@I##red_def_p@I##atk_abs@I##def_abs@I##reduce@I##hurt@I##hit_rate_show@I##dodge_rate_show@I##crit_rate_show@I##tenacity_rate_show@I",
+    "mspd__H",
+    "animate_res__T__ant_id@H##ant_val@s##ent_lev@C##dis_method@C",
+    "vip_exp__I",
+    "jiebai_title__s",
+    "jiebai_lev__C"
+   ],
+   "proto": 9
+  }
+ },
+ "10305": {
+  "cs": {
+   "fields": [],
+   "raw": [],
+   "proto": 12
+  },
+  "sc": {
+   "fields": [
+    [
+     "assets__T",
+     "label@C##val@I"
+    ]
+   ],
+   "raw": [
+    "assets__T__label@C##val@I"
+   ],
+   "proto": 11
+  }
+ },
+ "10306": {
+  "cs": {
+   "fields": [],
+   "raw": [],
+   "proto": 14
+  },
+  "sc": {
+   "fields": [
+    [
+     "attr__T",
+     "strength@H##intellect@H##armor@H##constiution@H##atk_s@I##atk_p@I##def_s@I##def_p@I##hp_max@I##atk_speed@I##hit@I##dodge@I##crit@I##tenacity@I##red_def_s@I##red_def_p@I##atk_abs@H##def_abs@H##reduce@H##hurt@H##hit_rate_show@I##dodge_rate_show@I##crit_rate_show@I##tenacity_rate_show@I"
+    ],
+    [
+     "mspd",
+     "H"
+    ],
+    [
+     "power",
+     "I"
+    ]
+   ],
+   "raw": [
+    "attr__T__strength@H##intellect@H##armor@H##constiution@H##atk_s@I##atk_p@I##def_s@I##def_p@I##hp_max@I##atk_speed@I##hit@I##dodge@I##crit@I##tenacity@I##red_def_s@I##red_def_p@I##atk_abs@H##def_abs@H##reduce@H##hurt@H##hit_rate_show@I##dodge_rate_show@I##crit_rate_show@I##tenacity_rate_show@I",
+    "mspd__H",
+    "power__I"
+   ],
+   "proto": 13
+  }
+ },
+ "10320": {
+  "cs": {
+   "fields": [],
+   "raw": [],
+   "proto": 20
+  },
+  "sc": {
+   "fields": [
+    [
+     "code",
+     "C"
+    ],
+    [
+     "msg",
+     "s"
+    ],
+    [
+     "times",
+     "C"
+    ]
+   ],
+   "raw": [
+    "code__C",
+    "msg__s",
+    "times__C"
+   ],
+   "proto": 19
+  }
+ },
+ "10321": {
+  "cs": {
+   "fields": [],
+   "raw": [],
+   "proto": 22
+  },
+  "sc": {
+   "fields": [
+    [
+     "times",
+     "C"
+    ]
+   ],
+   "raw": [
+    "times__C"
+   ],
+   "proto": 21
+  }
+ },
+ "10324": {
+  "cs": {
+   "fields": [
+    [
+     "name",
+     "s"
+    ],
+    [
+     "is_rename",
+     "C"
+    ]
+   ],
+   "raw": [
+    "name__s",
+    "is_rename__C"
+   ],
+   "proto": 28
+  },
+  "sc": {
+   "fields": [
+    [
+     "code",
+     "C"
+    ],
+    [
+     "msg",
+     "s"
+    ],
+    [
+     "name",
+     "s"
+    ]
+   ],
+   "raw": [
+    "code__C",
+    "msg__s",
+    "name__s"
+   ],
+   "proto": 27
+  }
+ },
+ "10328": {
+  "cs": {
+   "fields": [
+    [
+     "assets__T",
+     "label@H##val@H"
+    ]
+   ],
+   "raw": [
+    "assets__T__label@H##val@H"
+   ],
+   "proto": 36
+  },
+  "sc": {
+   "fields": [
+    [
+     "code",
+     "C"
+    ],
+    [
+     "msg",
+     "s"
+    ],
+    [
+     "point",
+     "H"
+    ]
+   ],
+   "raw": [
+    "code__C",
+    "msg__s",
+    "point__H"
+   ],
+   "proto": 35
+  }
+ },
+ "10331": {
+  "cs": {
+   "fields": [
+    [
+     "skill_bid",
+     "I"
+    ]
+   ],
+   "raw": [
+    "skill_bid__I"
+   ],
+   "proto": 38
+  },
+  "sc": {
+   "fields": [
+    [
+     "code",
+     "C"
+    ],
+    [
+     "msg",
+     "s"
+    ]
+   ],
+   "raw": [
+    "code__C",
+    "msg__s"
+   ],
+   "proto": 37
+  }
+ },
+ "10333": {
+  "cs": {
+   "fields": [],
+   "raw": [],
+   "proto": 42
+  },
+  "sc": {
+   "fields": [
+    [
+     "code",
+     "C"
+    ],
+    [
+     "msg",
+     "s"
+    ]
+   ],
+   "raw": [
+    "code__C",
+    "msg__s"
+   ],
+   "proto": 41
+  }
+ },
+ "10334": {
+  "cs": {
+   "fields": [],
+   "raw": [],
+   "proto": 44
+  },
+  "sc": {
+   "fields": [
+    [
+     "coin",
+     "I"
+    ]
+   ],
+   "raw": [
+    "coin__I"
+   ],
+   "proto": 43
+  }
+ },
+ "10342": {
+  "cs": null,
+  "sc": {
+   "fields": [
+    [
+     "profit_exp",
+     "I"
+    ]
+   ],
+   "raw": [
+    "profit_exp__I"
+   ],
+   "proto": 49
+  }
+ },
+ "10343": {
+  "cs": {
+   "fields": [
+    [
+     "new_name",
+     "s"
+    ],
+    [
+     "auto_buy",
+     "C"
+    ]
+   ],
+   "raw": [
+    "new_name__s",
+    "auto_buy__C"
+   ],
+   "proto": 51
+  },
+  "sc": {
+   "fields": [
+    [
+     "code",
+     "C"
+    ],
+    [
+     "msg",
+     "s"
+    ]
+   ],
+   "raw": [
+    "code__C",
+    "msg__s"
+   ],
+   "proto": 50
+  }
+ },
+ "10390": {
+  "cs": {
+   "fields": [
+    [
+     "msg",
+     "s"
+    ],
+    [
+     "len",
+     "I"
+    ]
+   ],
+   "raw": [
+    "msg__s",
+    "len__I"
+   ],
+   "proto": 61
+  },
+  "sc": {
+   "fields": [
+    [
+     "msg",
+     "s"
+    ]
+   ],
+   "raw": [
+    "msg__s"
+   ],
+   "proto": 60
+  }
+ },
+ "10391": {
+  "cs": {
+   "fields": [
+    [
+     "msg",
+     "s"
+    ]
+   ],
+   "raw": [
+    "msg__s"
+   ],
+   "proto": 63
+  },
+  "sc": {
+   "fields": [
+    [
+     "type",
+     "C"
+    ],
+    [
+     "data",
+     "s"
+    ]
+   ],
+   "raw": [
+    "type__C",
+    "data__s"
+   ],
+   "proto": 62
+  }
+ },
+ "10399": {
+  "cs": {
+   "fields": [
+    [
+     "msg",
+     "s"
+    ]
+   ],
+   "raw": [
+    "msg__s"
+   ],
+   "proto": 67
+  },
+  "sc": {
+   "fields": [
+    [
+     "code",
+     "C"
+    ],
+    [
+     "msg",
+     "s"
+    ]
+   ],
+   "raw": [
+    "code__C",
+    "msg__s"
+   ],
+   "proto": 66
+  }
+ },
+ "10409": {
+  "cs": {
+   "fields": [
+    [
+     "hero_bid",
+     "I"
+    ]
+   ],
+   "raw": [
+    "hero_bid__I"
+   ],
+   "proto": 18
+  },
+  "sc": {
+   "fields": [
+    [
+     "hero_bid",
+     "I"
+    ],
+    [
+     "exp",
+     "I"
+    ]
+   ],
+   "raw": [
+    "hero_bid__I",
+    "exp__I"
+   ],
+   "proto": 17
+  }
+ },
+ "10414": {
+  "cs": null,
+  "sc": {
+   "fields": [
+    [
+     "lev",
+     "C"
+    ]
+   ],
+   "raw": [
+    "lev__C"
+   ],
+   "proto": 26
+  }
+ },
+ "10424": {
+  "cs": {
+   "fields": [
+    [
+     "bid",
+     "I"
+    ],
+    [
+     "skill_bid",
+     "I"
+    ]
+   ],
+   "raw": [
+    "bid__I",
+    "skill_bid__I"
+   ],
+   "proto": 34
+  },
+  "sc": {
+   "fields": [
+    [
+     "code",
+     "C"
+    ],
+    [
+     "msg",
+     "s"
+    ],
+    [
+     "bid",
+     "I"
+    ],
+    [
+     "skill_bid",
+     "I"
+    ],
+    [
+     "new_skill_bid",
+     "I"
+    ]
+   ],
+   "raw": [
+    "code__C",
+    "msg__s",
+    "bid__I",
+    "skill_bid__I",
+    "new_skill_bid__I"
+   ],
+   "proto": 33
+  }
+ },
+ "10621": {
+  "cs": {
+   "fields": [],
+   "raw": [],
+   "proto": 5
+  },
+  "sc": {
+   "fields": [
+    [
+     "world_lev",
+     "H"
+    ],
+    [
+     "skill_list__T",
+     "bid@I##exp@I"
+    ]
+   ],
+   "raw": [
+    "world_lev__H",
+    "skill_list__T__bid@I##exp@I"
+   ],
+   "proto": 4
+  }
+ },
+ "10921": {
+  "cs": {
+   "fields": [],
+   "raw": [],
+   "proto": 16
+  },
+  "sc": {
+   "fields": [
+    [
+     "world_lev",
+     "C"
+    ],
+    [
+     "next",
+     "I"
+    ],
+    [
+     "exp",
+     "H"
+    ],
+    [
+     "dec_exp",
+     "H"
+    ],
+    [
+     "open_day",
+     "H"
+    ]
+   ],
+   "raw": [
+    "world_lev__C",
+    "next__I",
+    "exp__H",
+    "dec_exp__H",
+    "open_day__H"
+   ],
+   "proto": 15
+  }
+ },
+ "10933": {
+  "cs": {
+   "fields": [],
+   "raw": [],
+   "proto": 36
+  },
+  "sc": {
+   "fields": [
+    [
+     "code",
+     "C"
+    ],
+    [
+     "msg",
+     "s"
+    ]
+   ],
+   "raw": [
+    "code__C",
+    "msg__s"
+   ],
+   "proto": 35
+  }
+ },
+ "10934": {
+  "cs": {
+   "fields": [],
+   "raw": [],
+   "proto": 38
+  },
+  "sc": {
+   "fields": [
+    [
+     "code",
+     "C"
+    ],
+    [
+     "msg",
+     "s"
+    ]
+   ],
+   "raw": [
+    "code__C",
+    "msg__s"
+   ],
+   "proto": 37
+  }
+ },
+ "11202": {
+  "cs": null,
+  "sc": {
+   "fields": [
+    [
+     "id",
+     "I"
+    ],
+    [
+     "exp",
+     "I"
+    ]
+   ],
+   "raw": [
+    "id__I",
+    "exp__I"
+   ],
+   "proto": 16
+  }
+ },
+ "11207": {
+  "cs": null,
+  "sc": {
+   "fields": [
+    [
+     "lev_list__T",
+     "id@I##lev@C"
+    ]
+   ],
+   "raw": [
+    "lev_list__T__id@I##lev@C"
+   ],
+   "proto": 25
+  }
+ },
+ "13331": {
+  "cs": {
+   "fields": [],
+   "raw": [],
+   "proto": 57
+  },
+  "sc": {
+   "fields": [
+    [
+     "courage",
+     "I"
+    ],
+    [
+     "charm",
+     "I"
+    ],
+    [
+     "courage_rank",
+     "C"
+    ],
+    [
+     "charm_rank",
+     "C"
+    ]
+   ],
+   "raw": [
+    "courage__I",
+    "charm__I",
+    "courage_rank__C",
+    "charm_rank__C"
+   ],
+   "proto": 56
+  }
+ },
+ "17518": {
+  "cs": {
+   "fields": [],
+   "raw": [],
+   "proto": 37
+  },
+  "sc": {
+   "fields": [
+    [
+     "exp",
+     "I"
+    ],
+    [
+     "hero_exp",
+     "I"
+    ],
+    [
+     "coin",
+     "I"
+    ]
+   ],
+   "raw": [
+    "exp__I",
+    "hero_exp__I",
+    "coin__I"
+   ],
+   "proto": 36
+  }
+ },
+ "18906": {
+  "cs": {
+   "fields": [
+    [
+     "bid",
+     "I"
+    ],
+    [
+     "type",
+     "C"
+    ],
+    [
+     "value",
+     "H"
+    ]
+   ],
+   "raw": [
+    "bid__I",
+    "type__C",
+    "value__H"
+   ],
+   "proto": 15
+  },
+  "sc": {
+   "fields": [
+    [
+     "result",
+     "C"
+    ],
+    [
+     "bid",
+     "I"
+    ],
+    [
+     "pre_level",
+     "H"
+    ],
+    [
+     "post_level",
+     "H"
+    ],
+    [
+     "msg",
+     "s"
+    ]
+   ],
+   "raw": [
+    "result__C",
+    "bid__I",
+    "pre_level__H",
+    "post_level__H",
+    "msg__s"
+   ],
+   "proto": 14
+  }
+ }
+}

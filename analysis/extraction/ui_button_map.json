@@ -1,0 +1,202 @@
+[
+  {
+    "x": 2260,
+    "y": 20,
+    "cmd": "",
+    "panel": true,
+    "fg": true,
+    "tag": "PANEL"
+  },
+  {
+    "x": 2460,
+    "y": 20,
+    "cmd": "10341/10999",
+    "panel": false,
+    "fg": true,
+    "tag": "CS=10341/10999"
+  },
+  {
+    "x": 2060,
+    "y": 80,
+    "cmd": "16900/13901",
+    "panel": false,
+    "fg": true,
+    "tag": "CS=16900/13901"
+  },
+  {
+    "x": 2260,
+    "y": 140,
+    "cmd": "",
+    "panel": true,
+    "fg": true,
+    "tag": "PANEL"
+  },
+  {
+    "x": 2460,
+    "y": 140,
+    "cmd": "10341",
+    "panel": false,
+    "fg": true,
+    "tag": "CS=10341"
+  },
+  {
+    "x": 30,
+    "y": 200,
+    "cmd": "13781/13786",
+    "panel": true,
+    "fg": true,
+    "tag": "CS=13781/13786 PANEL"
+  },
+  {
+    "x": 150,
+    "y": 200,
+    "cmd": "13781/13786",
+    "panel": true,
+    "fg": true,
+    "tag": "CS=13781/13786 PANEL"
+  },
+  {
+    "x": 2470,
+    "y": 200,
+    "cmd": "10640",
+    "panel": false,
+    "fg": true,
+    "tag": "CS=10640"
+  },
+  {
+    "x": 30,
+    "y": 400,
+    "cmd": "12901/10999",
+    "panel": true,
+    "fg": true,
+    "tag": "CS=12901/10999 PANEL"
+  },
+  {
+    "x": 150,
+    "y": 400,
+    "cmd": "12901",
+    "panel": true,
+    "fg": true,
+    "tag": "CS=12901 PANEL"
+  },
+  {
+    "x": 2470,
+    "y": 400,
+    "cmd": "13200/13227",
+    "panel": true,
+    "fg": true,
+    "tag": "CS=13200/13227 PANEL"
+  },
+  {
+    "x": 150,
+    "y": 1000,
+    "cmd": "13300/13321",
+    "panel": true,
+    "fg": true,
+    "tag": "CS=13300/13321 PANEL"
+  },
+  {
+    "x": 2410,
+    "y": 1200,
+    "cmd": "",
+    "panel": true,
+    "fg": true,
+    "tag": "PANEL"
+  },
+  {
+    "x": 2530,
+    "y": 1200,
+    "cmd": "",
+    "panel": true,
+    "fg": true,
+    "tag": "PANEL"
+  },
+  {
+    "x": 1260,
+    "y": 1260,
+    "cmd": "",
+    "panel": true,
+    "fg": true,
+    "tag": "PANEL"
+  },
+  {
+    "x": 1460,
+    "y": 1260,
+    "cmd": "",
+    "panel": true,
+    "fg": true,
+    "tag": "PANEL"
+  },
+  {
+    "x": 1660,
+    "y": 1260,
+    "cmd": "",
+    "panel": true,
+    "fg": true,
+    "tag": "PANEL"
+  },
+  {
+    "x": 1860,
+    "y": 1260,
+    "cmd": "",
+    "panel": true,
+    "fg": true,
+    "tag": "PANEL"
+  },
+  {
+    "x": 2060,
+    "y": 1260,
+    "cmd": "",
+    "panel": true,
+    "fg": true,
+    "tag": "PANEL"
+  },
+  {
+    "x": 1860,
+    "y": 1320,
+    "cmd": "",
+    "panel": true,
+    "fg": true,
+    "tag": "PANEL"
+  },
+  {
+    "x": 2060,
+    "y": 1320,
+    "cmd": "",
+    "panel": true,
+    "fg": true,
+    "tag": "PANEL"
+  },
+  {
+    "x": 2260,
+    "y": 1320,
+    "cmd": "",
+    "panel": true,
+    "fg": true,
+    "tag": "PANEL"
+  },
+  {
+    "x": 1860,
+    "y": 1380,
+    "cmd": "",
+    "panel": true,
+    "fg": true,
+    "tag": "PANEL"
+  },
+  {
+    "x": 2060,
+    "y": 1380,
+    "cmd": "",
+    "panel": true,
+    "fg": true,
+    "tag": "PANEL"
+  },
+  {
+    "x": 2260,
+    "y": 1380,
+    "cmd": "",
+    "panel": true,
+    "fg": true,
+    "tag": "PANEL"
+  }
+]

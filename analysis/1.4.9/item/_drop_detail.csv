@@ -1,0 +1,76 @@
+﻿mon_bid,section,dropitem_bid,inner_idx,mid_pp,mid_min,mid_max,term_idx,item_bid,item_name,item_num,t_min,t_max,t_pp,src
+20003,normal(随机),4001,1,1000,1,1000,1,51000,小仙桃,1,1,50,50,"config_drop.luac[20003].normal[4001][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4001].item_list[1]"
+20003,normal(随机),4001,1,1000,1,1000,2,51000,小仙桃,1,51,100,50,"config_drop.luac[20003].normal[4001][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4001].item_list[2]"
+20004,core(核心),2001,,,,,1,51007,李逍遥召唤符,1,1,30,30,config_drop.luac[20004].core=2001 core_interval=3 -> config_drop_item.luac[2001].item_list[1]
+20004,core(核心),2001,,,,,2,51008,酒剑仙召唤符,1,31,60,30,config_drop.luac[20004].core=2001 core_interval=3 -> config_drop_item.luac[2001].item_list[2]
+20004,core(核心),2001,,,,,3,51009,赵灵儿召唤符,1,61,90,30,config_drop.luac[20004].core=2001 core_interval=3 -> config_drop_item.luac[2001].item_list[3]
+20004,normal(随机),4001,1,1000,1,1000,1,51000,小仙桃,1,1,50,50,"config_drop.luac[20004].normal[4001][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4001].item_list[1]"
+20004,normal(随机),4001,1,1000,1,1000,2,51000,小仙桃,1,51,100,50,"config_drop.luac[20004].normal[4001][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4001].item_list[2]"
+20004,normal(随机),4003,1,1000,1,1000,1,51004,铜·经验符,1,1,50,50,"config_drop.luac[20004].normal[4003][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4003].item_list[1]"
+20004,normal(随机),4003,1,1000,1,1000,2,51005,银·经验符,1,51,100,50,"config_drop.luac[20004].normal[4003][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4003].item_list[2]"
+20004,normal(随机),4003,1,1000,1,1000,3,51006,金·经验符,1,101,150,50,"config_drop.luac[20004].normal[4003][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4003].item_list[3]"
+20007,normal(随机),4001,1,1000,1,1000,1,51000,小仙桃,1,1,50,50,"config_drop.luac[20007].normal[4001][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4001].item_list[1]"
+20007,normal(随机),4001,1,1000,1,1000,2,51000,小仙桃,1,51,100,50,"config_drop.luac[20007].normal[4001][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4001].item_list[2]"
+20008,core(核心),2002,,,,,1,51010,林月如召唤符,1,1,30,30,config_drop.luac[20008].core=2002 core_interval=3 -> config_drop_item.luac[2002].item_list[1]
+20008,core(核心),2002,,,,,2,51011,南宫煌召唤符,1,31,60,30,config_drop.luac[20008].core=2002 core_interval=3 -> config_drop_item.luac[2002].item_list[2]
+20008,core(核心),2002,,,,,3,51012,韩菱纱召唤符,1,61,90,30,config_drop.luac[20008].core=2002 core_interval=3 -> config_drop_item.luac[2002].item_list[3]
+20008,normal(随机),4001,1,1000,1,1000,1,51000,小仙桃,1,1,50,50,"config_drop.luac[20008].normal[4001][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4001].item_list[1]"
+20008,normal(随机),4001,1,1000,1,1000,2,51000,小仙桃,1,51,100,50,"config_drop.luac[20008].normal[4001][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4001].item_list[2]"
+20008,normal(随机),4003,1,1000,1,1000,1,51004,铜·经验符,1,1,50,50,"config_drop.luac[20008].normal[4003][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4003].item_list[1]"
+20008,normal(随机),4003,1,1000,1,1000,2,51005,银·经验符,1,51,100,50,"config_drop.luac[20008].normal[4003][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4003].item_list[2]"
+20008,normal(随机),4003,1,1000,1,1000,3,51006,金·经验符,1,101,150,50,"config_drop.luac[20008].normal[4003][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4003].item_list[3]"
+20011,normal(随机),4001,1,1000,1,1000,1,51000,小仙桃,1,1,50,50,"config_drop.luac[20011].normal[4001][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4001].item_list[1]"
+20011,normal(随机),4001,1,1000,1,1000,2,51000,小仙桃,1,51,100,50,"config_drop.luac[20011].normal[4001][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4001].item_list[2]"
+20012,first(首次),1001,,,,,1,51026,宁采臣召唤符,1,1,50,50,config_drop.luac[20012].first=1001 -> config_drop_item.luac[1001].item_list[1]
+20012,first(首次),1001,,,,,2,51027,飞蓬召唤符,1,51,100,50,config_drop.luac[20012].first=1001 -> config_drop_item.luac[1001].item_list[2]
+20012,core(核心),2003,,,,,1,51026,宁采臣召唤符,1,1,25,25,config_drop.luac[20012].core=2003 core_interval=3 -> config_drop_item.luac[2003].item_list[1]
+20012,core(核心),2003,,,,,2,51027,飞蓬召唤符,1,26,50,25,config_drop.luac[20012].core=2003 core_interval=3 -> config_drop_item.luac[2003].item_list[2]
+20012,core(核心),2003,,,,,3,51028,魔翳召唤符,1,51,75,25,config_drop.luac[20012].core=2003 core_interval=3 -> config_drop_item.luac[2003].item_list[3]
+20012,core(核心),2003,,,,,4,51029,龙幽召唤符,1,76,100,25,config_drop.luac[20012].core=2003 core_interval=3 -> config_drop_item.luac[2003].item_list[4]
+20012,normal(随机),4001,1,1000,1,1000,1,51000,小仙桃,1,1,50,50,"config_drop.luac[20012].normal[4001][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4001].item_list[1]"
+20012,normal(随机),4001,1,1000,1,1000,2,51000,小仙桃,1,51,100,50,"config_drop.luac[20012].normal[4001][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4001].item_list[2]"
+20012,normal(随机),4003,1,1000,1,1000,1,51004,铜·经验符,1,1,50,50,"config_drop.luac[20012].normal[4003][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4003].item_list[1]"
+20012,normal(随机),4003,1,1000,1,1000,2,51005,银·经验符,1,51,100,50,"config_drop.luac[20012].normal[4003][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4003].item_list[2]"
+20012,normal(随机),4003,1,1000,1,1000,3,51006,金·经验符,1,101,150,50,"config_drop.luac[20012].normal[4003][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4003].item_list[3]"
+20015,normal(随机),4002,1,1000,1,1000,1,51001,大仙桃,2,1,30,30,"config_drop.luac[20015].normal[4002][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4002].item_list[1]"
+20015,normal(随机),4002,1,1000,1,1000,2,51001,大仙桃,2,31,60,30,"config_drop.luac[20015].normal[4002][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4002].item_list[2]"
+20016,core(核心),2004,,,,,1,51030,龙葵召唤符,1,1,30,30,config_drop.luac[20016].core=2004 core_interval=6 -> config_drop_item.luac[2004].item_list[1]
+20016,core(核心),2004,,,,,2,51031,小蛮召唤符,1,31,60,30,config_drop.luac[20016].core=2004 core_interval=6 -> config_drop_item.luac[2004].item_list[2]
+20016,core(核心),2004,,,,,3,51032,夕瑶召唤符,1,61,90,30,config_drop.luac[20016].core=2004 core_interval=6 -> config_drop_item.luac[2004].item_list[3]
+20016,normal(随机),4002,1,1000,1,1000,1,51001,大仙桃,2,1,30,30,"config_drop.luac[20016].normal[4002][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4002].item_list[1]"
+20016,normal(随机),4002,1,1000,1,1000,2,51001,大仙桃,2,31,60,30,"config_drop.luac[20016].normal[4002][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4002].item_list[2]"
+20016,normal(随机),4004,1,1000,1,1000,1,51004,铜·经验符,2,1,100,100,"config_drop.luac[20016].normal[4004][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4004].item_list[1]"
+20016,normal(随机),4004,1,1000,1,1000,2,51005,银·经验符,2,101,150,50,"config_drop.luac[20016].normal[4004][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4004].item_list[2]"
+20016,normal(随机),4004,1,1000,1,1000,3,51006,金·经验符,2,151,200,50,"config_drop.luac[20016].normal[4004][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4004].item_list[3]"
+20019,normal(随机),4002,1,1000,1,1000,1,51001,大仙桃,2,1,30,30,"config_drop.luac[20019].normal[4002][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4002].item_list[1]"
+20019,normal(随机),4002,1,1000,1,1000,2,51001,大仙桃,2,31,60,30,"config_drop.luac[20019].normal[4002][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4002].item_list[2]"
+20020,core(核心),2004,,,,,1,51030,龙葵召唤符,1,1,30,30,config_drop.luac[20020].core=2004 core_interval=6 -> config_drop_item.luac[2004].item_list[1]
+20020,core(核心),2004,,,,,2,51031,小蛮召唤符,1,31,60,30,config_drop.luac[20020].core=2004 core_interval=6 -> config_drop_item.luac[2004].item_list[2]
+20020,core(核心),2004,,,,,3,51032,夕瑶召唤符,1,61,90,30,config_drop.luac[20020].core=2004 core_interval=6 -> config_drop_item.luac[2004].item_list[3]
+20020,normal(随机),4002,1,1000,1,1000,1,51001,大仙桃,2,1,30,30,"config_drop.luac[20020].normal[4002][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4002].item_list[1]"
+20020,normal(随机),4002,1,1000,1,1000,2,51001,大仙桃,2,31,60,30,"config_drop.luac[20020].normal[4002][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4002].item_list[2]"
+20020,normal(随机),4004,1,1000,1,1000,1,51004,铜·经验符,2,1,100,100,"config_drop.luac[20020].normal[4004][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4004].item_list[1]"
+20020,normal(随机),4004,1,1000,1,1000,2,51005,银·经验符,2,101,150,50,"config_drop.luac[20020].normal[4004][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4004].item_list[2]"
+20020,normal(随机),4004,1,1000,1,1000,3,51006,金·经验符,2,151,200,50,"config_drop.luac[20020].normal[4004][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4004].item_list[3]"
+20023,normal(随机),4002,1,1000,1,1000,1,51001,大仙桃,2,1,30,30,"config_drop.luac[20023].normal[4002][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4002].item_list[1]"
+20023,normal(随机),4002,1,1000,1,1000,2,51001,大仙桃,2,31,60,30,"config_drop.luac[20023].normal[4002][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4002].item_list[2]"
+20024,first(首次),1002,,,,,1,51028,魔翳召唤符,1,1,50,50,config_drop.luac[20024].first=1002 -> config_drop_item.luac[1002].item_list[1]
+20024,first(首次),1002,,,,,2,51029,龙幽召唤符,1,51,100,50,config_drop.luac[20024].first=1002 -> config_drop_item.luac[1002].item_list[2]
+20024,core(核心),2004,,,,,1,51030,龙葵召唤符,1,1,30,30,config_drop.luac[20024].core=2004 core_interval=6 -> config_drop_item.luac[2004].item_list[1]
+20024,core(核心),2004,,,,,2,51031,小蛮召唤符,1,31,60,30,config_drop.luac[20024].core=2004 core_interval=6 -> config_drop_item.luac[2004].item_list[2]
+20024,core(核心),2004,,,,,3,51032,夕瑶召唤符,1,61,90,30,config_drop.luac[20024].core=2004 core_interval=6 -> config_drop_item.luac[2004].item_list[3]
+20024,normal(随机),4002,1,1000,1,1000,1,51001,大仙桃,2,1,30,30,"config_drop.luac[20024].normal[4002][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4002].item_list[1]"
+20024,normal(随机),4002,1,1000,1,1000,2,51001,大仙桃,2,31,60,30,"config_drop.luac[20024].normal[4002][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4002].item_list[2]"
+20024,normal(随机),4004,1,1000,1,1000,1,51004,铜·经验符,2,1,100,100,"config_drop.luac[20024].normal[4004][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4004].item_list[1]"
+20024,normal(随机),4004,1,1000,1,1000,2,51005,银·经验符,2,101,150,50,"config_drop.luac[20024].normal[4004][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4004].item_list[2]"
+20024,normal(随机),4004,1,1000,1,1000,3,51006,金·经验符,2,151,200,50,"config_drop.luac[20024].normal[4004][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4004].item_list[3]"
+30001,normal(随机),4011,1,1000,1,1000,1,51013,聂小倩召唤符,2,1,100,100,"config_drop.luac[30001].normal[4011][1] pp=1000 区间[1,1000] -> config_drop_item.luac[4011].item_list[1]"
+30002,normal(随机),4012,1,500,1,500,1,51020,孙思邈召唤符,2,1,100,100,"config_drop.luac[30002].normal[4012][1] pp=500 区间[1,500] -> config_drop_item.luac[4012].item_list[1]"
+30002,normal(随机),4012,1,500,1,500,2,51024,千叶禅师召唤符,2,101,200,100,"config_drop.luac[30002].normal[4012][1] pp=500 区间[1,500] -> config_drop_item.luac[4012].item_list[2]"
+30002,normal(随机),4012,2,500,501,1000,1,51020,孙思邈召唤符,2,1,100,100,"config_drop.luac[30002].normal[4012][2] pp=500 区间[501,1000] -> config_drop_item.luac[4012].item_list[1]"
+30002,normal(随机),4012,2,500,501,1000,2,51024,千叶禅师召唤符,2,101,200,100,"config_drop.luac[30002].normal[4012][2] pp=500 区间[501,1000] -> config_drop_item.luac[4012].item_list[2]"
+30003,core(核心),2012,,,,,1,51065,星璇灵魂玉,2,1,100,100,config_drop.luac[30003].core=2012 core_interval=3 -> config_drop_item.luac[2012].item_list[1]
+30003,core(核心),2012,,,,,2,51066,唐雨柔灵魂玉,2,101,200,100,config_drop.luac[30003].core=2012 core_interval=3 -> config_drop_item.luac[2012].item_list[2]
+30004,core(核心),2012,,,,,1,51065,星璇灵魂玉,2,1,100,100,config_drop.luac[30004].core=2012 core_interval=3 -> config_drop_item.luac[2012].item_list[1]
+30004,core(核心),2012,,,,,2,51066,唐雨柔灵魂玉,2,101,200,100,config_drop.luac[30004].core=2012 core_interval=3 -> config_drop_item.luac[2012].item_list[2]
+30005,first(首次),1011,,,,,1,51029,龙幽召唤符,2,1,50,50,config_drop.luac[30005].first=1011 -> config_drop_item.luac[1011].item_list[1]

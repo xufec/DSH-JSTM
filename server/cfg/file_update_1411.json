@@ -1,0 +1,16 @@
+{
+ "ver_load_start": null,
+ "check_new_version": null,
+ "initConfig": null,
+ "ver2num": null,
+ "initUpdateScene": null,
+ "update_version": null,
+ "merge_version": null,
+ "get_version_info": null,
+ "update_net_version": null,
+ "update_version_to": null,
+ "update_try_version_to": null,
+ "initInstance": null,
+ "update_finish": null,
+ "video_player": null
+}

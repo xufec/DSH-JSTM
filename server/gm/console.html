@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>绝世唐门 · GM 后台管理系统</title>
+<style>
+:root{--bg:#12151c;--panel:#1b2029;--panel2:#232936;--line:#2e3646;--fg:#e6e9f0;
+--dim:#8b95a8;--acc:#4f9dff;--ok:#37c98b;--warn:#e8b44a;--err:#ef5f6b;--mono:Consolas,"Courier New",monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.55 system-ui,"Microsoft YaHei",sans-serif}
+header{display:flex;align-items:center;gap:14px;padding:10px 18px;background:linear-gradient(90deg,#1d2534,#141922);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:9}
+header h1{margin:0;font-size:16px;font-weight:600;letter-spacing:.5px}
+header h1 small{color:var(--dim);font-weight:400;font-size:12px;margin-left:8px}
+.pill{padding:2px 9px;border-radius:20px;background:var(--panel2);border:1px solid var(--line);font-size:12px;color:var(--dim)}
+.pill b{color:var(--fg)}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--err);margin-right:5px;vertical-align:middle}
+.dot.on{background:var(--ok)}
+header .sp{flex:1}
+input,select,textarea,button{background:var(--panel2);color:var(--fg);border:1px solid var(--line);border-radius:6px;padding:6px 9px;font-size:13px;font-family:inherit}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--acc)}
+button{cursor:pointer;transition:.15s}
+button:hover{border-color:var(--acc);color:#fff}
+button.p{background:var(--acc);border-color:var(--acc);color:#fff;font-weight:600}
+button.p:hover{filter:brightness(1.12)}
+button.d{border-color:#5a2b31;color:#ff9aa3}
+.wrap{display:flex;min-height:calc(100vh - 49px)}
+nav{width:170px;flex:none;background:var(--panel);border-right:1px solid var(--line);padding:10px 0}
+nav a{display:block;padding:9px 18px;color:var(--dim);text-decoration:none;font-size:13px;border-left:3px solid transparent;cursor:pointer}
+nav a:hover{color:var(--fg);background:var(--panel2)}
+nav a.act{color:#fff;background:var(--panel2);border-left-color:var(--acc)}
+main{flex:1;padding:18px 22px;min-width:0}
+section{display:none}section.act{display:block}
+h2{margin:0 0 4px;font-size:15px}
+.sub{color:var(--dim);font-size:12px;margin-bottom:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:14px 16px;margin-bottom:14px}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end}
+.f{display:flex;flex-direction:column;gap:4px}
+.f label{font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:.6px}
+.f input,.f select{min-width:110px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.kv{background:var(--panel2);border-radius:7px;padding:9px 11px;border:1px solid var(--line)}
+.kv .k{font-size:11px;color:var(--dim)}
+.kv .v{font-size:17px;font-weight:600;font-family:var(--mono)}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th{text-align:left;color:var(--dim);font-weight:500;border-bottom:1px solid var(--line);padding:6px 8px;position:sticky;top:49px;background:var(--panel)}
+td{border-bottom:1px solid #232a37;padding:5px 8px;font-family:var(--mono)}
+tr:hover td{background:#1f2631}
+.scroll{max-height:460px;overflow:auto;border:1px solid var(--line);border-radius:8px}
+pre{background:#0d1017;border:1px solid var(--line);border-radius:8px;padding:11px;overflow:auto;max-height:430px;font-family:var(--mono);font-size:12px;white-space:pre-wrap;word-break:break-all}
+.tag{display:inline-block;padding:1px 7px;border-radius:4px;font-size:11px;background:var(--panel2);border:1px solid var(--line)}
+.tag.ok{color:var(--ok);border-color:#1f5c42}.tag.err{color:var(--err);border-color:#5a2b31}
+.hint{color:var(--dim);font-size:12px;margin-top:8px}
+#toast{position:fixed;right:18px;bottom:18px;display:flex;flex-direction:column;gap:8px;z-index:99}
+#toast div{background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--acc);border-radius:6px;padding:9px 14px;font-size:13px;min-width:220px;box-shadow:0 6px 20px #0007}
+#toast div.ok{border-left-color:var(--ok)}#toast div.err{border-left-color:var(--err)}
+code{font-family:var(--mono);background:#0d1017;padding:1px 5px;border-radius:4px;font-size:12px}
+.muted{color:var(--dim)}
+details{margin-top:8px}summary{cursor:pointer;color:var(--dim);font-size:12px}
+</style>
+</head>
+<body>
+<header>
+  <span class="dot" id="srvDot"></span>
+  <h1>绝世唐门 · GM 后台管理系统<small id="srvTxt">连接中…</small></h1>
+  <span class="pill">版本 <b>1.4.11</b></span>
+  <span class="pill">端口 <b>8080</b></span>
+  <span class="sp"></span>
+  <input id="rid" value="1001" title="当前操作角色 rid" style="width:78px">
+  <input id="token" placeholder="GM Token" title="写操作令牌" style="width:110px">
+  <button onclick="saveToken()">保存令牌</button>
+  <button class="p" onclick="boot()">刷新</button>
+</header>
+
+<div class="wrap">
+<nav id="nav">
+  <a data-s="overview" class="act">总览</a>
+  <a data-s="roles">角色管理</a>
+  <a data-s="assets">资产 / 等级</a>
+  <a data-s="items">物品发放</a>
+  <a data-s="mail">邮件</a>
+  <a data-s="missions">任务</a>
+  <a data-s="scene">场景 / 副本</a>
+  <a data-s="systems">养成系统</a>
+  <a data-s="audit">审计日志</a>
+  <a data-s="config">配置表</a>
+  <a data-s="adv">高级调用</a>
+</nav>
+<main>
+
+<!-- 总览 -->
+<section id="s-overview" class="act">
+  <h2>服务器总览</h2>
+  <div class="sub">数据源：<code>/GM/api</code> + <code>/DSH_ADMIN/status</code>（实时读库）</div>
+  <div class="grid" id="ovGrid"></div>
+  <div class="card">
+    <h2>在线连接</h2>
+    <div class="scroll" style="max-height:220px"><table id="ovOnline"><thead><tr><th>rid</th><th>地址</th><th>状态</th></tr></thead><tbody></tbody></table></div>
+  </div>
+  <div class="card">
+    <h2>当前角色 rid=<span id="ovRid">1001</span> 快照</h2>
+    <div class="grid" id="ovRole"></div>
+  </div>
+</section>
+
+<!-- 角色管理 -->
+<section id="s-roles">
+  <h2>角色管理</h2>
+  <div class="sub">点击一行查看完整角色卡（等级 / 资产 / 背包 / 装备 / 任务 / 邮件 / 奖励审计）</div>
+  <div class="card">
+    <div class="row">
+      <div class="f"><label>过滤</label><input id="roleKw" placeholder="uid / 名字 / rid" oninput="renderRoles()"></div>
+      <button onclick="loadRoles()">刷新列表</button>
+    </div>
+  </div>
+  <div class="scroll"><table id="roleTbl"><thead><tr><th>rid</th><th>uid</th><th>名称</th><th>等级</th><th>职业</th><th>场景</th><th>坐标</th><th>VIP</th><th>在线</th><th></th></tr></thead><tbody></tbody></table></div>
+  <div class="card" id="cardBox" style="display:none">
+    <h2>角色卡 <span class="muted" id="cardRid"></span></h2>
+    <div class="grid" id="cardGrid"></div>
+    <details open><summary>资产 role_assets</summary><pre id="cardAssets"></pre></details>
+    <details><summary>背包 bag_items</summary><pre id="cardBag"></pre></details>
+    <details><summary>装备 equip_items</summary><pre id="cardEquip"></pre></details>
+    <details><summary>任务 missions</summary><pre id="cardMis"></pre></details>
+    <details><summary>奖励审计 reward_log（近 50）</summary><pre id="cardRw"></pre></details>
+  </div>
+</section>
+
+<!-- 资产 / 等级 -->
+<section id="s-assets">
+  <h2>资产 / 等级</h2>
+  <div class="sub">写操作走后端正式 Service 链路（<code>gm.service</code> → <code>currency.service</code>），并落 <code>logs/gm.log</code></div>
+  <div class="card">
+    <h2>等级</h2>
+    <div class="row">
+      <div class="f"><label>目标等级 1–200</label><input id="aLv" type="number" value="70"></div>
+      <button class="p" onclick="api('setlevel',{lev:V('aLv')})">设置等级</button>
+    </div>
+    <div class="hint">依据 config_intensify / 表结构：lev 合法区间 1..200，越界后端返回 400。</div>
+  </div>
+  <div class="card">
+    <h2>货币</h2>
+    <div class="row">
+      <div class="f"><label>钻石 gold</label><input id="aGold" type="number" value="0"></div>
+      <div class="f"><label>银魂币 coin</label><input id="aCoin" type="number" value="0"></div>
+      <div class="f"><label>金魂币 coupon</label><input id="aCoupon" type="number" value="0"></div>
+      <div class="f"><label>模式</label><select id="aMode"><option value="set">设为绝对值</option><option value="add">增量累加</option></select></div>
+      <button class="p" onclick="grantAssets()">应用</button>
+    </div>
+    <div class="hint">字段映射（实机确证）：钻石=gold、银魂币=coin、金魂币=coupon。</div>
+  </div>
+  <div class="card">
+    <h2>累计充值 / 钻石单设</h2>
+    <div class="row">
+      <div class="f"><label>累计充值</label><input id="aCharge" type="number" value="80"></div>
+      <button onclick="api('setcharge',{n:V('aCharge')})">设置</button>
+      <div class="f"><label>钻石</label><input id="aDia" type="number" value="100000"></div>
+      <button onclick="api('setdiamond',{val:V('aDia')})">设置</button>
+    </div>
+  </div>
+  <div class="card">
+    <h2>危险操作</h2>
+    <div class="row">
+      <div class="f"><label>reset what</label><select id="aReset">
+        <option value="bag">背包</option><option value="equip">装备</option>
+        <option value="store">仓库</option><option value="mission">任务</option>
+        <option value="levgift">等级礼包</option><option value="all">全部</option></select></div>
+      <button class="d" onclick="api('reset',{what:V('aReset')})">执行 reset</button>
+    </div>
+    <div class="hint">reset 会 DELETE 对应表该 rid 的行，不可撤销。</div>
+  </div>
+</section>
+
+<!-- 物品 -->
+<section id="s-items">
+  <h2>物品发放</h2>
+  <div class="card">
+    <div class="row">
+      <div class="f"><label>物品 bid（逗号分隔可批量）</label><input id="iBid" placeholder="36057,36052" style="min-width:230px"></div>
+      <div class="f"><label>数量</label><input id="iN" type="number" value="1"></div>
+      <div class="f"><label>囊 code</label><select id="iCode"><option value="1">主背包</option><option value="0">其他</option></select></div>
+      <button class="p" onclick="api('addbag',{bid:V('iBid'),n:V('iN'),code:V('iCode')})">发放</button>
+      <button onclick="api('addbag',{formation_books:1})">一键发全部阵法书</button>
+    </div>
+    <div class="hint">发放后服务端会主动推包，客户端无需重登即可看到。</div>
+  </div>
+  <div class="card">
+    <h2>物品表检索</h2>
+    <div class="row">
+      <div class="f"><label>关键字</label><input id="iKw" placeholder="名称 / bid" onkeydown="if(event.key==='Enter')searchItems()"></div>
+      <button onclick="searchItems()">搜索</button>
+    </div>
+    <div class="scroll" style="max-height:340px"><table id="itemTbl"><thead><tr><th>bid</th><th>名称</th><th>类型</th></tr></thead><tbody></tbody></table></div>
+  </div>
+</section>
+
+<!-- 邮件 -->
+<section id="s-mail">
+  <h2>邮件</h2>
+  <div class="card">
+    <h2>发送邮件</h2>
+    <div class="row">
+      <div class="f"><label>发件人</label><input id="mFrom" value="系统"></div>
+      <div class="f"><label>标题</label><input id="mSub" value="GM 补偿" style="min-width:180px"></div>
+      <div class="f"><label>正文</label><input id="mCon" value="由后台管理系统发放" style="min-width:230px"></div>
+      <button class="p" onclick="api('mail',{from:V('mFrom'),subject:V('mSub'),content:V('mCon')})">发送</button>
+    </div>
+  </div>
+  <div class="card">
+    <div class="row"><button onclick="loadMail()">刷新邮件列表</button><span class="muted" id="mailCnt"></span></div>
+    <div class="scroll"><table id="mailTbl"><thead><tr><th>id</th><th>发件人</th><th>标题</th><th>附件</th><th>已读</th></tr></thead><tbody></tbody></table></div>
+  </div>
+</section>
+
+<!-- 任务 -->
+<section id="s-missions">
+  <h2>任务</h2>
+  <div class="card">
+    <h2>任务链前移</h2>
+    <div class="row">
+      <div class="f"><label>mission_bid</label><input id="miBid" value="10070"></div>
+      <button class="p" onclick="api('setmissions',{bid:V('miBid')})">设为链头</button>
+    </div>
+    <div class="hint">会清空该 rid 全部任务行，只留指定 bid 为 status=1（进行中），并推送给客户端。</div>
+  </div>
+  <div class="card">
+    <h2>当前任务</h2>
+    <div class="row"><button onclick="loadCard(V('rid'))">读取角色卡任务</button></div>
+    <div class="scroll" style="max-height:320px"><table id="misTbl"><thead><tr><th>bid</th><th>status</th><th>value</th><th>target</th><th>loop</th><th>更新时间</th></tr></thead><tbody></tbody></table></div>
+  </div>
+  <div class="card">
+    <h2>成就</h2>
+    <div class="row">
+      <div class="f"><label>成就 bid</label><input id="acBid" value="10100"></div>
+      <button onclick="api('ach_done',{bid:V('acBid')})">标记达成</button>
+      <button class="p" onclick="api('ach_claim',{bid:V('acBid')})">领取奖励</button>
+      <button onclick="api('ach_list',{})">成就总表</button>
+    </div>
+  </div>
+</section>
+
+<!-- 场景 -->
+<section id="s-scene">
+  <h2>场景 / 副本</h2>
+  <div class="card">
+    <h2>GM 传送（写库 + 推送 10200/10201）</h2>
+    <div class="row">
+      <div class="f"><label>scene_id</label><input id="scId" type="number" value="10001"></div>
+      <div class="f"><label>x（留空用默认出生点）</label><input id="scX" type="number" placeholder="44"></div>
+      <div class="f"><label>y</label><input id="scY" type="number" placeholder="68"></div>
+      <button class="p" onclick="teleport()">传送</button>
+    </div>
+    <div class="hint">常用：10001 史莱克城 · 10002–10011 挂机场所（config_guaji）。写操作需要 GM Token。</div>
+  </div>
+  <div class="card">
+    <h2>副本</h2>
+    <div class="row"><button onclick="loadDungeon()">刷新副本表</button>
+      <div class="f"><label>副本 bid</label><input id="duBid" value="20001"></div>
+      <button class="p" onclick="api('dungeon_clear',{bid:V('duBid')})">标记通关</button>
+    </div>
+    <div class="scroll" style="max-height:340px"><table id="duTbl"><thead><tr><th>bid</th><th>名称</th><th>等级下限</th><th>剩余</th><th>首通</th></tr></thead><tbody></tbody></table></div>
+  </div>
+</section>
+
+<!-- 养成系统 -->
+<section id="s-systems">
+  <h2>养成系统快捷发放</h2>
+  <div class="sub">全部走既有 <code>/DSH_ADMIN/*</code> 正式端点；长尾参数用「高级调用」。</div>
+  <div class="card">
+    <h2>伙伴 / 魂技 / 法宝</h2>
+    <div class="row">
+      <div class="f"><label>伙伴 bid</label><input id="sysHero" value="33100"></div>
+      <button onclick="api('hero',{bid:V('sysHero')})">发放伙伴</button>
+      <button onclick="api('hero',{bid:V('sysHero'),off:1})">移除伙伴</button>
+      <button onclick="api('partner_show',{})">伙伴面板</button>
+    </div>
+    <div class="row" style="margin-top:9px">
+      <div class="f"><label>魂技 bid</label><input id="sysSkill" value="10020"></div>
+      <button onclick="api('skill_learn',{bid:V('sysSkill')})">学习技能</button>
+      <button onclick="api('skill_show',{})">技能面板</button>
+    </div>
+    <div class="row" style="margin-top:9px">
+      <div class="f"><label>法宝 id</label><input id="sysFabaoId" type="number" value="1" style="width:70px"></div>
+      <div class="f"><label>bid</label><input id="sysFabaoBid" type="number" value="20001"></div>
+      <div class="f"><label>level</label><input id="sysFabaoLv" type="number" value="5" style="width:70px"></div>
+      <div class="f"><label>stage</label><input id="sysFabaoSt" type="number" value="2" style="width:70px"></div>
+      <button onclick="api('fabao',{id:V('sysFabaoId'),bid:V('sysFabaoBid'),level:V('sysFabaoLv'),stage:V('sysFabaoSt')})">发放法宝</button>
+    </div>
+  </div>
+  <div class="card">
+    <h2>翅膀 / 神器 / 命格 / 坐骑</h2>
+    <div class="row">
+      <div class="f"><label>翅膀 bid/sid</label><input id="sysWing" value="1" style="width:80px"></div>
+      <button onclick="api('wing_up',{sid:V('sysWing')})">翅膀升级</button>
+      <div class="f"><label>神器 sid</label><input id="sysSq" value="1" style="width:80px"></div>
+      <button onclick="api('shenqi_up',{sid:V('sysSq')})">神器升级</button>
+      <div class="f"><label>命格 bid</label><input id="sysMg" value="1" style="width:80px"></div>
+      <button onclick="api('mingge_activate',{bid:V('sysMg')})">激活命格</button>
+      <div class="f"><label>坐骑 jie/lev</label><input id="sysRide" value="1" style="width:80px"></div>
+      <button onclick="api('ride',{jie:V('sysRide'),lev:1})">发放坐骑</button>
+    </div>
+  </div>
+  <div class="card">
+    <h2>挂机 / 签到 / 战力</h2>
+    <div class="row">
+      <button onclick="api('guaji',{n:10})">挂机推进 10 次</button>
+      <button onclick="api('guaji_end',{})">结束本轮挂机</button>
+      <button onclick="api('afk_status',{})">挂机状态</button>
+      <button onclick="api('afk_enter',{})">离线挂机进入</button>
+      <button onclick="api('sign_do',{})">签到</button>
+      <button onclick="api('power',{})">战力明细</button>
+    </div>
+  </div>
+</section>
+
+<!-- 审计 -->
+<section id="s-audit">
+  <h2>审计日志</h2>
+  <div class="card">
+    <div class="row">
+      <div class="f"><label>行数</label><input id="auN" type="number" value="200" style="width:80px"></div>
+      <button onclick="loadGmLog()">读取 gm.log</button>
+      <button onclick="api('reward_log',{})">奖励审计 reward_log</button>
+    </div>
+  </div>
+  <div class="card"><h2>gm.log（GM 操作审计，倒序尾 N 行）</h2><pre id="gmLog">（未加载）</pre></div>
+  <div class="card"><h2>reward_log（奖励幂等键）</h2><pre id="rwLog">（未加载）</pre></div>
+</section>
+
+<!-- 配置 -->
+<section id="s-config">
+  <h2>配置表</h2>
+  <div class="card">
+    <div class="row">
+      <div class="f"><label>过滤</label><input id="cfgKw" placeholder="config_" oninput="renderCfg()"></div>
+      <button onclick="loadCfg()">刷新</button>
+      <span class="muted" id="cfgCnt"></span>
+    </div>
+    <div class="scroll" style="max-height:300px"><table id="cfgTbl"><thead><tr><th>名称</th><th>字节</th></tr></thead><tbody></tbody></table></div>
+  </div>
+  <div class="card">
+    <h2>配置内容</h2>
+    <div class="row">
+      <div class="f"><label>表名</label><input id="cfgName" placeholder="config_guaji.json" style="min-width:230px"></div>
+      <button class="p" onclick="api('cfg',{name:V('cfgName')})">读取</button>
+    </div>
+  </div>
+</section>
+
+<!-- 高级 -->
+<section id="s-adv">
+  <h2>高级调用</h2>
+  <div class="sub">直接调用任意 <code>/DSH_ADMIN/&lt;act&gt;</code>；自动附带当前 rid 与 GM Token，结果原样返回。</div>
+  <div class="card">
+    <div class="row">
+      <div class="f"><label>act</label><input id="advAct" placeholder="setheros" style="min-width:150px"></div>
+      <div class="f" style="flex:1"><label>其他参数 key=value&key2=value2</label><input id="advQ" placeholder="bids=30800,31300&pool=1" style="width:100%"></div>
+      <button class="p" onclick="advCall()">调用</button>
+    </div>
+    <div class="hint">只读端点无需 Token；写端点需在顶栏填入正确 GM Token（默认 <code>dshgm</code>，可用环境变量 <code>DSH_GM_TOKEN</code> 覆盖）。</div>
+  </div>
+  <div class="card"><h2>响应</h2><pre id="advOut">（未调用）</pre></div>
+  <div class="card">
+    <h2>后端端点速查</h2>
+    <pre id="advHelp">（加载中…）</pre>
+  </div>
+</section>
+
+</main>
+</div>
+<div id="toast"></div>
+
+<script>
+var $ = function(id){ return document.getElementById(id); };
+function V(id){ var e=$(id); return e ? e.value.trim() : ''; }
+function toast(msg, cls){
+  var d=document.createElement('div'); d.className=cls||''; d.textContent=msg;
+  $('toast').appendChild(d); setTimeout(function(){ d.remove(); }, 3800);
+}
+function saveToken(){ localStorage.setItem('dsh_gm_token', V('token')); toast('令牌已保存','ok'); }
+function tok(){ return V('token'); }
+
+/* 统一请求：qs 为对象；rid/token 自动附加 */
+function req(act, qs, useRid){
+  qs = qs || {};
+  if(useRid !== false) qs.rid = V('rid') || '1001';
+  if(tok()) qs.token = tok();
+  var u = '/DSH_ADMIN/' + act + '?' + new URLSearchParams(qs).toString();
+  return fetch(u).then(function(r){ return r.text().then(function(t){
+    var j; try { j = JSON.parse(t); } catch(e){ j = {raw:t}; }
+    return {status:r.status, body:j};
+  });});
+}
+/* 页面内 UI 按钮调用：结果 toast 提示 */
+function api(act, qs){
+  req(act, qs).then(function(r){
+    var ok = r.status===200 && (r.body.ok !== false);
+    toast(act + ' → HTTP ' + r.status, ok?'ok':'err');
+    lastOut(r.body);
+  }).catch(function(e){ toast(act+' 失败: '+e, 'err'); });
+}
+function lastOut(b){ $('advOut').textContent = JSON.stringify(b, null, 2); }
+
+/* ── 总览 ── */
+function loadOverview(){
+  fetch('/GM/api?act=overview').then(function(r){ return r.json(); }).then(function(j){
+    $('srvDot').className = 'dot on';
+    $('srvTxt').textContent = '运行中 · ' + (j.server_time||'');
+    $('ovGrid').innerHTML =
+      kv('角色数', j.roles) + kv('账号数', j.accounts) + kv('DB 表数', j.db_tables) +
+      kv('在线连接', (j.online||[]).length);
+    var tb = $('ovOnline').tBodies[0]; tb.innerHTML='';
+    (j.online||[]).forEach(function(o){
+      tb.insertAdjacentHTML('beforeend','<tr><td>'+o.rid+'</td><td>'+o.addr+'</td><td><span class="tag ok">在线</span></td></tr>');
+    });
+    if(!(j.online||[]).length) tb.innerHTML='<tr><td colspan="3" class="muted">无在线连接</td></tr>';
+  }).catch(function(){ $('srvDot').className='dot'; $('srvTxt').textContent='不可达'; });
+
+  fetch('/DSH_ADMIN/status?rid='+encodeURIComponent(V('rid')||'1001'))
+    .then(function(r){ return r.json(); }).then(function(s){
+      $('ovRid').textContent = s.rid;
+      var r = s.role||{}, a = s.assets||{};
+      $('ovRole').innerHTML =
+        kv('名称', r.name) + kv('等级', r.level) + kv('场景', r.scene_id) +
+        kv('坐标', (r.x||0)+','+(r.y||0)) + kv('钻石', a.gold) +
+        kv('银魂币', a.coin) + kv('金魂币', a.coupon) + kv('经验', a.exp) +
+        kv('背包格', (s.bag||[]).length) + kv('装备件', (s.equip||[]).length);
+    }).catch(function(){});
+}
+function kv(k,v){ return '<div class="kv"><div class="k">'+k+'</div><div class="v">'+(v===null||v===undefined?'-':v)+'</div></div>'; }
+
+/* ── 角色 ── */
+var ROLES=[];
+function loadRoles(){
+  fetch('/GM/api?act=roles').then(function(r){ return r.json(); }).then(function(j){
+    ROLES = j.roles||[]; renderRoles();
+    toast('角色 '+ROLES.length+' 条', 'ok');
+  }).catch(function(e){ toast('角色列表失败: '+e,'err'); });
+}
+function renderRoles(){
+  var kw = V('roleKw').toLowerCase();
+  var tb = $('roleTbl').tBodies[0]; tb.innerHTML='';
+  ROLES.filter(function(r){
+    if(!kw) return true;
+    return (String(r.rid)+String(r.uid)+String(r.name)).toLowerCase().indexOf(kw)>=0;
+  }).forEach(function(r){
+    tb.insertAdjacentHTML('beforeend',
+      '<tr><td>'+r.rid+'</td><td>'+r.uid+'</td><td>'+r.name+'</td><td>'+r.level+'</td>'+
+      '<td>'+r.career+'</td><td>'+r.scene_id+'</td><td>'+r.x+','+r.y+'</td><td>'+r.vip_level+'</td>'+
+      '<td>'+(r.online?'<span class="tag ok">在线</span>':'<span class="tag">离线</span>')+'</td>'+
+      '<td><button onclick="pick('+r.rid+')">选中</button></td></tr>');
+  });
+}
+function pick(rid){ $('rid').value = rid; loadCard(rid); loadOverview(); toast('当前角色 rid='+rid,'ok'); }
+function loadCard(rid){
+  fetch('/GM/api?act=rolecard&rid='+encodeURIComponent(rid)).then(function(r){ return r.json(); }).then(function(j){
+    if(!j.ok){ toast('无此角色 rid='+rid,'err'); return; }
+    $('cardBox').style.display='block'; $('cardRid').textContent='rid='+rid;
+    var c=j.card, r=c.role, a=c.assets||{};
+    $('cardGrid').innerHTML = kv('名称',r.name)+kv('uid',r.uid)+kv('等级',r.level)+
+      kv('经验',r.exp)+kv('职业',r.career)+kv('场景',r.scene_id)+kv('坐标',(r.x||0)+','+(r.y||0))+
+      kv('钻石',a.gold)+kv('银魂币',a.coin)+kv('金魂币',a.coupon)+kv('邮件',c.mail_count);
+    $('cardAssets').textContent=JSON.stringify(a,null,2);
+    $('cardBag').textContent=JSON.stringify(c.bag,null,2);
+    $('cardEquip').textContent=JSON.stringify(c.equip,null,2);
+    $('cardMis').textContent=JSON.stringify(c.missions,null,2);
+    $('cardRw').textContent=JSON.stringify(c.reward_log,null,2);
+    var mt=$('misTbl').tBodies[0]; mt.innerHTML='';
+    (c.missions||[]).forEach(function(m){
+      mt.insertAdjacentHTML('beforeend','<tr><td>'+m.mission_bid+'</td><td>'+m.mission_status+'</td><td>'+m.value+'</td><td>'+m.target_value+'</td><td>'+m.loop_count+'</td><td>'+m.updated_at+'</td></tr>');
+    });
+  }).catch(function(e){ toast('角色卡失败: '+e,'err'); });
+}
+function grantAssets(){
+  var q={mode:V('aMode')}, any=false;
+  [['gold','aGold'],['coin','aCoin'],['coupon','aCoupon']].forEach(function(p){
+    var v=$(p[1]).value.trim(); if(v!==''){ q[p[0]]=v; any=true; }
+  });
+  if(!any){ toast('至少填一个货币值','err'); return; }
+  api('setassets', q);
+}
+
+/* ── 物品 ── */
+function searchItems(){
+  fetch('/DSH_ADMIN/listitems?kw='+encodeURIComponent(V('iKw'))).then(function(r){ return r.json(); }).then(function(j){
+    var tb=$('itemTbl').tBodies[0]; tb.innerHTML='';
+    (j.items||[]).slice(0,300).forEach(function(it){
+      tb.insertAdjacentHTML('beforeend','<tr><td>'+it.bid+'</td><td>'+(it.name||'')+'</td><td>'+(it.type||'')+'</td></tr>');
+    });
+    if(!(j.items||[]).length) tb.innerHTML='<tr><td colspan="3" class="muted">无结果（留空关键字时后端只回条目数上限）</td></tr>';
+    toast('物品 '+((j.items||[]).length)+' 条','ok');
+  }).catch(function(e){ toast('物品检索失败: '+e,'err'); });
+}
+
+/* ── 邮件 ── */
+function loadMail(){
+  fetch('/DSH_ADMIN/mail_list?rid='+encodeURIComponent(V('rid')||'1001')).then(function(r){ return r.json(); }).then(function(j){
+    var tb=$('mailTbl').tBodies[0]; tb.innerHTML='';
+    (j.mails||[]).forEach(function(m){
+      tb.insertAdjacentHTML('beforeend','<tr><td>'+m.id+'</td><td>'+(m.from||'')+'</td><td>'+(m.subject||'')+
+        '</td><td>'+((m.assets&&m.assets!=='[]')?m.assets:'-')+'</td><td>'+(m.has_read?'是':'否')+'</td></tr>');
+    });
+    $('mailCnt').textContent='共 '+(j.count||0)+' 封';
+  }).catch(function(e){ toast('邮件失败: '+e,'err'); });
+}
+
+/* ── 场景 / 副本 ── */
+function teleport(){
+  var q={scene:V('scId')}; if(V('scX'))q.x=V('scX'); if(V('scY'))q.y=V('scY');
+  api('setscene', q);
+}
+function loadDungeon(){
+  fetch('/DSH_ADMIN/dungeon_list?rid='+encodeURIComponent(V('rid')||'1001')).then(function(r){ return r.json(); }).then(function(j){
+    var tb=$('duTbl').tBodies[0]; tb.innerHTML='';
+    (j.rows||[]).forEach(function(d){
+      tb.insertAdjacentHTML('beforeend','<tr><td>'+d.bid+'</td><td>'+(d.name||'')+'</td><td>'+d.level_low+
+        '</td><td>'+d.left+'</td><td>'+(d.first_clear?'<span class="tag ok">是</span>':'否')+'</td></tr>');
+    });
+    toast('副本 '+(j.catalog||0)+' 项','ok');
+  }).catch(function(e){ toast('副本失败: '+e,'err'); });
+}
+
+/* ── 审计 / 配置 ── */
+function loadGmLog(){
+  fetch('/GM/api?act=gmlog&n='+encodeURIComponent(V('auN')||'200')).then(function(r){ return r.json(); }).then(function(j){
+    var l=(j.lines||[]).slice().reverse();
+    $('gmLog').textContent = l.length? l.join('\n') : '（日志为空）';
+  }).catch(function(e){ toast('gm.log 失败: '+e,'err'); });
+}
+var CFG=[];
+function loadCfg(){
+  fetch('/DSH_ADMIN/cfglist').then(function(r){ return r.json(); }).then(function(j){
+    CFG=j.tables||[]; renderCfg(); $('cfgCnt').textContent='共 '+CFG.length+' 张表';
+  }).catch(function(e){ toast('配置表失败: '+e,'err'); });
+}
+function renderCfg(){
+  var kw=V('cfgKw').toLowerCase(), tb=$('cfgTbl').tBodies[0]; tb.innerHTML='';
+  CFG.filter(function(t){ return !kw || t.name.toLowerCase().indexOf(kw)>=0; }).slice(0,300).forEach(function(t){
+    tb.insertAdjacentHTML('beforeend','<tr><td style="cursor:pointer" onclick="document.getElementById(\'cfgName\').value=\''+t.name+'\'">'+t.name+'</td><td>'+t.size+'</td></tr>');
+  });
+}
+
+/* ── 高级 ── */
+function advCall(){
+  var act=V('advAct'); if(!act){ toast('先填 act','err'); return; }
+  var q={};
+  (V('advQ')||'').split('&').forEach(function(p){
+    if(!p) return; var i=p.indexOf('='); if(i<0){ q[p]='1'; }
+    else q[p.slice(0,i)] = decodeURIComponent(p.slice(i+1));
+  });
+  req(act,q).then(function(r){
+    $('advOut').textContent='HTTP '+r.status+'\n'+JSON.stringify(r.body,null,2);
+    toast(act+' → HTTP '+r.status, r.status===200?'ok':'err');
+  }).catch(function(e){ toast('调用失败: '+e,'err'); });
+}
+
+/* ── 导航 / 启动 ── */
+document.querySelectorAll('#nav a').forEach(function(a){
+  a.onclick=function(){
+    document.querySelectorAll('#nav a').forEach(function(x){ x.classList.remove('act'); });
+    document.querySelectorAll('main section').forEach(function(x){ x.classList.remove('act'); });
+    a.classList.add('act'); $('s-'+a.dataset.s).classList.add('act');
+    if(a.dataset.s==='roles' && !ROLES.length) loadRoles();
+    if(a.dataset.s==='audit') loadGmLog();
+    if(a.dataset.s==='config' && !CFG.length) loadCfg();
+  };
+});
+function boot(){
+  loadOverview(); loadRoles(); loadMail();
+}
+$('token').value = localStorage.getItem('dsh_gm_token') || '';
+$('rid').addEventListener('change', function(){ loadOverview(); });
+fetch('/GM/api?act=token&token='+encodeURIComponent(tok())).then(function(r){return r.json();}).then(function(j){
+  if(j.token_required && !tok()) toast('提示：写操作需要 GM Token（默认 dshgm）');
+});
+boot();
+</script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+[
+ {
+  "key": 10001,
+  "array": [
+   null,
+   10002,
+   10004
+  ],
+  "hash": {},
+  "bc_index": 196
+ },
+ {
+  "key": 10002,
+  "array": [
+   null,
+   10001,
+   10003
+  ],
+  "hash": {},
+  "bc_index": 199
+ },
+ {
+  "key": 10003,
+  "array": [
+   null,
+   10002
+  ],
+  "hash": {},
+  "bc_index": 202
+ },
+ {
+  "key": 10004,
+  "array": [
+   null,
+   10001,
+   10005
+  ],
+  "hash": {},
+  "bc_index": 205
+ },
+ {
+  "key": 10005,
+  "array": [
+   null,
+   10004
+  ],
+  "hash": {},
+  "bc_index": 208
+ },
+ {
+  "key": 10006,
+  "array": [
+   null,
+   10001
+  ],
+  "hash": {},
+  "bc_index": 211
+ },
+ {
+  "key": 10007,
+  "array": [
+   null,
+   10001
+  ],
+  "hash": {},
+  "bc_index": 214
+ },
+ {
+  "key": 10008,
+  "array": [
+   null,
+   10001
+  ],
+  "hash": {},
+  "bc_index": 217
+ },
+ {
+  "key": 10009,
+  "array": [
+   null,
+   10001
+  ],
+  "hash": {},
+  "bc_index": 220
+ },
+ {
+  "key": 10010,
+  "array": [
+   null,
+   10001
+  ],
+  "hash": {},
+  "bc_index": 223
+ },
+ {
+  "key": 10011,
+  "array": [
+   null,
+   10001
+  ],
+  "hash": {},
+  "bc_index": 226
+ },
+ {
+  "key": 10100,
+  "array": [
+   null,
+   10001
+  ],
+  "hash": {},
+  "bc_index": 229
+ },
+ {
+  "key": 10101,
+  "array": [
+   null,
+   10001
+  ],
+  "hash": {},
+  "bc_index": 232
+ },
+ {
+  "key": 10102,
+  "array": [
+   null,
+   10001
+  ],
+  "hash": {},
+  "bc_index": 235
+ },
+ {
+  "key": 10103,
+  "array": [
+   null,
+   10001
+  ],
+  "hash": {},
+  "bc_index": 238
+ },
+ {
+  "key": 10104,
+  "array": [
+   null,
+   10001
+  ],
+  "hash": {},
+  "bc_index": 241
+ },
+ {
+  "key": 20008,
+  "array": [
+   null,
+   20007,
+   20007
+  ],
+  "hash": {},
+  "bc_index": 268
+ },
+ {
+  "key": 20009,
+  "array": [
+   null,
+   20007,
+   20007
+  ],
+  "hash": {},
+  "bc_index": 271
+ }
+]

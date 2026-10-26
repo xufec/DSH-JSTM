@@ -1,0 +1,4554 @@
+{
+ "status": {
+  "ok": true,
+  "rid": 1001,
+  "role": {
+   "rid": 1001,
+   "uid": "dsh_local",
+   "name": "DSH",
+   "level": 70,
+   "career": 1,
+   "sex": 0,
+   "exp": 13339,
+   "hp": null,
+   "max_hp": null,
+   "mp": null,
+   "max_mp": null,
+   "gold": 1800140,
+   "gold_acc": 5000,
+   "diamond": 0,
+   "scene_id": 10001,
+   "x": 126,
+   "y": 49,
+   "dir": 0,
+   "vip_level": 0,
+   "title": "0",
+   "status": 0,
+   "updated_at": 1791955670,
+   "coin": 9904629
+  },
+  "assets": {
+   "charm": 0,
+   "coin": 9904629,
+   "coupon": 99999999,
+   "courage": 0,
+   "exp": 13339,
+   "gold": 1800140,
+   "hero_exp": 3200,
+   "rune_chip": 41000,
+   "rune_exp": 0
+  },
+  "bag": [
+   {
+    "item_id": 309,
+    "bid": 28560,
+    "qty": 2
+   },
+   {
+    "item_id": 310,
+    "bid": 28515,
+    "qty": 2
+   },
+   {
+    "item_id": 312,
+    "bid": 21403,
+    "qty": 3
+   },
+   {
+    "item_id": 315,
+    "bid": 13001,
+    "qty": 1
+   },
+   {
+    "item_id": 316,
+    "bid": 46022,
+    "qty": 1
+   },
+   {
+    "item_id": 318,
+    "bid": 33001,
+    "qty": 2
+   }
+  ],
+  "equip": [
+   {
+    "slot": 1,
+    "bid": 40003
+   },
+   {
+    "slot": 2,
+    "bid": 41803
+   },
+   {
+    "slot": 3,
+    "bid": 41403
+   },
+   {
+    "slot": 4,
+    "bid": 41603
+   },
+   {
+    "slot": 5,
+    "bid": 41003
+   },
+   {
+    "slot": 6,
+    "bid": 41213
+   }
+  ],
+  "store": [],
+  "levgift_got": []
+ },
+ "power": {
+  "ok": true,
+  "power": 724112,
+  "attrs": {
+   "strength": 10,
+   "intellect": 10,
+   "armor": 10,
+   "constiution": 10,
+   "atk_s": 1813,
+   "atk_p": 795,
+   "def_s": 1579,
+   "def_p": 611,
+   "hp_max": 7305,
+   "atk_speed": 18,
+   "hit": 337,
+   "dodge": 226,
+   "crit": 113,
+   "tenacity": 90,
+   "red_def_s": 0,
+   "red_def_p": 0,
+   "atk_abs": 0,
+   "def_abs": 0,
+   "reduce": 0,
+   "hurt": 0,
+   "hit_rate_show": 0,
+   "dodge_rate_show": 0,
+   "crit_rate_show": 0,
+   "tenacity_rate_show": 0,
+   "practice_exp": 35
+  },
+  "detail": [
+   {
+    "key": "atk_s",
+    "name": "物攻",
+    "contrib": 192178.0
+   },
+   {
+    "key": "hp_max",
+    "name": "生命",
+    "contrib": 175320.0
+   },
+   {
+    "key": "hit",
+    "name": "命中",
+    "contrib": 92675.0
+   },
+   {
+    "key": "atk_p",
+    "name": "法攻",
+    "contrib": 84270.0
+   },
+   {
+    "key": "dodge",
+    "name": "躲闪",
+    "contrib": 62150.0
+   },
+   {
+    "key": "def_s",
+    "name": "物防",
+    "contrib": 52107.0
+   },
+   {
+    "key": "crit",
+    "name": "暴击",
+    "contrib": 20679.0
+   },
+   {
+    "key": "def_p",
+    "name": "法防",
+    "contrib": 20163.0
+   },
+   {
+    "key": "tenacity",
+    "name": "抗暴",
+    "contrib": 16470.0
+   },
+   {
+    "key": "atk_speed",
+    "name": "速度",
+    "contrib": 8100.0
+   },
+   {
+    "key": "red_def_s",
+    "name": "物理破甲",
+    "contrib": 0.0
+   },
+   {
+    "key": "red_def_p",
+    "name": "法术破甲",
+    "contrib": 0.0
+   }
+  ],
+  "module": true
+ },
+ "rank_breakdown": {
+  "rid": 1001,
+  "total": 724112,
+  "dims": {
+   "power_eqm_role": 0,
+   "power_skill": 0,
+   "power_xiulian": 0,
+   "power_hero": 0,
+   "power_ride": 0,
+   "power_lingshou": 0,
+   "power_shenqi": 0,
+   "power_wing": 0,
+   "power_fabao": 0
+  },
+  "note": "dims placeholder pending V8/V11 evidence"
+ },
+ "getassets": {
+  "ok": true,
+  "rid": 1001,
+  "gold": 1800140,
+  "coin": 9904629,
+  "coupon": 99999999,
+  "assets": {
+   "charm": 0,
+   "coin": 9904629,
+   "coupon": 99999999,
+   "courage": 0,
+   "exp": 13339,
+   "gold": 1800140,
+   "hero_exp": 3200,
+   "rune_chip": 41000,
+   "rune_exp": 0
+  }
+ },
+ "ach_list": {
+  "ok": true,
+  "n": 342,
+  "sample": [
+   {
+    "bid": 10100,
+    "name": "史莱克弟子",
+    "desc": "完成5轮学院任务",
+    "cent": 1,
+    "type": 1
+   },
+   {
+    "bid": 10101,
+    "name": "学院能手",
+    "desc": "完成20轮学院任务",
+    "cent": 3,
+    "type": 1
+   },
+   {
+    "bid": 10102,
+    "name": "核心弟子",
+    "desc": "完成50轮学院任务",
+    "cent": 5,
+    "type": 1
+   },
+   {
+    "bid": 10103,
+    "name": "劳苦功高",
+    "desc": "完成100轮学院任务",
+    "cent": 6,
+    "type": 1
+   },
+   {
+    "bid": 10200,
+    "name": "走过一轮",
+    "desc": "完成20轮监察任务",
+    "cent": 2,
+    "type": 1
+   }
+  ]
+ },
+ "mail_list": {
+  "ok": true,
+  "rid": 1001,
+  "count": 195,
+  "mails": [
+   {
+    "id": 195,
+    "from": "系统",
+    "subject": "Phase12测试邮件",
+    "has_read": false,
+    "assets": "[{\"type\": \"gold\", \"count\": 1000}, {\"type\": \"coin\", \"count\": 2000}]",
+    "items": "[]"
+   },
+   {
+    "id": 194,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 193,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 192,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 191,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 190,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 189,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 188,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 187,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 186,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 185,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 184,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 183,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 182,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 181,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 180,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 179,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 178,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 177,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 176,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 175,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 174,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 173,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 172,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 171,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 170,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 169,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 168,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 167,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 166,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 165,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 164,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 163,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 162,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 161,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 160,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 159,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 158,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 157,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 156,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 155,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 154,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 153,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 152,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 151,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 150,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 149,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 148,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 147,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 146,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 145,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 144,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 143,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 142,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 141,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 140,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 139,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 138,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 137,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 136,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 135,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 134,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 133,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 132,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 131,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 130,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 129,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 128,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 127,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 126,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 125,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 124,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 123,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 122,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 121,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 120,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 119,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 118,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 117,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 116,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 115,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 114,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 113,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 112,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 111,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 110,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 109,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 108,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 107,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 106,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 105,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 104,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 103,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 102,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 101,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 100,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 99,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 98,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 97,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 96,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 95,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 94,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 93,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 92,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 91,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 90,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 89,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 88,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 87,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 86,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 85,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 84,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 83,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 82,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 81,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 80,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 79,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 78,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 77,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 76,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 75,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 74,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 73,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 72,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 71,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 70,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 69,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 68,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 67,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 66,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 65,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 64,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 63,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 62,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 61,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 60,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 59,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 58,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 57,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 56,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 55,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 54,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 53,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 52,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 51,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 50,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 49,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 48,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 47,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 46,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 45,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 44,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 43,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 42,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 41,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 40,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 39,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 38,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 37,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 36,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 35,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 34,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 33,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 32,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 31,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 30,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 29,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 28,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 27,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 26,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 25,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 24,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 23,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 22,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 21,
+    "from": "测",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 20,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 19,
+    "from": "测",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 18,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 17,
+    "from": "测",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 16,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 15,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 14,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 13,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 12,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 11,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 10,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 9,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 8,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 7,
+    "from": "DSH",
+    "subject": "测试",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 6,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 5,
+    "from": "DSH",
+    "subject": "�",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 4,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 3,
+    "from": "DSH",
+    "subject": "�",
+    "has_read": false,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 2,
+    "from": "tester",
+    "subject": "hello",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   },
+   {
+    "id": 1,
+    "from": "DSH",
+    "subject": "�",
+    "has_read": true,
+    "assets": "[]",
+    "items": "[]"
+   }
+  ]
+ },
+ "dungeon_list": {
+  "ok": true,
+  "rid": 1001,
+  "catalog": 34,
+  "rows": [
+   {
+    "bid": 20001,
+    "name": "极地寻宝",
+    "level_low": 31,
+    "left": 0,
+    "first_clear": true
+   },
+   {
+    "bid": 20100,
+    "name": "结拜副本",
+    "level_low": 48,
+    "left": 0,
+    "first_clear": false
+   },
+   {
+    "bid": 30001,
+    "name": "斗兽场",
+    "level_low": 40,
+    "left": 0,
+    "first_clear": false
+   },
+   {
+    "bid": 30002,
+    "name": "森林外围",
+    "level_low": 55,
+    "left": 0,
+    "first_clear": false
+   },
+   {
+    "bid": 30003,
+    "name": "御兽战场",
+    "level_low": 75,
+    "left": 0,
+    "first_clear": false
+   },
+   {
+    "bid": 30004,
+    "name": "无人地带",
+    "level_low": 90,
+    "left": 0,
+    "first_clear": false
+   },
+   {
+    "bid": 40001,
+    "name": "镇魂塔",
+    "level_low": 45,
+    "left": 0,
+    "first_clear": false
+   },
+   {
+    "bid": 40002,
+    "name": "传灵塔",
+    "level_low": 55,
+    "left": 0,
+    "first_clear": false
+   },
+   {
+    "bid": 40003,
+    "name": "困神塔",
+    "level_low": 90,
+    "left": 0,
+    "first_clear": false
+   },
+   {
+    "bid": 50001,
+    "name": "封神之路",
+    "level_low": 24,
+    "left": 1,
+    "first_clear": false
+   },
+   {
+    "bid": 50100,
+    "name": "遗迹一层",
+    "level_low": 78,
+    "left": 1,
+    "first_clear": false
+   },
+   {
+    "bid": 50101,
+    "name": "遗迹二层",
+    "level_low": 78,
+    "left": 1,
+    "first_clear": false
+   },
+   {
+    "bid": 50102,
+    "name": "遗迹三层",
+    "level_low": 83,
+    "left": 1,
+    "first_clear": false
+   },
+   {
+    "bid": 50103,
+    "name": "遗迹四层",
+    "level_low": 83,
+    "left": 1,
+    "first_clear": false
+   },
+   {
+    "bid": 50104,
+    "name": "遗迹五层",
+    "level_low": 90,
+    "left": 1,
+    "first_clear": false
+   },
+   {
+    "bid": 50105,
+    "name": "遗迹六层",
+    "level_low": 95,
+    "left": 1,
+    "first_clear": false
+   },
+   {
+    "bid": 50106,
+    "name": "遗迹七层",
+    "level_low": 100,
+    "left": 1,
+    "first_clear": false
+   },
+   {
+    "bid": 50107,
+    "name": "遗迹八层",
+    "level_low": 105,
+    "left": 1,
+    "first_clear": false
+   },
+   {
+    "bid": 50108,
+    "name": "遗迹九层",
+    "level_low": 110,
+    "left": 1,
+    "first_clear": false
+   },
+   {
+    "bid": 50500,
+    "name": "海神九考",
+    "level_low": 58,
+    "left": 1,
+    "first_clear": false
+   },
+   {
+    "bid": 60001,
+    "name": "乾坤问情",
+    "level_low": 35,
+    "left": 5,
+    "first_clear": false
+   },
+   {
+    "bid": 70001,
+    "name": "新生考核",
+    "level_low": 33,
+    "left": 1,
+    "first_clear": false
+   },
+   {
+    "bid": 70002,
+    "name": "极北之地",
+    "level_low": 43,
+    "left": 1,
+    "first_clear": false
+   },
+   {
+    "bid": 70003,
+    "name": "日月之行",
+    "level_low": 53,
+    "left": 1,
+    "first_clear": false
+   },
+   {
+    "bid": 70004,
+    "name": "生死时速",
+    "level_low": 63,
+    "left": 1,
+    "first_clear": false
+   },
+   {
+    "bid": 70005,
+    "name": "修行之路",
+    "level_low": 73,
+    "left": 1,
+    "first_clear": false
+   },
+   {
+    "bid": 70006,
+    "name": "帝国战争",
+    "level_low": 83,
+    "left": 1,
+    "first_clear": false
+   },
+   {
+    "bid": 70501,
+    "name": "魂师之战",
+    "level_low": 93,
+    "left": 1,
+    "first_clear": false
+   },
+   {
+    "bid": 70502,
+    "name": "突破之行",
+    "level_low": 93,
+    "left": 1,
+    "first_clear": false
+   },
+   {
+    "bid": 70503,
+    "name": "觉悟之旅",
+    "level_low": 93,
+    "left": 1,
+    "first_clear": false
+   },
+   {
+    "bid": 70504,
+    "name": "觉醒之途",
+    "level_low": 93,
+    "left": 1,
+    "first_clear": false
+   },
+   {
+    "bid": 80001,
+    "name": "普通试炼",
+    "level_low": 73,
+    "left": 0,
+    "first_clear": false
+   },
+   {
+    "bid": 80002,
+    "name": "精英试炼",
+    "level_low": 83,
+    "left": 0,
+    "first_clear": false
+   },
+   {
+    "bid": 80003,
+    "name": "巅峰试炼",
+    "level_low": 93,
+    "left": 0,
+    "first_clear": false
+   }
+  ]
+ },
+ "mall_list": {
+  "ok": true,
+  "rid": 1001,
+  "counts": {
+   "normal": 110,
+   "week": 24,
+   "xian": 45
+  },
+  "rows": {
+   "normal": [
+    {
+     "gid": 2001,
+     "item_bid": 25890,
+     "price": 99,
+     "pay_type": 1,
+     "cli_tag": "HOT",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2002,
+     "item_bid": 25301,
+     "price": 250,
+     "pay_type": 1,
+     "cli_tag": "HOT",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2003,
+     "item_bid": 36500,
+     "price": 5,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2004,
+     "item_bid": 25933,
+     "price": 30,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2005,
+     "item_bid": 25934,
+     "price": 30,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2006,
+     "item_bid": 36020,
+     "price": 30,
+     "pay_type": 1,
+     "cli_tag": "HOT",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2007,
+     "item_bid": 36009,
+     "price": 20,
+     "pay_type": 1,
+     "cli_tag": "HOT",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2008,
+     "item_bid": 25420,
+     "price": 20,
+     "pay_type": 1,
+     "cli_tag": "HOT",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2009,
+     "item_bid": 36040,
+     "price": 80,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2010,
+     "item_bid": 36007,
+     "price": 40,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2011,
+     "item_bid": 36008,
+     "price": 120,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2012,
+     "item_bid": 25104,
+     "price": 27,
+     "pay_type": 1,
+     "cli_tag": "HOT",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2013,
+     "item_bid": 25201,
+     "price": 10,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2014,
+     "item_bid": 25940,
+     "price": 40,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2015,
+     "item_bid": 25955,
+     "price": 50,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2016,
+     "item_bid": 36570,
+     "price": 2980,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2017,
+     "item_bid": 36573,
+     "price": 1980,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2018,
+     "item_bid": 36531,
+     "price": 210,
+     "pay_type": 1,
+     "cli_tag": "HOT",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2019,
+     "item_bid": 36532,
+     "price": 120,
+     "pay_type": 1,
+     "cli_tag": "HOT",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2020,
+     "item_bid": 25930,
+     "price": 10,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2021,
+     "item_bid": 25931,
+     "price": 99,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2022,
+     "item_bid": 25932,
+     "price": 999,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2023,
+     "item_bid": 25950,
+     "price": 50,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2024,
+     "item_bid": 25327,
+     "price": 15,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2025,
+     "item_bid": 25367,
+     "price": 15,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2026,
+     "item_bid": 36010,
+     "price": 80,
+     "pay_type": 1,
+     "cli_tag": "HOT",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2027,
+     "item_bid": 36011,
+     "price": 320,
+     "pay_type": 1,
+     "cli_tag": "HOT",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2028,
+     "item_bid": 36012,
+     "price": 1280,
+     "pay_type": 1,
+     "cli_tag": "HOT",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2029,
+     "item_bid": 36550,
+     "price": 98,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2031,
+     "item_bid": 36552,
+     "price": 380,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2032,
+     "item_bid": 36553,
+     "price": 680,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2033,
+     "item_bid": 36554,
+     "price": 880,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2034,
+     "item_bid": 36555,
+     "price": 980,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2035,
+     "item_bid": 36556,
+     "price": 1380,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2036,
+     "item_bid": 36557,
+     "price": 1680,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2037,
+     "item_bid": 36558,
+     "price": 1980,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2038,
+     "item_bid": 36559,
+     "price": 2280,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2039,
+     "item_bid": 36560,
+     "price": 2580,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2040,
+     "item_bid": 36506,
+     "price": 50,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2041,
+     "item_bid": 42011,
+     "price": 152,
+     "pay_type": 1,
+     "cli_tag": "HOT",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2042,
+     "item_bid": 42021,
+     "price": 152,
+     "pay_type": 1,
+     "cli_tag": "HOT",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2043,
+     "item_bid": 42031,
+     "price": 152,
+     "pay_type": 1,
+     "cli_tag": "HOT",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2044,
+     "item_bid": 42041,
+     "price": 152,
+     "pay_type": 1,
+     "cli_tag": "HOT",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2045,
+     "item_bid": 20110,
+     "price": 499,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2046,
+     "item_bid": 20100,
+     "price": 300,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2047,
+     "item_bid": 25520,
+     "price": 15,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2048,
+     "item_bid": 25610,
+     "price": 45,
+     "pay_type": 1,
+     "cli_tag": "HOT",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2049,
+     "item_bid": 36005,
+     "price": 480,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2050,
+     "item_bid": 18070,
+     "price": 299,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2051,
+     "item_bid": 26701,
+     "price": 15,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 2052,
+     "item_bid": 27001,
+     "price": 15,
+     "pay_type": 1,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 2
+    },
+    {
+     "gid": 3001,
+     "item_bid": 36500,
+     "price": 6,
+     "pay_type": 24,
+     "cli_tag": "",
+     "limit_week": 150,
+     "limit_day_cli": 0,
+     "type": 3
+    },
+    {
+     "gid": 3002,
+     "item_bid": 25940,
+     "price": 40,
+     "pay_type": 24,
+     "cli_tag": "",
+     "limit_week": 3,
+     "limit_day_cli": 0,
+     "type": 3
+    },
+    {
+     "gid": 3003,
+     "item_bid": 36006,
+     "price": 10,
+     "pay_type": 24,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 3
+    },
+    {
+     "gid": 3004,
+     "item_bid": 36007,
+     "price": 40,
+     "pay_type": 24,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 3
+    },
+    {
+     "gid": 3005,
+     "item_bid": 36040,
+     "price": 80,
+     "pay_type": 24,
+     "cli_tag": "",
+     "limit_week": 5,
+     "limit_day_cli": 0,
+     "type": 3
+    },
+    {
+     "gid": 3006,
+     "item_bid": 36020,
+     "price": 30,
+     "pay_type": 24,
+     "cli_tag": "",
+     "limit_week": 8,
+     "limit_day_cli": 0,
+     "type": 3
+    },
+    {
+     "gid": 3007,
+     "item_bid": 25420,
+     "price": 25,
+     "pay_type": 24,
+     "cli_tag": "",
+     "limit_week": 20,
+     "limit_day_cli": 0,
+     "type": 3
+    },
+    {
+     "gid": 3008,
+     "item_bid": 25327,
+     "price": 25,
+     "pay_type": 24,
+     "cli_tag": "",
+     "limit_week": 20,
+     "limit_day_cli": 0,
+     "type": 3
+    },
+    {
+     "gid": 3009,
+     "item_bid": 25367,
+     "price": 25,
+     "pay_type": 24,
+     "cli_tag": "",
+     "limit_week": 20,
+     "limit_day_cli": 0,
+     "type": 3
+    },
+    {
+     "gid": 3010,
+     "item_bid": 36009,
+     "price": 24,
+     "pay_type": 24,
+     "cli_tag": "",
+     "limit_week": 10,
+     "limit_day_cli": 0,
+     "type": 3
+    },
+    {
+     "gid": 3011,
+     "item_bid": 36008,
+     "price": 120,
+     "pay_type": 24,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 3
+    },
+    {
+     "gid": 3012,
+     "item_bid": 36510,
+     "price": 2800,
+     "pay_type": 24,
+     "cli_tag": "",
+     "limit_week": 1,
+     "limit_day_cli": 0,
+     "type": 3
+    },
+    {
+     "gid": 3013,
+     "item_bid": 35897,
+     "price": 280,
+     "pay_type": 24,
+     "cli_tag": "",
+     "limit_week": 4,
+     "limit_day_cli": 0,
+     "type": 3
+    },
+    {
+     "gid": 3014,
+     "item_bid": 26701,
+     "price": 30,
+     "pay_type": 24,
+     "cli_tag": "",
+     "limit_week": 10,
+     "limit_day_cli": 0,
+     "type": 3
+    },
+    {
+     "gid": 3015,
+     "item_bid": 25520,
+     "price": 30,
+     "pay_type": 24,
+     "cli_tag": "",
+     "limit_week": 10,
+     "limit_day_cli": 0,
+     "type": 3
+    },
+    {
+     "gid": 4000,
+     "item_bid": 22011,
+     "price": 200000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 4
+    },
+    {
+     "gid": 4001,
+     "item_bid": 40001,
+     "price": 4000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 4
+    },
+    {
+     "gid": 4002,
+     "item_bid": 40021,
+     "price": 4000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 4
+    },
+    {
+     "gid": 4003,
+     "item_bid": 40041,
+     "price": 4000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 4
+    },
+    {
+     "gid": 4004,
+     "item_bid": 40061,
+     "price": 4000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 4
+    },
+    {
+     "gid": 4005,
+     "item_bid": 41001,
+     "price": 4000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 4
+    },
+    {
+     "gid": 4006,
+     "item_bid": 41211,
+     "price": 4000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 4
+    },
+    {
+     "gid": 4007,
+     "item_bid": 41401,
+     "price": 4000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 4
+    },
+    {
+     "gid": 4008,
+     "item_bid": 41601,
+     "price": 4000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 4
+    },
+    {
+     "gid": 4009,
+     "item_bid": 41801,
+     "price": 4000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 4
+    },
+    {
+     "gid": 4010,
+     "item_bid": 40081,
+     "price": 4000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 4
+    },
+    {
+     "gid": 4011,
+     "item_bid": 40002,
+     "price": 16000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 5
+    },
+    {
+     "gid": 4012,
+     "item_bid": 40022,
+     "price": 16000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 5
+    },
+    {
+     "gid": 4013,
+     "item_bid": 40042,
+     "price": 16000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 5
+    },
+    {
+     "gid": 4014,
+     "item_bid": 40062,
+     "price": 16000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 5
+    },
+    {
+     "gid": 4015,
+     "item_bid": 41002,
+     "price": 16000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 5
+    },
+    {
+     "gid": 4016,
+     "item_bid": 41212,
+     "price": 16000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 5
+    },
+    {
+     "gid": 4017,
+     "item_bid": 41402,
+     "price": 16000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 5
+    },
+    {
+     "gid": 4018,
+     "item_bid": 41602,
+     "price": 16000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 5
+    },
+    {
+     "gid": 4019,
+     "item_bid": 41802,
+     "price": 16000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 5
+    },
+    {
+     "gid": 4020,
+     "item_bid": 40082,
+     "price": 16000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 5
+    },
+    {
+     "gid": 4021,
+     "item_bid": 40003,
+     "price": 16000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 6
+    },
+    {
+     "gid": 4022,
+     "item_bid": 40023,
+     "price": 16000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 6
+    },
+    {
+     "gid": 4023,
+     "item_bid": 40043,
+     "price": 16000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 6
+    },
+    {
+     "gid": 4024,
+     "item_bid": 40063,
+     "price": 16000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 6
+    },
+    {
+     "gid": 4025,
+     "item_bid": 41003,
+     "price": 16000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 6
+    },
+    {
+     "gid": 4026,
+     "item_bid": 41213,
+     "price": 16000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 6
+    },
+    {
+     "gid": 4027,
+     "item_bid": 41403,
+     "price": 16000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 6
+    },
+    {
+     "gid": 4028,
+     "item_bid": 41603,
+     "price": 16000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 6
+    },
+    {
+     "gid": 4029,
+     "item_bid": 41803,
+     "price": 16000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 6
+    },
+    {
+     "gid": 4030,
+     "item_bid": 20135,
+     "price": 12000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 100
+    },
+    {
+     "gid": 4031,
+     "item_bid": 20136,
+     "price": 12000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 100
+    },
+    {
+     "gid": 4032,
+     "item_bid": 20141,
+     "price": 12000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 100
+    },
+    {
+     "gid": 4033,
+     "item_bid": 20146,
+     "price": 12000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 100
+    },
+    {
+     "gid": 4034,
+     "item_bid": 20151,
+     "price": 12000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 100
+    },
+    {
+     "gid": 4040,
+     "item_bid": 20140,
+     "price": 32000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 101
+    },
+    {
+     "gid": 4041,
+     "item_bid": 20147,
+     "price": 32000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 101
+    },
+    {
+     "gid": 4042,
+     "item_bid": 20150,
+     "price": 32000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 101
+    },
+    {
+     "gid": 4043,
+     "item_bid": 20152,
+     "price": 32000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 101
+    },
+    {
+     "gid": 4050,
+     "item_bid": 20132,
+     "price": 120000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 102
+    },
+    {
+     "gid": 4051,
+     "item_bid": 20137,
+     "price": 120000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 102
+    },
+    {
+     "gid": 4052,
+     "item_bid": 20142,
+     "price": 120000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 102
+    },
+    {
+     "gid": 4053,
+     "item_bid": 20145,
+     "price": 120000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 102
+    },
+    {
+     "gid": 4090,
+     "item_bid": 40083,
+     "price": 16000,
+     "pay_type": 2,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 6
+    }
+   ],
+   "week": [
+    {
+     "gid": 20001,
+     "item_bid": 30039,
+     "price": 250,
+     "pay_type": 1,
+     "cli_tag": "五折",
+     "limit_week": 2,
+     "limit_day_cli": 0,
+     "type": 20
+    },
+    {
+     "gid": 20002,
+     "item_bid": 30043,
+     "price": 360,
+     "pay_type": 1,
+     "cli_tag": "八折",
+     "limit_week": 2,
+     "limit_day_cli": 0,
+     "type": 20
+    },
+    {
+     "gid": 20003,
+     "item_bid": 30044,
+     "price": 360,
+     "pay_type": 1,
+     "cli_tag": "八折",
+     "limit_week": 2,
+     "limit_day_cli": 0,
+     "type": 20
+    },
+    {
+     "gid": 20004,
+     "item_bid": 30041,
+     "price": 630,
+     "pay_type": 1,
+     "cli_tag": "七折",
+     "limit_week": 2,
+     "limit_day_cli": 0,
+     "type": 20
+    },
+    {
+     "gid": 20005,
+     "item_bid": 30045,
+     "price": 480,
+     "pay_type": 1,
+     "cli_tag": "八折",
+     "limit_week": 2,
+     "limit_day_cli": 0,
+     "type": 20
+    },
+    {
+     "gid": 20006,
+     "item_bid": 25933,
+     "price": 21,
+     "pay_type": 1,
+     "cli_tag": "七折",
+     "limit_week": 2,
+     "limit_day_cli": 0,
+     "type": 20
+    },
+    {
+     "gid": 20007,
+     "item_bid": 25934,
+     "price": 21,
+     "pay_type": 1,
+     "cli_tag": "七折",
+     "limit_week": 1,
+     "limit_day_cli": 0,
+     "type": 20
+    },
+    {
+     "gid": 20008,
+     "item_bid": 36500,
+     "price": 3,
+     "pay_type": 1,
+     "cli_tag": "六折",
+     "limit_week": 150,
+     "limit_day_cli": 0,
+     "type": 20
+    },
+    {
+     "gid": 20009,
+     "item_bid": 36530,
+     "price": 21,
+     "pay_type": 1,
+     "cli_tag": "七折",
+     "limit_week": 5,
+     "limit_day_cli": 0,
+     "type": 20
+    },
+    {
+     "gid": 20010,
+     "item_bid": 30035,
+     "price": 32,
+     "pay_type": 1,
+     "cli_tag": "八折",
+     "limit_week": 1,
+     "limit_day_cli": 0,
+     "type": 20
+    },
+    {
+     "gid": 20011,
+     "item_bid": 25891,
+     "price": 8,
+     "pay_type": 1,
+     "cli_tag": "八折",
+     "limit_week": 50,
+     "limit_day_cli": 0,
+     "type": 20
+    },
+    {
+     "gid": 20012,
+     "item_bid": 30690,
+     "price": 249,
+     "pay_type": 1,
+     "cli_tag": "七折",
+     "limit_week": 2,
+     "limit_day_cli": 0,
+     "type": 20
+    },
+    {
+     "gid": 20013,
+     "item_bid": 30691,
+     "price": 349,
+     "pay_type": 1,
+     "cli_tag": "七折",
+     "limit_week": 2,
+     "limit_day_cli": 0,
+     "type": 20
+    },
+    {
+     "gid": 20015,
+     "item_bid": 30890,
+     "price": 99,
+     "pay_type": 1,
+     "cli_tag": "八折",
+     "limit_week": 5,
+     "limit_day_cli": 0,
+     "type": 20
+    },
+    {
+     "gid": 20016,
+     "item_bid": 30891,
+     "price": 299,
+     "pay_type": 1,
+     "cli_tag": "八折",
+     "limit_week": 3,
+     "limit_day_cli": 0,
+     "type": 20
+    },
+    {
+     "gid": 20017,
+     "item_bid": 30057,
+     "price": 360,
+     "pay_type": 1,
+     "cli_tag": "八折",
+     "limit_week": 2,
+     "limit_day_cli": 0,
+     "type": 20
+    },
+    {
+     "gid": 20018,
+     "item_bid": 30058,
+     "price": 299,
+     "pay_type": 1,
+     "cli_tag": "八折",
+     "limit_week": 2,
+     "limit_day_cli": 0,
+     "type": 20
+    },
+    {
+     "gid": 20019,
+     "item_bid": 31130,
+     "price": 330,
+     "pay_type": 1,
+     "cli_tag": "八折",
+     "limit_week": 2,
+     "limit_day_cli": 0,
+     "type": 20
+    },
+    {
+     "gid": 20020,
+     "item_bid": 31131,
+     "price": 680,
+     "pay_type": 1,
+     "cli_tag": "八折",
+     "limit_week": 2,
+     "limit_day_cli": 0,
+     "type": 20
+    },
+    {
+     "gid": 20021,
+     "item_bid": 35890,
+     "price": 450,
+     "pay_type": 1,
+     "cli_tag": "七折",
+     "limit_week": 2,
+     "limit_day_cli": 0,
+     "type": 20
+    },
+    {
+     "gid": 20022,
+     "item_bid": 30195,
+     "price": 360,
+     "pay_type": 1,
+     "cli_tag": "八折",
+     "limit_week": 2,
+     "limit_day_cli": 0,
+     "type": 20
+    },
+    {
+     "gid": 20023,
+     "item_bid": 21902,
+     "price": 540,
+     "pay_type": 1,
+     "cli_tag": "八折",
+     "limit_week": 2,
+     "limit_day_cli": 0,
+     "type": 20
+    },
+    {
+     "gid": 20024,
+     "item_bid": 21903,
+     "price": 350,
+     "pay_type": 1,
+     "cli_tag": "七折",
+     "limit_week": 2,
+     "limit_day_cli": 0,
+     "type": 20
+    },
+    {
+     "gid": 20025,
+     "item_bid": 21904,
+     "price": 200,
+     "pay_type": 1,
+     "cli_tag": "七折",
+     "limit_week": 2,
+     "limit_day_cli": 0,
+     "type": 20
+    }
+   ],
+   "xian": [
+    {
+     "gid": 21001,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21002,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21003,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21004,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21005,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21006,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21007,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21008,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21009,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21010,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21011,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21012,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21013,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21014,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21015,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21016,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21017,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21018,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21019,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21020,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21021,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21022,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21023,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21024,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21025,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21026,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21027,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21028,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21029,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21030,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21031,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21032,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21033,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21034,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21035,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21036,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21037,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21038,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21039,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21040,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21041,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21042,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21043,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21044,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    },
+    {
+     "gid": 21045,
+     "item_bid": 0,
+     "price": 0,
+     "pay_type": 0,
+     "cli_tag": "",
+     "limit_week": 0,
+     "limit_day_cli": 0,
+     "type": 0
+    }
+   ]
+  }
+ },
+ "skill_show": {
+  "ok": true,
+  "rid": 1001,
+  "catalog": 105,
+  "learned": [
+   {
+    "skill_bid": 10020,
+    "lev": 2,
+    "learned_ts": 1790878372
+   }
+  ]
+ },
+ "partner_show": {
+  "ok": true,
+  "rid": 1001,
+  "catalog": 53,
+  "owned": {
+   "30800": {
+    "bid": 30800,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   "31300": {
+    "bid": 31300,
+    "color": 0,
+    "lev": 1,
+    "exp": 0,
+    "state": 0,
+    "chip": 0
+   },
+   "32100": {
+    "bid": 32100,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   "32200": {
+    "bid": 32200,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   "32300": {
+    "bid": 32300,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   "32400": {
+    "bid": 32400,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   "32900": {
+    "bid": 32900,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   "33100": {
+    "bid": 33100,
+    "color": 1,
+    "lev": 4,
+    "exp": 116,
+    "state": 1,
+    "chip": 0
+   },
+   "33200": {
+    "bid": 33200,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   "33300": {
+    "bid": 33300,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   "33400": {
+    "bid": 33400,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   "33500": {
+    "bid": 33500,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   "33600": {
+    "bid": 33600,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   "33700": {
+    "bid": 33700,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   "33800": {
+    "bid": 33800,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   "33900": {
+    "bid": 33900,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   "35600": {
+    "bid": 35600,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   "35700": {
+    "bid": 35700,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   }
+  },
+  "lev_max": 200
+ },
+ "hero": {
+  "ok": true,
+  "rid": 1001,
+  "hero_bag": [
+   {
+    "bid": 30800,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   {
+    "bid": 31300,
+    "color": 0,
+    "lev": 1,
+    "exp": 0,
+    "state": 0,
+    "chip": 0
+   },
+   {
+    "bid": 32100,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   {
+    "bid": 32200,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   {
+    "bid": 32300,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   {
+    "bid": 32400,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   {
+    "bid": 32900,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   {
+    "bid": 33100,
+    "color": 1,
+    "lev": 4,
+    "exp": 116,
+    "state": 1,
+    "chip": 0
+   },
+   {
+    "bid": 33200,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   {
+    "bid": 33300,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   {
+    "bid": 33400,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   {
+    "bid": 33500,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   {
+    "bid": 33600,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   {
+    "bid": 33700,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   {
+    "bid": 33800,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   {
+    "bid": 33900,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   {
+    "bid": 35600,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   },
+   {
+    "bid": 35700,
+    "color": 1,
+    "lev": 1,
+    "exp": 0,
+    "state": 1,
+    "chip": 0
+   }
+  ]
+ },
+ "wing": {
+  "ok": true,
+  "rid": 1001,
+  "wing": {
+   "color": 3,
+   "wing_id": 8801,
+   "power": 999,
+   "star": 0
+  }
+ },
+ "shenqi": {
+  "ok": true,
+  "rid": 1001,
+  "shenqi": [
+   {
+    "id": 10001,
+    "lev": 7,
+    "star": 3,
+    "status": 1,
+    "mark": 0
+   },
+   {
+    "id": 10002,
+    "lev": 1,
+    "star": 0,
+    "status": 1,
+    "mark": 0
+   }
+  ]
+ },
+ "mingge": {
+  "ok": true,
+  "rid": 1001,
+  "mingge": [
+   {
+    "bid": 21001,
+    "lev": 2,
+    "quantity": 1,
+    "hero_bid": 0,
+    "ctime": 1790772759
+   },
+   {
+    "bid": 21002,
+    "lev": 1,
+    "quantity": 1,
+    "hero_bid": 0,
+    "ctime": 1790772759
+   },
+   {
+    "bid": 21003,
+    "lev": 1,
+    "quantity": 1,
+    "hero_bid": 0,
+    "ctime": 1790878984
+   }
+  ]
+ },
+ "fabao": {
+  "ok": true,
+  "rid": 1001,
+  "fabao": [
+   {
+    "id": 1,
+    "bid": 20001,
+    "level": 6,
+    "exp": 0,
+    "stage": 2,
+    "pos": 1,
+    "effect_level": 0
+   },
+   {
+    "id": 2,
+    "bid": 20002,
+    "level": 3,
+    "exp": 0,
+    "stage": 1,
+    "pos": 0,
+    "effect_level": 0
+   },
+   {
+    "id": 7,
+    "bid": 20007,
+    "level": 1,
+    "exp": 0,
+    "stage": 3,
+    "pos": 0,
+    "effect_level": 0
+   },
+   {
+    "id": 9,
+    "bid": 20009,
+    "level": 1,
+    "exp": 0,
+    "stage": 0,
+    "pos": 0,
+    "effect_level": 0
+   }
+  ]
+ },
+ "ride": {
+  "ok": true,
+  "rid": 1001,
+  "ride": {
+   "jie": 1,
+   "lev": 10,
+   "jie_luck": 0,
+   "grow": 0,
+   "zz": 0,
+   "face": 0,
+   "use": 0
+  },
+  "attrs": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "skills": [
+   19011,
+   19021,
+   19031,
+   19041,
+   19051,
+   19061,
+   19071,
+   19081,
+   19091,
+   60501,
+   60511,
+   60521
+  ],
+  "can_items": [
+   [
+    1,
+    25327,
+    2
+   ],
+   [
+    2,
+    25327,
+    3
+   ],
+   [
+    3,
+    25327,
+    4
+   ],
+   [
+    4,
+    25327,
+    5
+   ],
+   [
+    5,
+    25327,
+    7
+   ],
+   [
+    6,
+    25327,
+    9
+   ],
+   [
+    7,
+    25327,
+    12
+   ],
+   [
+    8,
+    25327,
+    15
+   ],
+   [
+    9,
+    25327,
+    20
+   ],
+   [
+    10,
+    25327,
+    25
+   ],
+   [
+    11,
+    25327,
+    30
+   ],
+   [
+    12,
+    25327,
+    35
+   ],
+   [
+    13,
+    25327,
+    40
+   ],
+   [
+    14,
+    25327,
+    45
+   ],
+   [
+    15,
+    25327,
+    50
+   ]
+  ]
+ },
+ "lingshou": {
+  "ok": true,
+  "rid": 1001,
+  "lingshou": {
+   "jie": 2,
+   "lev": 5,
+   "jie_luck": 0,
+   "grow": 0,
+   "zz": 0,
+   "face": 0,
+   "use": 0
+  },
+  "attrs": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "tree": {
+  "ok": true,
+  "rid": 1001,
+  "tree_lev": 0,
+  "strength_rest": 48,
+  "strength_name": "北斗",
+  "max_lev": 5
+ },
+ "chair": {
+  "ok": true,
+  "rid": 1001,
+  "chair": {
+   "stage": 5,
+   "power": 0,
+   "luck": 0,
+   "res_stage": 0,
+   "grow": 0
+  }
+ },
+ "build": {
+  "ok": true,
+  "rid": 1001,
+  "lev": 5,
+  "learn_list": [
+   30001,
+   30002
+  ]
+ },
+ "title": {
+  "ok": true,
+  "rid": 1001,
+  "titles": []
+ },
+ "invest": {
+  "ok": true,
+  "rid": 1001,
+  "invest": {
+   "itype": 0,
+   "day": 0,
+   "geted": 0
+  },
+  "types": [
+   2,
+   3,
+   7,
+   8
+  ],
+  "milestones": []
+ },
+ "qifu": {
+  "ok": true,
+  "rid": 1001,
+  "tiers": [
+   1,
+   2,
+   3
+  ],
+  "qifu": {
+   "2": 0
+  }
+ },
+ "bosskill": {
+  "ok": true,
+  "rid": 1001,
+  "boss_count": 27,
+  "killed": []
+ },
+ "afk_status": {
+  "ok": true,
+  "rid": 1001,
+  "result": {
+   "start": 1790879046,
+   "claimed": true,
+   "minutes": 0,
+   "pending_gold": 0,
+   "pending_exp": 0
+  }
+ },
+ "aoi": {
+  "ok": true,
+  "aoi": {
+   "add": 1,
+   "remove": 1,
+   "update": 44,
+   "enter": 0,
+   "leave": 0,
+   "entities": 0,
+   "towers": 0
+  },
+  "mapgrid": {
+   "w": 256,
+   "h": 256,
+   "blocked": 0,
+   "allow_all": true
+  },
+  "modules": {
+   "aoi": true,
+   "pathfind": true
+  }
+ },
+ "listitems": {
+  "ok": true,
+  "kw": "",
+  "n": 0,
+  "items": []
+ }
+}

@@ -1,0 +1,179 @@
+JSTM PHASE C0 一致性审计报告
+生成时间: 2026-10-15 13:47:56
+只读审计：未修改任何既有文件。数据源: analysis/jstm_client_audit/_raw/apk_scan_*.json
+
+==============================================================================
+a) JSON 可解析性 / json-md 成对
+------------------------------------------------------------------------------
+  client_server_matrix.json        OK(json parsed)            md-present
+  data_inventory.json              OK(json parsed)            md-present
+  protocol_inventory.json          OK(json parsed)            md-present
+  reference_capability_table.json  OK(json parsed)            md-present
+  systems_master.json              OK(json parsed)            md-present
+  ui_inventory.json                OK(json parsed)            md-present
+  version_diff_matrix.json         OK(json parsed)            md-present
+  info: SELFCHECK.md                     无同名 json（纯 md 交付物，不算错误）
+  info: server_capability_needs.md       无同名 json（纯 md 交付物，不算错误）
+  info: system_dependency_graph.md       无同名 json（纯 md 交付物，不算错误）
+  info: unimplemented_systems.md         无同名 json（纯 md 交付物，不算错误）
+  info: workspace_audit.md               无同名 json（纯 md 交付物，不算错误）
+
+==============================================================================
+b) systems_master.protocol_ids 与 protocol_inventory.cmd 一致性
+------------------------------------------------------------------------------
+  systems_master 引用协议 token 数: 258；protocol_inventory 收录 token 数: 3134
+  PASS: systems_master 引用的全部协议 token 均在 protocol_inventory 中
+
+==============================================================================
+c) systems_master.config_files 与 raw config_tables 核对
+------------------------------------------------------------------------------
+  systems_master 声明 config basename 数: 246；raw 三版本 config_tables 并集: 234
+  !! 声明但不在任何版本 config_tables 的 .luac (0):
+  info: 声明的非 .luac basename（raw config_tables 只枚举 config_*.luac，以下项需另行核对 assets/，不算硬冲突）(43):
+     - _attr.json
+     - _attr_meta.json
+     - _chengjiu.json
+     - _chengjiu_map.json
+     - _dial_reward.json
+     - _guaji.json
+     - _invest_cfg.json
+     - _mingge_cfg.json
+     - _mission_route.json
+     - _promote.json
+     - _richang.json
+     - _role_attr.json
+     - _rune_cfg.json
+     - cfg_config_dungeon_tower.json
+     - cfg_config_single_tower.json
+     - config_auction_data.json
+     - config_charge_double?
+     - config_chest?
+     - config_dungeon_research?
+     - config_fest_data.json
+     - config_flying?
+     - config_function.json ids 33,34,37,40,101,103...
+     - config_game_data.luac (AssetsEnToCode)
+     - config_golden_dragon?
+     - config_growth_target.json
+     - config_invest.json
+     - config_invest_dec.json
+     - config_item_drop?
+     - config_mon_data.luac (drop refs)
+     - config_player_guess?
+     ... 共 43 项
+  PASS: 全部 .luac 配置表声明均在 raw config_tables 并集中
+
+==============================================================================
+d) data_inventory.config_files 与对应版本 raw config_tables 核对
+------------------------------------------------------------------------------
+  核对条目总数: 125
+  PASS: 全部 data_inventory 配置声明均可在对应版本 raw config_tables 中找到
+
+==============================================================================
+e) ui_inventory 模块/资源 basename 与 raw 清单核对
+------------------------------------------------------------------------------
+  目标版本: 1.4.11
+  entries=391  raw luac=2291 ui_mods=115 res_cats=1251
+  !! 模块不存在 (31):
+     - [garden (1.3.0 已移除)] garden
+     - [jingjie (1.3.0 已移除)] jingjie
+     - [moneytree (1.3.0 已移除)] moneytree
+     - [xiulianhulu (1.3.0 已移除)] xiulianhulu
+     - [运营活动-新消耗排行榜 (xfphb)] xfphb
+     - [运营活动-新充值排行榜 (czphb)] czphb
+     - [运营活动-合服首充 (hfsc)] hfsc
+     - [运营活动-飞升返利礼包 (flyUp_gift)] flyUp_gift
+     - [运营活动-奖池转盘 (jiangchi)] jiangchi
+     - [运营活动-充值翻倍 (charge_double)] charge_double
+     - [运营活动-老玩家回归 (recruit)] recruit
+     - [运营活动-合服 (hefu)] hefu
+     - [运营活动-竞猜 (guess)] guess
+     - [运营活动-幸运转盘 (lucky_turntable)] lucky_turntable
+     - [运营活动-众神联赛场景 (godwarscene)] godwarscene
+     - [运营活动-FC (fc)] fc
+     - [运营活动-门派 (menpai)] menpai
+     - [运营活动-跨服公会战 (kuafu_guildwars)] kuafu_guildwars
+     - [运营活动-活动排行榜 (actionrank)] actionrank
+     - [运营活动-投资_sec (invest_sec)] invest_sec
+     - [运营活动-奖励 (reward)] reward
+     - [运营活动-跨服仙魔 (kuafu_xianmo)] kuafu_xianmo
+     - [运营活动-运营兑换 (yunyingduihuan)] yunyingduihuan
+     - [运营活动-送花 (flower)] flower
+     - [运营活动-幸运宝箱 (luckbox)] luckbox
+     - [运营活动-祈福墙 (zhufuqiang)] zhufuqiang
+     - [运营活动-幸运翻牌 (xingyunfanpai)] xingyunfanpai
+     - [运营活动-密令 (miling)] miling
+     - [运营活动-巨龙/神龙 (julong)] julong
+     - [运营活动-成长目标 (target)] target
+     - [运营活动-一元夺宝 (duobao)] duobao
+  !! luac basename 不存在 (4):
+     - [friend view ] friend_view.luac
+     - [glz main ui ] glz_main_ui.luac
+     - [libao view ] libao_view.luac
+     - [mail panel ] mail_panel.luac
+  PASS: 资源类名不存在 全部命中 raw 清单
+
+==============================================================================
+f) systems_master.present_in_* 与 presence_lib 独立复算核对
+------------------------------------------------------------------------------
+  复算口径: 候选=lua_modules+client_entry 的 basename ∪ config_files basename；命中 luac_basenames/config_tables 记 true，有候选零命中记 false，无候选记 UNKNOWN
+  注: gen_systems_master 的 present_in_rule 还允许 protocol-chunk 等额外证据，下列冲突需人工复核（多数为仅含 .json 配置/通配符名目的系统）
+  !! present_in_* 与复算冲突 (52):
+     - SYS_FRIEND_005 [1.3.0] stored=unknown recomputed=false
+     - SYS_APPEAR_007 [1.3.0] stored=true recomputed=false
+     - SYS_APPEAR_008 [1.3.0] stored=unknown recomputed=false
+     - SYS_APPEAR_009 [1.3.0] stored=true recomputed=false
+     - SYS_ECON_001 [1.3.0] stored=true recomputed=false
+     - SYS_ECON_001 [1.4.9] stored=true recomputed=false
+     - SYS_ECON_001 [1.4.11] stored=true recomputed=false
+     - SYS_ECON_008 [1.3.0] stored=true recomputed=false
+     - SYS_DUNGEON_002 [1.3.0] stored=unknown recomputed=false
+     - SYS_DUNGEON_004 [1.3.0] stored=unknown recomputed=false
+     - SYS_ACT_005 [1.3.0] stored=unknown recomputed=false
+     - SYS_ACT_012 [1.3.0] stored=unknown recomputed=false
+     - SYS_BACK_001 [1.3.0] stored=unknown recomputed=false
+     - SYS_BACK_001 [1.4.9] stored=unknown recomputed=false
+     - SYS_BACK_001 [1.4.11] stored=unknown recomputed=false
+     - SYS_BACK_002 [1.3.0] stored=unknown recomputed=false
+     - SYS_BACK_002 [1.4.9] stored=unknown recomputed=false
+     - SYS_BACK_002 [1.4.11] stored=unknown recomputed=false
+     - SYS_HIDDEN_002 [1.3.0] stored=unknown recomputed=false
+     - SYS_HIDDEN_003 [1.3.0] stored=unknown recomputed=false
+     - SYS_HIDDEN_007 [1.3.0] stored=unknown recomputed=false
+     - SYS_UNKNOWN_003 [1.3.0] stored=unknown recomputed=false
+     - SYS_EQUIP_005 [1.3.0] stored=unknown recomputed=false
+     - SYS_EQUIP_005 [1.4.9] stored=unknown recomputed=false
+     - SYS_EQUIP_005 [1.4.11] stored=unknown recomputed=false
+     - SYS_EQUIP_006 [1.3.0] stored=unknown recomputed=false
+     - SYS_EQUIP_006 [1.4.9] stored=unknown recomputed=false
+     - SYS_EQUIP_006 [1.4.11] stored=unknown recomputed=false
+     - SYS_GROWTH_006 [1.3.0] stored=unknown recomputed=false
+     - SYS_GROWTH_006 [1.4.9] stored=unknown recomputed=false
+     - SYS_GROWTH_006 [1.4.11] stored=unknown recomputed=false
+     - SYS_GROWTH_007 [1.3.0] stored=unknown recomputed=false
+     - SYS_GROWTH_007 [1.4.9] stored=unknown recomputed=false
+     - SYS_GROWTH_007 [1.4.11] stored=unknown recomputed=false
+     - SYS_ECON_012 [1.3.0] stored=true recomputed=false
+     - SYS_ECON_012 [1.4.9] stored=true recomputed=false
+     - SYS_ECON_012 [1.4.11] stored=true recomputed=false
+     - SYS_CORE_008 [1.3.0] stored=unknown recomputed=false
+     - SYS_CORE_008 [1.4.9] stored=unknown recomputed=false
+     - SYS_CORE_008 [1.4.11] stored=unknown recomputed=false
+     - SYS_CORE_009 [1.3.0] stored=unknown recomputed=false
+     - SYS_CORE_009 [1.4.9] stored=unknown recomputed=false
+     - SYS_CORE_009 [1.4.11] stored=unknown recomputed=false
+     - SYS_ROLE_007 [1.3.0] stored=unknown recomputed=false
+     - SYS_ROLE_007 [1.4.9] stored=unknown recomputed=false
+     - SYS_ROLE_007 [1.4.11] stored=unknown recomputed=false
+     - SYS_FRIEND_006 [1.3.0] stored=unknown recomputed=false
+     - SYS_FRIEND_006 [1.4.9] stored=unknown recomputed=false
+     - SYS_FRIEND_006 [1.4.11] stored=unknown recomputed=false
+     - SYS_FRIEND_007 [1.3.0] stored=true recomputed=false
+     - SYS_FRIEND_007 [1.4.9] stored=true recomputed=false
+     - SYS_FRIEND_007 [1.4.11] stored=true recomputed=false
+
+==============================================================================
+g) client_server_matrix.system 集合与 systems_master 对齐
+------------------------------------------------------------------------------
+  systems_master=124  matrix=124
+  PASS: system 集合完全对齐

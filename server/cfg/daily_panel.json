@@ -1,0 +1,19 @@
+{
+ "DailyPanel": null,
+ "DailyType": {
+  "array": [],
+  "hash": {
+   "JJKQ": 3,
+   "RCHD": 1,
+   "XSHD": 2
+  }
+ },
+ "DailyLimitType": {
+  "array": [],
+  "hash": {
+   "OPEN": 0,
+   "LEV": 1,
+   "TIME": 2
+  }
+ }
+}

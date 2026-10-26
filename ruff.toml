@@ -1,0 +1,14 @@
+# ruff 配置（2026-10-17 新增）
+#
+# 背景：`server/backup/` 里原本躺着 40+ 份历史整包快照（mock_server_*.py，每次改动前的
+# 拷贝）。它们**不参与运行**，但会让 `ruff check server` 的 F821/F811 命中数虚高 20 倍
+# 以上，把真问题埋在噪音里 —— 2026-10-17 梳理时活代码的 F821 只有 4 处，其余全在快照里。
+#
+# 处理：代码快照已**物理移出包目录** -> `archive/server_snapshots/`（见那里的 README）。
+# 这里保留 exclude 作为**双保险**（防止有人再把快照丢回 server/ 下）。
+exclude = [
+    "server/backup",
+    "archive",
+    "**/__pycache__",
+    "**/*.bak_*",
+]

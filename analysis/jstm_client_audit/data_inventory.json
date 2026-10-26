@@ -1,0 +1,1525 @@
+{
+  "meta": {
+    "title": "绝世唐门 PHASE C0 数据资源总目录（只读审计）",
+    "generated": "2026-10-15 13:28:06",
+    "generator": "tools/jstm_audit/gen_data_inventory.py",
+    "version_scope": "数量/ID范围仅代表 1.4.11（VERIFIED 级提取）；1.3.0/1.4.9 仅有 config_tables 存在性证据",
+    "config_tables_counts": {
+      "1_3_0": 168,
+      "1_4_9": 227,
+      "1_4_11": 233
+    },
+    "ext13_on_disk_files": 165,
+    "evidence_levels": "VERIFIED / LIKELY / PARTIAL / UNVERIFIED / FAILED"
+  },
+  "category_coverage": {
+    "角色职业": [
+      "role_career"
+    ],
+    "等级经验": [
+      "role_attr",
+      "promote"
+    ],
+    "属性字段": [
+      "attr_data",
+      "attr_meta"
+    ],
+    "货币类型": [
+      "item_currency"
+    ],
+    "物品": [
+      "item_main"
+    ],
+    "装备": [
+      "item_equipment"
+    ],
+    "强化材料": [
+      "intensify"
+    ],
+    "宝石": [
+      "item_gem"
+    ],
+    "技能": [
+      "skill_raw",
+      "skill_talent"
+    ],
+    "伙伴": [
+      "partner_main",
+      "partner_base"
+    ],
+    "翅膀": [
+      "wing_data"
+    ],
+    "魂骨": [
+      "item_hungu"
+    ],
+    "时装": [
+      "item_fashion"
+    ],
+    "增幅": [
+      "buff_data"
+    ],
+    "神器": [
+      "shenqi"
+    ],
+    "命格": [
+      "mingge_cfg"
+    ],
+    "阵法": [
+      "formation",
+      "rune_cfg"
+    ],
+    "怪物": [
+      "mon_data"
+    ],
+    "NPC": [
+      "npc_main",
+      "npcs_10001",
+      "mapnpc_10001"
+    ],
+    "地图场景": [
+      "mapnpc_10001",
+      "map_block",
+      "map_main"
+    ],
+    "任务": [
+      "mission_main",
+      "mission_route"
+    ],
+    "副本": [
+      "dungeon_single_tower",
+      "dungeon_tower",
+      "dungeon_corpus"
+    ],
+    "商城商品": [
+      "mall_main",
+      "mall_zhenbao",
+      "mall_exchange"
+    ],
+    "礼包": [
+      "item_gift"
+    ],
+    "活动": [
+      "richang",
+      "guaji",
+      "answer_key",
+      "invest_cfg"
+    ],
+    "奖励": [
+      "mall_exchange",
+      "drop",
+      "chengjiu",
+      "chengjiu_map"
+    ],
+    "其他": [
+      "runtime_config",
+      "runtime_npcs_mislabel"
+    ]
+  },
+  "uncovered_categories": [],
+  "records": [
+    {
+      "data_id": "item_main",
+      "category": [
+        "物品"
+      ],
+      "name": "物品主表（全物品字典）",
+      "config_files": {
+        "1_3_0": [
+          "config_item.luac"
+        ],
+        "1_4_9": [
+          "config_item.luac"
+        ],
+        "1_4_11": [
+          "config_item.luac"
+        ]
+      },
+      "source_file": "server/item_config.json",
+      "extraction_method": "tools/extract_item_v2.py / extract_config_item.py（1.4.11 客户端提取）",
+      "field_meaning": "bid=物品ID；name=名称；type=物品分类编号；lev=使用等级；quality=品质；bind_type=绑定类型；overlap=可叠加数量；durable=耐久；use_type=使用效果类型",
+      "id_range": {
+        "min": 0,
+        "max": 3888000
+      },
+      "count": 3535,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "VERIFIED",
+      "evidence": "server/item_config.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_item.luac, 470884 字节）",
+      "missing_information": "type→分类中文名映射未成文（仅有采样对照，如11=物攻石、100=武器、201=男时装）"
+    },
+    {
+      "data_id": "item_equipment",
+      "category": [
+        "装备"
+      ],
+      "name": "装备类物品（item_config 中装备 type 分组）",
+      "config_files": {
+        "1_3_0": [
+          "config_item.luac"
+        ],
+        "1_4_9": [
+          "config_item.luac"
+        ],
+        "1_4_11": [
+          "config_item.luac"
+        ]
+      },
+      "source_file": "server/item_config.json",
+      "extraction_method": "对 item_config.json 按 type 聚合统计（本脚本实时计算）",
+      "field_meaning": "type 100=武器/103=腰带/104=帽子/105=衣服/106=护手/107=靴子；type 240-246=魂师套装六部位+武器",
+      "id_range": {
+        "min": 40001,
+        "max": 99999
+      },
+      "count": 213,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "VERIFIED",
+      "evidence": "server/item_config.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_item.luac, 470884 字节）；统计注记: type=[100, 103, 104, 105, 106, 107, 240, 241, 242, 243, 244, 245, 246] 分组合计",
+      "missing_information": "装备基础属性（+0 白装数值）不在物品表内，由公式或未识别表决定（见 truth_values/monster_values 取证）"
+    },
+    {
+      "data_id": "item_gem",
+      "category": [
+        "宝石"
+      ],
+      "name": "宝石类物品（item_config type 11-19 分组）",
+      "config_files": {
+        "1_3_0": [
+          "config_item.luac"
+        ],
+        "1_4_9": [
+          "config_item.luac"
+        ],
+        "1_4_11": [
+          "config_item.luac"
+        ]
+      },
+      "source_file": "server/item_config.json",
+      "extraction_method": "对 item_config.json 按 type 聚合统计（本脚本实时计算）",
+      "field_meaning": "11=物攻石/13=物防石/14=法防石/15=气血石/16=速度石/19=暴击石；镶嵌系统见 config_jewel 相关脚本证据（gem_inlay_spec.md）",
+      "id_range": {
+        "min": 11,
+        "max": 37690
+      },
+      "count": 71,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "LIKELY",
+      "evidence": "server/item_config.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_item.luac, 470884 字节）；统计注记: type=[11, 12, 13, 14, 15, 16, 19] 分组合计",
+      "missing_information": "无独立宝石属性表（truth_values: NO_SEPARATE_GEM_TABLE）；type 12/20 采样呈纯数字，疑似货币，未计入宝石组"
+    },
+    {
+      "data_id": "item_hungu",
+      "category": [
+        "魂骨"
+      ],
+      "name": "魂骨类物品（item_config type 108/120/121/22 分组）",
+      "config_files": {
+        "1_3_0": [
+          "config_item.luac"
+        ],
+        "1_4_9": [
+          "config_item.luac"
+        ],
+        "1_4_11": [
+          "config_item.luac"
+        ]
+      },
+      "source_file": "server/item_config.json",
+      "extraction_method": "对 item_config.json 按 type 聚合统计（本脚本实时计算）",
+      "field_meaning": "108=魂骨（如碧莲魂骨）；120/121=高级魂骨（瀚海头骨/妖眼树盾）；22=魂骨碎片",
+      "id_range": {
+        "min": 25700,
+        "max": 44060
+      },
+      "count": 28,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "LIKELY",
+      "evidence": "server/item_config.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_item.luac, 470884 字节）；统计注记: type=[22, 108, 120, 121] 分组合计",
+      "missing_information": "魂骨强化/进阶规则表未在已提取清单中定位"
+    },
+    {
+      "data_id": "item_fashion",
+      "category": [
+        "时装"
+      ],
+      "name": "时装表（客户端解构）+ 时装类物品",
+      "config_files": {
+        "1_3_0": [],
+        "1_4_9": [
+          "config_fashion.luac"
+        ],
+        "1_4_11": [
+          "config_fashion.luac"
+        ]
+      },
+      "source_file": "server/cfg/config_fashion.json",
+      "extraction_method": "1.4.11 luac 批量解构产物（server/cfg/ 语料）；物品侧类型见 item_config type 201/255",
+      "field_meaning": "时装外观/进阶配置；item_config 中 type 201=庆典夏日时装·男等",
+      "id_range": {
+        "min": 43100,
+        "max": 43264
+      },
+      "count": 48,
+      "count_evidence": "PARTIAL",
+      "version_diff": "存在于: 1_4_9/1_4_11；缺失: 1_3_0。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "PARTIAL",
+      "evidence": "server/cfg/config_fashion.json；统计注记: 顶层子表1个；条目合计48",
+      "missing_information": "未逐条统计时装表条目数（通用统计）；时装进阶消耗表 config_fashion_up.json 仅 2 字节（空表）"
+    },
+    {
+      "data_id": "item_currency",
+      "category": [
+        "货币类型"
+      ],
+      "name": "货币类物品（item_config type 0/12/20 疑似分组）",
+      "config_files": {
+        "1_3_0": [
+          "config_item.luac"
+        ],
+        "1_4_9": [
+          "config_item.luac"
+        ],
+        "1_4_11": [
+          "config_item.luac"
+        ]
+      },
+      "source_file": "server/item_config.json",
+      "extraction_method": "对 item_config.json 按 type 聚合统计（本脚本实时计算）",
+      "field_meaning": "type 0=幸运币（bid 28030）；type 12/20 条目 name 字段为纯数字（bid 11/3200），疑似货币/经验券占位",
+      "id_range": {
+        "min": 11,
+        "max": 37710
+      },
+      "count": 24,
+      "count_evidence": "UNVERIFIED",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "UNVERIFIED",
+      "evidence": "server/item_config.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_item.luac, 470884 字节）；统计注记: type=[0, 12, 20] 分组合计",
+      "missing_information": "货币类型枚举表未找到；服务端代码中 coin/hero_coin/vip_exp 等账目与物品 bid 的对应关系未成文"
+    },
+    {
+      "data_id": "skill_raw",
+      "category": [
+        "技能"
+      ],
+      "name": "技能原始表（4000 行结构化数组）",
+      "config_files": {
+        "1_3_0": [
+          "config_skill_xiulian.luac"
+        ],
+        "1_4_9": [
+          "config_skill_xiulian.luac"
+        ],
+        "1_4_11": [
+          "config_skill_xiulian.luac"
+        ]
+      },
+      "source_file": "server/_skill_raw.json",
+      "extraction_method": "临时提取脚本产物（未定位唯一脚本；luac 源表疑似 config_skill_xiulian.luac，待核）",
+      "field_meaning": "行数组：idx1=技能ID；idx2=技能名（普攻/治疗等）；idx19=效果描述（如\"造成250%伤害\"）；其余字段语义未逐列定义",
+      "id_range": {
+        "min": 1,
+        "max": 15868
+      },
+      "count": 4000,
+      "count_evidence": "PARTIAL",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "PARTIAL",
+      "evidence": "server/_skill_raw.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_skill_xiulian.luac, 97451 字节）；统计注记: 行内第2列=技能ID",
+      "missing_information": "列语义未完全定义；学习/升级消耗字段不存在（truth_values: NOT_FOUND_IN_CONFIG）"
+    },
+    {
+      "data_id": "partner_main",
+      "category": [
+        "伙伴"
+      ],
+      "name": "伙伴主表（伙伴名册）",
+      "config_files": {
+        "1_3_0": [
+          "config_partner_base.luac"
+        ],
+        "1_4_9": [
+          "config_partner_base.luac"
+        ],
+        "1_4_11": [
+          "config_partner_base.luac"
+        ]
+      },
+      "source_file": "server/partner_config.json",
+      "extraction_method": "临时脚本产物（53 伙伴，与 _partner_base.json 同源）；源 luac 疑似 config_partner_base.luac",
+      "field_meaning": "bid=伙伴ID（33100 起）；name=名称（唐舞桐等）；career=职业；score=战力评分；take_lev=携带等级；mode=模式",
+      "id_range": {
+        "min": 30000,
+        "max": 35700
+      },
+      "count": 53,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "VERIFIED",
+      "evidence": "server/partner_config.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_partner_base.luac, 68631 字节）",
+      "missing_information": "伙伴技能/羁绊/神器子表见 cfg/config_partner_skill.json(309KB)/config_partner_fetter.json(60KB)，未逐条统计"
+    },
+    {
+      "data_id": "partner_base",
+      "category": [
+        "伙伴"
+      ],
+      "name": "伙伴基础档案（含外观/性别/描述）",
+      "config_files": {
+        "1_3_0": [
+          "config_partner_base.luac"
+        ],
+        "1_4_9": [
+          "config_partner_base.luac"
+        ],
+        "1_4_11": [
+          "config_partner_base.luac"
+        ]
+      },
+      "source_file": "server/_partner_base.json",
+      "extraction_method": "临时脚本产物；tools/verify_partner_list.py 可复算",
+      "field_meaning": "name/score/career/bid/die_effect=死亡特效E码/by_resource=立绘H码/is_deity=是否神级/height=身高/desc=描述",
+      "id_range": {
+        "min": 30000,
+        "max": 35700
+      },
+      "count": 53,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "VERIFIED",
+      "evidence": "server/_partner_base.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_partner_base.luac, 68631 字节）",
+      "missing_information": "—"
+    },
+    {
+      "data_id": "mingge_cfg",
+      "category": [
+        "命格"
+      ],
+      "name": "命格配置（开/阶/其他子表）",
+      "config_files": {
+        "1_3_0": [],
+        "1_4_9": [
+          "config_mingge.luac"
+        ],
+        "1_4_11": [
+          "config_mingge.luac"
+        ]
+      },
+      "source_file": "server/_mingge_cfg.json",
+      "extraction_method": "tools/_fix_r111_mingge.py 落盘修复（源自 config_mingge.luac 解构）",
+      "field_meaning": "MinggeOther/MinggeOpen/MinggeStage 三个子表（开服条件、阶段、附加规则）",
+      "id_range": {
+        "min": 1,
+        "max": 5
+      },
+      "count": 9,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_4_9/1_4_11；缺失: 1_3_0。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "LIKELY",
+      "evidence": "server/_mingge_cfg.json；统计注记: 子表合计",
+      "missing_information": "子表逐行语义未逐条成文"
+    },
+    {
+      "data_id": "attr_data",
+      "category": [
+        "属性字段"
+      ],
+      "name": "属性ID↔字段名映射表",
+      "config_files": {
+        "1_3_0": [
+          "config_attr.luac"
+        ],
+        "1_4_9": [
+          "config_attr.luac"
+        ],
+        "1_4_11": [
+          "config_attr.luac"
+        ]
+      },
+      "source_file": "server/_attr_data.json",
+      "extraction_method": "config_attr.luac 提取；tools/_fix_r92_14099.py 引用",
+      "field_meaning": "AttrId2Key/AttrKey2Id/AttrId2Str/AttrKey2Str：属性ID↔字段名↔展示名；AttrPower=战力换算系数（atk_speed 450、hp_max 24 等，见 truth_values）",
+      "id_range": {
+        "min": 101,
+        "max": 243
+      },
+      "count": 394,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "VERIFIED",
+      "evidence": "server/_attr_data.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_attr.luac, 5191 字节）；统计注记: 子表合计",
+      "missing_information": "—"
+    },
+    {
+      "data_id": "attr_meta",
+      "category": [
+        "属性字段"
+      ],
+      "name": "属性数组元数据（向量长度）",
+      "config_files": {
+        "1_3_0": [
+          "config_attr.luac"
+        ],
+        "1_4_9": [
+          "config_attr.luac"
+        ],
+        "1_4_11": [
+          "config_attr.luac"
+        ]
+      },
+      "source_file": "server/_attr_meta.json",
+      "extraction_method": "临时提取脚本产物",
+      "field_meaning": "attr_len=属性向量长度（64）；items=逐属性说明",
+      "id_range": {
+        "min": 101,
+        "max": 243
+      },
+      "count": 64,
+      "count_evidence": "PARTIAL",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "PARTIAL",
+      "evidence": "server/_attr_meta.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_attr.luac, 5191 字节）；统计注记: 子表 items",
+      "missing_information": "items 条目逐属性含义未逐条核对"
+    },
+    {
+      "data_id": "role_career",
+      "category": [
+        "角色职业"
+      ],
+      "name": "职业配置表（客户端解构）",
+      "config_files": {
+        "1_3_0": [
+          "config_role_career.luac"
+        ],
+        "1_4_9": [
+          "config_role_career.luac"
+        ],
+        "1_4_11": [
+          "config_role_career.luac"
+        ]
+      },
+      "source_file": "server/cfg/config_role_career.json",
+      "extraction_method": "1.4.11 luac 批量解构产物",
+      "field_meaning": "职业相关配置（具体字段以解构 JSON 为准）",
+      "id_range": {
+        "min": 1,
+        "max": 99095
+      },
+      "count": 164,
+      "count_evidence": "UNVERIFIED",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "UNVERIFIED",
+      "evidence": "server/cfg/config_role_career.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_role_career.luac, 11703 字节）；统计注记: 顶层子表4个；条目合计164",
+      "missing_information": "未逐条统计；职业 ID 与伙伴 career 字段（1-4）对应关系未成文"
+    },
+    {
+      "data_id": "role_attr",
+      "category": [
+        "等级经验"
+      ],
+      "name": "角色等级经验表（RoleAttr，200 级）",
+      "config_files": {
+        "1_3_0": [
+          "config_role_attr.luac"
+        ],
+        "1_4_9": [
+          "config_role_attr.luac"
+        ],
+        "1_4_11": [
+          "config_role_attr.luac"
+        ]
+      },
+      "source_file": "server/cfg/config_role_attr.json",
+      "extraction_method": "1.4.11 luac 批量解构产物；truth_values.json 已确认 200 级经验曲线",
+      "field_meaning": "exp_max=本级所需经验；exp_total=累计经验；L1=240、L70=2,577,419、L200=1,917,555,775（取证值）",
+      "id_range": {
+        "min": 1,
+        "max": 200
+      },
+      "count": 200,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "VERIFIED",
+      "evidence": "server/cfg/config_role_attr.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_role_attr.luac, 15203 字节）；统计注记: 顶层子表1个；条目合计200",
+      "missing_information": "—"
+    },
+    {
+      "data_id": "intensify",
+      "category": [
+        "强化材料"
+      ],
+      "name": "装备强化数值表（成功率/消耗/奖励）",
+      "config_files": {
+        "1_3_0": [
+          "config_intensify.luac"
+        ],
+        "1_4_9": [
+          "config_intensify.luac"
+        ],
+        "1_4_11": [
+          "config_intensify.luac"
+        ]
+      },
+      "source_file": "server/cfg/config_intensify.json",
+      "extraction_method": "1.4.11 luac 批量解构产物；truth_values.json CONFIRMED",
+      "field_meaning": "IntensifyReward=8-15 级单件加成（+8 武器 atk_s+20）；IntensifyAllReward=6-8 阶套装加成；强化石 bid=36006；消耗金币每级递增 2000",
+      "id_range": {
+        "min": 1,
+        "max": 36043
+      },
+      "count": 129,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "VERIFIED",
+      "evidence": "server/cfg/config_intensify.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_intensify.luac, 40057 字节）；统计注记: 顶层子表13个；条目合计129",
+      "missing_information": "—"
+    },
+    {
+      "data_id": "wing_data",
+      "category": [
+        "翅膀"
+      ],
+      "name": "翅膀数据（客户端解构）",
+      "config_files": {
+        "1_3_0": [
+          "config_wing_data.luac"
+        ],
+        "1_4_9": [
+          "config_wing_data.luac"
+        ],
+        "1_4_11": [
+          "config_wing_data.luac"
+        ]
+      },
+      "source_file": "server/cfg/config_wing_data.json",
+      "extraction_method": "1.4.11 luac 批量解构产物",
+      "field_meaning": "翅膀外观/进阶/属性配置（具体字段以解构 JSON 为准）",
+      "id_range": {
+        "min": 1,
+        "max": 102
+      },
+      "count": 71,
+      "count_evidence": "UNVERIFIED",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "UNVERIFIED",
+      "evidence": "server/cfg/config_wing_data.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_wing_data.luac, 16192 字节）；统计注记: 顶层子表9个；条目合计71",
+      "missing_information": "未逐条统计；翅膀系统消费曲线未成文"
+    },
+    {
+      "data_id": "shenqi",
+      "category": [
+        "神器"
+      ],
+      "name": "神器表（客户端解构，574KB）",
+      "config_files": {
+        "1_3_0": [
+          "config_shenqi.luac"
+        ],
+        "1_4_9": [
+          "config_shenqi.luac"
+        ],
+        "1_4_11": [
+          "config_shenqi.luac"
+        ]
+      },
+      "source_file": "server/cfg/config_shenqi.json",
+      "extraction_method": "1.4.11 luac 批量解构产物",
+      "field_meaning": "神器列表/成长配置（具体字段以解构 JSON 为准）",
+      "id_range": {
+        "min": 1,
+        "max": 10065
+      },
+      "count": 127,
+      "count_evidence": "UNVERIFIED",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "UNVERIFIED",
+      "evidence": "server/cfg/config_shenqi.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_shenqi.luac, 163441 字节）；统计注记: 顶层子表7个；条目合计127",
+      "missing_information": "未逐条统计"
+    },
+    {
+      "data_id": "formation",
+      "category": [
+        "阵法"
+      ],
+      "name": "阵法表（客户端解构）",
+      "config_files": {
+        "1_3_0": [
+          "config_formation.luac"
+        ],
+        "1_4_9": [
+          "config_formation.luac"
+        ],
+        "1_4_11": [
+          "config_formation.luac"
+        ]
+      },
+      "source_file": "server/cfg/config_formation.json",
+      "extraction_method": "1.4.11 luac 批量解构产物；_cfg_formation.txt 探针证据",
+      "field_meaning": "阵法激活/属性加成配置",
+      "id_range": {
+        "min": 1,
+        "max": 7
+      },
+      "count": 18,
+      "count_evidence": "UNVERIFIED",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "UNVERIFIED",
+      "evidence": "server/cfg/config_formation.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_formation.luac, 14916 字节）；统计注记: 顶层子表4个；条目合计18",
+      "missing_information": "未逐条统计"
+    },
+    {
+      "data_id": "buff_data",
+      "category": [
+        "增幅"
+      ],
+      "name": "Buff/增幅数据表（客户端解构，102KB）",
+      "config_files": {
+        "1_3_0": [
+          "config_buff_data.luac"
+        ],
+        "1_4_9": [
+          "config_buff_data.luac"
+        ],
+        "1_4_11": [
+          "config_buff_data.luac"
+        ]
+      },
+      "source_file": "server/cfg/config_buff_data.json",
+      "extraction_method": "1.4.11 luac 批量解构产物",
+      "field_meaning": "Buff 效果/持续时间/叠加规则（本类别映射为推断：\"增幅\"在项目中无独立命名表）",
+      "id_range": {
+        "min": 10000,
+        "max": 43025
+      },
+      "count": 363,
+      "count_evidence": "UNVERIFIED",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "UNVERIFIED",
+      "evidence": "server/cfg/config_buff_data.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_buff_data.luac, 53242 字节）；统计注记: 顶层子表1个；条目合计363",
+      "missing_information": "\"增幅\"类别无直接命名证据；映射到 buff_data 为最佳推断，需人工确认"
+    },
+    {
+      "data_id": "mon_data",
+      "category": [
+        "怪物"
+      ],
+      "name": "怪物表（1.4.11 解构部分失败；1.4.9 参考 2645 怪）",
+      "config_files": {
+        "1_3_0": [
+          "config_mon_data.luac"
+        ],
+        "1_4_9": [
+          "config_mon_data.luac"
+        ],
+        "1_4_11": [
+          "config_mon_data.luac"
+        ]
+      },
+      "source_file": "server/cfg/config_mon_data.json",
+      "extraction_method": "1.4.11 解构产物仅 311 字节（主表空）；1.4.9 完整参考：analysis/1.4.9/task/config_mon.json（818,547 字节，2645 条）",
+      "field_meaning": "24 元素数组：idx1=怪名(601种)/idx2=等级(1-150)/idx3=类型(0普通1389/1普通1205/4精英BOSS51)/idx8=资源ID/idx21=战斗数值倍率(0.7-15x)/idx23=掉落层(0/2/4/6/8)；无显式 HP/ATK 字段",
+      "id_range": null,
+      "count": null,
+      "count_evidence": "UNKNOWN",
+      "version_diff": "三版本均有 config_mon_data.luac（存在性见清单）；1.4.11 解构主表失败，1.4.9 参考 2645 条；1.3.0 数量 UNKNOWN。",
+      "parse_confidence": "PARTIAL",
+      "evidence": "server/cfg/config_mon_data.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_mon_data.luac, 513571 字节）；统计注记: 1.4.11 主表空（311B）；1.4.9 参考 2645 条（见 monster_values.json）",
+      "missing_information": "1.4.11 主表解构失败；怪物 HP/ATK 由服务端公式计算，静态不可得"
+    },
+    {
+      "data_id": "npc_main",
+      "category": [
+        "NPC"
+      ],
+      "name": "NPC 主表（客户端解构，195KB）",
+      "config_files": {
+        "1_3_0": [
+          "config_npc.luac"
+        ],
+        "1_4_9": [
+          "config_npc.luac"
+        ],
+        "1_4_11": [
+          "config_npc.luac"
+        ]
+      },
+      "source_file": "server/cfg/config_npc.json",
+      "extraction_method": "1.4.11 luac 批量解构产物",
+      "field_meaning": "NPC 列表/对话/功能入口配置",
+      "id_range": {
+        "min": 1001,
+        "max": 80100
+      },
+      "count": 593,
+      "count_evidence": "UNVERIFIED",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "UNVERIFIED",
+      "evidence": "server/cfg/config_npc.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_npc.luac, 116497 字节）；统计注记: 顶层子表3个；条目合计593",
+      "missing_information": "未逐条统计"
+    },
+    {
+      "data_id": "npcs_10001",
+      "category": [
+        "NPC"
+      ],
+      "name": "单地图 NPC 坐标快照（地图10001，提取残缺）",
+      "config_files": {
+        "1_3_0": [
+          "config_npc.luac"
+        ],
+        "1_4_9": [
+          "config_npc.luac"
+        ],
+        "1_4_11": [
+          "config_npc.luac"
+        ]
+      },
+      "source_file": "server/_npcs_10001.json",
+      "extraction_method": "临时脚本产物；文件在第 163 行截断（尾部 \"id\": 后缺内容）",
+      "field_meaning": "id/bid=NPC编号(10001-10081)；x/y=坐标；name=npc<id>；另有两条哨兵记录 id=Config/MapNpc",
+      "id_range": {
+        "min": 10010,
+        "max": 10170
+      },
+      "count": 18,
+      "count_evidence": "FAILED",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "FAILED",
+      "evidence": "server/_npcs_10001.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_npc.luac, 116497 字节）；统计注记: 正则统计（文件截断，JSON 不可解析）",
+      "missing_information": "JSON 不可解析；仅能按 \"id\" 出现次数统计（21 次=19 个数值 NPC + 2 哨兵）；真实条数可能更多"
+    },
+    {
+      "data_id": "mapnpc_10001",
+      "category": [
+        "NPC",
+        "地图场景"
+      ],
+      "name": "地图 NPC 放置表（地图10001）",
+      "config_files": {
+        "1_3_0": [
+          "config_map_npc.luac"
+        ],
+        "1_4_9": [
+          "config_map_npc.luac"
+        ],
+        "1_4_11": [
+          "config_map_npc.luac"
+        ]
+      },
+      "source_file": "server/_mapnpc_10001.json",
+      "extraction_method": "临时脚本产物（对应 extract_map_npc.py 路线）",
+      "field_meaning": "id/bid=NPC编号；type=类型；x/y=格子坐标；name=NPC名",
+      "id_range": {
+        "min": 10010,
+        "max": 10175
+      },
+      "count": 19,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "LIKELY",
+      "evidence": "server/_mapnpc_10001.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_map_npc.luac, 1894 字节）",
+      "missing_information": "仅覆盖地图 10001 一张图"
+    },
+    {
+      "data_id": "map_block",
+      "category": [
+        "地图场景"
+      ],
+      "name": "地图遮挡/通行块数据",
+      "config_files": {
+        "1_3_0": [
+          "config_map_block.luac"
+        ],
+        "1_4_9": [
+          "config_map_block.luac"
+        ],
+        "1_4_11": [
+          "config_map_block.luac"
+        ]
+      },
+      "source_file": "server/map_block.json",
+      "extraction_method": "tools/extract_config_mapblock.py 提取",
+      "field_meaning": "_meta.source/polarity/blocked_chars；scenes=逐场景遮挡统计（cells_total/cells_blocked/blocked_ratio）",
+      "id_range": {
+        "min": 10001,
+        "max": 31000
+      },
+      "count": 26,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "VERIFIED",
+      "evidence": "server/map_block.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_map_block.luac, 499390 字节）；统计注记: 子表 scenes",
+      "missing_information": "—"
+    },
+    {
+      "data_id": "map_main",
+      "category": [
+        "地图场景"
+      ],
+      "name": "地图主表（客户端解构，83KB）",
+      "config_files": {
+        "1_3_0": [
+          "config_map.luac"
+        ],
+        "1_4_9": [
+          "config_map.luac"
+        ],
+        "1_4_11": [
+          "config_map.luac"
+        ]
+      },
+      "source_file": "server/cfg/config_map.json",
+      "extraction_method": "1.4.11 luac 批量解构产物",
+      "field_meaning": "地图列表/进出/出生点配置",
+      "id_range": {
+        "min": 10001,
+        "max": 31008
+      },
+      "count": 124,
+      "count_evidence": "UNVERIFIED",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "UNVERIFIED",
+      "evidence": "server/cfg/config_map.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_map.luac, 23184 字节）；统计注记: 顶层子表1个；条目合计124",
+      "missing_information": "未逐条统计"
+    },
+    {
+      "data_id": "mission_main",
+      "category": [
+        "任务"
+      ],
+      "name": "任务主表（全任务字典）",
+      "config_files": {
+        "1_3_0": [
+          "config_mission.luac"
+        ],
+        "1_4_9": [
+          "config_mission.luac"
+        ],
+        "1_4_11": [
+          "config_mission.luac"
+        ]
+      },
+      "source_file": "server/mission_config.json",
+      "extraction_method": "tools/extract_mission_config.py 提取",
+      "field_meaning": "bid=任务ID；type/show_type=任务类型；career=适用职业；accept_npc_id=接取NPC；accept_talk/commit_talk/process_talk=对话；auto_commit=自动完成",
+      "id_range": {
+        "min": 10010,
+        "max": 86073
+      },
+      "count": 846,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "VERIFIED",
+      "evidence": "server/mission_config.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_mission.luac, 325400 字节）",
+      "missing_information": "—"
+    },
+    {
+      "data_id": "mission_route",
+      "category": [
+        "任务"
+      ],
+      "name": "任务链/主线路由表",
+      "config_files": {
+        "1_3_0": [
+          "config_mission.luac"
+        ],
+        "1_4_9": [
+          "config_mission.luac"
+        ],
+        "1_4_11": [
+          "config_mission.luac"
+        ]
+      },
+      "source_file": "server/_mission_route.json",
+      "extraction_method": "临时脚本产物（键 35000 段，与主表互补）",
+      "field_meaning": "name=名称；type=类型；realm=界；lev=等级；desc=描述",
+      "id_range": {
+        "min": 35000,
+        "max": 86000
+      },
+      "count": 102,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "LIKELY",
+      "evidence": "server/_mission_route.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_mission.luac, 325400 字节）",
+      "missing_information": "与 config_mission.luac 的确切子表对应关系未定位"
+    },
+    {
+      "data_id": "dungeon_single_tower",
+      "category": [
+        "副本"
+      ],
+      "name": "单人爬塔副本表",
+      "config_files": {
+        "1_3_0": [
+          "config_single_tower.luac"
+        ],
+        "1_4_9": [
+          "config_single_tower.luac"
+        ],
+        "1_4_11": [
+          "config_single_tower.luac"
+        ]
+      },
+      "source_file": "server/cfg_config_single_tower.json",
+      "extraction_method": "临时脚本产物（源 luac 疑似 config_single_tower.luac）",
+      "field_meaning": "键=层/关ID；值=该层怪物/奖励列表",
+      "id_range": {
+        "min": 1,
+        "max": 42004
+      },
+      "count": 156,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "VERIFIED",
+      "evidence": "server/cfg_config_single_tower.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_single_tower.luac, 43088 字节）",
+      "missing_information": "—"
+    },
+    {
+      "data_id": "dungeon_tower",
+      "category": [
+        "副本"
+      ],
+      "name": "妖塔/多层副本表",
+      "config_files": {
+        "1_3_0": [
+          "config_dungeon_tower.luac"
+        ],
+        "1_4_9": [
+          "config_dungeon_tower.luac"
+        ],
+        "1_4_11": [
+          "config_dungeon_tower.luac"
+        ]
+      },
+      "source_file": "server/cfg_config_dungeon_tower.json",
+      "extraction_method": "临时脚本产物",
+      "field_meaning": "键=关ID；值=配置数组",
+      "id_range": {
+        "min": 2,
+        "max": 35056
+      },
+      "count": 48,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "VERIFIED",
+      "evidence": "server/cfg_config_dungeon_tower.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_dungeon_tower.luac, 4182 字节）",
+      "missing_information": "—"
+    },
+    {
+      "data_id": "dungeon_corpus",
+      "category": [
+        "副本"
+      ],
+      "name": "副本群解构语料（config_dungeon_* 系列）",
+      "config_files": {
+        "1_3_0": [
+          "config_dungeon_new.luac"
+        ],
+        "1_4_9": [
+          "config_dungeon_new.luac"
+        ],
+        "1_4_11": [
+          "config_dungeon_new.luac"
+        ]
+      },
+      "source_file": "server/cfg/config_dungeon_new.json",
+      "extraction_method": "1.4.11 luac 批量解构产物",
+      "field_meaning": "副本列表/奖励/进入条件（另有 config_dungeon_tower.json/gods.json/rune.json/seal_demon_data.json/vip_single*.json）",
+      "id_range": {
+        "min": 1,
+        "max": 80003
+      },
+      "count": 169,
+      "count_evidence": "UNVERIFIED",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "UNVERIFIED",
+      "evidence": "server/cfg/config_dungeon_new.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_dungeon_new.luac, 4616 字节）；统计注记: 顶层子表9个；条目合计169",
+      "missing_information": "未逐条统计"
+    },
+    {
+      "data_id": "mall_main",
+      "category": [
+        "商城商品"
+      ],
+      "name": "商城商品主表",
+      "config_files": {
+        "1_3_0": [
+          "config_mall.luac"
+        ],
+        "1_4_9": [
+          "config_mall.luac"
+        ],
+        "1_4_11": [
+          "config_mall.luac"
+        ]
+      },
+      "source_file": "server/mall_config.json",
+      "extraction_method": "tools/extract_mall.py 提取",
+      "field_meaning": "id=商品位；item_bid=商品物品；pay_type=支付货币类型；price=价格；limit_week/limit_day_cli=限购；cli_tag=客户端标签(HOT等)",
+      "id_range": {
+        "min": 2001,
+        "max": 20025
+      },
+      "count": 142,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "VERIFIED",
+      "evidence": "server/mall_config.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_mall.luac, 17598 字节）",
+      "missing_information": "—"
+    },
+    {
+      "data_id": "mall_zhenbao",
+      "category": [
+        "商城商品"
+      ],
+      "name": "珍宝阁商品（实现回退数据）",
+      "config_files": {
+        "1_3_0": [
+          "config_mall.luac"
+        ],
+        "1_4_9": [
+          "config_mall.luac"
+        ],
+        "1_4_11": [
+          "config_mall.luac"
+        ]
+      },
+      "source_file": "server/mall_zhenbao.json",
+      "extraction_method": "实现回退（source 字段=IMPLEMENTATION_FALLBACK_v2），非客户端配置直提",
+      "field_meaning": "id/item_bid/item_name/price/limit_num/buy_num",
+      "id_range": {
+        "min": 21001,
+        "max": 21045
+      },
+      "count": 45,
+      "count_evidence": "PARTIAL",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "PARTIAL",
+      "evidence": "server/mall_zhenbao.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_mall.luac, 17598 字节）",
+      "missing_information": "非原版配置真值；原版珍宝阁配方是否在 APK 内未确认"
+    },
+    {
+      "data_id": "mall_exchange",
+      "category": [
+        "商城商品",
+        "奖励"
+      ],
+      "name": "商城兑换配方（APK 内无此表，实现回退）",
+      "config_files": {
+        "1_3_0": [],
+        "1_4_9": [],
+        "1_4_11": []
+      },
+      "source_file": "server/mall_exchange.json",
+      "extraction_method": "实现回退（source 字段=IMPLEMENTATION_FALLBACK）；backup 注释明确\"原版兑换配方不在 APK 内\"",
+      "field_meaning": "id/item_bid=消耗物品；new_item_bid/new_item_num=产出；limit_num=限购",
+      "id_range": {
+        "min": 22001,
+        "max": 22028
+      },
+      "count": 28,
+      "count_evidence": "PARTIAL",
+      "version_diff": "存在于: 无；缺失: 1_3_0/1_4_9/1_4_11。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "PARTIAL",
+      "evidence": "server/mall_exchange.json",
+      "missing_information": "非原版配置真值；config_exchange.json(40KB) 解构表存在但未与该文件对齐"
+    },
+    {
+      "data_id": "item_gift",
+      "category": [
+        "礼包"
+      ],
+      "name": "物品礼包内容表",
+      "config_files": {
+        "1_3_0": [
+          "config_item_gift.luac"
+        ],
+        "1_4_9": [
+          "config_item_gift.luac"
+        ],
+        "1_4_11": [
+          "config_item_gift.luac"
+        ]
+      },
+      "source_file": "server/item_gift.json",
+      "extraction_method": "tools/extract_item_gift.py 提取",
+      "field_meaning": "键=礼包ID；值=物品列表（bid/数量数组）",
+      "id_range": {
+        "min": 0,
+        "max": 44751
+      },
+      "count": 496,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "VERIFIED",
+      "evidence": "server/item_gift.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_item_gift.luac, 105347 字节）",
+      "missing_information": "—"
+    },
+    {
+      "data_id": "richang",
+      "category": [
+        "活动"
+      ],
+      "name": "日常任务/活跃表",
+      "config_files": {
+        "1_3_0": [
+          "config_richang.luac"
+        ],
+        "1_4_9": [
+          "config_richang.luac"
+        ],
+        "1_4_11": [
+          "config_richang.luac"
+        ]
+      },
+      "source_file": "server/_richang.json",
+      "extraction_method": "tools/extract_richang.py 提取",
+      "field_meaning": "tasks=日常任务列表；kezhi=克制/规则子表",
+      "id_range": {
+        "min": 101,
+        "max": 255
+      },
+      "count": 43,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "VERIFIED",
+      "evidence": "server/_richang.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_richang.luac, 21849 字节）；统计注记: 子表 tasks",
+      "missing_information": "—"
+    },
+    {
+      "data_id": "guaji",
+      "category": [
+        "活动"
+      ],
+      "name": "挂机地图列表",
+      "config_files": {
+        "1_3_0": [
+          "config_guaji.luac"
+        ],
+        "1_4_9": [
+          "config_guaji.luac"
+        ],
+        "1_4_11": [
+          "config_guaji.luac"
+        ]
+      },
+      "source_file": "server/_guaji.json",
+      "extraction_method": "tools/extract_guaji.py 提取",
+      "field_meaning": "spots=挂机区域（星斗大森林等 8 区，level_range 25-34、map_bid、mon_bid）",
+      "id_range": null,
+      "count": 8,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "VERIFIED",
+      "evidence": "server/_guaji.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_guaji.luac, 930 字节）；统计注记: 子表 spots",
+      "missing_information": "每分钟收益速率不在配置表（truth_values: NOT_IN_CONFIG）"
+    },
+    {
+      "data_id": "drop",
+      "category": [
+        "奖励"
+      ],
+      "name": "掉落组表",
+      "config_files": {
+        "1_3_0": [
+          "config_drop.luac"
+        ],
+        "1_4_9": [
+          "config_drop.luac"
+        ],
+        "1_4_11": [
+          "config_drop.luac"
+        ]
+      },
+      "source_file": "server/cfg_drop.json",
+      "extraction_method": "tools/extract_drop.py 提取",
+      "field_meaning": "键=掉落组ID(20001段)；值=[{coin, normal:[{item,num,pp}], core, first}]；pp=概率点（池内归一）",
+      "id_range": {
+        "min": 4001,
+        "max": 30004
+      },
+      "count": 34,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "VERIFIED",
+      "evidence": "server/cfg_drop.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_drop.luac, 8195 字节）",
+      "missing_information": "—"
+    },
+    {
+      "data_id": "chengjiu",
+      "category": [
+        "奖励"
+      ],
+      "name": "成就表",
+      "config_files": {
+        "1_3_0": [
+          "config_chengjiu.luac"
+        ],
+        "1_4_9": [
+          "config_chengjiu.luac"
+        ],
+        "1_4_11": [
+          "config_chengjiu.luac"
+        ]
+      },
+      "source_file": "server/_chengjiu.json",
+      "extraction_method": "tools/extract_chengjiu.py 提取",
+      "field_meaning": "items=成就条目字典（10100 段分组）",
+      "id_range": {
+        "min": 10100,
+        "max": 51000
+      },
+      "count": 342,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "VERIFIED",
+      "evidence": "server/_chengjiu.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_chengjiu.luac, 13848 字节）；统计注记: 子表 items",
+      "missing_information": "—"
+    },
+    {
+      "data_id": "chengjiu_map",
+      "category": [
+        "奖励"
+      ],
+      "name": "成就分组映射（手工整理）",
+      "config_files": {
+        "1_3_0": [
+          "config_chengjiu.luac"
+        ],
+        "1_4_9": [
+          "config_chengjiu.luac"
+        ],
+        "1_4_11": [
+          "config_chengjiu.luac"
+        ]
+      },
+      "source_file": "server/_chengjiu_map.json",
+      "extraction_method": "手工映射产物（groups 分组清单）",
+      "field_meaning": "groups=成就分组列表（43 组）",
+      "id_range": null,
+      "count": 12,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "LIKELY",
+      "evidence": "server/_chengjiu_map.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_chengjiu.luac, 13848 字节）；统计注记: 子表 groups",
+      "missing_information": "分组为人工整理，与原版分组定义对应关系未逐条验证"
+    },
+    {
+      "data_id": "runtime_config",
+      "category": [
+        "其他"
+      ],
+      "name": "服务端连接运行时配置（非游戏数据表）",
+      "config_files": {
+        "1_3_0": [],
+        "1_4_9": [],
+        "1_4_11": []
+      },
+      "source_file": "server/config.json",
+      "extraction_method": "mock_server 运行配置（bind/host/http_port/game_port/server_list）",
+      "field_meaning": "bind=监听地址；host=模拟器回环 10.0.2.2；http_port=8080；game_port=9000",
+      "id_range": null,
+      "count": 133,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 无；缺失: 1_3_0/1_4_9/1_4_11。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "VERIFIED",
+      "evidence": "server/config.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config.luac, 4097 字节）；统计注记: 运行配置项数（非数据表）",
+      "missing_information": "—"
+    },
+    {
+      "data_id": "runtime_npcs_mislabel",
+      "category": [
+        "其他"
+      ],
+      "name": "\"config_21npcs.json\"（命名误导：实为服务端运行配置，非 NPC 表）",
+      "config_files": {
+        "1_3_0": [],
+        "1_4_9": [],
+        "1_4_11": []
+      },
+      "source_file": "server/config_21npcs.json",
+      "extraction_method": "直接读文件核实：内容为 bind/host/server_list 运行配置，与 21 个 NPC 无关",
+      "field_meaning": "bind/host/http_port/game_port/server_list[].ip/port/state",
+      "id_range": null,
+      "count": 16,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 无；缺失: 1_3_0/1_4_9/1_4_11。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "VERIFIED",
+      "evidence": "server/config_21npcs.json；统计注记: 运行配置项数（非数据表）",
+      "missing_information": "文件名与内容不符的原因（历史命名）未追溯"
+    },
+    {
+      "data_id": "answer_key",
+      "category": [
+        "活动"
+      ],
+      "name": "答题答案表（项目手工推导）",
+      "config_files": {
+        "1_3_0": [
+          "config_answer.luac"
+        ],
+        "1_4_9": [
+          "config_answer.luac"
+        ],
+        "1_4_11": [
+          "config_answer.luac"
+        ]
+      },
+      "source_file": "server/answer_key.json",
+      "extraction_method": "手工推导（server/answer/service.py 注释：项目自定义推导键，依据题面推导）",
+      "field_meaning": "answers=题目→答案映射；_meta.provenance/reason/evidence_level",
+      "id_range": {
+        "min": 10001,
+        "max": 10243
+      },
+      "count": 239,
+      "count_evidence": "PARTIAL",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "PARTIAL",
+      "evidence": "server/answer_key.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_answer.luac, 24513 字节）；统计注记: 子表 answers",
+      "missing_information": "非客户端 config_answer.luac 直提；与原版答案一致性未验证"
+    },
+    {
+      "data_id": "promote",
+      "category": [
+        "等级经验"
+      ],
+      "name": "转生/晋升表",
+      "config_files": {
+        "1_3_0": [],
+        "1_4_9": [
+          "config_promote.luac"
+        ],
+        "1_4_11": [
+          "config_promote.luac"
+        ]
+      },
+      "source_file": "server/_promote.json",
+      "extraction_method": "tools/extract_promote.py 提取",
+      "field_meaning": "items=晋升配置列表；tips=提示文案",
+      "id_range": null,
+      "count": 146,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_4_9/1_4_11；缺失: 1_3_0。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "VERIFIED",
+      "evidence": "server/_promote.json；统计注记: 子表 items",
+      "missing_information": "—"
+    },
+    {
+      "data_id": "rune_cfg",
+      "category": [
+        "阵法"
+      ],
+      "name": "符文配置（交换/静态/基础三子表）",
+      "config_files": {
+        "1_3_0": [],
+        "1_4_9": [
+          "config_rune_data.luac"
+        ],
+        "1_4_11": [
+          "config_rune_data.luac"
+        ]
+      },
+      "source_file": "server/_rune_cfg.json",
+      "extraction_method": "tools/_fix_r109_rune_exchange.py 落盘修复（源自 config_rune_data.luac 1.7MB 解构）",
+      "field_meaning": "RuneExchange=兑换配方；RuneStatic=静态属性；RuneBase=基础数据",
+      "id_range": {
+        "min": 1,
+        "max": 21595
+      },
+      "count": 146,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_4_9/1_4_11；缺失: 1_3_0。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "LIKELY",
+      "evidence": "server/_rune_cfg.json；统计注记: 子表合计",
+      "missing_information": "—"
+    },
+    {
+      "data_id": "invest_cfg",
+      "category": [
+        "活动"
+      ],
+      "name": "投资计划配置（6 子表）",
+      "config_files": {
+        "1_3_0": [
+          "config_invest.luac"
+        ],
+        "1_4_9": [
+          "config_invest.luac"
+        ],
+        "1_4_11": [
+          "config_invest.luac"
+        ]
+      },
+      "source_file": "server/_invest_cfg.json",
+      "extraction_method": "tools/_fix_r107_invest.py 落盘修复",
+      "field_meaning": "InvestType/AllFanhuan/DayInvest/LevInvest 等子表",
+      "id_range": {
+        "min": 2,
+        "max": 8
+      },
+      "count": 12,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "LIKELY",
+      "evidence": "server/_invest_cfg.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_invest.luac, 3260 字节）；统计注记: 子表合计",
+      "missing_information": "—"
+    },
+    {
+      "data_id": "skill_talent",
+      "category": [
+        "技能"
+      ],
+      "name": "技能天赋表（客户端解构）",
+      "config_files": {
+        "1_3_0": [
+          "config_skill_talent.luac"
+        ],
+        "1_4_9": [
+          "config_skill_talent.luac"
+        ],
+        "1_4_11": [
+          "config_skill_talent.luac"
+        ]
+      },
+      "source_file": "server/cfg/config_skill_talent.json",
+      "extraction_method": "1.4.11 luac 批量解构产物；truth_values 确认仅 name/bid/skill_group 字段，无消耗字段",
+      "field_meaning": "name/bid/skill_group/skill_talent/magic_talent；无 gold/coin/item 消耗字段",
+      "id_range": {
+        "min": 10020,
+        "max": 90800
+      },
+      "count": 245,
+      "count_evidence": "VERIFIED(1.4.11实际提取)",
+      "version_diff": "存在于: 1_3_0/1_4_9/1_4_11；缺失: 无。数量仅 1.4.11 已统计；旧版本数量 UNKNOWN。",
+      "parse_confidence": "VERIFIED",
+      "evidence": "server/cfg/config_skill_talent.json（1.3.0 落盘证据: analysis\\version_compare\\1.3.0\\extracted\\config\\config_skill_talent.luac, 18655 字节）；统计注记: 顶层子表3个；条目合计245",
+      "missing_information": "技能学习/升级消耗在配置表中不存在"
+    }
+  ],
+  "unconfirmed_items": [
+    "item_fashion",
+    "item_currency",
+    "skill_raw",
+    "attr_meta",
+    "role_career",
+    "wing_data",
+    "shenqi",
+    "formation",
+    "buff_data",
+    "mon_data",
+    "npc_main",
+    "npcs_10001",
+    "map_main",
+    "dungeon_corpus",
+    "mall_zhenbao",
+    "mall_exchange",
+    "answer_key"
+  ]
+}

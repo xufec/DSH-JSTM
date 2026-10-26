@@ -1,0 +1,60 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ===== 日志与运行时数据 =====
+*.log
+logs/
+server/game.db
+server/state/
+server/minloop/*.db
+server/minloop/*.log
+server/world/tests/
+.DS_Store
+Thumbs.db
+
+# ===== 备份与归档 =====
+*.bak*
+.bak_*/
+.archive_pre_git/
+
+# ===== 大二进制 / 第三方工具 / 版权敏感（本地保留，不入库）=====
+001/
+anzbao/
+patched/
+cankao/
+shots/
+photo/
+skill/
+
+# ===== tools 第三方工具链与构建产物 =====
+tools/grok/
+tools/grok-build-main/
+tools/grok-install/
+tools/jadx/
+tools/jadx-out/
+tools/dexdump/
+tools/frida/
+tools/ljd/
+tools/ljd_pypi/
+tools/protoc/
+tools/luajit-decompiler-v2-build/
+tools/luajit-decompiler-v2-master/
+tools/dex/
+tools/*.zip
+tools/*.jar
+
+# ===== analysis 大体积证据 / 第三方源码 =====
+analysis/runtime_evidence/
+analysis/luajit_src/
+analysis/runtime_trace/
+analysis/r1_client_index/
+
+# ===== 归档快照 =====
+archive/server_snapshots/

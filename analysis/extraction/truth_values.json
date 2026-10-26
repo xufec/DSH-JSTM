@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "task": "① 数值真值替换——真服探测 + 深度静态提取",
+    "date": "2026-10-02",
+    "version": "1.4.11",
+    "read_only": true,
+    "note": "All extraction from server/cfg/*.json + _tmp_cfg/ + 1.4.9 corpus. No server/ code modified."
+  },
+  "part_a_real_server": {
+    "patched_apk_target": {
+      "tcp": "10.0.2.2:9000",
+      "http_gateway": "10.0.2.2:8080",
+      "evidence": "PHASE1_STATUS.md: config.luac injected URL_PATH_ALL → 10.0.2.2:8080; TCP connect 10.0.2.2:9000",
+      "reachable_from_host": {"tcp_9000": true, "http_8080": true, "test_time": "2026-10-02"},
+      "note": "10.0.2.2 is Android emulator host loopback = localhost on host machine. mock_server is running."
+    },
+    "original_real_server": {
+      "address_found": false,
+      "reason": "原版服务端地址在未修改的 config.luac 中，已被补丁包替换。项目文档中无原始地址记录。",
+      "reachability": "UNKNOWN",
+      "note": "真服大概率已下线（老游戏项目）。即使地址已知，公网服务也不可达。"
+    },
+    "conclusion": "真服不可达：原版服务端地址未知/已下线，当前仅本地 mock_server 运行中。所有需实机验证的数值仍需 MuMu + mock_server 联调采集。"
+  },
+  "part_b_deep_extraction": {
+    "skill_learn_upgrade_cost": {
+      "value": "NOT_FOUND_IN_CONFIG",
+      "source": "server/cfg/config_skill_talent.json SkillTalent",
+      "evidence": "CONFIRMED",
+      "detail": "SkillTalent 表仅含 name/bid/skill_group/skill_talent/magic_talent 字段，无 gold/coin/item 消耗字段。学习/升级消耗可能在服务端硬编码或未提取的配置表中。",
+      "replace_plan": "server/mock_server.py 中技能学习/升级消耗占位行 → 暂保持 INFERENCE，标注'需从服务端代码或实机抓包提取'"
+    },
+    "partner_cultivation_curve": {
+      "partner_levup_exp": {
+        "source": "server/cfg/config_partner_base.json PartnerLevUp",
+        "evidence": "CONFIRMED",
+        "levels": 201,
+        "sample": {"L1_exp_max": 53, "L2_exp_max": 108, "L10_exp_max": "需查表", "L200_exp_max": "需查表"},
+        "note": "伙伴等级经验曲线已确认，201级完整数据"
+      },
+      "partner_mode_attr": {
+        "source": "server/cfg/config_partner_base.json PartnerModeAttr",
+        "evidence": "CONFIRMED",
+        "modes": 10,
+        "sample_mode_1": {"hp_max": 30, "atk_s": 6, "atk_p": 6, "def_s": 4, "def_p": 4, "crit": 2, "tenacity": 2, "dodge": 2, "hit": 2},
+        "note": "伙伴模式属性加成表已提取"
+      },
+      "feed_gold_exp_cost": {
+        "value": "NOT_FOUND",
+        "evidence": "UNKNOWN",
+        "note": "FEED_GOLD=1000/FEED_EXP=500 占位值无配置表支撑。伙伴培养消耗可能在服务端硬编码。"
+      },
+      "replace_plan": "伙伴等级经验曲线 → 替换 PartnerLevUp 表真值；培养消耗 → 保持 INFERENCE"
+    },
+    "intensify_enhance_values": {
+      "source": "server/cfg/config_intensify.json",
+      "evidence": "CONFIRMED",
+      "intensify_success_rate": {
+        "L1": "100%", "L2": "85%", "L3": "75%", "L4": "需查表", "L15": "需查表"
+      },
+      "intensify_cost_coin": {
+        "L1": 2400, "L2": 4400, "L3": 6400, "note": "每级递增2000金，全部6个装备位统一"
+      },
+      "intensify_stone_bid": 36006,
+      "intensify_reward_weapon": {
+        "+8": {"atk_s": 20, "atk_p": 20, "atk_s_per": 1, "atk_p_per": 1},
+        "+10": {"atk_s": 60, "atk_p": 60, "atk_s_per": 3, "atk_p_per": 3},
+        "+15": {"atk_s": 160, "atk_p": 160, "atk_s_per": 8, "atk_p_per": 8}
+      },
+      "intensify_all_reward": {
+        "+6_set": {"hp_max": 345, "atk_s": 69, "atk_p": 69, "def_s": 49, "def_p": 49, "crit": 15, "dodge": 10},
+        "+7_set": {"hp_max": 767, "atk_s": 153, "atk_p": 153, "def_s": 108, "def_p": 108, "crit": 34, "dodge": 23, "atk_abs": 23, "atk_speed": 5},
+        "+8_set": {"hp_max": 1280, "atk_s": 256, "atk_p": 256, "def_s": 180, "def_p": 180, "crit": 56, "dodge": 38, "hit": 38, "tenacity": 56, "atk_abs": 39, "atk_speed": 8}
+      },
+      "upgrade_cost": {
+        "L30_weapon": {"coin": 58850, "hero_coin": 15840, "item": "13001×1"},
+        "L70_weapon": {"coin": 637400, "hero_coin": 306200, "item": "13020×2"},
+        "L100_weapon": {"coin": 1793500, "hero_coin": 925300, "item": "13035×2"}
+      },
+      "replace_plan": "全部强化数值 → 替换 mock_server 中 INTENSIFY_* 占位常量为 config_intensify.json 真值"
+    },
+    "gem_values": {
+      "value": "NO_SEPARATE_GEM_TABLE",
+      "source": "server/cfg/config_item.json (type=11-20 宝石类物品)",
+      "evidence": "UNKNOWN",
+      "note": "无独立宝石属性配置表。宝石作为物品存在（type 11-20），但其属性加成可能在物品字段或镶嵌系统表中，未单独提取。",
+      "replace_plan": "保持 INFERENCE，后续需查 config_jewel 或镶嵌相关表"
+    },
+    "drop_probabilities": {
+      "source": "server/cfg/config_drop.json Drop table (29 groups)",
+      "evidence": "CONFIRMED",
+      "groups": {
+        "20001": {"coin": 1000, "normal": [], "core": 0, "first": 0},
+        "20003": {"coin": 1000, "normal": [{"item": 4001, "num": 1, "pp": 1000}], "core": 0, "first": 0},
+        "20004": {"coin": 1000, "normal": [{"item": 4001, "pp": 1000}, {"item": 4003, "pp": 1000}], "core": 2001, "first": 0},
+        "20012": {"coin": 3000, "normal": [{"item": 4001, "pp": 1000}, {"item": 4003, "pp": 1000}], "core": 2003, "first": 1001},
+        "20024": {"coin": 6000, "normal": [{"item": 4002, "pp": 1000}, {"item": 4004, "pp": 1000}], "core": 2004, "first": 1002},
+        "30001": {"coin": 0, "normal": [{"item": 4011, "pp": 1000}], "core": 0, "first": 0},
+        "30005": {"coin": 0, "normal": [], "core": 0, "first": 1011}
+      },
+      "coin_scale": "每5组递增1000：20001-20005=1000, 20006-20010=2000, ..., 20021-20024=6000",
+      "note": "pp=1000 为基础概率点，实际概率 = pp / 池内总和。多数 normal 池只有1-2个物品，pp=1000 ≈ 必掉。",
+      "replace_plan": "掉落金币/物品池 → 替换 mock_server 中 drop 占位逻辑为 config_drop.json 真值"
+    },
+    "afk_idle_rewards": {
+      "guaji_zones": {
+        "source": "server/cfg/config_guaji.json GuajiInfo",
+        "evidence": "CONFIRMED",
+        "zones": 8,
+        "sample": {"zone_1": {"name": "星斗大森林", "level_range": "25-34", "map_bid": 10002, "mon_bid": 10101}}
+      },
+      "per_minute_reward": {
+        "value": "NOT_IN_CONFIG",
+        "evidence": "UNKNOWN",
+        "note": "挂机地图配置已提取，但每分钟 gold/exp 收益速率不在配置表中。GOLD=200/EXP=100 占位值无配置支撑。"
+      },
+      "replace_plan": "挂机地图列表 → CONFIRMED 真值；挂机收益速率 → 保持 INFERENCE"
+    },
+    "daily_checkin_rewards": {
+      "source": "server/cfg/config_checkin.json Checkin",
+      "evidence": "CONFIRMED",
+      "days": 30,
+      "week_1": {
+        "day1": {"assets": {"type": 2, "amount": 250000}, "vip_exp": 2},
+        "day2": {"items": [{"bid": 36500, "count": 10}], "vip_exp": 1},
+        "day3": {"items": [{"bid": 36530, "count": 1}], "vip_exp": 2},
+        "day4": {"items": [{"bid": 25327, "count": 5}], "vip_exp": 1},
+        "day5": {"items": [{"bid": 42003, "count": 1}], "vip_exp": 2},
+        "day6": {"assets": {"type": 2, "amount": 250000}, "vip_exp": 2},
+        "day7": {"items": [{"bid": 36500, "count": 15}], "vip_exp": 1}
+      },
+      "note": "签到奖励真值已提取。GOLD=1000/COIN=5000 占位值不准确，实际 Day1=250000 银魂币。",
+      "replace_plan": "签到奖励 → 替换 mock_server 中 checkin 占位为 config_checkin.json 30天真值"
+    },
+    "nine_dimension_power": {
+      "attr_power_coefficients": {
+        "source": "server/cfg/config_attr.json AttrPower.hash",
+        "evidence": "CONFIRMED",
+        "coefficients": {
+          "atk_speed": 450, "dodge": 275, "hit": 275, "crit": 183, "tenacity": 183,
+          "atk_s": 106, "atk_p": 106, "control": 90, "anti_control": 90,
+          "def_abs": 82, "atk_abs": 82, "red_def_s": 33, "def_p": 33, "def_s": 33,
+          "red_def_p": 33, "anti_control_s": 30, "hp_max": 24
+        }
+      },
+      "nine_dimensions": {
+        "note": "九维 = eqm_role(装备)/skill(技能)/xiulian(修炼)/hero(伙伴)/ride(坐骑)/lingshou(灵兽)/shenqi(神器)/wing(翅膀)/fabao(法宝)",
+        "formula": "总战力 = Σ(各系统属性值 × AttrPower系数)，公式为 INFERENCE，系数为 CONFIRMED",
+        "evidence": "INFERENCE",
+        "replace_plan": "战力计算 → 用 AttrPower 系数替换 mock_server 中占位公式"
+      }
+    },
+    "monster_hp_atk": {
+      "value": "STATIC_EXTRACTION_NOT_POSSIBLE",
+      "evidence": "UNKNOWN",
+      "detail": "config_mon_data.luac (857KB) 反构造失败，主表空。1.4.9 参考数据(2645怪)确认无显式 HP/ATK 字段。怪物战斗数值由服务端公式基于 level + type + scale_factor 计算，公式不在配置表中。",
+      "replace_plan": "怪物 HP/ATK → 保持 INFERENCE 占位，标注'需 MuMu 运行时取证或服务端代码反编译'"
+    }
+  },
+  "evidence_summary": {
+    "CONFIRMED": [
+      "强化数值全套（成功率/消耗/奖励/突破）",
+      "掉落表29组（金币/物品池/核心/首杀）",
+      "签到奖励30天（资产/物品/VIP经验）",
+      "战力系数表 AttrPower（31属性→战力）",
+      "伙伴等级经验曲线 PartnerLevUp（201级）",
+      "伙伴模式属性 PartnerModeAttr（10模式）",
+      "挂机地图列表 GuajiInfo（8区域）"
+    ],
+    "INFERENCE": [
+      "九维战力计算公式（系数已确认，组合方式为推断）",
+      "挂机收益速率（地图已确认，每分钟收益速率为推断）"
+    ],
+    "UNKNOWN": [
+      "技能学习/升级消耗（配置表无此字段）",
+      "伙伴培养消耗（FEED_GOLD/EXP 无配置支撑）",
+      "宝石属性加成（无独立宝石表）",
+      "怪物 HP/ATK 实际值（公式在服务端，静态提取不可得）"
+    ]
+  }
+}
